@@ -25,5 +25,5 @@ db.sqlite3
 Thumbs.db
 
 #activate
-.bat
+activate.bat
 ```
