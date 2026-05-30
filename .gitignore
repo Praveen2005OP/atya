@@ -23,4 +23,7 @@ db.sqlite3
 # OS junk
 .DS_Store
 Thumbs.db
+
+#activate
+.bat
 ```
