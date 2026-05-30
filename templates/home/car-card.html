@@ -1,0 +1,37 @@
+<article class="car-card" onclick="window.location.href='/car/{{ car.slug }}/'" tabindex="0" role="button" aria-label="Open {{ car.name }} review and specifications">
+    <figure>
+        <img src="{{ car.images.hero }}" alt="{{ car.name }}">
+    </figure>
+    <div class="card-body">
+        <div>
+            <span class="badge">{{ car.brand }}</span>
+            <h3>{{ car.name }}</h3>
+            <p>{{ car.minides }}</p>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-tile">
+                <span>Price</span>
+                <strong>{{ car.price.min }} - {{ car.price.max }}</strong>
+            </div>
+            <div class="spec-tile">
+                <span>Power</span>
+                <strong>{{ car.maxpower }} bhp</strong>
+            </div>
+            <div class="spec-tile">
+                <span>Torque</span>
+                <strong>{{ car.maxtorque }}</strong>
+            </div>
+            <div class="spec-tile">
+                <span>Safety</span>
+                <strong>
+                    {% if car.overview.safetyRating %}
+                        {{ car.overview.safetyRating }}
+                        ★ Safety
+                    {% else %}
+                        Not tested yet
+                    {% endif %}
+                </strong>
+            </div>
+        </div>
+    </div>
+</article>

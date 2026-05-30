@@ -1,0 +1,85 @@
+<section class="finder-band" id="explore">
+    <div class="finder-panel">
+        <div class="section-heading tight">
+            <p class="eyebrow">Smart search</p>
+            <h2>Find cars fast.</h2>
+        </div>
+        <div class="filters" aria-label="Car filters">
+            <label>
+                Budget
+                <select id="budgetFilter">
+                    <option value="all">Any budget</option>
+                    <option value="under10">Under INR 10L</option>
+                    <option value="10to20">INR 10L - INR 20L</option>
+                    <option value="20to40">INR 20L - INR 40L</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </label>
+            <label>
+                Body
+                <select id="bodyFilter">
+                    <option value="all">Any body</option>
+                    <option value="Micro SUV">Micro SUV</option>
+                    <option value="Sub-Compact SUV">Sub-Compact SUV</option>
+                    <option value="Compact Crossover SUV (Coupe SUV)">Compact Crossover SUV (Coupe SUV)</option>
+                    <option value="Compact SUV">Compact SUV</option>
+                    <option value="Mid-Size SUV">Mid-Size SUV</option>
+                    <option value="Full-Size SUV">Full-Size SUV</option>
+                    <option value="Mini Hatchback">Mini Hatchback</option>
+                    <option value="Compact Hatchback">Compact Hatchback</option>
+                    <option value="Premium Hatchback">Premium Hatchback</option>
+                    <option value="Sub-Compact Sedan">Sub-Compact Sedan</option>
+                    <option value="Mid-Size Sedan">Mid-Size Sedan</option>
+                    <option value="Full-Size Sedan">Full-Size Sedan</option>
+                    <option value="Sub-Compact MPV">Sub-Compact MPV</option>
+                    <option value="Compact MPV">Compact MPV</option>
+                    <option value="Premium MPV">Premium MPV</option>
+                    <option value="Luxury Saloon/SUV">Luxury Saloon/SUV</option>
+                    <option value="Sports Cars">Sports Cars</option>
+                </select>
+            </label>
+            <label>
+                Fuel
+                <select id="fuelFilter">
+                    <option value="all">Any fuel</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="CNG">CNG</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Electric">Electric</option>
+                </select>
+            </label>
+            <label>
+                Transmission
+                <select id="transmissionFilter">
+                    <option value="all">Any gearbox</option>
+                    <option value="Manual">Manual</option>
+                    <option value="Automatic">Automatic</option>
+                    <option value="Continuously Variable Transmission(CVT)">Continuously Variable Transmission (CVT)</option>
+                    <option value="Dual-Clutch Transmission(DCT)">Dual-Clutch Transmission (DCT)</option>
+                    <option value="Dedicated Hybrid Transmission(DHT)">Dedicated Hybrid Transmission (DHT)</option>
+                    <option value="Intelligent Variable Transmission(IVT)">Intelligent Variable Transmission (IVT)</option>
+                    <option value="Torque Converter Automatic(AT)">Torque Converter Automatic (AT)</option>
+                    <option value="Intelligent Manual Transmission(iMT)">Intelligent Manual Transmission (iMT)</option>
+                </select>
+            </label>
+            <label>
+                Safety
+                <select id="safetyFilter">
+                    <option value="all">Any rating</option>
+                    <option value="5">5 ★ Safety</option>
+                    <option value="4">4 ★ Safety</option>
+                </select>
+            </label>
+        </div>
+        <div class="finder-actions">
+            <button class="secondary-button" type="button" id="resetFilters">Reset</button>
+            <p id="resultCount">{{ cars|length }} cars found</p>
+        </div>
+    </div>
+    <div class="car-grid" id="carGrid">
+        {% for car in cars %}
+        {% include 'home/car-card.html' %}
+        {% endfor %}
+    </div>
+</section>

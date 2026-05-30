@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Atya | Indian Car Intelligence
+{% endblock %}
+
+{% block content %}
+
+{{ cars|json_script:"cars-data" }}
+
+<div id="homePage">
+
+    {% include 'home/hero.html' %}
+    {% include 'home/brands.html' %}
+    {% include 'home/finder.html' %}
+    {% include 'home/compare.html' %}
+    {% include 'home/purpose.html' %}
+    {% include 'home/garage.html' %}
+
+</div>
+
+<div id="carPage" style="display: none;"></div>
+
+{% endblock %}

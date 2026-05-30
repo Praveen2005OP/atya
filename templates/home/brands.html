@@ -1,0 +1,45 @@
+{% load static %}
+
+<section class="section-strip" id="brands">
+    <div class="section-heading">
+        <p class="eyebrow">
+            Explore by brand
+        </p>
+        <h2>
+            Start with the badge you trust.
+        </h2>
+        <p>
+            Every brand card gives you
+            the models, price spread,
+            and category signal in one scan.
+        </p>
+    </div>
+    <div class="brand-grid" id="brandGrid">
+        {% for brand in brands %}
+        <a class="brand-card spa-link" href="/brand/{{ brand.name|lower }}/" data-initial="{{ brand.name|first }}">
+            <div class="brand-logo">
+                <img src="/static/images/logos/${brand.toLowerCase().replace(/\s+/g, "")}.png" alt="{{ brand.name }}">
+            </div>
+            <h3>
+                {{ brand.name }}
+            </h3>
+            <p>
+                {{ brand.first_car }}
+                and
+                {{ brand.remaining_count }}
+                more
+            </p>
+            <div class="meta-row">
+                <span class="pill">
+                    {{ brand.car_count }}
+                    cars
+                </span>
+                <span class="pill">
+                    from INR
+                    {{ brand.starting_price }}
+                </span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>

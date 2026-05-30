@@ -1,0 +1,42 @@
+{% load static %}
+{% load car_filters %}
+
+<article class="car-detail-page">
+    <section class="detail-body page-detail-body">
+        <div class="quick-read">
+            <div>
+                <span>Price</span>
+                <strong>₹{{ car.pricing.exShowroom.min|lakh }}L - ₹{{ car.pricing.exShowroom.max|lakh }}L</strong>
+            </div>
+            <div>
+                <span>Power</span>
+                <strong>{{ car.engineDatabase|power }}</strong>
+            </div>
+            <div>
+                <span>Mileage</span>
+                <strong>{{ car.engineDatabase|mileage }}</strong>
+            </div>
+            <div>
+                <span>Safety</span>
+                <strong>{{ car.overview.safetyRating|safety }}</strong>
+            </div>
+        </div>
+        <section class="detail-section">
+                <div>
+                    <p class="eyebrow">Specification sheet</p>
+                    <h2>Everything important, without the clutter.</h2>
+                </div>
+                <div class="detail-specs">
+                    <div class="spec-tile"><span>Price</span><strong>₹{{ car.pricing.exShowroom.min|lakh }}L - ₹{{ car.pricing.exShowroom.max|lakh }}L</strong></div>
+                    <div class="spec-tile"><span>Fuel</span><strong>{{ car.overview.fuelTypes|default:""|join:", " }}</strong></div>
+                    <div class="spec-tile"><span>Transmission</span><strong>{{ car.overview.transmissions|default:""|join:", " }}</strong></div>
+                    <div class="spec-tile"><span>Power</span><strong>{{ car.engineDatabase|power }}</strong></div>
+                    <div class="spec-tile"><span>Torque</span><strong>{{ car.engineDatabase|torque }}</strong></div>
+                    <div class="spec-tile"><span>Safety</span><strong>{{ car.overview.safetyRating|safety }}</strong></div>
+                    <div class="spec-tile"><span>Clearance</span><strong>{{ car.sharedSpecs.dimensions.groundClearance }}</strong></div>
+                    <div class="spec-tile"><span>Seats</span><strong>{{ car.overview.seatingOptions|default:"5"|first }}</strong></div>
+                    <div class="spec-tile"><span>Use case</span><strong>{{ car.overview.useCases|random_usecases }}</strong></div>
+                </div>
+            </section>
+    </section>
+</article>

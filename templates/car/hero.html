@@ -1,0 +1,29 @@
+{% load static %}
+
+<article class="car-detail-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Atya</a>
+            <span>/</span>
+            <a href="/#brands">Brands</a>
+            <span>/</span>
+            <a href="/#explore">Cars</a>
+            <span>/</span>
+            <span>{{ car.name }}</span>
+        </nav>
+
+        <section class="detail-hero page-hero">
+            <img src="{{ car.hero.image }}" alt="{{ car.name }}">
+            <div class="detail-title">
+                <span class="badge">
+                    {{ car.brand }} · {{ car.overview.body }} · {{ car.overview.safetyRating }}-star safety
+                </span>
+                <h1 data-text="{{ car.name }}" class="glass-title">{{ car.name }}</h1>
+                <p>{{ car.overview.minides }}</p>
+                <div class="detail-actions">
+                    <button class="primary-button" type="button" data-compare="{{ car.slug }}">Add to compare</button>
+                    <button class="secondary-button" type="button" data-save="{{ car.slug }}">Save to garage</button>
+                    <a class="secondary-link-button" href="/#explore">Back to cars</a>
+                </div>
+            </div>
+        </section>
+</article>

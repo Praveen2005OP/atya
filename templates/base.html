@@ -1,0 +1,101 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        {% block title %}
+        Atya | Indian Car Intelligence
+        {% endblock %}
+    </title>
+    <meta name="description"
+        content="Atya is a premium car intelligence website for exploring, filtering, and comparing cars sold in India." />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="site-header" id="top">
+        <a class="brand-mark" href="/" aria-label="Atya home">
+            <img src="/static/images/logos/atya-logo.png" alt="Atya" class="brand-logo">
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+            <a href="#brands">Brands</a>
+            <a href="/#explore">Explore</a>
+            <a href="#compare">Compare</a>
+            <a href="#saved">Saved</a>
+        </nav>
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+                <div class="toggle-track">
+                    <div class="track-sky">
+                        <div class="track-sky-gradient"></div>
+                        <!-- stars (visible in dark/night mode) -->
+                        <span class="track-star" style="top:6px;left:18px;"></span>
+                        <span class="track-star" style="top:12px;left:34px;width:2px;height:2px;"></span>
+                        <span class="track-star" style="top:5px;left:50px;"></span>
+                        <span class="track-star" style="top:14px;left:64px;width:2px;height:2px;"></span>
+                        <span class="track-star" style="top:8px;left:78px;"></span>
+                        <!-- clouds (visible in light/day mode) -->
+                        <span class="track-cloud" style="width:22px;height:9px;bottom:9px;left:48px;"></span>
+                        <span class="track-cloud" style="width:14px;height:7px;bottom:13px;left:58px;border-radius:8px;"></span>
+                        <span class="track-cloud" style="width:18px;height:8px;bottom:8px;left:62px;"></span>
+                    </div>
+                    <div class="knob" id="themeKnob">
+                        <!-- Sun -->
+                        <div class="sun-knob" id="themeKnobSun">
+                            <svg id="themeRaysSvg" style="position:absolute;inset:-14px;width:66px;height:66px;overflow:visible;" viewBox="0 0 66 66"></svg>
+                        </div>
+                        <!-- Moon -->
+                        <div class="moon-knob" id="themeKnobMoon">
+                            <svg class="moon-shape" viewBox="0 0 48 48">
+                                <defs>
+                                    <mask id="navMoonMask">
+                                        <rect width="48" height="48" fill="white"/>
+                                        <circle cx="32" cy="14" r="15" fill="black"/>
+                                    </mask>
+                                </defs>
+                                <circle cx="22" cy="24" r="18" fill="#e8d5a3" mask="url(#navMoonMask)"/>
+                                <circle cx="15" cy="18" r="2.5" fill="#d4c090" opacity="0.6"/>
+                                <circle cx="26" cy="30" r="2" fill="#d4c090" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <button class="primary-button compact" type="button" data-scroll-target="explore">
+                Find Cars
+            </button>
+        </div>
+    </header>
+    <!-- PAGE CONTENT -->
+    <main id="page-content">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div>
+            <a class="brand-mark" href="#top">
+                <span>Atya</span>
+            </a>
+            <p>
+                Made for Indian car enthusiasts who care
+                about clean specs and better decisions.
+            </p>
+        </div>
+        <nav aria-label="Footer navigation">
+            <a href="#brands">Brands</a>
+            <a href="/#explore">Explore</a>
+            <a href="#compare">Compare</a>
+            <a href="#saved">Saved</a>
+        </nav>
+    </footer>
+    <script src="{% static 'js/script.js' %}" defer></script>
+</body>
+
+</html>
