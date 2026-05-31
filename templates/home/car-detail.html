@@ -2,15 +2,16 @@
 {% load static %}
 
 {% block content %}
+<article class="car-detail-page">
+    {% include 'car/hero.html' %}
+    <section class="detail-body page-detail-body">
+        {% include 'car/quick-specs.html' %}
 
-{% include 'car/hero.html' %}
+        {% include 'car/spec-sheet.html' %}
 
-{% include 'car/quick-specs.html' %}
+        {% include 'car/compare-table.html' %}
 
-{% include 'car/spec-sheet.html' %}
-
-{% include 'car/variants.html' %}
-
-{% include 'car/compare-table.html' %}
-
+        {% include 'car/car-blog.html' %}
+    </section>
+</article>
 {% endblock %}

@@ -1,0 +1,29 @@
+{% load static %}
+{% load car_filters %}
+
+<div class="variants-list">
+    {% for variant in car.variants %}
+        <article class="variant-card">
+            <div>
+                <span class="badge">{{ variant.broadTrim }}</span>
+                <h3>{{ variant.name }}</h3>
+                <p>{{ variant.configuration.fuel }} · {{ variant.configuration.transmission }} · INR {{ variant.price.exShowroom|lakh }}L</p>
+            </div>
+            <div class="variant-spec-row">
+                <span>{{ variant.performance.power }}</span>
+                <span>{{ variant.performance.torque }}</span>
+                <span>{{ variant.performance.mileageARAI }}</span>
+            </div>
+            <ul>
+                <li>{{ variant.configuration.seating }}-seat layout</li>
+                <li>{{ car.overview.safetyRating }} ★ Safety Rating</li>
+                <li>{{ variant. }}</li>
+                <li>{{ variant. }}</li>
+            </ul>
+            <label class="compare-check">
+                <input type="checkbox" data-compare-slot-variant="{{ variant.id }}" data-compare-slot-car="{{ car.id }}"> 
+                Compare Variant   
+            </label>
+        </article>
+    {% endfor %}
+</div>
