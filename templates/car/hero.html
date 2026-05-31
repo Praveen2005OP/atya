@@ -17,7 +17,11 @@
                 <span class="badge">
                     {{ car.brand }} · {{ car.overview.body }} · {{ car.overview.safetyRating }}-star safety
                 </span>
-                <h1 data-text="{{ car.name }}" class="glass-title">{{ car.name }}</h1>
+                <h1 data-text="{{ car.name }}" class="glass-title">
+                    <span class="layer-blur" aria-hidden="true">{{ car.name }}</span>
+                    <span class="layer-glow" aria-hidden="true">{{ car.name }}</span>
+                    <span class="layer-sharp">{{ car.name }}</span>
+                </h1>
                 <p>{{ car.overview.minides }}</p>
                 <div class="detail-actions">
                     <button class="primary-button" type="button" data-compare="{{ car.slug }}">Add to compare</button>

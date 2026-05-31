@@ -1007,32 +1007,32 @@ document.addEventListener("keydown", (event) => {
     openCarPage(card.dataset.cardDetails);
 });
 
-els.heroSearch.addEventListener("submit", (event) => {
+els.heroSearch?.addEventListener("submit", (event) => {
     event.preventDefault();
     state.query = els.search.value;
-    document.querySelector("/#explore").scrollIntoView({ behavior: "smooth" });
+    document.querySelector("/#explore")?.scrollIntoView({ behavior: "smooth" });
     renderCars();
 });
 
-els.search.addEventListener("input", () => {
+els.search?.addEventListener("input", () => {
     state.query = els.search.value;
     renderCars();
 });
 
-[els.budget, els.body, els.fuel, els.transmission, els.safety].forEach((select) => {
+[els.budget, els.body, els.fuel, els.transmission, els.safety].filter(Boolean).forEach((select) => {
     select.addEventListener("change", () => {
-        state.budget = els.budget.value;
-        state.body = els.body.value;
-        state.fuel = els.fuel.value;
-        state.transmission = els.transmission.value;
-        state.safety = els.safety.value;
+        state.budget = els.budget?.value;
+        state.body = els.body?.value;
+        state.fuel = els.fuel?.value;
+        state.transmission = els.transmission?.value;
+        state.safety = els.safety?.value;
         renderCars();
     });
 });
 
-els.reset.addEventListener("click", resetFilters);
+els.reset?.addEventListener("click", resetFilters);
 
-els.comparePicker.addEventListener("change", (event) => {
+els.comparePicker?.addEventListener("change", (event) => {
     const carSelect = event.target.closest("[data-compare-slot-car]");
     const variantSelect = event.target.closest("[data-compare-slot-variant]");
 
