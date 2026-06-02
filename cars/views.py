@@ -48,3 +48,30 @@ def home(request):
         "home/index.html",
         context
     )
+
+def about(request):
+    return render(
+        request, 
+        "about.html"
+    )
+
+def terms(request):
+    return render(
+        request, 
+        "terms.html"
+    )
+
+def privacypolicy(request):
+    return render(
+        request, 
+        "privacypolicy.html"
+    )
+
+def faq(request):
+    return render(
+        request, 
+        "faq.html"
+    )
+
+def feedback(request):
+    return render(request, "feedback.html")

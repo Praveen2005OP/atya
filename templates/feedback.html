@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="feedback-page">
+    <div class="feedback-container">
+        <span class="legal-label">
+            Feedback
+        </span>
+        <h1>
+            Help Shape Atya
+        </h1>
+        <p class="feedback-intro">
+            We're constantly improving Atya to make automotive
+            research faster, smarter, and more enjoyable.
+            Your feedback helps us identify issues, improve
+            features, and build a better experience for everyone.
+        </p>
+        <form class="feedback-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+                <label for="category">
+                    Feedback Type
+                </label>
+                <select id="category">
+                    <option>General Feedback</option>
+                    <option>Bug Report</option>
+                    <option>Feature Request</option>
+                    <option>Data Correction</option>
+                    <option>UI / Design Feedback</option>
+                </select>
+            </div>
+            <div class="feedback-rating">
+                <label class="rating-option">
+                    <input type="radio" name="rating" value="love">
+                    <span>😍 Love it</span>
+                </label>
+                <label class="rating-option">
+                    <input type="radio" name="rating" value="good">
+                    <span>🙂 Good</span>
+                </label>
+                <label class="rating-option">
+                    <input type="radio" name="rating" value="average">
+                    <span>😐 Average</span>
+                </label>
+                <label class="rating-option">
+                    <input type="radio" name="rating" value="needs-work">
+                    <span>😕 Needs work</span>
+                </label>
+                <label class="rating-option">
+                    <input type="radio" name="rating" value="bug">
+                    <span>🐞 Found a bug</span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Feedback</label>
+                <textarea id="message" rows="6"
+                    placeholder="Tell us what you liked, what could be improved, or report an issue..."></textarea>
+            </div>
+            <button type="submit" class="primary-button">Submit Feedback</button>
+        </form>
+        <blockquote>
+            Every suggestion helps us build a better
+            automotive platform for enthusiasts and buyers.
+        </blockquote>
+    </div>
+</section>
+{% endblock %}

@@ -155,3 +155,91 @@ def random_usecases(usecases):
         )
     except:
         return ""
+
+
+@register.filter
+def carplay_type(variant):
+    infotainment = variant.get("infotainment", {})
+    wireless_android = infotainment.get("wirelessAndroidAuto", False)
+    wireless_apple = infotainment.get("wirelessAppleCarPlay", False)
+    wired_android = infotainment.get("androidAuto", False)
+    wired_apple = infotainment.get("appleCarPlay", False)
+    if wireless_android and wireless_apple:
+        return "Wireless Android Auto & Apple CarPlay"
+    if wireless_android:
+        return "Wireless Android Auto"
+    if wireless_apple:
+        return "Wireless Apple CarPlay"
+    if wired_android and wired_apple:
+        return "Android Auto & Apple CarPlay"
+    if wired_android:
+        return "Android Auto"
+    if wired_apple:
+        return "Apple CarPlay"
+    return "No Android Auto or Apple CarPlay"
+
+@register.filter
+def adas_type(variant):
+    adas = variant.get("adas", {})
+    if not adas.get("available", False):
+        return "No ADAS"
+    level = adas.get("level")
+    if level:
+        return f"Level {level} ADAS"
+    return "ADAS"
+
+@register.filter
+def comfort_highlight(variant):
+    comfort = variant.get("comfort", {})
+    features = []
+    if comfort.get("ventilatedFrontSeats"):
+        features.append("Ventilated Seats")
+    if comfort.get("wirelessCharging"):
+        features.append("Wireless Charging")
+    sunroof = comfort.get("sunroof", {})
+    if sunroof.get("available"):
+        features.append(
+            sunroof.get("type", "Sunroof")
+        )
+    if features:
+        return ", ".join(features)
+    return "Standard Comfort Features"
+
+@register.filter
+def random_comfort(variant):
+    comfort = variant.get("comfort", {})
+    try:
+        if not comfort:
+            return ""
+        shuffled = (
+            list(comfort.keys())
+        )
+        random.shuffle(
+            shuffled
+        )
+        return (
+            ", ".join(
+                shuffled[:3]
+            )
+        )
+    except:
+        return ""
+
+@register.filter
+def safety_features(variant):
+    safety = variant.get("safety", {})
+    features = []
+    if safety.get("abs"):
+        features.append("ABS")
+    if safety.get("ebd"):
+        features.append("EBD")
+    if safety.get("brakeAssist"):
+        features.append("Brake Assist")
+    if safety.get("esc"):
+        features.append("ESC")
+    if safety.get("tractionControl"):
+        features.append("Traction Control")
+    if safety.get("tpms"):
+        features.append("TPMS")
+    return ", ".join(features) if features else "Basic Safety Features"
+

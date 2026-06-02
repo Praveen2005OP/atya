@@ -337,7 +337,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -351,7 +351,7 @@
       },
       "wheels": {
         "size": "17 Inch",
-        "type": "Steel",
+        "type": "Steel Rims with Wheel Covers",
         "tyreSizeLabel": "235/65 R17"
       },
       "comfort": {
@@ -945,7 +945,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -2161,7 +2161,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -2763,7 +2763,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -3365,7 +3365,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -3970,7 +3970,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -4572,7 +4572,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -5175,7 +5175,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -5778,7 +5778,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -6380,7 +6380,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -6982,7 +6982,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -7584,7 +7584,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -8186,7 +8186,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -8788,7 +8788,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -9400,7 +9400,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -10010,7 +10010,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -10620,7 +10620,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -11229,7 +11229,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -11839,7 +11839,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Manual",
         "gearbox": "6-Speed Manual",
         "drivetrain": "FWD",
@@ -12450,7 +12450,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -13059,7 +13059,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "AWD",
@@ -13669,7 +13669,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -14280,7 +14280,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol",
+        "engine": "2.0L mStallion TGDi Turbo Petrol",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -14890,7 +14890,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk TGDi Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -15500,7 +15500,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "FWD",
@@ -16110,7 +16110,7 @@
       },
       "configuration": {
         "fuel": "Diesel",
-        "engine": "diesel",
+        "engine": "2.2L mHawk CRDe Turbo Diesel",
         "transmission": "Automatic",
         "gearbox": "6-Speed Torque Converter Automatic",
         "drivetrain": "AWD",

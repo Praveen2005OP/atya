@@ -354,7 +354,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -534,7 +534,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -714,7 +714,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -900,7 +900,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -1086,7 +1086,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -1278,7 +1278,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -1470,7 +1470,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -1660,9 +1660,9 @@
       "price": {
         "exShowroom": 874990
       },
-      "configuration": {
+      "configuration": { 
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -1854,7 +1854,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -2049,7 +2049,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -2244,7 +2244,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -2439,7 +2439,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -2643,7 +2643,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -2847,7 +2847,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -3051,7 +3051,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -3255,7 +3255,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_turbo_revotron_1_2",
+        "engine": "1.2L Turbocharged Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -3459,7 +3459,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -3663,7 +3663,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -3867,7 +3867,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -4071,7 +4071,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -4282,7 +4282,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -4493,7 +4493,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -4704,7 +4704,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",
@@ -4919,7 +4919,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_revotron_1_2",
+        "engine": "1.2L Revotron Petrol",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -5134,7 +5134,7 @@
       },
       "configuration": {
         "fuel": "CNG",
-        "engine": "cng_revotron_1_2",
+        "engine": "1.2L Revotron iCNG",
         "transmission": "AMT",
         "gearbox": "5-Speed AMT",
         "drivetrain": "FWD",
@@ -5349,7 +5349,7 @@
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "petrol_turbo_revotron_1_2",
+        "engine": "1.2L Turbocharged Revotron Petrol",
         "transmission": "Manual",
         "gearbox": "5-Speed Manual",
         "drivetrain": "FWD",

@@ -42,26 +42,29 @@
                         <span class="track-star" style="top:8px;left:78px;"></span>
                         <!-- clouds (visible in light/day mode) -->
                         <span class="track-cloud" style="width:22px;height:9px;bottom:9px;left:48px;"></span>
-                        <span class="track-cloud" style="width:14px;height:7px;bottom:13px;left:58px;border-radius:8px;"></span>
+                        <span class="track-cloud"
+                            style="width:14px;height:7px;bottom:13px;left:58px;border-radius:8px;"></span>
                         <span class="track-cloud" style="width:18px;height:8px;bottom:8px;left:62px;"></span>
                     </div>
                     <div class="knob" id="themeKnob">
                         <!-- Sun -->
                         <div class="sun-knob" id="themeKnobSun">
-                            <svg id="themeRaysSvg" style="position:absolute;inset:-14px;width:66px;height:66px;overflow:visible;" viewBox="0 0 66 66"></svg>
+                            <svg id="themeRaysSvg"
+                                style="position:absolute;inset:-14px;width:66px;height:66px;overflow:visible;"
+                                viewBox="0 0 66 66"></svg>
                         </div>
                         <!-- Moon -->
                         <div class="moon-knob" id="themeKnobMoon">
                             <svg class="moon-shape" viewBox="0 0 48 48">
                                 <defs>
                                     <mask id="navMoonMask">
-                                        <rect width="48" height="48" fill="white"/>
-                                        <circle cx="32" cy="14" r="15" fill="black"/>
+                                        <rect width="48" height="48" fill="white" />
+                                        <circle cx="32" cy="14" r="15" fill="black" />
                                     </mask>
                                 </defs>
-                                <circle cx="22" cy="24" r="18" fill="#e8d5a3" mask="url(#navMoonMask)"/>
-                                <circle cx="15" cy="18" r="2.5" fill="#d4c090" opacity="0.6"/>
-                                <circle cx="26" cy="30" r="2" fill="#d4c090" opacity="0.5"/>
+                                <circle cx="22" cy="24" r="18" fill="#e8d5a3" mask="url(#navMoonMask)" />
+                                <circle cx="15" cy="18" r="2.5" fill="#d4c090" opacity="0.6" />
+                                <circle cx="26" cy="30" r="2" fill="#d4c090" opacity="0.5" />
                             </svg>
                         </div>
                     </div>
@@ -79,21 +82,75 @@
     </main>
     <!-- FOOTER -->
     <footer class="site-footer">
-        <div>
-            <a class="brand-mark" href="#top">
-                <span>Atya</span>
-            </a>
+        <!-- Top Features -->
+        <section class="footer-highlights">
+            <div class="footer-highlight">
+                <span>🏆</span>
+                <div>
+                    <h4>Detailed Specs</h4>
+                    <p>Variant-wise technical data</p>
+                </div>
+            </div>
+            <div class="footer-highlight">
+                <span>🤖</span>
+                <div>
+                    <h4>Smart Discovery</h4>
+                    <p>Find the right car faster</p>
+                </div>
+            </div>
+            <div class="footer-highlight">
+                <span>📊</span>
+                <div>
+                    <h4>Comparison Engine</h4>
+                    <p>Side-by-side analysis</p>
+                </div>
+            </div>
+            <div class="footer-highlight">
+                <span>🚗</span>
+                <div>
+                    <h4>Built for Enthusiasts</h4>
+                    <p>Cars beyond brochures</p>
+                </div>
+            </div>
+        </section>
+        <!-- Main Footer -->
+        <section class="footer-content">
+            <div class="footer-column footer-about">
+                <h4>Atya</h4>
+                <p>
+                    India's growing automotive
+                    research platform built for
+                    enthusiasts and informed buyers.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4>About Atya</h4>
+                <a href="/about">About</a>
+                <a href="/terms">Terms & Conditions</a>
+                <a href="/privacypolicy">Privacy Policy</a>
+                <a href="/faq">FAQs</a>
+            </div>
+            <div class="footer-column">
+                <h4>Connect With Us</h4>
+                <a href="/feedback">Feedback</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Contact</a>
+            </div>
+        </section>
+        <section class="footer-bottom">
             <p>
-                Made for Indian car enthusiasts who care
-                about clean specs and better decisions.
+                © 2026 Atya. All rights reserved.
             </p>
-        </div>
-        <nav aria-label="Footer navigation">
-            <a href="#brands">Brands</a>
-            <a href="/#explore">Explore</a>
-            <a href="#compare">Compare</a>
-            <a href="#saved">Saved</a>
-        </nav>
+            <div class="footer-socials">
+                <p>Connect with us:</p>
+                <a href="#"><img src="{% static 'images/app/icons8-facebook-96.png' %}" alt="Facebook"></a>
+                <a href="#"><img src="{% static 'images/app/icons8-instagram-96.png' %}" alt="Instagram"></a>
+                <a href="#"><img src="{% static 'images/app/icons8-linkedin-96.png' %}" alt="LinkedIn"></a>
+                <a href="#"><img src="{% static 'images/app/icons8-x-96.png' %}" alt="X"></a>
+                <a href="#"><img src="{% static 'images/app/icons8-youtube-96.png' %}" alt="YouTube"></a>
+            </div>
+        </section>
     </footer>
     <script src="{% static 'js/script.js' %}" defer></script>
 </body>

@@ -1,8 +1,8 @@
 {% load static %}
 {% load car_filters %}
 
-<div class="variants-list">
-    {% for variant in car.variants %}
+{% for variant in car.variants %}
+    <div class="variant-list">
         <article class="variant-card">
             <div>
                 <span class="badge">{{ variant.broadTrim }}</span>
@@ -16,14 +16,69 @@
             </div>
             <ul>
                 <li>{{ variant.configuration.seating }}-seat layout</li>
-                <li>{{ car.overview.safetyRating }} ★ Safety Rating</li>
-                <li>{{ variant. }}</li>
-                <li>{{ variant. }}</li>
+                <li>{{ variant|carplay_type }}</li>
+                <li>{{ variant|adas_type }}</li>
+                <li>{{ variant|comfort_highlight }}</li>
             </ul>
+            <section class="variant-configurations">
+                <h4>Available Features in this variant</h4>
+                <div class="configuration-grid">
+                    <!-- Powertrain -->
+                    <div>
+                        <span>Powertrain</span>
+                        <ul>
+                            <li>
+                                <strong>{{ variant.configuration.fuel }} {{ variant.configuration.transmission }}</strong>
+                                <span>{{ variant.configuration.engine }} · {{ variant.configuration.transmission }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- equipped features -->
+                    <div>
+                        <span>Equipment choices</span>
+                        <dl>
+                            <div>
+                                <dt>Seating</dt>
+                                <dd>{{ variant.configuration.seating }}-seating layout</dd>
+                            </div>
+                            <div>
+                                <dt>Drive</dt>
+                                <dd>{{ variant.configuration.drivetrain }}</dd>
+                            </div>
+                            <div>
+                                <dt>Wheels</dt>
+                                <dd>{{ variant.wheels.tyreSizeLabel }} · {{ variant.wheels.type }}</dd>
+                            </div>
+                            <div>
+                                <dt>Safety pack</dt>
+                                <dd>{{ variant.safety.airbags }} airbags, {{ variant|safety_features }}</dd>
+                            </div>
+                            <div>
+                                <dt>Comfort pack</dt>
+                                <dd>{{ variant|random_comfort }}</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <div class="variant-detail-groups">
+                <details class="variant-detail-group">
+                    <summary>Engine and Performance</summary>
+                    <dl>
+                        <div>
+                            <dt>Engine/Motor</dt>
+                            <dd>{{ variant.engine }}</dd>
+                        </div>
+                        <div>
+                            <dt>Displacement</dt>
+                        </div>
+                    </dl>
+                </details>
+            </div>
             <label class="compare-check">
                 <input type="checkbox" data-compare-slot-variant="{{ variant.id }}" data-compare-slot-car="{{ car.id }}"> 
                 Compare Variant   
             </label>
         </article>
-    {% endfor %}
-</div>
+    </div>
+{% endfor %}
