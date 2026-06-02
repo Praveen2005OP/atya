@@ -1,7 +1,8 @@
 import json
-
 from pathlib import Path
 from django.shortcuts import render
+from .models import Feedback
+from django.core.mail import send_mail
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -74,4 +75,40 @@ def faq(request):
     )
 
 def feedback(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        email = request.POST.get("email")
+        rating = request.POST.get("rating")
+        category = request.POST.get("category")
+        message = request.POST.get("message")
+
+        # Save feedback to the database
+        Feedback.objects.create(
+            name=name,
+            email=email,
+            rating=rating,
+            category=category,
+            message=message
+        )
+
+        # Send email notification (optional)
+        send_mail(
+            subject=(f"Atya Feedback: " f"{feedback.category}"),
+            message=f"""
+                Name:
+                {feedback.name}
+                Email:
+                {feedback.email}
+                Rating:
+                {feedback.rating}
+                Category:
+                {feedback.category}
+                Message:
+                {feedback.message}
+                """,
+            from_email=("your_email@gmail.com"),
+            recipient_list=["your_email@gmail.com"],
+            fail_silently=False,
+        )
+        return render(request, "feedback_success.html")
     return render(request, "feedback.html")
