@@ -126,9 +126,10 @@ STATICFILES_DIRS = [
 ]
 
 # To send feedback via email (configure these settings in production)
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # For development, prints emails to console
-EMAIL_HOST = 'smtp.example.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # For development, prints emails to console
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

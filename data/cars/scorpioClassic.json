@@ -7,6 +7,19 @@
   "generation": "Scorpio Classic",
   "launchYear": 2022,
   "status": "On Sale",
+  "viewer360": {
+    "exterior": {
+      "available": false,
+      "frames": null
+    },
+    "open": {
+      "available": false,
+      "frames": null
+    },
+    "interior": {
+      "available": null
+    }
+  },
   "hero": {
     "tagline": "The original body-on-frame Scorpio, kept tough and simple.",
     "image": "/static/images/car-images/scorpioClassic/pic1.png",
@@ -187,7 +200,7 @@
       "performance": {
         "power": "97 kW @ 3750 r/min",
         "torque": "300 Nm @ 1600-2800 r/min",
-        "mileageARAI": null
+        "mileageARAI": "16.36 kmpl"
       },
       "wheels": {
         "size": "17 Inch",
@@ -795,7 +808,7 @@
       "performance": {
         "power": "97 kW @ 3750 r/min",
         "torque": "300 Nm @ 1600-2800 r/min",
-        "mileageARAI": null
+        "mileageARAI": "16.36 kmpl"
       },
       "wheels": {
         "size": "17 Inch",
@@ -1403,7 +1416,7 @@
       "performance": {
         "power": "97 kW @ 3750 r/min",
         "torque": "300 Nm @ 1600-2800 r/min",
-        "mileageARAI": null
+        "mileageARAI": "16.36 kmpl"
       },
       "wheels": {
         "size": "17 Inch",
@@ -2038,7 +2051,7 @@
       "performance": {
         "power": "97 kW @ 3750 r/min",
         "torque": "300 Nm @ 1600-2800 r/min",
-        "mileageARAI": null
+        "mileageARAI": "16.36 kmpl"
       },
       "wheels": {
         "size": "17 Inch",
@@ -2652,72 +2665,5 @@
         }
       }
     }
-  ],
-  "blog": {
-    "title": "Mahindra Scorpio Classic review: old-school SUV appeal with a simple variant line-up",
-    "subtitle": "Two trims, four seating-led variants, one diesel-manual powertrain.",
-    "summary": "The Scorpio Classic is for buyers who want the familiar Scorpio shape, rugged road presence and simple diesel-manual mechanicals rather than a tech-heavy crossover experience.",
-    "sections": [
-      {
-        "heading": "Positioning",
-        "body": [
-          "The Scorpio Classic sits below the Scorpio-N but keeps the traditional Scorpio identity alive. It is aimed at buyers who value road presence, tough construction and high seating capacity."
-        ]
-      },
-      {
-        "heading": "Engine and performance",
-        "body": [
-          "Every variant uses the 2.2L mHawk diesel engine paired with a 6-speed manual gearbox and 2WD layout. The official output is 97 kW at 3750 r/min and 300 Nm from 1600-2800 r/min."
-        ]
-      },
-      {
-        "heading": "Variants",
-        "body": [
-          "The range has two trims: Classic S and Classic S11. Classic S focuses on essentials, while Classic S11 adds projector headlamps, DRLs, touchscreen infotainment, automatic temperature control, alloy wheels and more convenience features."
-        ]
-      },
-      {
-        "heading": "Buyer fit",
-        "body": [
-          "Choose the S if you want the lowest-price Scorpio Classic with seating flexibility. Choose the S11 if you want the proper feature set and more finished exterior/interior equipment."
-        ]
-      }
-    ],
-    "pros": [
-      "Strong road presence",
-      "Simple diesel-manual line-up",
-      "7-seat and 9-seat configurations",
-      "S11 gets the features most buyers expect"
-    ],
-    "cons": [
-      "No automatic transmission",
-      "No 4WD option",
-      "No sunroof or ADAS",
-      "Safety feature list is basic compared with newer SUVs"
-    ],
-    "verdict": "The Scorpio Classic is best for buyers who want the classic Scorpio formula: rugged stance, diesel torque and flexible seating. The S11 is the easier recommendation if budget allows.",
-    "faqs": [
-      {
-        "question": "How many trims does the Scorpio Classic have?",
-        "answer": "It has two trims: Classic S and Classic S11."
-      },
-      {
-        "question": "How many variants are included in this file?",
-        "answer": "This JSON includes four variants: S 7SF, S 9SF, S11 7SF and S11 7CC."
-      },
-      {
-        "question": "Does Scorpio Classic get an automatic gearbox?",
-        "answer": "No. The Scorpio Classic is listed with a 6-speed manual gearbox."
-      }
-    ]
-  },
-  "metadata": {
-    "source": [
-      "https://auto.mahindra.com/suv/scorpio-classic-classic-s-diesel/SCRCM088617973489.html",
-      "https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dwf2ec18d1/brochure/Scorpio%20Classic%20Brochure.pdf"
-    ],
-    "lastVerified": "2026-05-27",
-    "dataQuality": "verified",
-    "notes": "Variant feature data is based on Mahindra Scorpio Classic official page and brochure. Variant-level pricing should be checked against latest city/dealer price list before production use."
-  }
+  ]
 }

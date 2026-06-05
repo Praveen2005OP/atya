@@ -15,20 +15,28 @@
             Your feedback helps us identify issues, improve
             features, and build a better experience for everyone.
         </p>
-        <form class="feedback-form">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        <form class="feedback-form" method="POST">
+            {% csrf_token %}
             <div class="form-group">
                 <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your name">
+                <input id="name" name="name" type="text" placeholder="Your name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="you@example.com">
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
             </div>
             <div class="form-group">
                 <label for="category">
                     Feedback Type
                 </label>
-                <select id="category">
+                <select id="category" name="category" required>
                     <option>General Feedback</option>
                     <option>Bug Report</option>
                     <option>Feature Request</option>
@@ -60,7 +68,7 @@
             </div>
             <div class="form-group">
                 <label for="message">Your Feedback</label>
-                <textarea id="message" rows="6"
+                <textarea id="message" rows="6" name="message" required
                     placeholder="Tell us what you liked, what could be improved, or report an issue..."></textarea>
             </div>
             <button type="submit" class="primary-button">Submit Feedback</button>

@@ -45,16 +45,16 @@ async function loadCars() {
             // Safe pricing extraction
             const minPrice = Number(car?.pricing?.exShowroom?.min) || 0;
             const maxPrice = Number(car?.pricing?.exShowroom?.max) || 0;
-            const engineDb =car?.engineDatabase || {};
+            const engineDb = car?.engineDatabase || {};
             const allPower = [];
             const allTorque = [];
             Object.values(engineDb)
                 .forEach(engine => {
                     Object.values(engine)
                         .forEach(config => {
-                            if (typeof config === "object" &&config.power) {
+                            if (typeof config === "object" && config.power) {
                                 const power = parseFloat(config.power);
-                                const torque =parseFloat(config.torque);
+                                const torque = parseFloat(config.torque);
                                 if (!isNaN(power)) {
                                     allPower.push(power);
                                 }
@@ -63,42 +63,42 @@ async function loadCars() {
                                 }
                             }
                         }
-                    );
+                        );
                 }
-            );
+                );
             const power = {
-                min : Math.min(...allPower) || 0,
-                max : Math.max(...allPower) || 0
+                min: Math.min(...allPower) || 0,
+                max: Math.max(...allPower) || 0
             };
             const torque = {
-                min : Math.min(...allTorque) || 0,
-                max : Math.max(...allTorque) || 0
+                min: Math.min(...allTorque) || 0,
+                max: Math.max(...allTorque) || 0
             };
             return {
                 id: car?.slug || "",
                 slug: car?.slug || "",
                 name: car.fullName || car.name || "",
                 brand: car?.brand || "",
-                minides:car?.overview?.minides || "",
-                summary:car?.overview?.description || "",
+                minides: car?.overview?.minides || "",
+                summary: car?.overview?.description || "",
                 priceMin: minPrice / 100000,
                 priceMax: maxPrice / 100000,
-                body:car?.overview?.segment || "",
-                bodyType:car?.overview?.body || "",
-                fuel:car?.overview?.fuelTypes || [],
-                transmission:car?.overview?.transmissions || [],
-                safety:car?.overview?.safetyRating?? "Not tested yet",
+                body: car?.overview?.segment || "",
+                bodyType: car?.overview?.body || "",
+                fuel: car?.overview?.fuelTypes || [],
+                transmission: car?.overview?.transmissions || [],
+                safety: car?.overview?.safetyRating ?? "Not tested yet",
                 power,
                 torque,
                 mileage: 0,
-                seats:car?.overview?.seatingOptions?.[0] || 5,
-                purpose:[],
-                images:{hero:car?.hero?.image || ""},
-                hero:car?.hero || {},
-                overview:car?.overview || {},
-                pricing:car?.pricing || {},
-                variants:car?.variants || [],
-                original:car
+                seats: car?.overview?.seatingOptions?.[0] || 5,
+                purpose: [],
+                images: { hero: car?.hero?.image || "" },
+                hero: car?.hero || {},
+                overview: car?.overview || {},
+                pricing: car?.pricing || {},
+                variants: car?.variants || [],
+                original: car
             };
         });
 
@@ -181,7 +181,7 @@ function buildVariants(car) {
 function variantFeatures(car, trimIndex, totalTrims) {
     const base = [
         `${car.seats}-seat layout`,
-        `${car.safety ==="Not tested yet"? car.safety : `${car.safety} ★ Safety`}`,
+        `${car.safety === "Not tested yet" ? car.safety : `${car.safety} ★ Safety`}`,
         "Dual airbags and ABS",
         "Touchscreen infotainment",
     ];
@@ -403,31 +403,31 @@ function renderGroupedComparisonTable(selected) {
             </thead>
             <tbody>
                 ${groups
-                    .map((group) => `
+            .map((group) => `
                         <tr class="compare-category-row">
                             <th colspan="${selected.length + 1}">${group.title}</th>
                         </tr>
                         ${group.rows
-                            .map(([label, value, metric]) => {
-                                const max = metric ? Math.max(...selected.map((item) => metric(item))) : 0;
-                                    return `
+                    .map(([label, value, metric]) => {
+                        const max = metric ? Math.max(...selected.map((item) => metric(item))) : 0;
+                        return `
                                         <tr>
                                             <th>${label}</th>
                                             ${selected
-                                                .map((item) => {
-                                                    const numericValue = metric ? metric(item) : 0;
-                                                    const width = metric ? Math.max(8, (numericValue / max) * 100) : 0;
-                                                    return `<td><strong>${value(item)}</strong>${metric ? `<span class="bar"><i style="width:${width}%"></i></span>` : ""}</td>`;
-                                                })
-                                                .join("")
-                                            }
+                                .map((item) => {
+                                    const numericValue = metric ? metric(item) : 0;
+                                    const width = metric ? Math.max(8, (numericValue / max) * 100) : 0;
+                                    return `<td><strong>${value(item)}</strong>${metric ? `<span class="bar"><i style="width:${width}%"></i></span>` : ""}</td>`;
+                                })
+                                .join("")
+                            }
                                         </tr>
                                     `;
-                                })
-                            .join("")}
+                    })
+                    .join("")}
                         `,)
-                    .join("")
-                }
+            .join("")
+        }
             </tbody>
         </table>
     `;
@@ -438,9 +438,9 @@ function renderVariantDetailGroups(car, variant) {
     return `
         <div class="variant-detail-groups">
             ${comparisonGroups()
-                .filter((group) => group.title !== "Price and Variant")
-                .map(
-                    (group) => `
+            .filter((group) => group.title !== "Price and Variant")
+            .map(
+                (group) => `
                 <details class="variant-detail-group">
                     <summary>${group.title}</summary>
                     <dl>
@@ -448,9 +448,9 @@ function renderVariantDetailGroups(car, variant) {
                     </dl>
                 </details>
                 `,
-                )
-                .join("")
-            }
+            )
+            .join("")
+        }
         </div>
     `;
 }
@@ -605,9 +605,9 @@ function renderCars() {
                         </div>
                         <div class="spec-grid">
                             <div class="spec-tile"><span>Price</span><strong>${formatPrice(car.priceMin, car.priceMax)}</strong></div>
-                            <div class="spec-tile"><span>Power</span><strong>${car.power.min === car.power.max ? `${car.power.max} hp` : `${car.power.min} hp - ${car.power.max} hp` }</strong></div>
-                            <div class="spec-tile"><span>Torque</span><strong>${car.torque.min === car.torque.max ? `${car.torque.max} Nm` : `${car.torque.min}Nm - ${car.torque.max} Nm` }</strong></div>
-                            <div class="spec-tile"><span>Safety</span><strong>${car.safety ==="Not tested yet"? car.safety : `${car.safety} ★ Safety`}</strong></div>
+                            <div class="spec-tile"><span>Power</span><strong>${car.power.min === car.power.max ? `${car.power.max} hp` : `${car.power.min} hp - ${car.power.max} hp`}</strong></div>
+                            <div class="spec-tile"><span>Torque</span><strong>${car.torque.min === car.torque.max ? `${car.torque.max} Nm` : `${car.torque.min}Nm - ${car.torque.max} Nm`}</strong></div>
+                            <div class="spec-tile"><span>Safety</span><strong>${car.safety === "Not tested yet" ? car.safety : `${car.safety} ★ Safety`}</strong></div>
                         </div>
                         <div class="card-actions">
                             <button class="secondary-button" type="button" data-details="${car.id}">Read review</button>
@@ -646,7 +646,7 @@ function renderComparePicker() {
                     <label>
                         Select variant
                         <select data-compare-slot-variant="${slot}" ${car ? "" : "disabled"}>
-                            ${car ? variants.map((variant) =>`<option value="${variant.id}" ${selectedVariant === variant.id ? "selected" : ""}>${variant.name} · ${formatSinglePrice(variant.price)}</option>`,).join("") : `<option value="">Choose car first</option>`}
+                            ${car ? variants.map((variant) => `<option value="${variant.id}" ${selectedVariant === variant.id ? "selected" : ""}>${variant.name} · ${formatSinglePrice(variant.price)}</option>`,).join("") : `<option value="">Choose car first</option>`}
                         </select>
                     </label>
                 </div>
@@ -690,7 +690,7 @@ function renderSaved() {
                     <img src="${car.images.hero}" alt="${car.name}" loading="lazy" />
                     <span class="badge">${car.brand}</span>
                     <h3>${car.name}</h3>
-                    <p>${formatPrice(car.priceMin, car.priceMax)} · ${car.power} hp · ${car.safety ==="Not tested yet"? car.safety : `${car.safety} ★ Safety`}</p>
+                    <p>${formatPrice(car.priceMin, car.priceMax)} · ${car.power} hp · ${car.safety === "Not tested yet" ? car.safety : `${car.safety} ★ Safety`}</p>
                     <div class="card-actions">
                         <button class="secondary-button" type="button" data-details="${car.id}">Open</button>
                         <button class="secondary-button" type="button" data-save="${car.id}">Remove</button>
@@ -836,8 +836,8 @@ function renderVariantSection(car) {
             <div class="variant-layout">
                 <div class="variant-list">
                     ${variants
-                        .map(
-                            (variant) => `
+            .map(
+                (variant) => `
                                 <article class="variant-card">
                                     <div>
                                         <span class="badge">${variant.trim}</span>
@@ -860,8 +860,8 @@ function renderVariantSection(car) {
                                     </label>
                                 </article>
                             `,
-                        )
-                        .join("")}
+            )
+            .join("")}
                 </div>
                 <aside class="variant-compare-panel">
                     <div class="panel-heading">
@@ -869,7 +869,7 @@ function renderVariantSection(car) {
                         <h3>Compare variants</h3>
                         <p>Select up to three variants of the ${car.name}.</p>
                     </div>
-                    ${selectedVariants.length? `${renderGroupedComparisonTable(selectedItems)}` : `<div class="empty-state"><p>Select variants from the list to compare them here.</p></div>`}
+                    ${selectedVariants.length ? `${renderGroupedComparisonTable(selectedItems)}` : `<div class="empty-state"><p>Select variants from the list to compare them here.</p></div>`}
                 </aside>
             </div>
         </section>
@@ -1096,3 +1096,178 @@ document.addEventListener(
         loadCars();
     }
 );
+
+// 360 view
+// const viewer =
+//     document.querySelector(
+//         ".frame-viewer"
+//     );
+
+const frameViewer = document.querySelector(".frame-viewer");
+
+if (frameViewer) {
+    const slug = frameViewer.dataset.slug;
+    const image = document.getElementById("car360");
+    const interiorViewer = document.getElementById("interior360");
+    const tabs = document.querySelectorAll(".viewer-tab");
+    let interiorLoaded = false;
+    let totalFrames = Number(frameViewer.dataset.frames);
+    let currentFrame = 0;
+    let currentFolder = "360";
+    let dragging = false;
+    let startX = 0;
+    let autoRotate;
+    // -----------------------------
+    // PRELOAD IMAGES
+    // -----------------------------
+    function preloadFrames(folder, count) {
+        for (let i = 0; i < count; i++) {
+            const img = new Image();
+            const frame = i.toString().padStart(3, "0");
+            img.src = `/static/images/car-images/${slug}/${folder}/img_0_0_${frame}.webp`;
+        }
+    }
+    preloadFrames("360", Number(frameViewer.dataset.frames));
+    if (frameViewer.dataset.openFrames) {
+        preloadFrames("360-open", Number(frameViewer.dataset.openFrames));
+    }
+    // -----------------------------
+    // UPDATE IMAGE
+    // -----------------------------
+    function updateFrame() {
+        const frame = Math.floor(currentFrame).toString().padStart(3, "0");
+        image.src = `/static/images/car-images/${slug}/${currentFolder}/img_0_0_${frame}.webp`;
+
+    }
+    // -----------------------------
+    // AUTO ROTATION
+    // -----------------------------
+    function startAutoRotate() {
+        clearInterval(autoRotate);
+        if (currentFolder === "interior")
+            return;
+        autoRotate = setInterval(() => {
+            currentFrame = (currentFrame + 1) % totalFrames;
+            updateFrame();
+        }, 90);
+
+    }
+    // -----------------------------
+    // BUTTONS
+    // -----------------------------
+    tabs.forEach(button => {
+        button.addEventListener("click", () => {
+            document.querySelector(".viewer-tab.active")?.classList.remove("active");
+            button.classList.add("active");
+            // EXTERIOR
+            if (button.dataset.view === "exterior") {
+                currentFolder = "360";
+                totalFrames = Number(frameViewer.dataset.frames);
+                interiorViewer.style.display = "none";
+                frameViewer.style.display = "block";
+                currentFrame = 0;
+                updateFrame();
+                startAutoRotate();
+            }
+            // OPEN
+            else if (button.dataset.view === "open") {
+                currentFolder = "360-open";
+                totalFrames = Number(frameViewer.dataset.openFrames);
+                interiorViewer.style.display = "none";
+                frameViewer.style.display = "block";
+                currentFrame = 0;
+                updateFrame();
+                startAutoRotate();
+            }
+            // INTERIOR
+            else if (button.dataset.view === "interior") {
+                clearInterval(autoRotate);
+                currentFolder = "interior";
+                frameViewer.style.display = "none";
+                interiorViewer.style.display = "block";
+                if (!interiorLoaded) {
+                    pannellum.viewer("interior360",
+                        {
+                            type: "cubemap",
+                            cubeMap: [
+                                `/static/images/car-images/${slug}/interior/1.webp`,
+                                `/static/images/car-images/${slug}/interior/2.webp`,
+                                `/static/images/car-images/${slug}/interior/3.webp`,
+                                `/static/images/car-images/${slug}/interior/4.webp`,
+                                `/static/images/car-images/${slug}/interior/5.webp`,
+                                `/static/images/car-images/${slug}/interior/6.webp`
+                            ],
+                            autoLoad: true,
+                            autoRotate: -2,
+                            mouseZoom: true,
+                            showZoomCtrl: false,
+                            showFullscreenCtrl: false
+                        }
+                    );
+                    interiorLoaded = true;
+                }
+            }
+        });
+    });
+    // -----------------------------
+    // MOUSE EVENTS
+    // -----------------------------
+    frameViewer.addEventListener("mousedown", e => {
+        clearInterval(autoRotate);
+        dragging = true;
+        startX = e.clientX;
+    });
+
+    window.addEventListener("mouseup", () => {
+        dragging = false;
+        if (currentFolder !== "interior") {
+            startAutoRotate();
+        }
+    });
+
+    window.addEventListener("mousemove", e => {
+        if (!dragging)
+            return;
+        const delta = e.clientX - startX;
+        if (Math.abs(delta) > 8) {
+            currentFrame += delta > 0 ? 1 : -1;
+            currentFrame = (currentFrame + totalFrames) % totalFrames;
+            updateFrame();
+            startX = e.clientX;
+        }
+    });
+    // -----------------------------
+    // TOUCH SUPPORT
+    // -----------------------------
+    frameViewer.addEventListener("touchstart", e => {
+        clearInterval(autoRotate);
+        dragging = true;
+        startX = e.touches[0].clientX;
+    });
+
+    frameViewer.addEventListener("touchmove", e => {
+        if (!dragging)
+            return;
+        const delta = e.touches[0].clientX - startX;
+        if (Math.abs(delta) > 8) {
+            currentFrame += delta > 0 ? 1 : -1;
+            currentFrame = (currentFrame + totalFrames) % totalFrames;
+            updateFrame();
+            startX = e.touches[0].clientX;
+        }
+    }); 
+
+    frameViewer.addEventListener("touchend", () => {
+        dragging = false;
+        startAutoRotate();
+    });
+    // -----------------------------
+    // START
+    // -----------------------------
+    currentFolder = "360";
+    currentFrame = 0;
+    frameViewer.style.display = "block";
+    interiorViewer.style.display = "none";
+    updateFrame();
+    startAutoRotate();
+}

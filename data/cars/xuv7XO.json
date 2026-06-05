@@ -7,6 +7,19 @@
   "generation": "XUV7XO Facelift",
   "launchYear": 2026,
   "status": "On Sale",
+  "viewer360": {
+    "exterior": {
+      "available": false,
+      "frames": null
+    },
+    "open": {
+      "available": false,
+      "frames": null
+    },
+    "interior": {
+      "available": null
+    }
+  },
   "hero": {
     "tagline": "Luxury, technology and power in one intelligent SUV.",
     "image": "/static/images/car-images/7XO/pic1.png",
@@ -52,7 +65,7 @@
       "Premium SUV",
       "Tech-focused"
     ],
-    "minides": "Bold, feature-packed, and impossible to ignore — the XUV 7XO brings flagship luxury to everyday driving.",
+    "minides": "Bold, feature-packed, and impossible to ignore \u2014 the XUV 7XO brings flagship luxury to everyday driving.",
     "description": "The Mahindra XUV 7XO is the facelifted XUV700 featuring a triple 12.3-inch coast-to-coast screen, Harman Kardon 16-speaker Dolby Atmos audio, Level-2 ADAS tuned for India, 540-degree surround camera, and ChatGPT + Alexa integration. Available in 27 variants with petrol and diesel engines, manual and automatic gearboxes, and AWD on select diesel trims."
   },
   "images": {
@@ -64,12 +77,12 @@
       "hex": "#FFFFFF",
       "type": "Monotone",
       "variants": [
-        "AX",
-        "AX3",
-        "AX5",
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax",
+        "ax3",
+        "ax5",
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -77,12 +90,12 @@
       "hex": "#0D0D0D",
       "type": "Monotone",
       "variants": [
-        "AX",
-        "AX3",
-        "AX5",
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax",
+        "ax3",
+        "ax5",
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -90,12 +103,12 @@
       "hex": "#5A5C5E",
       "type": "Monotone",
       "variants": [
-        "AX",
-        "AX3",
-        "AX5",
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax",
+        "ax3",
+        "ax5",
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -103,12 +116,12 @@
       "hex": "#151B26",
       "type": "Monotone",
       "variants": [
-        "AX",
-        "AX3",
-        "AX5",
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax",
+        "ax3",
+        "ax5",
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -116,12 +129,12 @@
       "hex": "#0F2A4A",
       "type": "Monotone",
       "variants": [
-        "AX",
-        "AX3",
-        "AX5",
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax",
+        "ax3",
+        "ax5",
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -129,10 +142,10 @@
       "hex": "#A89B87",
       "type": "Monotone",
       "variants": [
-        "AX5",
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax5",
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -140,10 +153,10 @@
       "hex": "#721C24",
       "type": "Monotone",
       "variants": [
-        "AX5",
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax5",
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -151,9 +164,9 @@
       "hex": "#FFFFFF-#0D0D0D",
       "type": "Dualtone",
       "variants": [
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -161,9 +174,9 @@
       "hex": "#5A5C5E-#0D0D0D",
       "type": "Dualtone",
       "variants": [
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -171,9 +184,9 @@
       "hex": "#151B26-#0D0D0D",
       "type": "Dualtone",
       "variants": [
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     },
     {
@@ -181,9 +194,9 @@
       "hex": "#A89B87-#0D0D0D",
       "type": "Dualtone",
       "variants": [
-        "AX7",
-        "AX7T",
-        "AX7L"
+        "ax7",
+        "ax7t",
+        "ax7l"
       ]
     }
   ],
@@ -199,7 +212,8 @@
       "bootSpaceMaximum": "1045 Litres",
       "fuelTank": "60 Litres",
       "kerbWeight": "1855 kg",
-      "doors": 5
+      "doors": 5,
+      "bootSpace": "720 Litres"
     },
     "suspension": {
       "front": "MacPherson Strut",
@@ -241,14 +255,14 @@
       "fuelSupplySystem": "GDi (Direct Injection)",
       "manual": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "FWD",
         "mileageARAI": "15 kmpl"
       },
       "automatic": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "FWD",
         "mileageARAI": "13 kmpl"
@@ -267,21 +281,146 @@
       "fuelSupplySystem": "CRDi",
       "manual": {
         "power": "153 bhp @ 3750 rpm",
-        "torque": "360 Nm @ 1500–2800 rpm",
+        "torque": "360 Nm @ 1500\u20132800 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automatic": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automaticAWD": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "gearbox": "6-Speed Torque Converter Automatic",
+        "driveType": "AWD",
+        "mileageARAI": "13 kmpl"
+      }
+    },
+    "2.0L mStallion TGDi Turbo Petrol": {
+      "id": "2.0L mStallion TGDi Turbo Petrol",
+      "name": "2.0L mStallion Turbo Petrol",
+      "engineType": "mStallion TGDi",
+      "displacement": "1997 cc",
+      "engineLayout": "Inline-4",
+      "cylinders": 4,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": true,
+      "fuelSupplySystem": "GDi (Direct Injection)",
+      "manual": {
+        "power": "200 bhp @ 5000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "gearbox": "6-Speed Manual",
+        "driveType": "FWD",
+        "mileageARAI": "15 kmpl"
+      },
+      "automatic": {
+        "power": "200 bhp @ 5000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "gearbox": "6-Speed Torque Converter Automatic",
+        "driveType": "FWD",
+        "mileageARAI": "13 kmpl"
+      }
+    },
+    "2.2L mHawk Turbo Diesel": {
+      "id": "2.2L mHawk Turbo Diesel",
+      "name": "2.2L mHawk Diesel",
+      "engineType": "mHawk CRDe",
+      "displacement": "2184 cc",
+      "engineLayout": "Inline-4",
+      "cylinders": 4,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": true,
+      "fuelSupplySystem": "CRDi",
+      "manual": {
+        "power": "153 bhp @ 3750 rpm",
+        "torque": "360 Nm @ 1500\u20132800 rpm",
+        "gearbox": "6-Speed Manual",
+        "driveType": "FWD",
+        "mileageARAI": "17 kmpl"
+      },
+      "automatic": {
+        "power": "182.37 bhp @ 3500 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "gearbox": "6-Speed Torque Converter Automatic",
+        "driveType": "FWD",
+        "mileageARAI": "17 kmpl"
+      },
+      "automaticAWD": {
+        "power": "182.37 bhp @ 3500 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "gearbox": "6-Speed Torque Converter Automatic",
+        "driveType": "AWD",
+        "mileageARAI": "13 kmpl"
+      }
+    },
+    "2.2L mHawk CRDe Turbo Diesel": {
+      "id": "2.2L mHawk CRDe Turbo Diesel",
+      "name": "2.2L mHawk Diesel",
+      "engineType": "mHawk CRDe",
+      "displacement": "2184 cc",
+      "engineLayout": "Inline-4",
+      "cylinders": 4,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": true,
+      "fuelSupplySystem": "CRDi",
+      "manual": {
+        "power": "153 bhp @ 3750 rpm",
+        "torque": "360 Nm @ 1500\u20132800 rpm",
+        "gearbox": "6-Speed Manual",
+        "driveType": "FWD",
+        "mileageARAI": "17 kmpl"
+      },
+      "automatic": {
+        "power": "182.37 bhp @ 3500 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "gearbox": "6-Speed Torque Converter Automatic",
+        "driveType": "FWD",
+        "mileageARAI": "17 kmpl"
+      },
+      "automaticAWD": {
+        "power": "182.37 bhp @ 3500 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "gearbox": "6-Speed Torque Converter Automatic",
+        "driveType": "AWD",
+        "mileageARAI": "13 kmpl"
+      }
+    },
+    "2.2L mHawk TGDi Turbo Diesel": {
+      "id": "2.2L mHawk TGDi Turbo Diesel",
+      "name": "2.2L mHawk Diesel",
+      "engineType": "mHawk CRDe",
+      "displacement": "2184 cc",
+      "engineLayout": "Inline-4",
+      "cylinders": 4,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": true,
+      "fuelSupplySystem": "CRDi",
+      "manual": {
+        "power": "153 bhp @ 3750 rpm",
+        "torque": "360 Nm @ 1500\u20132800 rpm",
+        "gearbox": "6-Speed Manual",
+        "driveType": "FWD",
+        "mileageARAI": "17 kmpl"
+      },
+      "automatic": {
+        "power": "182.37 bhp @ 3500 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "gearbox": "6-Speed Torque Converter Automatic",
+        "driveType": "FWD",
+        "mileageARAI": "17 kmpl"
+      },
+      "automaticAWD": {
+        "power": "182.37 bhp @ 3500 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "AWD",
         "mileageARAI": "13 kmpl"
@@ -346,7 +485,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "15 kmpl"
       },
       "wheels": {
@@ -954,7 +1093,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600–2800 rpm",
+        "torque": "420 Nm @ 1600\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -1105,7 +1244,7 @@
       },
       "keyFeatures": [
         "6 Airbags",
-        "Diesel engine – 17 kmpl ARAI",
+        "Diesel engine \u2013 17 kmpl ARAI",
         "10.25-inch touchscreen",
         "LED DRLs",
         "Rear AC vents",
@@ -1562,7 +1701,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "15 kmpl"
       },
       "wheels": {
@@ -2170,7 +2309,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600–2800 rpm",
+        "torque": "420 Nm @ 1600\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -2314,7 +2453,7 @@
         "adrenox": false
       },
       "keyFeatures": [
-        "Diesel – 17 kmpl ARAI",
+        "Diesel \u2013 17 kmpl ARAI",
         "LED headlamps",
         "Alloy wheels",
         "Cruise control",
@@ -2772,7 +2911,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -3374,7 +3513,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "15 kmpl"
       },
       "wheels": {
@@ -3979,7 +4118,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -4124,7 +4263,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel – 17 kmpl ARAI",
+        "Diesel \u2013 17 kmpl ARAI",
         "LED headlamps",
         "Alloy wheels",
         "Cruise control",
@@ -4581,7 +4720,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600–2800 rpm",
+        "torque": "420 Nm @ 1600\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -4726,7 +4865,7 @@
       },
       "keyFeatures": [
         "7 Airbags",
-        "Diesel – 17 kmpl ARAI",
+        "Diesel \u2013 17 kmpl ARAI",
         "12.29-inch touchscreen",
         "Sunroof",
         "Automatic climate control",
@@ -5184,7 +5323,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "15 kmpl"
       },
       "wheels": {
@@ -5787,7 +5926,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600–2800 rpm",
+        "torque": "420 Nm @ 1600\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -5931,7 +6070,7 @@
         "adrenox": false
       },
       "keyFeatures": [
-        "Diesel – 17 kmpl ARAI",
+        "Diesel \u2013 17 kmpl ARAI",
         "7 Airbags",
         "Panoramic sunroof",
         "Ventilated front seats",
@@ -6389,7 +6528,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -6991,7 +7130,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -7136,7 +7275,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel – 17 kmpl ARAI",
+        "Diesel \u2013 17 kmpl ARAI",
         "7 Airbags",
         "Sunroof",
         "Wireless charging",
@@ -7593,7 +7732,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -8195,7 +8334,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -8340,7 +8479,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel – 17 kmpl ARAI",
+        "Diesel \u2013 17 kmpl ARAI",
         "7 Airbags",
         "Panoramic sunroof",
         "Ventilated front seats",
@@ -8797,7 +8936,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600–2800 rpm",
+        "torque": "420 Nm @ 1600\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -8886,7 +9025,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -8948,7 +9087,7 @@
       },
       "keyFeatures": [
         "Level-2 ADAS",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -9409,7 +9548,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600–2800 rpm",
+        "torque": "420 Nm @ 1600\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -9498,7 +9637,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -9561,7 +9700,7 @@
       "keyFeatures": [
         "6-Seater captain seat layout",
         "Level-2 ADAS",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -10019,7 +10158,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -10108,7 +10247,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -10171,7 +10310,7 @@
       "keyFeatures": [
         "6-Speed Automatic",
         "Level-2 ADAS",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -10629,7 +10768,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -10718,7 +10857,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -10783,7 +10922,7 @@
         "6-Speed Automatic",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
         "ChatGPT + Alexa"
@@ -11238,7 +11377,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -11327,7 +11466,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -11389,9 +11528,9 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel – 17 kmpl ARAI",
+        "Diesel \u2013 17 kmpl ARAI",
         "Level-2 ADAS",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -11848,7 +11987,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600–2800 rpm",
+        "torque": "420 Nm @ 1600\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -11938,7 +12077,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -12001,7 +12140,7 @@
       "keyFeatures": [
         "Boss Mode (rear seat recline)",
         "Level-2 ADAS",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -12459,7 +12598,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -12548,7 +12687,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -12611,10 +12750,10 @@
       "keyFeatures": [
         "6-Seater captain seat layout",
         "6-Speed Automatic",
-        "Diesel – 17 kmpl ARAI",
+        "Diesel \u2013 17 kmpl ARAI",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof"
       ],
@@ -13068,7 +13207,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -13157,7 +13296,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -13220,7 +13359,7 @@
       "keyFeatures": [
         "AWD",
         "Level-2 ADAS",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -13678,7 +13817,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -13768,7 +13907,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -13833,7 +13972,7 @@
         "6-Speed Automatic",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
         "Ventilated front & rear seats",
@@ -14289,7 +14428,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750–3000 rpm",
+        "torque": "380 Nm @ 1750\u20133000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -14379,7 +14518,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -14444,7 +14583,7 @@
         "Boss Mode",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
         "ChatGPT + Alexa"
@@ -14899,7 +15038,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "16.57 kmpl"
       },
       "wheels": {
@@ -14989,7 +15128,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -15052,10 +15191,10 @@
       "keyFeatures": [
         "Boss Mode",
         "6-Speed Automatic",
-        "Diesel – 16.57 kmpl ARAI",
+        "Diesel \u2013 16.57 kmpl ARAI",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof"
       ],
@@ -15509,7 +15648,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "16.57 kmpl"
       },
       "wheels": {
@@ -15599,7 +15738,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -15665,7 +15804,7 @@
         "6-Speed Automatic",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof"
       ],
@@ -16119,7 +16258,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750–2800 rpm",
+        "torque": "450 Nm @ 1750\u20132800 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -16209,7 +16348,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540° (360° + Bottom View)",
+        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -16270,10 +16409,10 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "AWD – Top-of-the-line",
+        "AWD \u2013 Top-of-the-line",
         "Boss Mode",
         "Level-2 ADAS",
-        "540° Surround Camera",
+        "540\u00b0 Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
