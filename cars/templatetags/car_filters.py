@@ -243,3 +243,8 @@ def safety_features(variant):
         features.append("TPMS")
     return ", ".join(features) if features else "Basic Safety Features"
 
+@register.filter
+def lookup(value, arg):
+    if isinstance(value, dict):
+        return value.get(arg)
+    return None

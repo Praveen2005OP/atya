@@ -138,7 +138,19 @@
       "height": "1398 mm",
       "wheelbase": "2857 mm",
       "groundClearance": "120 mm approx",
-      "bootSpace": "440 Litres",
+      "bootSpace7Seater":{
+        "available": false
+      },
+      "bootSpaceThirdRowFolded": {
+        "available": false
+      },
+      "bootSpaceMaximum": {
+        "available": false
+      },
+      "bootSpace": {
+        "available": true,
+        "value": "440 Litres"
+      },
       "fuelTank": "59 Litres",
       "doors": 2
     },

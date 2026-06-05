@@ -195,13 +195,24 @@
       "height": "1857 mm",
       "wheelbase": "2750 mm",
       "groundClearance": "200 mm",
-      "bootSpace7Seater": "189 Litres",
-      "bootSpaceThirdRowFolded": "694 Litres",
-      "bootSpaceMaximum": "1052 Litres",
+      "bootSpace7Seater":{
+        "available": true,
+        "value": "50 Litres"
+      },
+      "bootSpaceThirdRowFolded": {
+        "available": true,
+        "value": "460 Litres"
+      },
+      "bootSpaceMaximum": {
+        "available": true,
+        "value": "786 Litres"
+      },
+      "bootSpace": {
+        "available": false
+      },
       "fuelTank": "57 Litres",
       "kerbWeight": "1825 kg",
-      "doors": 5,
-      "bootSpace": "698 Litres"
+      "doors": 5
     },
     "suspension": {
       "front": "Independent Double Wishbone with Coil Spring",

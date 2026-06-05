@@ -159,8 +159,23 @@
       "height": "1615 mm",
       "wheelbase": "2445 mm",
       "groundClearance": "187 mm",
-      "bootSpace": "366 Litres petrol / reduced in CNG variants with twin-cylinder layout",
-      "fuelTank": "37 L petrol / 60 L water equivalent CNG",
+      "bootSpace7Seater":{
+        "available": false
+      },
+      "bootSpaceThirdRowFolded": {
+        "available": false
+      },
+      "bootSpaceMaximum": {
+        "available": false
+      },
+      "bootSpace": {
+        "available": true,
+        "value": "366 Litres"
+      },
+      "bootSpaceCNG": "210 Litres",
+      "fuelTank": "37 Litres",
+      "fuelTankCNG": "60 Litres / 8-9 kg",
+      "kerbWeight": "1140 kg",
       "doors": 5
     },
     "suspension": {

@@ -228,7 +228,20 @@
       "height": "1635 mm",
       "wheelbase": "2690 mm",
       "groundClearance": "190 mm",
-      "bootSpace": "447 Litres",
+      "bootSpace7Seater":{
+        "available": false
+      },
+      "bootSpaceThirdRowFolded": {
+        "available": false
+      },
+      "bootSpaceMaximum": {
+        "available": true,
+        "value": "1401 Litres"
+      },
+      "bootSpace": {
+        "available": true,
+        "value": "447 Litres"
+      },
       "fuelTank": "47 L (Petrol/Diesel) / 50 L (Turbo Petrol)",
       "doors": 5
     },

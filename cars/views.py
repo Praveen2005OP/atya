@@ -33,7 +33,7 @@ def car_detail(request,slug):
         ),
         None
     )
-
+    
     return render(
         request,
         "home/car-detail.html",

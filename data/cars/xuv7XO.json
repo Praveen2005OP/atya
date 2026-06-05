@@ -206,14 +206,24 @@
       "width": "1890 mm",
       "height": "1755 mm",
       "wheelbase": "2750 mm",
-      "groundClearance": "200 mm",
-      "bootSpace7Seater": "240 Litres",
-      "bootSpaceThirdRowFolded": "625 Litres",
-      "bootSpaceMaximum": "1045 Litres",
+      "bootSpace7Seater":{
+        "available": true,
+        "value": "240 Litres"
+      },
+      "bootSpaceThirdRowFolded": {
+        "available": true,
+        "value": "700 Litres"
+      },
+      "bootSpaceMaximum": {
+        "available": true,
+        "value": "1050 Litres"
+      },
+      "bootSpace": {
+        "available": false
+      },
       "fuelTank": "60 Litres",
       "kerbWeight": "1855 kg",
-      "doors": 5,
-      "bootSpace": "720 Litres"
+      "doors": 5
     },
     "suspension": {
       "front": "MacPherson Strut",

@@ -5,7 +5,7 @@
     <div class="variant-list">
         <article class="variant-card">
             <div>
-                <span class="badge">{{ variant.broadTrim }}</span>
+                <span class="badge">{{ variant.family }}</span>
                 <h3>{{ variant.name }}</h3>
                 <p>{{ variant.configuration.fuel }} · {{ variant.configuration.transmission }} · INR {{ variant.price.exShowroom|lakh }}L</p>
             </div>
@@ -67,10 +67,174 @@
                     <dl>
                         <div>
                             <dt>Engine/Motor</dt>
-                            <dd>{{ variant.engine }}</dd>
+                            <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"name" }}</dd>
                         </div>
                         <div>
                             <dt>Displacement</dt>
+                            <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"displacement" }}</dd>
+                        </div>
+                        <div>
+                            <dt>Cylinders</dt>
+                            <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"cylinders" }}</dd>
+                        </div>
+                        <div>
+                            <dt>Fuel</dt>
+                            <dd>{{ variant.configuration.fuel }}</dd>
+                        </div>
+                        <div>
+                            <dt>Transmission</dt>
+                            <dd>{{ variant.configuration.transmission }}</dd>
+                        </div>
+                        <div>
+                            <dt>Drivetrain</dt>
+                            <dd>{{ variant.configuration.drivetrain }}</dd>
+                        </div>
+                        <div>
+                            <dt>Power</dt>
+                            <dd>{{ variant.performance.power }}</dd>
+                        </div>
+                        <div>
+                            <dt>Torque</dt>
+                            <dd>{{ variant.performance.torque }}</dd>
+                        </div>
+                        <div>
+                            <dt>Mileage/Range</dt>
+                            <dd>{{ variant.performance.mileageARAI }}</dd>
+                        </div>
+                        <div>
+                            <dt>Emission Standard</dt>
+                            <dd>{{ car.sharedSpecs.emissionNorm }}</dd>
+                        </div>
+                    </dl>
+                </details>
+                <details class="variant-detail-group">
+                    <summary>Dimensions and Capacity</summary>
+                    <dl>
+                        <div>
+                            <dt>Length</dt>
+                            <dd>{{ car.sharedSpecs.dimensions.length }}</dd>
+                        </div>
+                        <div>
+                            <dt>Width</dt>
+                            <dd>{{ car.sharedSpecs.dimensions.width }}</dd>
+                        </div>
+                        <div>
+                            <dt>Height</dt>
+                            <dd>{{ car.sharedSpecs.dimensions.height }}</dd>
+                        </div>
+                        <div>
+                            <dt>Wheelbase</dt>
+                            <dd>{{ car.sharedSpecs.dimensions.wheelbase }}</dd>
+                        </div>
+                        <div>
+                            <dt>Ground Clearance</dt>
+                            <dd>{{ car.sharedSpecs.dimensions.groundClearance }}</dd>
+                        </div>
+                        {% if car.sharedSpecs.dimensions.bootSpace.available %}
+                            <div>
+                                <dt>Boot Space</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.bootSpace.value }}</dd>
+                            </div>
+                        {% endif %}
+                        {% if car.sharedSpecs.dimensions.bootSpace7Seater.available %}
+                            <div>
+                                <dt>Boot Space (7-Seater)</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.bootSpace7Seater.value }}</dd>
+                            </div>
+                        {% endif %}
+                        {% if car.sharedSpecs.dimensions.bootSpaceThirdRowFolded.available %}
+                            <div>
+                                <dt>Boot Space (Third Row Folded)</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.bootSpaceThirdRowFolded.value }}</dd>
+                            </div>
+                        {% endif %}
+                        {% if car.sharedSpecs.dimensions.bootSpaceMaximum.available %}
+                            <div>
+                                <dt>Boot Space (Maximum)</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.bootSpaceMaximum.value }}</dd>
+                            </div>
+                        {% endif %}
+                        {% if variant.configuration.fuel == "CNG" %}
+                            <div>
+                                <dt>Boot Space (CNG)</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.bootSpaceCNG }}</dd>
+                            </div>
+                        {% endif %}
+                        <div>
+                            <dt>Fuel Tank Capacity</dt>
+                            <dd>{{ car.sharedSpecs.dimensions.fuelTank }}</dd>
+                        </div>
+                        {% if variant.configuration.fuel == "CNG" %}
+                            <div>
+                                <dt>Fuel Tank Capacity (CNG)</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.fuelTankCNG }}</dd>
+                            </div>
+                        {% endif %}
+                    </dl>
+                </details>
+                <details class="variant-detail-group">
+                    <summary>Suspension, Brakes and Tyres</summary>
+                    <dl>
+                        <div>
+                            <dt>Front Suspension</dt>
+                            <dd>{{ car.sharedSpecs.suspension.front }}</dd>
+                        </div>
+                        <div>
+                            <dt>Rear Suspension</dt>
+                            <dd>{{ car.sharedSpecs.suspension.rear }}</dd>
+                        </div>
+                        <div>
+                            <dt>Front Brakes</dt>
+                            <dd>{{ car.sharedSpecs.brakes.front }}</dd>
+                        </div>
+                        <div>
+                            <dt>Rear Brakes</dt>
+                            <dd>{{ car.sharedSpecs.brakes.rear }}</dd>
+                        </div>
+                        <div>
+                            <dt>Tyres/Wheel Size</dt>
+                            <dd>{{ variant.wheels.tyreSizeLabel }} {{ variant.wheels.type }}</dd>
+                        </div>
+                    </dl>
+                </details>
+                <details class="variant-detail-group">
+                    <summary>Safety and Driver Assistance</summary>
+                    <dl>
+                        <div>
+                            <dt>Safety Rating</dt>
+                            <dd>{{ car.sharedSpecs.safetyRating }}</dd>
+                        </div>
+                        <div>
+                            <dt>Airbags</dt>
+                            <dd>{{ variant.safety.airbags }}</dd>
+                        </div>
+                        <div>
+                            <dt>Anti-lock Braking System (ABS)</dt>
+                            <dd>{{ variant.safety.abs|yesno:"Yes,No" }}</dd>
+                        </div>
+                        <div>
+                            <dt>Electronic Brakeforce Distribution (EBD)</dt>
+                            <dd>{{ variant.safety.ebd|yesno:"Yes,No" }}</dd>
+                        </div>
+                        <div>
+                            <dt>Electronic Stability Control (ESC)</dt>
+                            <dd>{{ variant.safety.esc|yesno:"Yes,No" }}</dd>
+                        </div>
+                        <div>
+                            <dt>Hill hold assist</dt>
+                            <dd>{{ variant.safety.hillAssist|yesno:"Yes,No" }}</dd>
+                        </div>
+                        <div>
+                            <dt>Tyre Pressure Monitoring System (TPMS)</dt>
+                            <dd>{{ variant.safety.tpms|yesno:"Yes,No" }}</dd>
+                        </div>
+                        <div>
+                            <dt>ISOFix Child Seat Anchors</dt>
+                            <dd>{{ variant.safety.isofix|yesno:"Yes,No" }}</dd>
+                        </div>
+                        <div>
+                            <dt></dt>
+                            <dd></dd>
                         </div>
                     </dl>
                 </details>

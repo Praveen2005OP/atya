@@ -183,7 +183,21 @@
       "height": "1786 mm",
       "wheelbase": "2741 mm",
       "groundClearance": "205 mm",
-      "bootSpace": "420 Litres",
+      "bootSpace7Seater":{
+        "available": true,
+        "value": "73 Litres"
+      },
+      "bootSpaceThirdRowFolded": {
+        "available": true,
+        "value": "420 Litres"
+      },
+      "bootSpaceMaximum": {
+        "available": true,
+        "value": "827 Litres"
+      },
+      "bootSpace": {
+        "available": false
+      },
       "fuelTank": "50 Litres",
       "kerbWeight": "1822 kg (approx)",
       "doors": 5

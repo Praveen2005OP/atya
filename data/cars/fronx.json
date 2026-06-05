@@ -194,9 +194,22 @@
       "height": "1550 mm",
       "wheelbase": "2520 mm",
       "groundClearance": "190 mm",
-      "bootSpace": "308 Litres",
+      "bootSpace7Seater":{
+        "available": false
+      },
+      "bootSpaceThirdRowFolded": {
+        "available": false
+      },
+      "bootSpaceMaximum": {
+        "available": false
+      },
+      "bootSpace": {
+        "available": true,
+        "value": "308 Litres"
+      },
       "bootSpaceCNG": "145 Litres",
-      "fuelTank": "37 Litres (Petrol) / 37L Petrol + 55L CNG (CNG)",
+      "fuelTank": "37 Litres",
+      "fuelTankCNG": "55 Litres / 7.3-8.3 kg",
       "kerbWeight": "1055-1060 kg",
       "doors": 5
     },
