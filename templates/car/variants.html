@@ -1,8 +1,8 @@
 {% load static %}
 {% load car_filters %}
 
-{% for variant in car.variants %}
-    <div class="variant-list">
+<div class="variant-list">
+    {% for variant in car.variants %}    
         <article class="variant-card">
             <div>
                 <span class="badge">{{ variant.family }}</span>
@@ -233,8 +233,184 @@
                             <dd>{{ variant.safety.isofix|yesno:"Yes,No" }}</dd>
                         </div>
                         <div>
-                            <dt></dt>
+                            <dt>360 Camera</dt>
+                            <dd>{{ variant.safety.surroundCamera|yesno:"Yes,No" }}</dd>
+                        </div>
+                        <div>
+                            <dt>Advanced Driver Assistance Systems (ADAS)</dt>
+                            <dd>{{ variant.safety.adas|yesno:"Yes,No" }}</dd>
+                        </div>
+                        <div>
+                            {% if variant.comfort.parkingSensors == null %}
+                                <dt>Parking Sensors</dt>
+                                <dd>Not Available</dd>
+                            {% else %}
+                                <dt>Parking Sensors</dt>
+                                <dd>{{ variant.comfort.parkingSensors }}</dd>
+                            {% endif %}
+                        </div>
+                    </dl>
+                </details>
+                <details class="variant-detail-group">
+                    <summary>Comfort and Convenience</summary>
+                    <dl>
+                        <div>
+                            <dt>Climate Control</dt>
+                            {% if variant.comfort.airConditioner and variant.comfort.automaticClimateControl %}
+                                <dd>Automatic AC</dd>
+                            {% elif variant.comfort.airConditioner and variant.comfort.airConditioner %}
+                                <dd>Manual AC</dd>
+                            {% else %}
+                                <dd>No AC</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Ventilated Seats</dt>
+                            {% if variant.comfort.ventilatedFrontSeats and variant.comfort.ventilatedRearSeats %}
+                                <dd>Both Front and Rear</dd>
+                            {% elif variant.comfort.ventilatedFrontSeats %}
+                                <dd>Only Front Seats</dd>
+                            {% elif variant.comfort.ventilatedRearSeats %}
+                                <dd>Only Rear Seats</dd>
+                            {% else %}
+                                <dd>No</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Front Power Seats</dt>
+                            {% if variant.comfort.frontPowerSeats %}
+                                <dd>Yes</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Sunroof</dt>
+                            {% if variant.comfort.sunroof.available %}
+                                <dd>{{ variant.comfort.sunroof.type }}</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Cruise Control</dt>
+                            {% if variant.comfort.cruiseControl %}
+                                <dd>Yes</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Keyless Entry</dt>
+                            {% if variant.comfort.keylessEntry %}
+                                <dd>Yes</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Push Button Start</dt>
+                            {% if variant.comfort.pushButtonStart %}
+                                <dd>Yes</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Rear AC Ventilation</dt>
+                            {% if variant.comfort.rearAcVents %}
+                                <dd>Yes</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                    </dl>
+                </details>
+                <details class="variant-detail-group">
+                    <summary>Infotainment and Connectivity</summary>
+                    <dl>
+                        <div>
+                            <dt>Infotainment Screen Size</dt>
+                            {% if variant.infotainment.screenSize %}
+                                <dd>{{ variant.infotainment.screenSize }}</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Apple CarPlay</dt>
+                            {% if variant.infotainment.wirelessappleCarplay %}
+                                <dd>Wireless Apple CarPlay</dd>
+                            {% elif variant.infotainment.appleCarplay %}
+                                <dd>Apple CarPlay</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Android Auto</dt>
+                            {% if variant.infotainment.wirelessAndroidAuto %}
+                                <dd>Wireless Android Auto</dd>
+                            {% elif variant.infotainment.androidAuto %}
+                                <dd>Android Auto</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <!-- <div>
+                            <dt>Instrument cluster</dt>
                             <dd></dd>
+                        </div> -->
+                        <div>
+                            <dt>Speakers</dt>
+                            {% if variant.infotainment.speakerCount != null and variant.infotainment.dolbyAtmos %}
+                                <dd>{{ variant.infotainment.speakerCount }} with Dolby Atmos</dd>
+                            {% elif variant.infotainment.speakerCount != null and variant.infotainment.premiumAudio %}
+                                <dd>{{ variant.infotainment.speakerCount }} with Premium Audio</dd>
+                            {% elif variant.infotainment.speakerCount != null %}
+                                <dd>{{ variant.infotainment.speakerCount }}</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Connected Car Tech</dt>
+                            {% if variant.connectedTech.available %}
+                                <dd>Available</dd>
+                            {% else %}
+                                <dd>Not Available</dd>
+                            {% endif %}
+                        </div>
+                    </dl>
+                </details>
+                <details class="variant-detail-group">
+                    <summary>Exterior Equipment</summary>
+                    <dl>
+                        <div>
+                            <dt>Headlamp</dt>
+                            {% if variant.exterior.ledDRL and variant.exterior.ledHeadlamps and variant.exterior.ledTaillamps and variant.exterior.projectionHeadlamps %}
+                                <dd>Full LED lighting package with projector headlamps</dd>
+                            {% elif variant.exterior.ledDRL and variant.exterior.ledHeadlamps and variant.exterior.ledTaillamps %}
+                                <dd>Complete LED lighting setup</dd>
+                            {% elif variant.exterior.ledDRL and variant.exterior.ledHeadlamps %}
+                                <dd>LED DRLs with LED headlamps</dd>
+                            {% elif variant.exterior.ledHeadlamps and variant.exterior.projectionHeadlamps %}
+                                <dd>Projector LED headlamps</dd>
+                            {% elif variant.exterior.ledHeadlamps %}
+                                <dd>LED headlamps</dd>
+                            {% elif variant.exterior.projectionHeadlamps %}
+                                <dd>Projection headlamps</dd>
+                            {% elif variant.exterior.ledDRL %}
+                                <dd>LED DRLs and Halogen headlamps</dd>
+                            {% elif variant.exterior.ledTaillamps %}
+                                <dd>LED tail lamps</dd>
+                            {% else %}
+                                <dd>Halogen lighting setup</dd>
+                            {% endif %}
+                        </div>
+                        <div>
+                            <dt>Wheels</dt>
+                            <dd>{{ variant.exterior.wheelSize }} inch alloy wheels</dd>
                         </div>
                     </dl>
                 </details>
@@ -244,5 +420,5 @@
                 Compare Variant   
             </label>
         </article>
-    </div>
-{% endfor %}
+    {% endfor %}
+</div>
