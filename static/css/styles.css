@@ -103,6 +103,25 @@ img {
         border-color 180ms ease;
 }
 
+@media (max-width: 900px) {
+    .site-header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .site-header.scrolled {
     background: color-mix(in srgb, var(--bg) 76%, transparent);
     border-color: var(--line);
