@@ -96,6 +96,7 @@ img {
     gap: 1rem;
     padding: 0.5rem clamp(1rem, 4vw, 3rem);
     border-bottom: 1px solid transparent;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(18px);
     transition:
         background 180ms ease,
@@ -534,6 +535,7 @@ h3 {
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 0.5rem;
     background: rgba(8, 9, 9, 0.72);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(18px);
     color: #f7f1e4;
     font-size: 0.86rem;
@@ -733,6 +735,7 @@ h3 {
     border: 1px solid var(--line);
     border-radius: 0.75rem;
     background: color-mix(in srgb, var(--surface) 90%, transparent);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(18px);
     box-shadow: var(--shadow);
 }
