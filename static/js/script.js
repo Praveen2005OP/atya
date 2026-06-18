@@ -891,7 +891,7 @@ function renderCarPage(id, options = {}) {
 function applyPurpose(purpose) {
     state.query = purpose;
     els.search.value = purpose;
-    document.querySelector("/#explore").scrollIntoView({ behavior: "smooth" });
+    document.querySelector("#explore").scrollIntoView({ behavior: "smooth" });
     renderCars();
 }
 
@@ -987,13 +987,13 @@ document.addEventListener("click", (event) => {
     if (card && !event.target.closest("button")) openCarPage(card.dataset.cardDetails);
     if (brand) {
         state.selectedBrand = state.selectedBrand === brand.dataset.brand ? "all" : brand.dataset.brand;
-        document.querySelector("/#explore").scrollIntoView({ behavior: "smooth" });
+        document.querySelector("#explore").scrollIntoView({ behavior: "smooth" });
         renderCars();
     }
     if (chip) {
         state.query = chip.dataset.chip;
         els.search.value = chip.dataset.chip;
-        document.querySelector("/#explore").scrollIntoView({ behavior: "smooth" });
+        document.querySelector("#explore").scrollIntoView({ behavior: "smooth" });
         renderCars();
     }
     if (purpose) applyPurpose(purpose.dataset.purpose);
@@ -1010,7 +1010,7 @@ document.addEventListener("keydown", (event) => {
 els.heroSearch?.addEventListener("submit", (event) => {
     event.preventDefault();
     state.query = els.search.value;
-    document.querySelector("/#explore")?.scrollIntoView({ behavior: "smooth" });
+    document.querySelector("#explore")?.scrollIntoView({ behavior: "smooth" });
     renderCars();
 });
 
