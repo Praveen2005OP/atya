@@ -29,3 +29,6 @@ activate.bat
 
 # Environment Variables
 .env
+
+# staticfiles
+staticfiles/

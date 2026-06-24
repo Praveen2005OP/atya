@@ -564,6 +564,7 @@ function brandSummary() {
 }
 
 function renderBrands() {
+    if (!els.brandGrid) return;
     els.brandGrid.innerHTML = brandSummary()
         .map(
             ([brand, info]) => `
@@ -1080,7 +1081,7 @@ els.themeToggle.addEventListener("click", () => {
     localStorage.setItem("atyaTheme", isLight ? "light" : "dark");
 });
 
-initTheme();
+// initTheme();
 loadCars()
     .then(() => {
         renderBrands();
@@ -1136,8 +1137,9 @@ if (frameViewer) {
     // -----------------------------
     function updateFrame() {
         const frame = Math.floor(currentFrame).toString().padStart(3, "0");
-        image.src = `/static/images/car-images/${slug}/${currentFolder}/img_0_0_${frame}.webp`;
-
+        if(image){
+            image.src = `/static/images/car-images/${slug}/${currentFolder}/img_0_0_${frame}.webp`;
+        }
     }
     // -----------------------------
     // AUTO ROTATION
