@@ -37,9 +37,9 @@ const formatSinglePrice = (price) => `INR ${price.toFixed(2)}L`;
 
 async function loadCars() {
     try {
-        const djangoCars = JSON.parse(
-            document.getElementById("cars-data").textContent
-        );
+        const carsDataEl = document.getElementById("cars-data");
+        if (!carsDataEl) return;
+        const djangoCars = JSON.parse(carsDataEl.textContent);
 
         cars = djangoCars.map((car) => {
             // Safe pricing extraction
@@ -960,7 +960,7 @@ function updateThemeToggle() {
 }
 
 document.addEventListener("scroll", () => {
-    els.header.classList.toggle("scrolled", window.scrollY > 16);
+    els.header?.classList.toggle("scrolled", window.scrollY > 16);
 });
 
 document.addEventListener("click", (event) => {
@@ -1075,28 +1075,21 @@ document.addEventListener("change", (event) => {
     }
 });
 
-els.themeToggle.addEventListener("click", () => {
+els.themeToggle?.addEventListener("click", () => {
     document.documentElement.classList.toggle("light");
     const isLight = document.documentElement.classList.contains("light");
     localStorage.setItem("atyaTheme", isLight ? "light" : "dark");
 });
 
 // initTheme();
-loadCars()
-    .then(() => {
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (!document.getElementById("cars-data")) return;
+    loadCars().then(() => {
         renderBrands();
         renderAll();
-    })
-    .catch((error) => {
-        console.error(error);
-    });
-
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
-        loadCars();
-    }
-);
+    }).catch(console.error);
+});
 
 // 360 view
 // const viewer =
