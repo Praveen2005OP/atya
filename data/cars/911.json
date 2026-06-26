@@ -38,10 +38,10 @@
     }
   },
   "overview": {
-    "segment": "Sports Car / GT",
+    "segment": "Coupe",
     "body": "2-door Coupe / Targa",
     "doors": 2,
-    "safetyRating": "N/A (Euro NCAP not applicable)",
+    "safetyRating": null,
     "seatingOptions": [
       4
     ],
