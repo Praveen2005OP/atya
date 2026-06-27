@@ -18,7 +18,7 @@
         {% for brand in brands %}
         <a class="brand-card spa-link" href="/brand/{{ brand.name|lower }}/" data-initial="{{ brand.name|first }}">
             <div class="brand-logo">
-                <img src="/static/images/logos/${brand.toLowerCase().replace(/\s+/g, "")}.png" alt="{{ brand.name }}">
+                <img src="/static/images/logos/{{ brand.name|lower }}.png" alt="{{ brand.name }}">
             </div>
             <h3>
                 {{ brand.name }}

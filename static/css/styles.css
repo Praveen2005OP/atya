@@ -93,8 +93,8 @@ img {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 1rem;
-    padding: 0.5rem clamp(1rem, 4vw, 3rem);
+    gap: 1.5rem;
+    padding: 1rem clamp(1rem, 4vw, 3rem);
     border-bottom: 1px solid transparent;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(18px);
@@ -138,15 +138,20 @@ img {
     transform: translateY(-1px);
 }
 
-.brand-logo {
+.site-logo {
+    display: block;
     height: 42px;
     width: auto;
     object-fit: contain;
     transition:
-        transform 350ms ease,
-        filter 350ms ease;
-    filter:
-        drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
+        transform .35s ease,
+        filter .35s ease;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,.25));
+}
+
+.brand-mark:hover .site-logo {
+    transform: scale(1.04);
+    filter: drop-shadow(0 6px 18px rgba(212,175,55,.16));
 }
 
 .brand-mark:hover .brand-logo {
@@ -624,7 +629,7 @@ h3 {
     gap: 1rem;
 }
 
-.brand-logo {
+.brand-card .brand-logo {
     width: 100px;
     height: 100px;
     display: flex;
@@ -632,7 +637,7 @@ h3 {
     justify-content: center;
 }
 
-.brand-logo img {
+.brand-card .brand-logo img {
     width: 100px;
     height: 100px;
     object-fit: contain;
