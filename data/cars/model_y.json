@@ -1,6 +1,6 @@
 {
   "id": "tesla-model-y",
-  "slug": "model-y",
+  "slug": "model_y",
   "brand": "Tesla",
   "model": "Model Y",
   "name": "Tesla Model Y",
@@ -14,12 +14,12 @@
   },
   "hero": {
     "tagline": "The World's Best-Selling Electric SUV, Now In India.",
-    "image": "/static/images/car-images/model-y/pic1.png",
+    "image": "/static/images/car-images/model_y/pic1.png",
     "gallery": [
-      "/static/images/car-images/model-y/pic1.png",
-      "/static/images/car-images/model-y/pic2.png",
-      "/static/images/car-images/model-y/pic3.png",
-      "/static/images/car-images/model-y/pic4.png"
+      "/static/images/car-images/model_y/pic1.png",
+      "/static/images/car-images/model_y/pic2.png",
+      "/static/images/car-images/model_y/pic3.png",
+      "/static/images/car-images/model_y/pic4.png"
     ]
   },
   "pricing": {

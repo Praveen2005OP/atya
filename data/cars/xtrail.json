@@ -1,6 +1,6 @@
 {
   "id": "nissan-x-trail",
-  "slug": "x-trail",
+  "slug": "xtrail",
   "brand": "Nissan",
   "model": "X-Trail",
   "name": "Nissan X-Trail",
@@ -14,12 +14,12 @@
   },
   "hero": {
     "tagline": "Redefining Performance, Built for Every Journey.",
-    "image": "/static/images/car-images/x-trail/pic1.png",
+    "image": "/static/images/car-images/xtrail/pic1.png",
     "gallery": [
-      "/static/images/car-images/x-trail/pic1.png",
-      "/static/images/car-images/x-trail/pic2.png",
-      "/static/images/car-images/x-trail/pic3.png",
-      "/static/images/car-images/x-trail/pic4.png"
+      "/static/images/car-images/xtrail/pic1.png",
+      "/static/images/car-images/xtrail/pic2.png",
+      "/static/images/car-images/xtrail/pic3.png",
+      "/static/images/car-images/xtrail/pic4.png"
     ]
   },
   "pricing": {
