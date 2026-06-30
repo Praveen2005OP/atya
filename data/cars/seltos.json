@@ -228,7 +228,7 @@
       "height": "1635 mm",
       "wheelbase": "2690 mm",
       "groundClearance": "190 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": false
       },
       "bootSpaceThirdRowFolded": {
@@ -256,7 +256,7 @@
     "brakes": {
       "front": "Ventilated Disc",
       "rear": "Disc",
-      "note": "All-wheel disc brakes \u2013 standard across all 40 variants"
+      "note": "All-wheel disc brakes – standard across all 40 variants"
     },
     "tyres": {
       "HTE": "205/65 R16",
@@ -717,9 +717,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1345,9 +1346,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1868,7 +1870,7 @@
       },
       "keyFeatures": [
         "6 Airbags",
-        "Diesel \u2013 21.4 kmpl ARAI",
+        "Diesel – 21.4 kmpl ARAI",
         "All-wheel disc brakes",
         "8-inch touchscreen",
         "Wireless Android Auto & CarPlay",
@@ -1975,9 +1977,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -2497,7 +2500,7 @@
         "navigation": false
       },
       "keyFeatures": [
-        "1.5L Turbo Petrol \u2013 160 bhp",
+        "1.5L Turbo Petrol – 160 bhp",
         "6-Speed iMT clutchless manual",
         "6 Airbags",
         "Tilt & telescopic steering",
@@ -2604,9 +2607,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3237,9 +3241,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3866,9 +3871,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -4388,7 +4394,7 @@
         "navigation": false
       },
       "keyFeatures": [
-        "Diesel \u2013 21.4 kmpl ARAI",
+        "Diesel – 21.4 kmpl ARAI",
         "6 Airbags",
         "Tilt & telescopic steering",
         "Electric ORVMs with LED indicators",
@@ -4495,9 +4501,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -5017,7 +5024,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "1.5L Turbo Petrol \u2013 160 bhp",
+        "1.5L Turbo Petrol – 160 bhp",
         "6-Speed iMT",
         "Dual-Pane Panoramic Sunroof",
         "17-inch alloys",
@@ -5125,9 +5132,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -5759,9 +5767,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -6389,9 +6398,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -6911,7 +6921,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "Diesel \u2013 21.4 kmpl ARAI",
+        "Diesel – 21.4 kmpl ARAI",
         "Dual-Pane Panoramic Sunroof",
         "17-inch alloys",
         "Cruise control",
@@ -7019,9 +7029,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -7544,7 +7555,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "1.5L Turbo Petrol \u2013 160 bhp",
+        "1.5L Turbo Petrol – 160 bhp",
         "6-Speed iMT",
         "Automatic climate control",
         "Wireless charging",
@@ -7652,9 +7663,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -8281,9 +8293,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -8914,9 +8927,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -9552,9 +9566,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -10077,7 +10092,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "Diesel \u2013 21.4 kmpl ARAI",
+        "Diesel – 21.4 kmpl ARAI",
         "Automatic climate control",
         "Wireless charging",
         "Leatherette + 10.25-inch cluster",
@@ -10185,9 +10200,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -10815,9 +10831,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -11340,7 +11357,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "1.5L Turbo Petrol \u2013 7-Speed DCT",
+        "1.5L Turbo Petrol – 7-Speed DCT",
         "Automatic climate control",
         "Wireless charging",
         "Leatherette + 10.25-inch cluster",
@@ -11448,9 +11465,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -11975,7 +11993,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "Level-2+ ADAS \u2013 full 16-feature suite",
+        "Level-2+ ADAS – full 16-feature suite",
         "360-degree camera + Blind View Monitor",
         "8-speaker Bose sound system",
         "Dual 12.3-inch displays",
@@ -12085,9 +12103,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -12722,9 +12741,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -13355,9 +13375,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -13882,7 +13903,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "Diesel \u2013 21.4 kmpl ARAI",
+        "Diesel – 21.4 kmpl ARAI",
         "Dual 12.3-inch displays",
         "Dual-zone climate control",
         "8-way powered driver seat",
@@ -13990,9 +14011,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -14517,7 +14539,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "1.5L Turbo Petrol \u2013 7-Speed DCT",
+        "1.5L Turbo Petrol – 7-Speed DCT",
         "Dual 12.3-inch displays",
         "Dual-zone climate control",
         "8-way powered driver seat",
@@ -14625,9 +14647,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -15153,7 +15176,7 @@
       },
       "keyFeatures": [
         "CVT Automatic",
-        "Level-2+ ADAS \u2013 full suite",
+        "Level-2+ ADAS – full suite",
         "360-degree camera + Blind View Monitor",
         "Smart Cruise Control with Stop & Go",
         "8-speaker Bose",
@@ -15261,9 +15284,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -15788,8 +15812,8 @@
         "navigation": true
       },
       "keyFeatures": [
-        "Diesel \u2013 21.4 kmpl ARAI",
-        "Level-2+ ADAS \u2013 full suite",
+        "Diesel – 21.4 kmpl ARAI",
+        "Level-2+ ADAS – full suite",
         "360-degree camera",
         "8-speaker Bose",
         "Dual 12.3-inch displays",
@@ -15895,9 +15919,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -16305,7 +16330,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -16424,7 +16449,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "X-Line exclusive \u2013 Black & Matte Graphite only",
+        "X-Line exclusive – Black & Matte Graphite only",
         "Trinity Panoramic Display",
         "CVT Automatic",
         "10-way powered driver seat + 2 memory",
@@ -16434,7 +16459,7 @@
         "360-degree camera",
         "Sequential LED turn signals",
         "Panoramic sunroof",
-        "NOTE: No ADAS \u2013 see X-Line(A) for ADAS"
+        "NOTE: No ADAS – see X-Line(A) for ADAS"
       ],
       "comparisonFeatures": {
         "comfort": {
@@ -16536,9 +16561,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -16605,7 +16631,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -16946,7 +16972,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -17075,7 +17101,7 @@
         "Ice Cube LED Projection headlamps",
         "Sequential LED turn signals",
         "Panoramic sunroof",
-        "NOTE: No ADAS \u2013 see GTX(A) for ADAS"
+        "NOTE: No ADAS – see GTX(A) for ADAS"
       ],
       "comparisonFeatures": {
         "comfort": {
@@ -17177,9 +17203,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -17246,7 +17273,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -17812,9 +17839,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -18339,8 +18367,8 @@
         "navigation": true
       },
       "keyFeatures": [
-        "1.5L Turbo Petrol \u2013 7-Speed DCT",
-        "Level-2+ ADAS \u2013 full suite",
+        "1.5L Turbo Petrol – 7-Speed DCT",
+        "Level-2+ ADAS – full suite",
         "Smart Cruise Control with Stop & Go",
         "360-degree camera + Blind View Monitor",
         "8-speaker Bose",
@@ -18447,9 +18475,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -18857,7 +18886,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -18977,14 +19006,14 @@
       },
       "keyFeatures": [
         "X-Line exclusive",
-        "1.5L Turbo Petrol \u2013 7-Speed DCT",
+        "1.5L Turbo Petrol – 7-Speed DCT",
         "Trinity Panoramic Display",
         "10-way powered driver seat",
         "18-inch Black Painted alloys",
         "8-speaker Bose + Personal Space",
         "Electronic tailgate",
         "360-degree camera",
-        "NOTE: No ADAS \u2013 see X-Line(A) for ADAS"
+        "NOTE: No ADAS – see X-Line(A) for ADAS"
       ],
       "comparisonFeatures": {
         "comfort": {
@@ -19086,9 +19115,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -19155,7 +19185,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -19496,7 +19526,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -19615,14 +19645,14 @@
         "navigation": true
       },
       "keyFeatures": [
-        "1.5L Turbo Petrol \u2013 7-Speed DCT",
+        "1.5L Turbo Petrol – 7-Speed DCT",
         "Trinity Panoramic Display",
         "10-way powered driver seat",
         "18-inch sporty crystal cut alloys",
         "8-speaker Bose + Personal Space",
         "Electronic tailgate",
         "360-degree camera",
-        "NOTE: No ADAS \u2013 see GTX(A) for ADAS"
+        "NOTE: No ADAS – see GTX(A) for ADAS"
       ],
       "comparisonFeatures": {
         "comfort": {
@@ -19724,9 +19754,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -19793,7 +19824,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -20134,7 +20165,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -20253,9 +20284,9 @@
         "navigation": true
       },
       "keyFeatures": [
-        "X-Line exclusive \u2013 Black & Matte Graphite only",
+        "X-Line exclusive – Black & Matte Graphite only",
         "CVT Automatic",
-        "Level-2+ ADAS \u2013 full 16-feature suite",
+        "Level-2+ ADAS – full 16-feature suite",
         "Smart Cruise Control with Stop & Go",
         "Trinity Panoramic Display",
         "10-way powered driver seat + 2 memory",
@@ -20364,9 +20395,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -20433,7 +20465,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -20774,7 +20806,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -20894,7 +20926,7 @@
       },
       "keyFeatures": [
         "CVT Automatic",
-        "Level-2+ ADAS \u2013 full 16-feature suite",
+        "Level-2+ ADAS – full 16-feature suite",
         "Smart Cruise Control with Stop & Go",
         "Trinity Panoramic Display",
         "10-way powered driver seat + 2 memory",
@@ -21003,9 +21035,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -21072,7 +21105,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -21531,7 +21564,7 @@
       },
       "keyFeatures": [
         "Diesel Automatic",
-        "Level-2+ ADAS \u2013 full suite",
+        "Level-2+ ADAS – full suite",
         "Smart Cruise Control with Stop & Go",
         "360-degree camera + Blind View Monitor",
         "8-speaker Bose",
@@ -21639,9 +21672,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -22049,7 +22083,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -22176,7 +22210,7 @@
         "8-speaker Bose + Personal Space",
         "Electronic tailgate",
         "360-degree camera",
-        "NOTE: No ADAS \u2013 see X-Line(A) for ADAS"
+        "NOTE: No ADAS – see X-Line(A) for ADAS"
       ],
       "comparisonFeatures": {
         "comfort": {
@@ -22278,9 +22312,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -22347,7 +22382,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -22688,7 +22723,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -22814,7 +22849,7 @@
         "8-speaker Bose + Personal Space",
         "Electronic tailgate",
         "360-degree camera",
-        "NOTE: No ADAS \u2013 see GTX(A) for ADAS"
+        "NOTE: No ADAS – see GTX(A) for ADAS"
       ],
       "comparisonFeatures": {
         "comfort": {
@@ -22916,9 +22951,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -22985,7 +23021,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -23326,7 +23362,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -23445,9 +23481,9 @@
         "navigation": true
       },
       "keyFeatures": [
-        "X-Line exclusive \u2013 Top of line",
+        "X-Line exclusive – Top of line",
         "Diesel Automatic",
-        "Level-2+ ADAS \u2013 full 16-feature suite",
+        "Level-2+ ADAS – full 16-feature suite",
         "Smart Cruise Control with Stop & Go",
         "Trinity Panoramic Display",
         "10-way powered driver seat + 2 memory",
@@ -23556,9 +23592,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -23625,7 +23662,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -23966,7 +24003,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -24086,8 +24123,8 @@
       },
       "keyFeatures": [
         "X-Line exclusive",
-        "1.5L Turbo Petrol \u2013 7-Speed DCT",
-        "Level-2+ ADAS \u2013 full 16-feature suite",
+        "1.5L Turbo Petrol – 7-Speed DCT",
+        "Level-2+ ADAS – full 16-feature suite",
         "Smart Cruise Control with Stop & Go",
         "Trinity Panoramic Display",
         "10-way powered driver seat",
@@ -24196,9 +24233,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -24265,7 +24303,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -24606,7 +24644,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -24726,7 +24764,7 @@
       },
       "keyFeatures": [
         "Diesel Automatic",
-        "Level-2+ ADAS \u2013 full 16-feature suite",
+        "Level-2+ ADAS – full 16-feature suite",
         "Smart Cruise Control with Stop & Go",
         "Trinity Panoramic Display",
         "10-way powered driver seat + 2 memory",
@@ -24835,9 +24873,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -24904,7 +24943,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false
@@ -25245,7 +25284,7 @@
         "artificialLeatherGearKnob": true,
         "digitalCluster1025": true,
         "dualScreenNote": "Two separate 12.3-inch displays side by side",
-        "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel"
+        "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel"
       },
       "exterior": {
         "ledDRL": true,
@@ -25364,9 +25403,9 @@
         "navigation": true
       },
       "keyFeatures": [
-        "Top of the line \u2013 Turbo Petrol DCT",
-        "1.5L Turbo Petrol \u2013 7-Speed DCT",
-        "Level-2+ ADAS \u2013 full 16-feature suite",
+        "Top of the line – Turbo Petrol DCT",
+        "1.5L Turbo Petrol – 7-Speed DCT",
+        "Level-2+ ADAS – full 16-feature suite",
         "Smart Cruise Control with Stop & Go",
         "Parking Collision Avoidance Assist",
         "Trinity Panoramic Display",
@@ -25476,9 +25515,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Dual-Pane Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Dual-Pane Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -25545,7 +25585,7 @@
           "tftClusterSize": false,
           "thirdRowSeats": false,
           "trinityCombinedDisplay": true,
-          "trinityCombinedDisplayNote": "Trinity Panoramic Display \u2013 dual 12.3-inch in single panoramic panel",
+          "trinityCombinedDisplayNote": "Trinity Panoramic Display – dual 12.3-inch in single panoramic panel",
           "upholstery": "Premium Leatherette",
           "upperGlovebox": false,
           "woodFinishInterior": false

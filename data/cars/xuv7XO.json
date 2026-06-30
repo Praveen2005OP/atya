@@ -65,7 +65,7 @@
       "Premium SUV",
       "Tech-focused"
     ],
-    "minides": "Bold, feature-packed, and impossible to ignore \u2014 the XUV 7XO brings flagship luxury to everyday driving.",
+    "minides": "Bold, feature-packed, and impossible to ignore — the XUV 7XO brings flagship luxury to everyday driving.",
     "description": "The Mahindra XUV 7XO is the facelifted XUV700 featuring a triple 12.3-inch coast-to-coast screen, Harman Kardon 16-speaker Dolby Atmos audio, Level-2 ADAS tuned for India, 540-degree surround camera, and ChatGPT + Alexa integration. Available in 27 variants with petrol and diesel engines, manual and automatic gearboxes, and AWD on select diesel trims."
   },
   "images": {
@@ -206,7 +206,7 @@
       "width": "1890 mm",
       "height": "1755 mm",
       "wheelbase": "2750 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": true,
         "value": "240 Litres"
       },
@@ -265,14 +265,14 @@
       "fuelSupplySystem": "GDi (Direct Injection)",
       "manual": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "FWD",
         "mileageARAI": "15 kmpl"
       },
       "automatic": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "FWD",
         "mileageARAI": "13 kmpl"
@@ -291,21 +291,21 @@
       "fuelSupplySystem": "CRDi",
       "manual": {
         "power": "153 bhp @ 3750 rpm",
-        "torque": "360 Nm @ 1500\u20132800 rpm",
+        "torque": "360 Nm @ 1500–2800 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automatic": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automaticAWD": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "AWD",
         "mileageARAI": "13 kmpl"
@@ -324,14 +324,14 @@
       "fuelSupplySystem": "GDi (Direct Injection)",
       "manual": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "FWD",
         "mileageARAI": "15 kmpl"
       },
       "automatic": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "FWD",
         "mileageARAI": "13 kmpl"
@@ -350,21 +350,21 @@
       "fuelSupplySystem": "CRDi",
       "manual": {
         "power": "153 bhp @ 3750 rpm",
-        "torque": "360 Nm @ 1500\u20132800 rpm",
+        "torque": "360 Nm @ 1500–2800 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automatic": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automaticAWD": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "AWD",
         "mileageARAI": "13 kmpl"
@@ -383,21 +383,21 @@
       "fuelSupplySystem": "CRDi",
       "manual": {
         "power": "153 bhp @ 3750 rpm",
-        "torque": "360 Nm @ 1500\u20132800 rpm",
+        "torque": "360 Nm @ 1500–2800 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automatic": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automaticAWD": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "AWD",
         "mileageARAI": "13 kmpl"
@@ -416,21 +416,21 @@
       "fuelSupplySystem": "CRDi",
       "manual": {
         "power": "153 bhp @ 3750 rpm",
-        "torque": "360 Nm @ 1500\u20132800 rpm",
+        "torque": "360 Nm @ 1500–2800 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automatic": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "FWD",
         "mileageARAI": "17 kmpl"
       },
       "automaticAWD": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "AWD",
         "mileageARAI": "13 kmpl"
@@ -495,7 +495,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15 kmpl"
       },
       "wheels": {
@@ -753,9 +753,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1103,7 +1104,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600\u20132800 rpm",
+        "torque": "420 Nm @ 1600–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -1254,7 +1255,7 @@
       },
       "keyFeatures": [
         "6 Airbags",
-        "Diesel engine \u2013 17 kmpl ARAI",
+        "Diesel engine – 17 kmpl ARAI",
         "10.25-inch touchscreen",
         "LED DRLs",
         "Rear AC vents",
@@ -1361,9 +1362,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1711,7 +1713,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15 kmpl"
       },
       "wheels": {
@@ -1969,9 +1971,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2319,7 +2322,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600\u20132800 rpm",
+        "torque": "420 Nm @ 1600–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -2463,7 +2466,7 @@
         "adrenox": false
       },
       "keyFeatures": [
-        "Diesel \u2013 17 kmpl ARAI",
+        "Diesel – 17 kmpl ARAI",
         "LED headlamps",
         "Alloy wheels",
         "Cruise control",
@@ -2571,9 +2574,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2921,7 +2925,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -3173,9 +3177,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -3523,7 +3528,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15 kmpl"
       },
       "wheels": {
@@ -3778,9 +3783,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4128,7 +4134,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -4273,7 +4279,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel \u2013 17 kmpl ARAI",
+        "Diesel – 17 kmpl ARAI",
         "LED headlamps",
         "Alloy wheels",
         "Cruise control",
@@ -4380,9 +4386,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4730,7 +4737,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600\u20132800 rpm",
+        "torque": "420 Nm @ 1600–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -4875,7 +4882,7 @@
       },
       "keyFeatures": [
         "7 Airbags",
-        "Diesel \u2013 17 kmpl ARAI",
+        "Diesel – 17 kmpl ARAI",
         "12.29-inch touchscreen",
         "Sunroof",
         "Automatic climate control",
@@ -4983,9 +4990,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -5333,7 +5341,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15 kmpl"
       },
       "wheels": {
@@ -5586,9 +5594,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -5936,7 +5945,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600\u20132800 rpm",
+        "torque": "420 Nm @ 1600–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -6080,7 +6089,7 @@
         "adrenox": false
       },
       "keyFeatures": [
-        "Diesel \u2013 17 kmpl ARAI",
+        "Diesel – 17 kmpl ARAI",
         "7 Airbags",
         "Panoramic sunroof",
         "Ventilated front seats",
@@ -6188,9 +6197,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -6538,7 +6548,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -6790,9 +6800,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -7140,7 +7151,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -7285,7 +7296,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel \u2013 17 kmpl ARAI",
+        "Diesel – 17 kmpl ARAI",
         "7 Airbags",
         "Sunroof",
         "Wireless charging",
@@ -7392,9 +7403,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -7742,7 +7754,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -7994,9 +8006,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -8344,7 +8357,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -8489,7 +8502,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel \u2013 17 kmpl ARAI",
+        "Diesel – 17 kmpl ARAI",
         "7 Airbags",
         "Panoramic sunroof",
         "Ventilated front seats",
@@ -8596,9 +8609,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -8946,7 +8960,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600\u20132800 rpm",
+        "torque": "420 Nm @ 1600–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -9035,7 +9049,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -9097,7 +9111,7 @@
       },
       "keyFeatures": [
         "Level-2 ADAS",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -9208,9 +9222,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -9558,7 +9573,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600\u20132800 rpm",
+        "torque": "420 Nm @ 1600–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -9647,7 +9662,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -9710,7 +9725,7 @@
       "keyFeatures": [
         "6-Seater captain seat layout",
         "Level-2 ADAS",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -9818,9 +9833,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -10168,7 +10184,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -10257,7 +10273,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -10320,7 +10336,7 @@
       "keyFeatures": [
         "6-Speed Automatic",
         "Level-2 ADAS",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -10428,9 +10444,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -10778,7 +10795,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -10867,7 +10884,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -10932,7 +10949,7 @@
         "6-Speed Automatic",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
         "ChatGPT + Alexa"
@@ -11037,9 +11054,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -11387,7 +11405,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -11476,7 +11494,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -11538,9 +11556,9 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel \u2013 17 kmpl ARAI",
+        "Diesel – 17 kmpl ARAI",
         "Level-2 ADAS",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -11647,9 +11665,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -11997,7 +12016,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "420 Nm @ 1600\u20132800 rpm",
+        "torque": "420 Nm @ 1600–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -12087,7 +12106,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -12150,7 +12169,7 @@
       "keyFeatures": [
         "Boss Mode (rear seat recline)",
         "Level-2 ADAS",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -12258,9 +12277,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -12608,7 +12628,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "17 kmpl"
       },
       "wheels": {
@@ -12697,7 +12717,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -12760,10 +12780,10 @@
       "keyFeatures": [
         "6-Seater captain seat layout",
         "6-Speed Automatic",
-        "Diesel \u2013 17 kmpl ARAI",
+        "Diesel – 17 kmpl ARAI",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof"
       ],
@@ -12867,9 +12887,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -13217,7 +13238,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -13306,7 +13327,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -13369,7 +13390,7 @@
       "keyFeatures": [
         "AWD",
         "Level-2 ADAS",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -13477,9 +13498,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -13827,7 +13849,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -13917,7 +13939,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -13982,7 +14004,7 @@
         "6-Speed Automatic",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
         "Ventilated front & rear seats",
@@ -14088,9 +14110,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -14438,7 +14461,7 @@
       },
       "performance": {
         "power": "197 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -14528,7 +14551,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -14593,7 +14616,7 @@
         "Boss Mode",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
         "ChatGPT + Alexa"
@@ -14698,9 +14721,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -15048,7 +15072,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "16.57 kmpl"
       },
       "wheels": {
@@ -15138,7 +15162,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -15201,10 +15225,10 @@
       "keyFeatures": [
         "Boss Mode",
         "6-Speed Automatic",
-        "Diesel \u2013 16.57 kmpl ARAI",
+        "Diesel – 16.57 kmpl ARAI",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof"
       ],
@@ -15308,9 +15332,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -15658,7 +15683,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "16.57 kmpl"
       },
       "wheels": {
@@ -15748,7 +15773,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -15814,7 +15839,7 @@
         "6-Speed Automatic",
         "Level-2 ADAS",
         "16-speaker Harman Kardon + Dolby Atmos",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof"
       ],
@@ -15918,9 +15943,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -16268,7 +16294,7 @@
       },
       "performance": {
         "power": "182.37 bhp @ 3500 rpm",
-        "torque": "450 Nm @ 1750\u20132800 rpm",
+        "torque": "450 Nm @ 1750–2800 rpm",
         "mileageARAI": "13 kmpl"
       },
       "wheels": {
@@ -16358,7 +16384,7 @@
         "rearCamera": true,
         "rearCameraType": "540-degree Surround View Camera",
         "surroundCamera": true,
-        "surroundCameraType": "540\u00b0 (360\u00b0 + Bottom View)",
+        "surroundCameraType": "540° (360° + Bottom View)",
         "hillAssist": true,
         "hillDescentControl": true,
         "isofix": true,
@@ -16419,10 +16445,10 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "AWD \u2013 Top-of-the-line",
+        "AWD – Top-of-the-line",
         "Boss Mode",
         "Level-2 ADAS",
-        "540\u00b0 Surround Camera",
+        "540° Surround Camera",
         "16-speaker Harman Kardon + Dolby Atmos",
         "Triple 12.29-inch screens",
         "Infinity Glass Panoramic sunroof",
@@ -16532,9 +16558,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,

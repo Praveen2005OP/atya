@@ -1,16 +1,22 @@
 {% load static %}
 
-<aside class="variant-compare-panel">
+<aside class="variant-compare-panel" >
     <div class="panel-heading">
         <p class="eyebrow">Same car comparison</p>
         <h3>Compare variants</h3>
         <p>Select up to three variants of the {{ car.name }}.</p>
     </div>
+    <div class="empty-state">
+        <p>Select variants from the list to compare them here.</p>
+    </div>
     <table class="compare-table full-compare-table">
-        <thead>
-
+        <thead id="compareHead">
+            <tr>
+                <th>Spec</th>
+                <th>{{ car.name }}<span>{{ variant.name }}</span></th>
+            </tr>
         </thead>
-        <tbody>
+        <tbody id="compareBody">
             <!-- <tr>
                 <th>Spec</th>
                 <th>{{ car.name }}<span>Smart Petrol Manual</span></th>

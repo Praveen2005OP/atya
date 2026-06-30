@@ -194,7 +194,7 @@
       "height": "1550 mm",
       "wheelbase": "2520 mm",
       "groundClearance": "190 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": false
       },
       "bootSpaceThirdRowFolded": {
@@ -624,9 +624,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1235,9 +1236,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1736,7 +1738,7 @@
         "navigation": false
       },
       "keyFeatures": [
-        "CNG \u2013 28.51 km/kg ARAI",
+        "CNG – 28.51 km/kg ARAI",
         "37L petrol + 55L CNG tanks",
         "Halogen headlamps",
         "2 Airbags",
@@ -1845,9 +1847,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -2456,9 +2459,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3067,9 +3071,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3677,9 +3682,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -4287,9 +4293,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -4897,9 +4904,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -5398,7 +5406,7 @@
         "navigation": false
       },
       "keyFeatures": [
-        "CNG \u2013 28.51 km/kg ARAI",
+        "CNG – 28.51 km/kg ARAI",
         "37L petrol + 55L CNG tanks",
         "7-inch touchscreen",
         "Android Auto & Apple CarPlay",
@@ -5508,9 +5516,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -6009,7 +6018,7 @@
         "navigation": false
       },
       "keyFeatures": [
-        "1.0L Boosterjet Turbo Petrol \u2013 98.7 bhp",
+        "1.0L Boosterjet Turbo Petrol – 98.7 bhp",
         "6-Speed Manual",
         "147.6 Nm torque",
         "6 Airbags",
@@ -6119,9 +6128,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -6620,7 +6630,7 @@
         "navigation": true
       },
       "keyFeatures": [
-        "1.0L Boosterjet Turbo \u2013 98.7 bhp",
+        "1.0L Boosterjet Turbo – 98.7 bhp",
         "Rear view camera",
         "Wireless charging",
         "Rear AC vents",
@@ -6734,9 +6744,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -7241,7 +7252,7 @@
         "Heads-Up Display (HUD)",
         "Cruise control",
         "Push-button start",
-        "1.0L Boosterjet Turbo \u2013 98.7 bhp",
+        "1.0L Boosterjet Turbo – 98.7 bhp",
         "9-inch touchscreen",
         "Wireless Android Auto & CarPlay",
         "Rain-sensing wipers",
@@ -7350,9 +7361,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -7858,7 +7870,7 @@
         "Heads-Up Display (HUD)",
         "Cruise control",
         "Push-button start",
-        "1.0L Boosterjet Turbo \u2013 98.7 bhp",
+        "1.0L Boosterjet Turbo – 98.7 bhp",
         "9-inch touchscreen",
         "Wireless Android Auto & CarPlay",
         "Rain-sensing wipers",
@@ -7965,9 +7977,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -8467,7 +8480,7 @@
       },
       "keyFeatures": [
         "6-Speed Torque Converter Automatic",
-        "1.0L Boosterjet Turbo \u2013 98.7 bhp",
+        "1.0L Boosterjet Turbo – 98.7 bhp",
         "Rear view camera",
         "Wireless charging",
         "Rear AC vents",
@@ -8578,9 +8591,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -9086,7 +9100,7 @@
         "Heads-Up Display (HUD)",
         "Cruise control",
         "Push-button start",
-        "1.0L Boosterjet Turbo \u2013 98.7 bhp",
+        "1.0L Boosterjet Turbo – 98.7 bhp",
         "9-inch touchscreen",
         "Wireless Android Auto & CarPlay",
         "Rain-sensing wipers",
@@ -9193,9 +9207,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -9703,7 +9718,7 @@
         "Heads-Up Display (HUD)",
         "Cruise control",
         "Push-button start",
-        "1.0L Boosterjet Turbo \u2013 98.7 bhp",
+        "1.0L Boosterjet Turbo – 98.7 bhp",
         "9-inch touchscreen",
         "Wireless Android Auto & CarPlay",
         "Rain-sensing wipers",
@@ -9810,9 +9825,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,

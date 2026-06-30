@@ -119,7 +119,7 @@
       "height": "1995 mm",
       "wheelbase": "2680 mm",
       "groundClearance": "209 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": true,
         "value": "460 Litres"
       },
@@ -468,9 +468,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1076,9 +1077,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1711,9 +1713,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2346,9 +2349,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": true,
           "tiltSteering": false,

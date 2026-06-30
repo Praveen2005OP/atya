@@ -556,9 +556,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1167,9 +1168,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1778,9 +1780,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -2389,9 +2392,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3000,9 +3004,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3611,9 +3616,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -4222,9 +4228,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,

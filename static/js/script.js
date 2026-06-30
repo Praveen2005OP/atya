@@ -86,6 +86,8 @@ async function loadCars() {
                 original: car,
             };
         });
+        console.log("Cars loaded:", djangoCars);
+        console.log("Mapped cars:", cars);
 
         renderBrands();
         renderCars();
@@ -313,70 +315,70 @@ function renderGroupedComparisonTable(selected) {
 
 // ── Variant section (car detail page) ─────────────────────────────────────────
 
-function renderVariantSection(car) {
-    const variants = getVariants(car);
-    if (!variants.length) return `<section class="variant-section" id="variants"><p>No variant data available.</p></section>`;
+// function renderVariantSection(car) {
+//     const variants = getVariants(car);
+//     if (!variants.length) return `<section class="variant-section" id="variants"><p>No variant data available.</p></section>`;
 
-    if (!state.variantCompare[car.id]) {
-        state.variantCompare[car.id] = variants.slice(0, 3).map((v) => v.id);
-    }
+//     if (!state.variantCompare[car.id]) {
+//         state.variantCompare[car.id] = variants.slice(0, 3).map((v) => v.id);
+//     }
 
-    const selectedIds = state.variantCompare[car.id].filter((id) => variants.some((v) => v.id === id));
-    const selectedVariants = selectedIds.map((id) => variants.find((v) => v.id === id)).filter(Boolean);
-    const selectedItems = selectedVariants.map((variant) => ({ car, variant }));
-
-    return `
-        <section class="variant-section" id="variants">
-            <div class="section-heading tight">
-                <p class="eyebrow">Variants and equipment</p>
-                <h2>${car.name} variants.</h2>
-            </div>
-            <div class="variant-layout">
-                <div class="variant-list">
-                    ${variants.map((variant) => {
-                        const price = getVariantPrice(variant) / 100000;
-                        const fuel = getVariantFuel(variant);
-                        const transmission = getVariantTransmission(variant);
-                        const power = getVariantPower(variant);
-                        const torque = getVariantTorque(variant);
-                        const mileage = getVariantMileage(variant);
-                        return `
-                            <article class="variant-card">
-                                <div>
-                                    <span class="badge">${getVariantFamily(variant)}</span>
-                                    <h3>${variant.name}</h3>
-                                    <p>${fuel} · ${transmission} · ${formatSinglePrice(price)}</p>
-                                </div>
-                                <div class="variant-spec-row">
-                                    <span>${power}</span>
-                                    <span>${torque}</span>
-                                    <span>${mileage}</span>
-                                </div>
-                                <label class="compare-check">
-                                    <input type="checkbox"
-                                        data-variant-compare="${variant.id}"
-                                        data-car-id="${car.id}"
-                                        ${selectedIds.includes(variant.id) ? "checked" : ""} />
-                                    Compare variant
-                                </label>
-                            </article>
-                        `;
-                    }).join("")}
-                </div>
-                <aside class="variant-compare-panel">
-                    <div class="panel-heading">
-                        <p class="eyebrow">Same car comparison</p>
-                        <h3>Compare variants</h3>
-                        <p>Select up to three variants of the ${car.name}.</p>
-                    </div>
-                    ${selectedVariants.length
-                        ? renderGroupedComparisonTable(selectedItems)
-                        : `<div class="empty-state"><p>Select variants from the list to compare them here.</p></div>`}
-                </aside>
-            </div>
-        </section>
-    `;
-}
+//     const selectedIds = state.variantCompare[car.id].filter((id) => variants.some((v) => v.id === id));
+//     const selectedVariants = selectedIds.map((id) => variants.find((v) => v.id === id)).filter(Boolean);
+//     const selectedItems = selectedVariants.map((variant) => ({ car, variant }));
+    
+//     return `
+//         <section class="variant-section" id="variants">
+//             <div class="section-heading tight">
+//                 <p class="eyebrow">Variants and equipment</p>
+//                 <h2>${car.name} variants.</h2>
+//             </div>
+//             <div class="variant-layout">
+//                 <div class="variant-list">
+//                     ${variants.map((variant) => {
+//                         const price = getVariantPrice(variant) / 100000;
+//                         const fuel = getVariantFuel(variant);
+//                         const transmission = getVariantTransmission(variant);
+//                         const power = getVariantPower(variant);
+//                         const torque = getVariantTorque(variant);
+//                         const mileage = getVariantMileage(variant);
+//                         return `
+//                             <article class="variant-card">
+//                                 <div>
+//                                     <span class="badge">${getVariantFamily(variant)}</span>
+//                                     <h3>${variant.name}</h3>
+//                                     <p>${fuel} · ${transmission} · ${formatSinglePrice(price)}</p>
+//                                 </div>
+//                                 <div class="variant-spec-row">
+//                                     <span>${power}</span>
+//                                     <span>${torque}</span>
+//                                     <span>${mileage}</span>
+//                                 </div>
+//                                 <label class="compare-check">
+//                                     <input type="checkbox"
+//                                         data-variant-compare="${variant.id}"
+//                                         data-car-id="${car.id}"
+//                                         ${selectedIds.includes(variant.id) ? "checked" : ""} />
+//                                     Compare variant
+//                                 </label>
+//                             </article>
+//                         `;
+//                     }).join("")}
+//                 </div>
+//                 <aside class="variant-compare-panel">
+//                     <div class="panel-heading">
+//                         <p class="eyebrow">Same car comparison</p>
+//                         <h3>Compare variants</h3>
+//                         <p>Select up to three variants of the ${car.name}.</p>
+//                     </div>
+//                     ${selectedVariants.length
+//                         ? renderGroupedComparisonTable(selectedItems)
+//                         : `<div class="empty-state"><p>Select variants from the list to compare them here.</p></div>`}
+//                 </aside>
+//             </div>
+//         </section>
+//     `;
+// }
 
 // ── Compare picker / output ────────────────────────────────────────────────────
 
@@ -581,10 +583,10 @@ function toggleSave(id) {
 }
 
 function renderAll() {
-    renderCars();
-    renderComparePicker();
-    renderCompareOutput();
-    renderSaved();
+    if (els.carGrid) renderCars();
+    if (els.comparePicker) renderComparePicker();
+    if (els.compareOutput) renderCompareOutput();
+    if (els.savedGrid) renderSaved();
 }
 
 function renderCarPage(id, options = {}) {
@@ -763,6 +765,7 @@ document.addEventListener("change", (event) => {
     } else {
         state.variantCompare[carId] = current.filter((id) => id !== variantId);
     }
+    renderAll();
 });
 
 els.themeToggle?.addEventListener("click", () => {

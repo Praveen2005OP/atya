@@ -168,7 +168,7 @@
       "height": "1718 mm",
       "wheelbase": "2741 mm",
       "groundClearance": "205 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": false
       },
       "bootSpaceThirdRowFolded": {
@@ -559,9 +559,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -1039,9 +1040,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -1519,9 +1521,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -1999,9 +2002,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -2479,9 +2483,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -2959,9 +2964,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -3439,9 +3445,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -3919,9 +3926,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -4399,9 +4407,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -4879,9 +4888,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -5359,9 +5369,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -5839,9 +5850,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -6319,9 +6331,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -6799,9 +6812,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -7279,9 +7293,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -7759,9 +7774,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -8239,9 +8255,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -8719,9 +8736,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -9199,9 +9217,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -9679,9 +9698,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -10159,9 +10179,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -10639,9 +10660,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -11119,9 +11141,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -11599,9 +11622,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -12079,9 +12103,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -12559,9 +12584,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -13039,9 +13065,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -13519,9 +13546,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -13999,9 +14027,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -14479,9 +14508,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -14959,9 +14989,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -15439,9 +15470,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -15919,9 +15951,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -16399,9 +16432,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -16879,9 +16913,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -17359,9 +17394,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -17839,9 +17875,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -18319,9 +18356,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -18799,9 +18837,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -19279,9 +19318,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -19759,9 +19799,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -20239,9 +20280,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -20719,9 +20761,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -21199,9 +21242,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -21679,9 +21723,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -22159,9 +22204,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -22639,9 +22685,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -23119,9 +23166,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -23599,9 +23647,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,
@@ -24079,9 +24128,10 @@
           "softCloseDoors": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "tiltSteering": false,
           "tiltTelescopicSteering": false,
           "usbCharger": false,

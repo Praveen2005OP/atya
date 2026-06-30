@@ -9,8 +9,8 @@
   "status": "On Sale",
   "viewer360": {
     "exterior": {
-      "available": false,
-      "frames": null
+      "available": true,
+      "frames": 72
     },
     "open": {
       "available": false,
@@ -66,8 +66,8 @@
       "Weekend Touring",
       "Compact SUV"
     ],
-    "minides": "The Duster is back \u2014 and it means business. Punchy turbos, rugged French character and a loaded cabin make it the compact SUV to beat in 2026.",
-    "description": "The third-generation Renault Duster returns to India after years of absence, now on a modern CMF-B platform with two turbo-petrol engines (1.0L and 1.3L), manual and DCT automatic options, and six carefully crafted trim levels from no-nonsense Authentic to the adventure-ready Iconic Launch Edition. It brings Level-2 ADAS, a panoramic sunroof, 5-star Bharat NCAP rating, connected car tech, and a 7-year/1,50,000 km warranty \u2014 a segment first. A 1.8L strong hybrid is confirmed for Diwali 2026."
+    "minides": "The Duster is back — and it means business. Punchy turbos, rugged French character and a loaded cabin make it the compact SUV to beat in 2026.",
+    "description": "The third-generation Renault Duster returns to India after years of absence, now on a modern CMF-B platform with two turbo-petrol engines (1.0L and 1.3L), manual and DCT automatic options, and six carefully crafted trim levels from no-nonsense Authentic to the adventure-ready Iconic Launch Edition. It brings Level-2 ADAS, a panoramic sunroof, 5-star Bharat NCAP rating, connected car tech, and a 7-year/1,50,000 km warranty — a segment first. A 1.8L strong hybrid is confirmed for Diwali 2026."
   },
   "images": {
     "logo": "/static/images/logos/renault.png"
@@ -213,7 +213,7 @@
       "height": "1701 mm",
       "wheelbase": "2657 mm",
       "groundClearance": "212 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": false
       },
       "bootSpaceThirdRowFolded": {
@@ -620,9 +620,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1234,9 +1235,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1848,9 +1850,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2463,9 +2466,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2978,7 +2982,7 @@
         "Six Airbags",
         "ISOFIX"
       ],
-      "notes": "Techno is the mid-spec sweet spot \u2014 adds sunroof, push-button start, wireless charging, connected tech and skid plates over Evolution.",
+      "notes": "Techno is the mid-spec sweet spot — adds sunroof, push-button start, wireless charging, connected tech and skid plates over Evolution.",
       "comparisonFeatures": {
         "comfort": {
           "accessoryPowerOutlet": false,
@@ -3079,9 +3083,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -3588,7 +3593,7 @@
         "ESC",
         "ISOFIX"
       ],
-      "notes": "Techno 1.3L adds the stronger engine to the Techno feature set. No ADAS yet \u2014 that comes from Techno Plus upward.",
+      "notes": "Techno 1.3L adds the stronger engine to the Techno feature set. No ADAS yet — that comes from Techno Plus upward.",
       "comparisonFeatures": {
         "comfort": {
           "accessoryPowerOutlet": false,
@@ -3689,9 +3694,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4299,9 +4305,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4912,9 +4919,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -5525,9 +5533,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -6041,7 +6050,7 @@
         "Six Airbags",
         "TPMS"
       ],
-      "notes": "Iconic is the fully loaded trim \u2014 adds ventilated seats, powered driver seat, HUD, ambient lighting and Google built-in. Distinctive sage green cabin theme.",
+      "notes": "Iconic is the fully loaded trim — adds ventilated seats, powered driver seat, HUD, ambient lighting and Google built-in. Distinctive sage green cabin theme.",
       "comparisonFeatures": {
         "comfort": {
           "accessoryPowerOutlet": false,
@@ -6142,9 +6151,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -6759,9 +6769,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -7277,7 +7288,7 @@
         "Wireless Charging",
         "Six Airbags"
       ],
-      "notes": "Launch Edition is built on the full Iconic spec and adds unique adventure-themed styling touches \u2014 yellow accents, blacked alloys and Himalayan garnish. Limited availability.",
+      "notes": "Launch Edition is built on the full Iconic spec and adds unique adventure-themed styling touches — yellow accents, blacked alloys and Himalayan garnish. Limited availability.",
       "comparisonFeatures": {
         "comfort": {
           "accessoryPowerOutlet": false,
@@ -7378,9 +7389,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -7998,9 +8010,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -8508,7 +8521,7 @@
         "Connected Car Tech",
         "Six Airbags"
       ],
-      "notes": "Dual-Tone (DT) variant of Techno Plus MT \u2014 same spec as standard Techno Plus MT but priced Rs 20,000 higher for dual-tone roof colour combination.",
+      "notes": "Dual-Tone (DT) variant of Techno Plus MT — same spec as standard Techno Plus MT but priced Rs 20,000 higher for dual-tone roof colour combination.",
       "comparisonFeatures": {
         "comfort": {
           "accessoryPowerOutlet": false,
@@ -8609,9 +8622,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -9221,9 +9235,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -9737,7 +9752,7 @@
         "Cooled Armrest Storage",
         "Six Airbags"
       ],
-      "notes": "Iconic DT DCT \u2014 Iconic fully loaded spec with DCT and the dual-tone black roof colour premium. Priced on par with the Iconic Launch Edition DCT.",
+      "notes": "Iconic DT DCT — Iconic fully loaded spec with DCT and the dual-tone black roof colour premium. Priced on par with the Iconic Launch Edition DCT.",
       "comparisonFeatures": {
         "comfort": {
           "accessoryPowerOutlet": false,
@@ -9838,9 +9853,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,

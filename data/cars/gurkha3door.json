@@ -1,0 +1,307 @@
+{
+  "id": "force-gurkha",
+  "slug": "gurkha3door",
+  "brand": "Force",
+  "model": "Gurkha",
+  "name": "Force Gurkha",
+  "generation": "3rd Gen (3-Door, 2024 Update)",
+  "launchYear": 2021,
+  "status": "On Sale",
+  "viewer360": {
+    "exterior": { "available": false, "frames": null },
+    "open": { "available": false, "frames": null },
+    "interior": { "available": null }
+  },
+  "hero": {
+    "tagline": "King of All Terrains.",
+    "image": "/static/images/car-images/gurkha3door/pic1.png",
+    "gallery": [
+      "/static/images/car-images/gurkha3door/pic1.png",
+      "/static/images/car-images/gurkha3door/pic2.png",
+      "/static/images/car-images/gurkha3door/pic3.png",
+      "/static/images/car-images/gurkha3door/pic4.png"
+    ]
+  },
+  "pricing": {
+    "currency": "INR",
+    "exShowroom": { "min": 1631000, "max": 1631000 }
+  },
+  "overview": {
+    "segment": "Compact Off-Road SUV",
+    "body": "SUV (3-Door, Ladder Frame)",
+    "doors": 3,
+    "safetyRating": "Not Tested (Global NCAP / Bharat NCAP)",
+    "seatingOptions": [4],
+    "fuelTypes": ["Diesel"],
+    "transmissions": ["Manual (5-Speed)"],
+    "driveTypes": ["4x4 (Shift-on-the-Fly)"],
+    "useCases": ["Off-Road", "Expedition", "Adventure", "Defence/Tactical"],
+    "minides": "A proper old-school 4x4 with a Mercedes-derived diesel engine, mechanical front and rear differential locks, and genuine expedition-grade off-road hardware.",
+    "description": "The Force Gurkha 3-Door is a hardcore, ladder-frame off-roader aimed squarely at serious off-road enthusiasts rather than urban SUV buyers. It is powered by a Mercedes-derived 2.6-litre FM2.6 diesel engine producing 140 PS and 320 Nm, paired exclusively with a 5-speed manual gearbox and a genuine 4x4 system offering electric shift-on-the-fly between 2H, 4H, and 4L, plus rare-for-the-segment manual front and rear differential locks. It offers 700mm water-wading depth (thanks to a factory snorkel), 233mm ground clearance, and steep 39-degree approach / 37-degree departure angles. Despite its rugged focus, it has gained modern touches like a 9-inch touchscreen with Android Auto and Apple CarPlay, a digital instrument cluster, LED Pro Edge headlamps, and 18-inch alloy wheels. It is sold in a single, fully-loaded 4-seater variant and has also been supplied in bulk to the Indian Defence Forces."
+  },
+  "images": { "logo": "/static/images/logos/force-motors.png" },
+  "colors": [
+    { "name": "Green", "hex": "#2E4A2E", "type": "Solid", "variants": ["gurkha-4x4"] },
+    { "name": "Red", "hex": "#8B1A1A", "type": "Solid", "variants": ["gurkha-4x4"] },
+    { "name": "White", "hex": "#F2F2F0", "type": "Solid", "variants": ["gurkha-4x4"] },
+    { "name": "Black", "hex": "#0A0A0A", "type": "Solid", "variants": ["gurkha-4x4"] }
+  ],
+  "sharedSpecs": {
+    "dimensions": {
+      "length": "3965 mm",
+      "width": "1865 mm",
+      "height": "2080 mm",
+      "wheelbase": "2400 mm",
+      "groundClearance": "233 mm",
+      "bootSpace": "500 Litres",
+      "fuelTank": "63.5 Litres",
+      "kerbWeight": "1985 kg",
+      "doors": 3
+    },
+    "suspension": {
+      "front": "Independent Double Wishbone with Coil Spring",
+      "rear": "Multi-Link with Panhard Rod & Coil Spring",
+      "additionalTech": "Mechanically Actuated Front & Rear Differential Locks"
+    },
+    "steering": {
+      "type": "Hydraulic Power Steering",
+      "column": "Tilt and Telescopic Adjustable"
+    },
+    "brakes": {
+      "front": "Disc",
+      "rear": "Drum",
+      "brakeAssist": false
+    },
+    "tyres": {
+      "standard": "255/65 R18"
+    },
+    "platform": "Force Ladder Frame Chassis",
+    "emissionNorm": "BS VI Phase 2",
+    "e20Compatible": false
+  },
+  "engineDatabase": {
+    "fm2-6-diesel-140hp": {
+      "id": "fm2-6-diesel-140hp",
+      "name": "2.6L FM2.6 CR CD Diesel",
+      "engineType": "FM2.6 Inline-4 Mercedes-Derived Diesel",
+      "displacement": "2596 cc",
+      "engineLayout": "Inline-4",
+      "cylinders": 4,
+      "valvesPerCylinder": 4,
+      "valvetrain": "SOHC",
+      "turbocharged": true,
+      "fuelSupplySystem": "CRDi",
+      "mildHybrid": false,
+      "manual": {
+        "power": "140 hp (103 kW) @ 3200 rpm",
+        "torque": "320 Nm @ 1400–2600 rpm",
+        "gearbox": "5-Speed Manual",
+        "driveType": "4x4 (Shift-on-the-Fly, 2H/4H/4L)",
+        "acceleration0To100": "Not Specified",
+        "topSpeed": "120 km/h (approx.)",
+        "mileageARAI": "Not Disclosed"
+      }
+    }
+  },
+  "variantFamilies": [
+    { "id": "gurkha-4x4", "name": "Gurkha 4x4 (Single Variant)", "position": "Flagship Only Trim", "tier": 1 }
+  ],
+  "variants": [
+    {
+      "id": "gurkha-4x4",
+      "name": "Force Gurkha",
+      "family": "gurkha-4x4",
+      "rank": 1,
+      "price": { "exShowroom": 1631000 },
+      "configuration": {
+        "fuel": "Diesel",
+        "engine": "fm2-6-diesel-140hp",
+        "transmission": "Manual",
+        "gearbox": "5-Speed Manual",
+        "drivetrain": "4x4 (Shift-on-the-Fly)",
+        "seating": 4,
+        "tyreSizeLabel": "255/65 R18"
+      },
+      "performance": {
+        "power": "140 hp (103 kW) @ 3200 rpm",
+        "torque": "320 Nm @ 1400–2600 rpm",
+        "mileageARAI": "Not Disclosed",
+        "acceleration0To100": "Not Specified",
+        "topSpeed": "120 km/h (approx.)"
+      },
+      "wheels": { "size": "18 Inch", "type": "Dual-Tone Alloy Wheels", "tyreSizeLabel": "255/65 R18" },
+      "comfort": {
+        "powerSteering": true, "airConditioner": true, "automaticClimateControl": false,
+        "manualClimateControl": true, "rearAcVents": false, "cruiseControl": false,
+        "adaptiveCruiseControl": false, "keylessEntry": false, "comfortAccess": false,
+        "pushButtonStart": false, "heatedFrontSeats": false, "heatedRearSeats": false,
+        "ventilatedFrontSeats": false, "massageSeats": false, "poweredDriverSeat": false,
+        "poweredPassengerSeat": false, "driverSeatMemory": false, "driverSeatLumbarSupport": false,
+        "wirelessCharging": false, "softCloseDoors": false, "electricParkingBrake": false,
+        "autoHold": false, "driveModes": true, "rainSensingWiper": false,
+        "frontParkingSensors": false, "rearParkingSensors": true, "rearDefogger": false,
+        "rearSunshade": false, "usbCharger": true, "tiltTelescopicSteering": true,
+        "sunroof": false, "ambientLighting": false, "panoramicSunroof": false
+      },
+      "interior": {
+        "digitalCluster": true, "digitalClusterSize": "Semi-Digital",
+        "touchscreenSize": "9 inch",
+        "rearEntertainmentScreen": false, "upholstery": "Dual-Tone Fabric",
+        "leatherWrappedSteering": false, "flatBottomSteering": false,
+        "ambientLighting": false, "headsUpDisplay": false, "woodFinishInterior": false,
+        "illuminatedGlovebox": false, "captainSeats": true
+      },
+      "exterior": {
+        "matrixLedHeadlamps": false, "ledDRL": true, "ledTailLamps": true, "alloyWheels": true,
+        "orvmElectric": true, "orvmAutoDimming": false, "orvmHeated": false, "orvmLedIndicators": false,
+        "autoFoldOrvm": false, "flushDoorHandles": false, "headlampWashers": false,
+        "rainSensingWiper": false, "rearWindowDefogger": false, "rearWindowWiper": true,
+        "glossBlackGrille": false, "connectedLedTailLamps": false, "snorkel": true,
+        "spareWheelTailgateMounted": true
+      },
+      "safety": {
+        "airbags": 2, "driverAirbag": true, "passengerAirbag": true, "sideAirbags": false,
+        "curtainAirbags": false, "kneeAirbag": false, "abs": true, "ebd": true,
+        "brakeAssist": false, "esc": false, "tractionControl": false, "tpms": true,
+        "rearCamera": true, "rearCameraType": "Standard Reverse Camera with Sensors",
+        "frontParkingSensors": false, "rearParkingSensors": true, "isofix": true,
+        "speedAlert": true, "engineImmobilizer": true, "allWheelDiscBrakes": false,
+        "camera360": false, "adas": false, "differentialLockFront": true,
+        "differentialLockRear": true, "impactSensingAutoDoorUnlock": false
+      },
+      "adas": {
+        "available": false, "level": "Not Available",
+        "adaptiveCruiseControl": false, "forwardCollisionWarning": false,
+        "automaticEmergencyBraking": false, "laneDepartureWarning": false,
+        "laneKeepAssist": false, "blindSpotMonitor": false, "rearCrossTrafficAlert": false,
+        "parkingAssistant": false, "autoHighBeam": false, "trafficSignRecognition": false,
+        "driverAttentionWarning": false
+      },
+      "infotainment": {
+        "touchscreen": true, "screenSize": "9 inch", "androidAuto": true, "appleCarplay": true,
+        "wirelessAndroidAuto": false, "wirelessAppleCarplay": false, "bluetooth": true,
+        "usbPorts": true, "speakerCount": 4, "premiumAudio": false,
+        "radio": true, "gestureControl": false, "voiceAssistant": false,
+        "rearEntertainmentScreens": false
+      },
+      "connectedTech": {
+        "available": false, "appName": false, "remoteDoorLockUnlock": false,
+        "remoteHornLight": false, "remoteAcControl": false, "remoteEngineStart": false,
+        "otaUpdates": false, "navigation": true, "navigationWithLiveTraffic": false,
+        "eCallICall": false, "sosAlert": false, "stolenVehicleTracking": false,
+        "findMyCar": false, "diagnostics": false, "liveTracking": false, "remoteSoftwareUpgrade": false
+      },
+      "evHybrid": {
+        "hybrid": false, "mildHybrid": false, "plugInHybrid": false, "batteryCapacity": false,
+        "electricRange": false, "homeCharging": false, "regenerativeBraking": false,
+        "dcFastCharging": false, "electricOnly": false
+      },
+      "offRoad": {
+        "driveType": "4x4 (Shift-on-the-Fly)", "awd": true, "fourWheelDrive": true,
+        "hillAssist": false, "hillDescentControl": false, "lowRangeTransferCase": true,
+        "differentialLockFront": true, "differentialLockRear": true, "snorkel": true,
+        "approachAngle": "39 degrees", "departureAngle": "37 degrees", "rampoverAngle": "28 degrees",
+        "gradeability": "35 degrees", "wadingDepth": "700 mm", "turningRadius": "5.50 m"
+      },
+      "keyFeatures": [
+        "2.6L Mercedes-Derived Diesel Engine (140 hp / 320 Nm)",
+        "Mechanical Front & Rear Differential Locks",
+        "Shift-on-the-Fly 4x4 (2H/4H/4L)",
+        "700mm Water Wading Depth with Factory Snorkel",
+        "39-Degree Approach / 37-Degree Departure Angle",
+        "9-Inch Touchscreen with Android Auto & Apple CarPlay",
+        "LED Pro Edge Headlamps with 18-Inch Alloy Wheels"
+      ],
+      "comparisonFeatures": {
+        "comfort": {
+          "adaptiveCruiseControl": false, "airConditioner": true, "ambientLighting": false,
+          "autoDimmingIRVM": false, "autoHeadlamps": false, "autoHold": false,
+          "automaticClimateControl": false, "comfortAccess": false, "cruiseControl": false,
+          "cupHoldersFront": true, "cupHoldersRear": false, "driveModes": true,
+          "driverArmrest": true, "driverSeatHeightAdjust": false, "driverSeatLumbarSupport": false,
+          "driverSeatMemory": false, "driverSeatPowered": false, "electricParkingBrake": false,
+          "frontArmrest": true, "frontParkingSensors": false, "heatedFrontSeats": false,
+          "heatedRearSeats": false, "idleStopStart": true, "keylessEntry": false,
+          "massageSeats": false, "panoramicSunroof": false, "powerAdjustableOrvm": true,
+          "powerBoot": false, "poweredDriverSeat": false, "poweredPassengerSeat": false,
+          "powerSteering": true, "pushButtonStart": false, "rainSensingWiper": false,
+          "rearAcVents": false, "rearArmrest": true, "rearDefogger": false,
+          "rearParkingSensors": true, "rearSeatRecline": true, "rearSunshade": false,
+          "smartKey": false, "softCloseDoors": false, "steeringMountedControls": false,
+          "sunroof": false, "sunroof.available": false, "tiltSteering": true,
+          "tiltTelescopicSteering": true, "usbCharger": true, "ventilatedFrontSeats": false,
+          "voiceCommands": false, "wirelessCharging": false
+        },
+        "interior": {
+          "ambientLighting": false, "analogueCluster": false, "captainSeats": true,
+          "digitalCluster": true, "digitalClusterSize": "Semi-Digital", "dualToneInterior": true,
+          "flatBottomSteering": false, "foldableRearSeats": false, "frontHeadrestsAdjustable": true,
+          "gloveBox": true, "headsUpDisplay": false, "illuminatedGlovebox": false,
+          "leatherWrappedGearKnob": false, "leatherWrappedSteering": false, "metalPedals": false,
+          "parcelTray": false, "rearHeadrestsAdjustable": false, "tachometer": false,
+          "thirdRowSeats": false, "touchscreenSize": "9 inch", "upholstery": true,
+          "woodFinishInterior": false
+        },
+        "exterior": {
+          "activeRearSpoiler": false, "adaptiveLedHeadlamps": false, "alloyWheels": true,
+          "autoFoldOrvm": false, "bodyColouredBumpers": false, "chromeBeltline": false,
+          "connectedLedTailLamps": false, "corneringFogLamps": true, "dualToneExterior": false,
+          "flushDoorHandles": false, "fogLamps": true, "framelessDoors": false,
+          "glossBlackGrille": false, "halogenHeadlamps": false, "headlampWashers": false,
+          "ledDRL": true, "ledFogLamps": false, "ledHeadlamps": true, "ledTailLamps": true,
+          "matrixLedHeadlamps": false, "orvmAutoDimming": false, "orvmElectric": true,
+          "orvmHeated": false, "orvmLedIndicators": false, "rainSensingWiper": false,
+          "rearSpoiler": false, "rearWindowDefogger": false, "rearWindowWiper": true,
+          "roofRails": false, "sharkFinAntenna": false, "skidPlates": true,
+          "sunroof": false, "wheelSize": true, "wheelType": true
+        },
+        "safety": {
+          "abs": true, "activeBonnet": false, "adas": false, "airbags": true,
+          "allWheelDiscBrakes": false, "antiPinchPowerWindows": false, "autoDoorLock": true,
+          "brakeAssist": false, "camera360": false, "childSafetyLocks": true,
+          "curtainAirbag": false, "curtainAirbags": false, "doorAjarWarning": true,
+          "driverAirbag": true, "dynamicStabilityControl": false, "ebd": true,
+          "emergencyStopSignal": false, "engineImmobilizer": true, "esc": false,
+          "frontParkingSensors": false, "hillAssist": false, "hillDescentControl": false,
+          "isofix": true, "kneeAirbag": false, "passengerAirbag": true, "rearCamera": true,
+          "rearCameraType": "Standard Reverse Camera with Sensors", "rearParkingSensors": true,
+          "rearSeatBeltReminder": true, "rolloverMitigation": false, "sideAirbagFront": false,
+          "sideAirbagRear": false, "sideAirbags": false, "speedAlert": true, "tpms": true,
+          "tractionControl": false, "vehicleStabilityManagement": false
+        },
+        "adas": {
+          "adaptiveCruiseControl": false, "autoHighBeam": false, "automaticEmergencyBraking": false,
+          "available": false, "blindSpotMonitor": false, "driverAttentionWarning": false,
+          "forwardCollisionWarning": false, "laneDepartureWarning": false, "laneKeepAssist": false,
+          "level": "Not Available", "parkingAssistant": false, "rearCrossTrafficAlert": false,
+          "trafficSignRecognition": false
+        },
+        "infotainment": {
+          "androidAuto": true, "appleCarplay": true, "bluetooth": true, "dolbyAtmos": false,
+          "gestureControl": false, "headsUpDisplay": false, "premiumAudio": false,
+          "radio": true, "rearEntertainmentScreens": false, "screenSize": "9 inch",
+          "speakerCount": 4, "steeringControls": false, "touchscreen": true, "usbPorts": true,
+          "voiceAssistant": false, "wirelessAndroidAuto": false, "wirelessAppleCarplay": false
+        },
+        "connectedTech": {
+          "appName": false, "available": false, "connectedCarTech": false,
+          "diagnostics": false, "eCallICall": false, "findMyCar": false, "geofencing": false,
+          "liveTracking": false, "navigation": true, "navigationWithLiveTraffic": false,
+          "otaUpdates": false, "remoteAcControl": false, "remoteDoorLockUnlock": false,
+          "remoteEngineStart": false, "remoteHornLight": false, "remoteSoftwareUpgrade": false,
+          "sosAlert": false, "stolenVehicleTracking": false
+        },
+        "evHybrid": {
+          "batteryCapacity": false, "dcFastCharging": false, "electricOnly": false,
+          "homeCharging": false, "hybrid": false, "mildHybrid": false, "plugInHybrid": false,
+          "regenerativeBraking": false
+        },
+        "offRoad": {
+          "awd": true, "differentialLock": true, "fourWheelDrive": true,
+          "hillDescentControl": false, "lowRangeTransferCase": true, "terrainModes": false,
+          "waterWadingMode": true, "snorkel": true, "wadingDepth": "700 mm"
+        }
+      }
+    }
+  ]
+}

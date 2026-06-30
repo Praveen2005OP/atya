@@ -17,7 +17,7 @@
       "frames": 72
     },
     "interior": {
-      "available":true
+      "available": true
     }
   },
   "hero": {
@@ -195,7 +195,7 @@
       "height": "1857 mm",
       "wheelbase": "2750 mm",
       "groundClearance": "200 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": true,
         "value": "50 Litres"
       },
@@ -255,14 +255,14 @@
       "fuelSupplySystem": "GDi (Direct Injection)",
       "manual": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "2WD",
         "mileageARAI": "15.2 kmpl"
       },
       "automatic": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "2WD",
         "mileageARAI": "13.8 kmpl"
@@ -281,37 +281,37 @@
       "fuelSupplySystem": "CRDi",
       "manual": {
         "power": "132 bhp @ 3750 rpm",
-        "torque": "300 Nm @ 1600\u20132800 rpm",
+        "torque": "300 Nm @ 1600–2800 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "2WD",
         "mileageARAI": "17.98 kmpl",
-        "note": "Low output \u2013 Z2/Z4 only"
+        "note": "Low output – Z2/Z4 only"
       },
       "manualHO": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "2WD",
         "mileageARAI": "17.98 kmpl",
-        "note": "High output \u2013 Z6 and above"
+        "note": "High output – Z6 and above"
       },
       "automatic": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "2WD",
         "mileageARAI": "14.6 kmpl"
       },
       "manual4WD": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "gearbox": "6-Speed Manual",
         "driveType": "4WD",
         "mileageARAI": "15.0 kmpl"
       },
       "automatic4WD": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "gearbox": "6-Speed Torque Converter Automatic",
         "driveType": "4WD",
         "mileageARAI": "13.4 kmpl"
@@ -382,7 +382,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15.2 kmpl"
       },
       "wheels": {
@@ -640,9 +640,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -990,7 +991,7 @@
       },
       "performance": {
         "power": "132 bhp @ 3750 rpm",
-        "torque": "300 Nm @ 1600\u20132800 rpm",
+        "torque": "300 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.98 kmpl"
       },
       "wheels": {
@@ -1141,7 +1142,7 @@
       },
       "keyFeatures": [
         "2 Airbags",
-        "Diesel \u2013 17.98 kmpl ARAI",
+        "Diesel – 17.98 kmpl ARAI",
         "ESC",
         "Hill Start & Descent Control",
         "8-inch Touchscreen",
@@ -1248,9 +1249,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1598,7 +1600,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15.2 kmpl"
       },
       "wheels": {
@@ -1856,9 +1858,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2206,7 +2209,7 @@
       },
       "performance": {
         "power": "132 bhp @ 3750 rpm",
-        "torque": "300 Nm @ 1600\u20132800 rpm",
+        "torque": "300 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.98 kmpl"
       },
       "wheels": {
@@ -2351,7 +2354,7 @@
         "adrenox": false
       },
       "keyFeatures": [
-        "Diesel \u2013 17.98 kmpl ARAI",
+        "Diesel – 17.98 kmpl ARAI",
         "Android Auto & Apple CarPlay",
         "Rear Camera",
         "Cruise Control",
@@ -2458,9 +2461,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2808,7 +2812,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13.8 kmpl"
       },
       "wheels": {
@@ -2954,7 +2958,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Petrol \u2013 200 bhp",
+        "Petrol – 200 bhp",
         "Android Auto & Apple CarPlay",
         "Rear Camera",
         "Cruise Control",
@@ -3060,9 +3064,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -3410,7 +3415,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -3556,7 +3561,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel \u2013 14.6 kmpl ARAI",
+        "Diesel – 14.6 kmpl ARAI",
         "Android Auto & Apple CarPlay",
         "Rear Camera",
         "Cruise Control",
@@ -3662,9 +3667,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4012,7 +4018,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "15.0 kmpl"
       },
       "wheels": {
@@ -4158,7 +4164,7 @@
       },
       "keyFeatures": [
         "4WD",
-        "Diesel \u2013 172 bhp",
+        "Diesel – 172 bhp",
         "Android Auto & Apple CarPlay",
         "Rear Camera",
         "Cruise Control",
@@ -4264,9 +4270,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4614,7 +4621,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.0 kmpl"
       },
       "wheels": {
@@ -4867,9 +4874,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -5217,7 +5225,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -5469,9 +5477,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -5819,7 +5828,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15.2 kmpl"
       },
       "wheels": {
@@ -6071,9 +6080,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -6421,7 +6431,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.0 kmpl"
       },
       "wheels": {
@@ -6567,7 +6577,7 @@
       },
       "keyFeatures": [
         "6 Airbags",
-        "Diesel \u2013 17 kmpl",
+        "Diesel – 17 kmpl",
         "Sunroof",
         "Keyless Entry & Push-Button Start",
         "LED Fog Lamps",
@@ -6673,9 +6683,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -7023,7 +7034,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13.8 kmpl"
       },
       "wheels": {
@@ -7275,9 +7286,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -7625,7 +7637,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -7771,7 +7783,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel \u2013 14.6 kmpl",
+        "Diesel – 14.6 kmpl",
         "6 Airbags",
         "Sunroof",
         "Keyless Entry & Push-Button Start",
@@ -7877,9 +7889,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -8227,7 +8240,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.0 kmpl"
       },
       "wheels": {
@@ -8482,9 +8495,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -8832,7 +8846,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -9086,9 +9100,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -9436,7 +9451,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15.2 kmpl"
       },
       "wheels": {
@@ -9690,9 +9705,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -10040,7 +10056,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.0 kmpl"
       },
       "wheels": {
@@ -10186,7 +10202,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Carbon Edition \u2013 Diesel",
+        "Carbon Edition – Diesel",
         "6 Airbags",
         "18-inch Blacked Alloys",
         "Auto Climate Control",
@@ -10294,9 +10310,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -10644,7 +10661,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13.8 kmpl"
       },
       "wheels": {
@@ -10790,7 +10807,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Carbon Edition \u2013 Petrol AT",
+        "Carbon Edition – Petrol AT",
         "6 Airbags",
         "6-Speed Automatic",
         "18-inch Blacked Alloys",
@@ -10898,9 +10915,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -11248,7 +11266,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -11394,7 +11412,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Carbon Edition \u2013 Diesel AT",
+        "Carbon Edition – Diesel AT",
         "6-Speed Automatic",
         "6 Airbags",
         "18-inch Blacked Alloys",
@@ -11502,9 +11520,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -11852,7 +11871,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "13.4 kmpl"
       },
       "wheels": {
@@ -11998,7 +12017,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "4WD \u2013 Carbon Edition",
+        "4WD – Carbon Edition",
         "6-Speed Automatic",
         "6 Airbags",
         "18-inch Blacked Alloys",
@@ -12106,9 +12125,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -12456,7 +12476,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15.2 kmpl"
       },
       "wheels": {
@@ -12712,9 +12732,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -13062,7 +13083,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.0 kmpl"
       },
       "wheels": {
@@ -13209,7 +13230,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Diesel \u2013 17 kmpl",
+        "Diesel – 17 kmpl",
         "12-Speaker Sony Audio",
         "Ventilated Front Seats",
         "Power Driver Seat",
@@ -13318,9 +13339,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -13668,7 +13690,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13.8 kmpl"
       },
       "wheels": {
@@ -13924,9 +13946,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -14274,7 +14297,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -14422,7 +14445,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel \u2013 14.6 kmpl",
+        "Diesel – 14.6 kmpl",
         "12-Speaker Sony Audio",
         "Ventilated Front Seats",
         "Power Driver Seat",
@@ -14530,9 +14553,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -14880,7 +14904,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "15.0 kmpl"
       },
       "wheels": {
@@ -15136,9 +15160,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -15486,7 +15511,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "13.4 kmpl"
       },
       "wheels": {
@@ -15742,9 +15767,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -16092,7 +16118,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15.2 kmpl"
       },
       "wheels": {
@@ -16347,9 +16373,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -16697,7 +16724,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15.2 kmpl"
       },
       "wheels": {
@@ -16952,9 +16979,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -17302,7 +17330,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.0 kmpl"
       },
       "wheels": {
@@ -17449,7 +17477,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Diesel \u2013 17 kmpl",
+        "Diesel – 17 kmpl",
         "Dual-tone Premium Leatherette",
         "12-Speaker Sony Audio",
         "Ventilated Front Seats",
@@ -17558,9 +17586,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -17908,7 +17937,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.0 kmpl"
       },
       "wheels": {
@@ -18056,7 +18085,7 @@
       },
       "keyFeatures": [
         "6-Seater Captain Seat Layout",
-        "Diesel \u2013 17 kmpl",
+        "Diesel – 17 kmpl",
         "Dual-tone Premium Leatherette",
         "12-Speaker Sony Audio",
         "Ventilated Front Seats",
@@ -18164,9 +18193,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": true,
-          "sunroof.type": true,
+          "sunroof": {
+            "available": true,
+            "type": true
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -18514,7 +18544,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13.8 kmpl"
       },
       "wheels": {
@@ -18755,9 +18785,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -19121,7 +19152,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13.8 kmpl"
       },
       "wheels": {
@@ -19362,9 +19393,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -19728,7 +19760,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -19860,7 +19892,7 @@
       },
       "keyFeatures": [
         "6-Speed Automatic",
-        "Diesel \u2013 14.6 kmpl",
+        "Diesel – 14.6 kmpl",
         "Level-2 ADAS",
         "12-Speaker Sony Audio",
         "Ventilated Front Seats",
@@ -19969,9 +20001,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -20335,7 +20368,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -20576,9 +20609,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -20942,7 +20976,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "15.0 kmpl"
       },
       "wheels": {
@@ -21183,9 +21217,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -21549,7 +21584,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "13.4 kmpl"
       },
       "wheels": {
@@ -21790,9 +21825,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -22156,7 +22192,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "15.2 kmpl"
       },
       "wheels": {
@@ -22288,7 +22324,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Carbon Edition \u2013 Z8L",
+        "Carbon Edition – Z8L",
         "Level-2 ADAS",
         "12-Speaker Sony Audio",
         "Blacked Alloys",
@@ -22398,9 +22434,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -22764,7 +22801,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "370 Nm @ 1600\u20132800 rpm",
+        "torque": "370 Nm @ 1600–2800 rpm",
         "mileageARAI": "17.0 kmpl"
       },
       "wheels": {
@@ -22896,7 +22933,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Carbon Edition \u2013 Z8L Diesel",
+        "Carbon Edition – Z8L Diesel",
         "Level-2 ADAS",
         "12-Speaker Sony Audio",
         "Blacked Alloys",
@@ -23005,9 +23042,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -23371,7 +23409,7 @@
       },
       "performance": {
         "power": "200 bhp @ 5000 rpm",
-        "torque": "380 Nm @ 1750\u20133000 rpm",
+        "torque": "380 Nm @ 1750–3000 rpm",
         "mileageARAI": "13.8 kmpl"
       },
       "wheels": {
@@ -23503,7 +23541,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Carbon Edition \u2013 Z8L AT",
+        "Carbon Edition – Z8L AT",
         "Level-2 ADAS",
         "12-Speaker Sony Audio",
         "Blacked Alloys",
@@ -23613,9 +23651,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -24111,7 +24150,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "6-Seater Carbon Edition \u2013 Z8L",
+        "6-Seater Carbon Edition – Z8L",
         "Level-2 ADAS",
         "12-Speaker Sony Audio",
         "Blacked Alloys",
@@ -24221,9 +24260,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -24719,7 +24759,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "6-Seater Carbon Edition AT \u2013 Z8L",
+        "6-Seater Carbon Edition AT – Z8L",
         "Level-2 ADAS",
         "12-Speaker Sony Audio",
         "Blacked Alloys",
@@ -24829,9 +24869,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -25195,7 +25236,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "14.6 kmpl"
       },
       "wheels": {
@@ -25327,7 +25368,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "Carbon Edition Diesel AT \u2013 Z8L",
+        "Carbon Edition Diesel AT – Z8L",
         "Level-2 ADAS",
         "12-Speaker Sony Audio",
         "Blacked Alloys",
@@ -25437,9 +25478,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -25803,7 +25845,7 @@
       },
       "performance": {
         "power": "172 bhp @ 3500 rpm",
-        "torque": "400 Nm @ 1600\u20132800 rpm",
+        "torque": "400 Nm @ 1600–2800 rpm",
         "mileageARAI": "13.4 kmpl"
       },
       "wheels": {
@@ -25935,7 +25977,7 @@
         "adrenox": true
       },
       "keyFeatures": [
-        "4WD Carbon Edition \u2013 Z8L",
+        "4WD Carbon Edition – Z8L",
         "Level-2 ADAS",
         "12-Speaker Sony Audio",
         "Blacked Alloys",
@@ -26045,9 +26087,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single Pane Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single Pane Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,

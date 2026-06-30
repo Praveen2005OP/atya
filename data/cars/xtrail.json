@@ -1,0 +1,304 @@
+{
+  "id": "nissan-x-trail",
+  "slug": "x-trail",
+  "brand": "Nissan",
+  "model": "X-Trail",
+  "name": "Nissan X-Trail",
+  "generation": "4th Gen (T33, India CBU 2024–present)",
+  "launchYear": 2024,
+  "status": "On Sale",
+  "viewer360": {
+    "exterior": { "available": false, "frames": null },
+    "open": { "available": false, "frames": null },
+    "interior": { "available": null }
+  },
+  "hero": {
+    "tagline": "Redefining Performance, Built for Every Journey.",
+    "image": "/static/images/car-images/x-trail/pic1.png",
+    "gallery": [
+      "/static/images/car-images/x-trail/pic1.png",
+      "/static/images/car-images/x-trail/pic2.png",
+      "/static/images/car-images/x-trail/pic3.png",
+      "/static/images/car-images/x-trail/pic4.png"
+    ]
+  },
+  "pricing": {
+    "currency": "INR",
+    "exShowroom": { "min": 4820000, "max": 4820000 }
+  },
+  "overview": {
+    "segment": "Premium 3-Row SUV",
+    "body": "SUV",
+    "doors": 5,
+    "safetyRating": "Not Tested (Global NCAP)",
+    "seatingOptions": [7],
+    "fuelTypes": ["Petrol (Mild-Hybrid)"],
+    "transmissions": ["CVT (Shift-by-Wire)"],
+    "driveTypes": ["FWD"],
+    "useCases": ["Family", "Long-Distance", "City", "Comfort-Focused"],
+    "minides": "Nissan's flagship 7-seater SUV, reintroduced to India as a fully imported (CBU) model with a 1.5L VC-Turbo mild-hybrid petrol engine and CVT.",
+    "description": "The fourth-generation Nissan X-Trail returned to India in August 2024 as a fully imported (CBU), single fully-loaded variant 7-seater SUV. It is powered exclusively by a 1.5-litre three-cylinder VC-Turbo (variable compression) mild-hybrid petrol engine producing 163 hp and 300 Nm, paired with a CVT automatic and front-wheel drive. The X-Trail focuses on comfort, refinement, and space over outright performance, featuring a panoramic sunroof, 8-inch touchscreen, 12.3-inch digital cluster, dual-zone climate control, and a 360-degree camera, while notably lacking ADAS, leather upholstery, powered front seats, and all-wheel drive compared to international variants."
+  },
+  "images": { "logo": "/static/images/logos/nissan.png" },
+  "colors": [
+    { "name": "Pearl White", "hex": "#F2F2F0", "type": "Pearl", "variants": ["std"] },
+    { "name": "Diamond Black", "hex": "#0A0A0A", "type": "Metallic", "variants": ["std"] },
+    { "name": "Champagne Silver", "hex": "#C9C2B5", "type": "Metallic", "variants": ["std"] }
+  ],
+  "sharedSpecs": {
+    "dimensions": {
+      "length": "4680 mm",
+      "width": "1840 mm",
+      "height": "1725 mm",
+      "wheelbase": "2750 mm",
+      "groundClearance": "210 mm",
+      "bootSpace": "585 Litres (3rd row down) / 1424 Litres (2nd row folded)",
+      "fuelTank": "55 Litres",
+      "kerbWeight": "1650 kg",
+      "doors": 5
+    },
+    "suspension": {
+      "front": "MacPherson Strut",
+      "rear": "Multi-Link",
+      "additionalTech": "None (Standard Tuning)"
+    },
+    "steering": {
+      "type": "Electric Power Steering",
+      "column": "Tilt Adjustable"
+    },
+    "brakes": {
+      "front": "Ventilated Disc",
+      "rear": "Disc",
+      "brakeAssist": true
+    },
+    "tyres": {
+      "standard": "235/55 R20"
+    },
+    "platform": "CMF-C/D Platform",
+    "emissionNorm": "BS VI Phase 2",
+    "e20Compatible": true
+  },
+  "engineDatabase": {
+    "vc-turbo-1-5L-mhev-163hp": {
+      "id": "vc-turbo-1-5L-mhev-163hp",
+      "name": "1.5L VC-Turbo Mild-Hybrid Petrol",
+      "engineType": "KR15DDT Inline-3 Variable Compression Turbo",
+      "displacement": "1498 cc",
+      "engineLayout": "Inline-3",
+      "cylinders": 3,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": true,
+      "fuelSupplySystem": "Direct Injection",
+      "mildHybrid": true,
+      "mildHybridSystem": "12V e-POWER Assist Mild-Hybrid",
+      "automatic": {
+        "power": "163 hp (120 kW) @ 4800 rpm",
+        "torque": "300 Nm @ 3600 rpm",
+        "gearbox": "CVT (Shift-by-Wire, Auto)",
+        "driveType": "FWD",
+        "acceleration0To100": "9.9 sec",
+        "topSpeed": "190 km/h",
+        "mileageARAI": "13.7 kmpl"
+      }
+    }
+  },
+  "variantFamilies": [
+    { "id": "std", "name": "X-Trail (Single Fully-Loaded Variant)", "position": "Flagship Only Trim", "tier": 1 }
+  ],
+  "variants": [
+    {
+      "id": "std",
+      "name": "X-Trail",
+      "family": "std",
+      "rank": 1,
+      "price": { "exShowroom": 4820000 },
+      "configuration": {
+        "fuel": "Petrol (Mild-Hybrid)",
+        "engine": "vc-turbo-1-5L-mhev-163hp",
+        "transmission": "CVT",
+        "gearbox": "CVT (Shift-by-Wire)",
+        "drivetrain": "FWD",
+        "seating": 7,
+        "tyreSizeLabel": "235/55 R20"
+      },
+      "performance": {
+        "power": "163 hp (120 kW) @ 4800 rpm",
+        "torque": "300 Nm @ 3600 rpm",
+        "mileageARAI": "13.7 kmpl",
+        "acceleration0To100": "9.9 sec",
+        "topSpeed": "190 km/h"
+      },
+      "wheels": { "size": "20 Inch", "type": "Two-Tone Alloy Wheels", "tyreSizeLabel": "235/55 R20" },
+      "comfort": {
+        "powerSteering": true, "airConditioner": true, "automaticClimateControl": true,
+        "dualZoneClimateControl": true, "rearAcVents": true, "cruiseControl": true,
+        "adaptiveCruiseControl": false, "keylessEntry": true, "comfortAccess": true,
+        "pushButtonStart": true, "heatedFrontSeats": false, "heatedRearSeats": false,
+        "ventilatedFrontSeats": false, "massageSeats": false, "poweredDriverSeat": false,
+        "poweredPassengerSeat": false, "driverSeatMemory": false, "driverSeatLumbarSupport": false,
+        "wirelessCharging": true, "softCloseDoors": false, "electricParkingBrake": true,
+        "autoHold": true, "driveModes": true, "rainSensingWiper": true,
+        "frontParkingSensors": true, "rearParkingSensors": true, "rearDefogger": true,
+        "rearSunshade": false, "usbCharger": true, "tiltTelescopicSteering": false,
+        "sunroof": true, "ambientLighting": true, "panoramicSunroof": "Dual-Pane Panoramic Sunroof"
+      },
+      "interior": {
+        "digitalCluster": true, "digitalClusterSize": "12.3 inch",
+        "touchscreenSize": "8 inch",
+        "rearEntertainmentScreen": false, "upholstery": "Premium Fabric",
+        "leatherWrappedSteering": true, "flatBottomSteering": false,
+        "ambientLighting": true, "headsUpDisplay": false, "woodFinishInterior": false,
+        "illuminatedGlovebox": false, "slidingReclining2ndRow": true, "foldable3rdRow": true
+      },
+      "exterior": {
+        "matrixLedHeadlamps": false, "ledDRL": true, "ledTailLamps": true, "alloyWheels": true,
+        "orvmElectric": true, "orvmAutoDimming": false, "orvmHeated": false, "orvmLedIndicators": true,
+        "autoFoldOrvm": true, "flushDoorHandles": false, "headlampWashers": false,
+        "rainSensingWiper": true, "rearWindowDefogger": true, "rearWindowWiper": true,
+        "glossBlackGrille": false, "connectedLedTailLamps": true, "vMotionGrille": true
+      },
+      "safety": {
+        "airbags": 7, "driverAirbag": true, "passengerAirbag": true, "sideAirbags": true,
+        "curtainAirbags": true, "kneeAirbag": true, "abs": true, "ebd": true,
+        "brakeAssist": true, "esc": true, "tractionControl": true, "tpms": true,
+        "rearCamera": true, "rearCameraType": "360-Degree Around View Monitor",
+        "frontParkingSensors": true, "rearParkingSensors": true, "isofix": true,
+        "speedAlert": true, "engineImmobilizer": true, "allWheelDiscBrakes": false,
+        "camera360": true, "adas": false, "limitedSlipDifferential": true,
+        "impactSensingAutoDoorUnlock": false
+      },
+      "adas": {
+        "available": false, "level": "Not Available",
+        "adaptiveCruiseControl": false, "forwardCollisionWarning": false,
+        "automaticEmergencyBraking": false, "laneDepartureWarning": false,
+        "laneKeepAssist": false, "blindSpotMonitor": false, "rearCrossTrafficAlert": false,
+        "parkingAssistant": false, "autoHighBeam": false, "trafficSignRecognition": false,
+        "driverAttentionWarning": false
+      },
+      "infotainment": {
+        "touchscreen": true, "screenSize": "8 inch", "androidAuto": true, "appleCarplay": true,
+        "wirelessAndroidAuto": true, "wirelessAppleCarplay": true, "bluetooth": true,
+        "usbPorts": true, "speakerCount": 6, "premiumAudio": false,
+        "radio": true, "gestureControl": false, "voiceAssistant": false,
+        "rearEntertainmentScreens": false
+      },
+      "connectedTech": {
+        "available": false, "appName": false, "remoteDoorLockUnlock": false,
+        "remoteHornLight": false, "remoteAcControl": false, "remoteEngineStart": false,
+        "otaUpdates": false, "navigation": true, "navigationWithLiveTraffic": false,
+        "eCallICall": false, "sosAlert": false, "stolenVehicleTracking": false,
+        "findMyCar": false, "diagnostics": false, "liveTracking": false, "remoteSoftwareUpgrade": false
+      },
+      "evHybrid": {
+        "hybrid": false, "mildHybrid": true, "plugInHybrid": false, "batteryCapacity": false,
+        "electricRange": false, "homeCharging": false, "regenerativeBraking": true,
+        "dcFastCharging": false, "electricOnly": false
+      },
+      "offRoad": {
+        "driveType": "FWD", "awd": false, "hillAssist": true, "hillDescentControl": false
+      },
+      "keyFeatures": [
+        "1.5L VC-Turbo 3-Cylinder Mild-Hybrid Petrol (163 hp)",
+        "Variable Compression Engine Technology",
+        "7-Seat Layout with Sliding & Reclining 2nd Row",
+        "Dual-Pane Panoramic Sunroof",
+        "12.3-inch Digital Driver Display",
+        "360-Degree Around View Monitor",
+        "Largest-in-Segment 20-Inch Alloy Wheels"
+      ],
+      "comparisonFeatures": {
+        "comfort": {
+          "adaptiveCruiseControl": false, "airConditioner": true, "ambientLighting": true,
+          "autoDimmingIRVM": false, "autoHeadlamps": true, "autoHold": true,
+          "automaticClimateControl": true, "comfortAccess": true, "cruiseControl": true,
+          "cupHoldersFront": true, "cupHoldersRear": true, "driveModes": true,
+          "driverArmrest": true, "driverSeatHeightAdjust": true, "driverSeatLumbarSupport": false,
+          "driverSeatMemory": false, "driverSeatPowered": false, "dualZoneClimateControl": true,
+          "electricParkingBrake": true, "frontArmrest": true, "frontParkingSensors": true,
+          "heatedFrontSeats": false, "heatedRearSeats": false, "idleStopStart": true,
+          "keylessEntry": true, "massageSeats": false, "panoramicSunroof": true,
+          "powerAdjustableOrvm": true, "powerBoot": false, "poweredDriverSeat": false,
+          "poweredPassengerSeat": false, "powerSteering": true, "pushButtonStart": true,
+          "rainSensingWiper": true, "rearAcVents": true, "rearArmrest": true,
+          "rearDefogger": true, "rearParkingSensors": true, "rearSeatRecline": true,
+          "rearSeatSlide": true, "rearSunshade": false, "smartKey": true, "softCloseDoors": false,
+          "steeringMountedControls": true, "sunroof": true, "sunroof.available": true,
+          "sunroof.type": "Dual-Pane Panoramic Sunroof", "tiltSteering": true,
+          "tiltTelescopicSteering": false, "usbCharger": true, "ventilatedFrontSeats": false,
+          "voiceCommands": false, "wirelessCharging": true
+        },
+        "interior": {
+          "ambientLighting": true, "analogueCluster": false, "captainSeats": false,
+          "digitalCluster": true, "digitalClusterSize": "12.3 inch", "dualToneInterior": true,
+          "flatBottomSteering": false, "foldableRearSeats": true, "frontHeadrestsAdjustable": true,
+          "gloveBox": true, "headsUpDisplay": false, "illuminatedGlovebox": false,
+          "leatherWrappedGearKnob": true, "leatherWrappedSteering": true, "metalPedals": false,
+          "parcelTray": true, "rearHeadrestsAdjustable": true, "tachometer": true,
+          "thirdRowSeats": true, "touchscreenSize": "8 inch", "upholstery": true,
+          "woodFinishInterior": false
+        },
+        "exterior": {
+          "activeRearSpoiler": false, "adaptiveLedHeadlamps": false, "alloyWheels": true,
+          "autoFoldOrvm": true, "bodyColouredBumpers": true, "chromeBeltline": false,
+          "connectedLedTailLamps": true, "corneringFogLamps": false, "dualToneExterior": false,
+          "flushDoorHandles": false, "fogLamps": false, "framelessDoors": false,
+          "glossBlackGrille": false, "halogenHeadlamps": false, "headlampWashers": false,
+          "ledDRL": true, "ledFogLamps": false, "ledHeadlamps": true, "ledTailLamps": true,
+          "matrixLedHeadlamps": false, "orvmAutoDimming": false, "orvmElectric": true,
+          "orvmHeated": false, "orvmLedIndicators": true, "rainSensingWiper": true,
+          "rearSpoiler": true, "rearWindowDefogger": true, "rearWindowWiper": true,
+          "roofRails": true, "sharkFinAntenna": true, "skidPlates": false,
+          "sunroof": true, "wheelSize": true, "wheelType": true
+        },
+        "safety": {
+          "abs": true, "activeBonnet": false, "adas": false, "airbags": true,
+          "allWheelDiscBrakes": false, "antiPinchPowerWindows": true, "autoDoorLock": true,
+          "brakeAssist": true, "camera360": true, "childSafetyLocks": true,
+          "curtainAirbag": true, "curtainAirbags": true, "doorAjarWarning": true,
+          "driverAirbag": true, "dynamicStabilityControl": true, "ebd": true,
+          "emergencyStopSignal": false, "engineImmobilizer": true, "esc": true,
+          "frontParkingSensors": true, "hillAssist": true, "hillDescentControl": false,
+          "isofix": true, "kneeAirbag": true, "limitedSlipDifferential": true,
+          "passengerAirbag": true, "rearCamera": true,
+          "rearCameraType": "360-Degree Around View Monitor", "rearParkingSensors": true,
+          "rearSeatBeltReminder": true, "rolloverMitigation": false, "sideAirbagFront": true,
+          "sideAirbagRear": true, "sideAirbags": true, "speedAlert": true, "tpms": true,
+          "tractionControl": true, "vehicleStabilityManagement": true
+        },
+        "adas": {
+          "adaptiveCruiseControl": false, "autoHighBeam": false, "automaticEmergencyBraking": false,
+          "available": false, "blindSpotMonitor": false, "driverAttentionWarning": false,
+          "forwardCollisionWarning": false, "laneDepartureWarning": false, "laneKeepAssist": false,
+          "level": "Not Available", "parkingAssistant": false, "rearCrossTrafficAlert": false,
+          "trafficSignRecognition": false
+        },
+        "infotainment": {
+          "androidAuto": true, "appleCarplay": true, "bluetooth": true, "dolbyAtmos": false,
+          "gestureControl": false, "headsUpDisplay": false, "premiumAudio": false,
+          "radio": true, "rearEntertainmentScreens": false, "screenSize": "8 inch",
+          "speakerCount": 6, "steeringControls": true, "touchscreen": true, "usbPorts": true,
+          "voiceAssistant": false, "wirelessAndroidAuto": true, "wirelessAppleCarplay": true
+        },
+        "connectedTech": {
+          "appName": false, "available": false, "connectedCarTech": false,
+          "diagnostics": false, "eCallICall": false, "findMyCar": false, "geofencing": false,
+          "liveTracking": false, "navigation": true, "navigationWithLiveTraffic": false,
+          "otaUpdates": false, "remoteAcControl": false, "remoteDoorLockUnlock": false,
+          "remoteEngineStart": false, "remoteHornLight": false, "remoteSoftwareUpgrade": false,
+          "sosAlert": false, "stolenVehicleTracking": false
+        },
+        "evHybrid": {
+          "batteryCapacity": false, "dcFastCharging": false, "electricOnly": false,
+          "homeCharging": false, "hybrid": false, "mildHybrid": true, "plugInHybrid": false,
+          "regenerativeBraking": true
+        },
+        "offRoad": {
+          "awd": false, "differentialLock": false, "fourWheelDrive": false,
+          "hillDescentControl": false, "lowRangeTransferCase": false, "terrainModes": false,
+          "waterWadingMode": false
+        }
+      }
+    }
+  ]
+}

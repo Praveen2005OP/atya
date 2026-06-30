@@ -699,9 +699,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1309,9 +1310,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1919,9 +1921,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -2529,9 +2532,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3139,9 +3143,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3749,9 +3754,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -4359,9 +4365,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -4969,9 +4976,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -5579,9 +5587,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -6189,9 +6198,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -6799,9 +6809,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -7409,9 +7420,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -8019,9 +8031,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -8629,9 +8642,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -9239,9 +9253,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -9849,9 +9864,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -10459,9 +10475,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -11069,9 +11086,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -11679,9 +11697,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Single-Pane Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Single-Pane Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -12289,9 +12308,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -12899,9 +12919,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,

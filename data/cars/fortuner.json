@@ -9,15 +9,15 @@
   "status": "On Sale",
   "viewer360": {
     "exterior": {
-      "available": false,
-      "frames": null
+      "available": true,
+      "frames": 36
     },
     "open": {
-      "available": false,
-      "frames": null
+      "available": true,
+      "frames": 36
     },
     "interior": {
-      "available": null
+      "available": true
     }
   },
   "hero": {
@@ -66,7 +66,7 @@
       "Off-road",
       "Premium SUV"
     ],
-    "minides": "Road presence that speaks before you do \u2014 the Fortuner blends rugged capability, premium comfort, and that unmistakable \u201craasta khud ban jaata hai\u201d aura.",
+    "minides": "Road presence that speaks before you do — the Fortuner blends rugged capability, premium comfort, and that unmistakable “raasta khud ban jaata hai” aura.",
     "description": "The Toyota Fortuner range combines a 2.7L petrol automatic, 2.8L diesel manual and automatic choices, 2WD and 4WD drivetrains, and premium Legender and GR-S trims. It is positioned for buyers who want a durable seven-seat SUV with strong resale value, commanding road presence and long-distance ability."
   },
   "images": {
@@ -164,7 +164,7 @@
       "height": "1835 mm",
       "wheelbase": "2745 mm",
       "groundClearance": "225 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": true,
         "value": "296 Litres"
       },
@@ -595,9 +595,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1235,9 +1236,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1875,9 +1877,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2515,9 +2518,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -3155,9 +3159,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -3806,9 +3811,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4457,9 +4463,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -5108,9 +5115,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -5767,9 +5775,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,

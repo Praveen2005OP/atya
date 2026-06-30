@@ -62,7 +62,7 @@
       "First car",
       "High ground clearance"
     ],
-    "minides": "Small in size, big on confidence \u2014 the Punch delivers SUV styling, practicality, and 5-star safety.",
+    "minides": "Small in size, big on confidence — the Punch delivers SUV styling, practicality, and 5-star safety.",
     "description": "The Tata Punch is a compact micro-SUV that blends SUV styling, city-friendly dimensions, and strong safety credentials. Available with petrol and CNG powertrains, manual and AMT gearboxes, it stands out with its bold design, 5-star safety rating, high ground clearance, and practical everyday usability."
   },
   "images": {
@@ -159,7 +159,7 @@
       "height": "1615 mm",
       "wheelbase": "2445 mm",
       "groundClearance": "187 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": false
       },
       "bootSpaceThirdRowFolded": {
@@ -599,9 +599,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1209,9 +1210,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -1825,9 +1827,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -2441,9 +2444,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": false,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -3063,9 +3067,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -3685,9 +3690,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4307,9 +4313,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -4929,9 +4936,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -5554,9 +5562,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -6179,9 +6188,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -6804,9 +6814,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -7438,9 +7449,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -8072,9 +8084,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -8706,9 +8719,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -9340,9 +9354,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -9974,9 +9989,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -10608,9 +10624,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -11242,9 +11259,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -11876,9 +11894,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -12517,9 +12536,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -13158,9 +13178,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -13799,9 +13820,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -14444,9 +14466,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -15089,9 +15112,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -15734,9 +15758,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,
@@ -16379,9 +16404,10 @@
           "speedSensingAutoDoorLock": false,
           "speedSensingDoorLock": false,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Voice Assisted Electric Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Voice Assisted Electric Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": false,

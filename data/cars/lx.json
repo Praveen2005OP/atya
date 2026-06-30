@@ -1,0 +1,507 @@
+{
+  "id": "lexus-lx",
+  "slug": "lx",
+  "brand": "Lexus",
+  "model": "LX",
+  "name": "Lexus LX 500d",
+  "generation": "3rd Gen (J310, 2022–present)",
+  "launchYear": 2022,
+  "status": "On Sale",
+  "viewer360": {
+    "exterior": { "available": false, "frames": null },
+    "open": { "available": false, "frames": null },
+    "interior": { "available": null }
+  },
+  "hero": {
+    "tagline": "Uncompromising Luxury. Unstoppable Capability.",
+    "image": "/static/images/car-images/lx/pic1.png",
+    "gallery": [
+      "/static/images/car-images/lx/pic1.png",
+      "/static/images/car-images/lx/pic2.png",
+      "/static/images/car-images/lx/pic3.png",
+      "/static/images/car-images/lx/pic4.png"
+    ]
+  },
+  "pricing": {
+    "currency": "INR",
+    "exShowroom": { "min": 28140000, "max": 29266000 }
+  },
+  "overview": {
+    "segment": "Full-Size Luxury SUV (Body-on-Frame)",
+    "body": "SUV",
+    "doors": 5,
+    "safetyRating": "Not Tested (Global NCAP)",
+    "seatingOptions": [5],
+    "fuelTypes": ["Diesel"],
+    "transmissions": ["Automatic (10-Speed)"],
+    "driveTypes": ["4WD (Full-Time)"],
+    "useCases": ["Chauffeur-Driven", "Off-Road", "Status Symbol", "Long-Distance"],
+    "minides": "Lexus's flagship body-on-frame SUV, built on the TNGA-F platform, combining Toyota Land Cruiser ruggedness with Lexus luxury and a 304hp twin-turbo diesel V6.",
+    "description": "The Lexus LX is the brand's flagship luxury SUV, sharing its ladder-frame TNGA-F platform with the Toyota Land Cruiser. In India it is offered exclusively with a 3.3-litre twin-turbo diesel V6 producing 304 hp and 700 Nm, paired with a 10-speed automatic and full-time four-wheel drive. Two trims are offered: the standard LX 500d Urban and the off-road-focused Overtrail, which adds reinforced underbody protection, a unique Overtrail Monolith dark green cabin theme, and enhanced off-road hardware. The cabin features a triple-display layout, 4-zone climate control, massaging front seats, and Lexus's Level-2 Safety System+ ADAS suite, while retaining genuine off-road tools like Multi-Terrain Select and Crawl Control."
+  },
+  "images": { "logo": "/static/images/logos/lexus.png" },
+  "colors": [
+    { "name": "Sonic Quartz", "hex": "#D9D6CE", "type": "Premium", "variants": ["lx500d-urban", "lx500d-overtrail"] },
+    { "name": "Moon Desert", "hex": "#8A7C68", "type": "Premium Metallic", "variants": ["lx500d-urban", "lx500d-overtrail"] },
+    { "name": "Sonic Titanium", "hex": "#9A9A9C", "type": "Premium Metallic", "variants": ["lx500d-urban", "lx500d-overtrail"] },
+    { "name": "Manganese Luster", "hex": "#4B4A4D", "type": "Premium Metallic", "variants": ["lx500d-urban", "lx500d-overtrail"] },
+    { "name": "Graphite Black", "hex": "#161616", "type": "Solid", "variants": ["lx500d-urban", "lx500d-overtrail"] }
+  ],
+  "sharedSpecs": {
+    "dimensions": {
+      "length": "5095 mm",
+      "width": "1990 mm",
+      "height": "1895 mm",
+      "wheelbase": "2850 mm",
+      "groundClearance": "215 mm (variable, air suspension)",
+      "bootSpace": "174 Litres (5-seat, behind 3rd row equiv.)",
+      "fuelTank": "80 Litres",
+      "kerbWeight": "2630 kg",
+      "doors": 5
+    },
+    "suspension": {
+      "front": "Double Wishbone with Adaptive Variable Air Suspension (AVS)",
+      "rear": "Multi-Link with Adaptive Variable Air Suspension (AVS)",
+      "additionalTech": "Active Height Control, Multi-Terrain Select, Crawl Control"
+    },
+    "steering": {
+      "type": "Electric Power Steering",
+      "column": "Tilt and Telescopic Adjustable"
+    },
+    "brakes": {
+      "front": "Ventilated Disc",
+      "rear": "Ventilated Disc",
+      "brakeAssist": true
+    },
+    "tyres": {
+      "standard": "265/50 R22",
+      "overtrail": "265/65 R18 (All-Terrain)"
+    },
+    "platform": "TNGA-F Body-on-Frame Platform",
+    "emissionNorm": "BS VI Phase 2",
+    "e20Compatible": false
+  },
+  "engineDatabase": {
+    "1gd-3-3L-diesel-304hp": {
+      "id": "1gd-3-3L-diesel-304hp",
+      "name": "3.3L Twin-Turbo Diesel V6",
+      "engineType": "V35A-FTS V6 Twin-Turbo Diesel",
+      "displacement": "3346 cc",
+      "engineLayout": "V6",
+      "cylinders": 6,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": true,
+      "fuelSupplySystem": "CRDi (Twin-Turbo)",
+      "mildHybrid": false,
+      "automatic": {
+        "power": "304 hp (224 kW) @ 4000 rpm",
+        "torque": "700 Nm @ 1600–2600 rpm",
+        "gearbox": "10-Speed Automatic",
+        "driveType": "4WD (Full-Time, Torsen LSD)",
+        "acceleration0To100": "7.7 sec",
+        "topSpeed": "210 km/h",
+        "mileageARAI": "6.9 kmpl"
+      }
+    }
+  },
+  "variantFamilies": [
+    { "id": "lx500d-urban", "name": "LX 500d Urban", "position": "Base Flagship", "tier": 1 },
+    { "id": "lx500d-overtrail", "name": "LX 500d Overtrail", "position": "Off-Road Edition", "tier": 2 }
+  ],
+  "variants": [
+    {
+      "id": "lx500d-urban",
+      "name": "LX 500d Urban",
+      "family": "lx500d-urban",
+      "rank": 1,
+      "price": { "exShowroom": 28140000 },
+      "configuration": {
+        "fuel": "Diesel",
+        "engine": "1gd-3-3L-diesel-304hp",
+        "transmission": "Automatic",
+        "gearbox": "10-Speed Automatic",
+        "drivetrain": "4WD (Full-Time)",
+        "seating": 5,
+        "tyreSizeLabel": "265/50 R22"
+      },
+      "performance": {
+        "power": "304 hp (224 kW) @ 4000 rpm",
+        "torque": "700 Nm @ 1600–2600 rpm",
+        "mileageARAI": "6.9 kmpl",
+        "acceleration0To100": "7.7 sec",
+        "topSpeed": "210 km/h"
+      },
+      "wheels": { "size": "22 Inch", "type": "Machined-Finish Alloy Wheels", "tyreSizeLabel": "265/50 R22" },
+      "comfort": {
+        "powerSteering": true, "airConditioner": true, "automaticClimateControl": true,
+        "fourZoneClimateControl": true, "rearAcVents": true, "cruiseControl": true,
+        "adaptiveCruiseControl": true, "keylessEntry": true, "comfortAccess": true,
+        "pushButtonStart": true, "heatedFrontSeats": true, "heatedRearSeats": true,
+        "ventilatedFrontSeats": true, "ventilatedRearSeats": true, "massageSeats": true,
+        "poweredDriverSeat": true, "poweredPassengerSeat": true, "driverSeatMemory": true,
+        "driverSeatLumbarSupport": true, "wirelessCharging": true, "softCloseDoors": true,
+        "electricParkingBrake": true, "autoHold": true, "driveModes": true,
+        "rainSensingWiper": true, "frontParkingSensors": true, "rearParkingSensors": true,
+        "rearDefogger": true, "rearSunshade": true, "usbCharger": true,
+        "tiltTelescopicSteering": true, "sunroof": false, "ambientLighting": true,
+        "panoramicSunroof": false
+      },
+      "interior": {
+        "digitalCluster": true, "digitalClusterSize": "12.3 inch",
+        "touchscreenSize": "12.3 inch (Triple Display Layout)",
+        "rearEntertainmentScreen": false, "upholstery": "Semi-Aniline Leather",
+        "leatherWrappedSteering": true, "flatBottomSteering": false,
+        "ambientLighting": true, "headsUpDisplay": true, "woodFinishInterior": true,
+        "illuminatedGlovebox": false
+      },
+      "exterior": {
+        "matrixLedHeadlamps": false, "ledDRL": true, "ledTailLamps": true, "alloyWheels": true,
+        "orvmElectric": true, "orvmAutoDimming": true, "orvmHeated": true, "orvmLedIndicators": true,
+        "autoFoldOrvm": true, "flushDoorHandles": false, "headlampWashers": true,
+        "rainSensingWiper": true, "rearWindowDefogger": true, "rearWindowWiper": true,
+        "glossBlackGrille": false, "connectedLedTailLamps": true
+      },
+      "safety": {
+        "airbags": 10, "driverAirbag": true, "passengerAirbag": true, "sideAirbags": true,
+        "curtainAirbags": true, "kneeAirbag": true, "abs": true, "ebd": true,
+        "brakeAssist": true, "esc": true, "tractionControl": true, "tpms": true,
+        "rearCamera": true, "rearCameraType": "360-Degree Panoramic View Monitor",
+        "frontParkingSensors": true, "rearParkingSensors": true, "isofix": true,
+        "speedAlert": true, "engineImmobilizer": true, "allWheelDiscBrakes": true,
+        "camera360": true, "adas": true, "trailerSwayControl": true,
+        "impactSensingAutoDoorUnlock": false
+      },
+      "adas": {
+        "available": true, "level": "Level 2 (Lexus Safety System+)",
+        "adaptiveCruiseControl": true, "forwardCollisionWarning": true,
+        "automaticEmergencyBraking": true, "laneDepartureWarning": true,
+        "laneKeepAssist": true, "laneCenteringAssist": true, "blindSpotMonitor": true,
+        "rearCrossTrafficAlert": true, "parkingAssistant": true, "autoHighBeam": true,
+        "trafficSignRecognition": true, "driverAttentionWarning": true, "safeExitAssist": true
+      },
+      "infotainment": {
+        "touchscreen": true, "screenSize": "12.3 inch", "androidAuto": true, "appleCarplay": true,
+        "wirelessAndroidAuto": true, "wirelessAppleCarplay": true, "bluetooth": true,
+        "usbPorts": true, "speakerCount": 25, "premiumAudio": "Mark Levinson 25-Speaker Surround Sound",
+        "radio": true, "gestureControl": false, "voiceAssistant": true,
+        "rearEntertainmentScreens": false
+      },
+      "connectedTech": {
+        "available": true, "appName": "Lexus Connect", "remoteDoorLockUnlock": true,
+        "remoteHornLight": true, "remoteAcControl": true, "remoteEngineStart": true,
+        "otaUpdates": true, "navigation": true, "navigationWithLiveTraffic": true,
+        "eCallICall": true, "sosAlert": true, "stolenVehicleTracking": true,
+        "findMyCar": true, "diagnostics": true, "liveTracking": true, "remoteSoftwareUpgrade": true
+      },
+      "evHybrid": {
+        "hybrid": false, "mildHybrid": false, "plugInHybrid": false, "batteryCapacity": false,
+        "electricRange": false, "homeCharging": false, "regenerativeBraking": false,
+        "dcFastCharging": false, "electricOnly": false
+      },
+      "offRoad": {
+        "driveType": "4WD (Full-Time)", "awd": true, "fourWheelDrive": true,
+        "hillAssist": true, "hillDescentControl": true, "multiTerrainSelect": true,
+        "crawlControl": true, "lowRangeTransferCase": true, "lockingCenterDiff": true,
+        "wadingDepth": "700 mm"
+      },
+      "keyFeatures": [
+        "3.3L Twin-Turbo Diesel V6 (304 hp / 700 Nm)",
+        "10-Speed Automatic with Full-Time 4WD",
+        "Adaptive Variable Air Suspension",
+        "Triple-Display 12.3-inch Cabin Layout",
+        "Mark Levinson 25-Speaker Surround Sound",
+        "Lexus Safety System+ (Level 2 ADAS, 10 Airbags)",
+        "Multi-Terrain Select with Crawl Control"
+      ],
+      "comparisonFeatures": {
+        "comfort": {
+          "adaptiveCruiseControl": true, "airConditioner": true, "ambientLighting": true,
+          "autoDimmingIRVM": true, "autoHeadlamps": true, "autoHold": true,
+          "automaticClimateControl": true, "comfortAccess": true, "cruiseControl": true,
+          "cupHoldersFront": true, "cupHoldersRear": true, "driveModes": true,
+          "driverArmrest": true, "driverSeatHeightAdjust": true, "driverSeatLumbarSupport": true,
+          "driverSeatMemory": true, "driverSeatPowered": true, "electricParkingBrake": true,
+          "fourZoneClimateControl": true, "frontArmrest": true, "frontParkingSensors": true,
+          "heatedFrontSeats": true, "heatedRearSeats": true, "idleStopStart": true,
+          "keylessEntry": true, "massageSeats": true, "panoramicSunroof": false,
+          "powerAdjustableOrvm": true, "powerBoot": true, "poweredDriverSeat": true,
+          "poweredPassengerSeat": true, "powerSteering": true, "pushButtonStart": true,
+          "rainSensingWiper": true, "rearAcVents": true, "rearArmrest": true,
+          "rearDefogger": true, "rearParkingSensors": true, "rearSeatRecline": true,
+          "rearSunshade": true, "smartKey": true, "softCloseDoors": true,
+          "steeringMountedControls": true, "sunroof": false, "threeZoneClimateControl": true,
+          "tiltTelescopicSteering": true, "usbCharger": true, "ventilatedFrontSeats": true,
+          "ventilatedRearSeats": true, "voiceCommands": true, "wirelessCharging": true
+        },
+        "interior": {
+          "ambientLighting": true, "analogueCluster": false, "captainSeats": false,
+          "digitalCluster": true, "digitalClusterSize": "12.3 inch", "dualToneInterior": false,
+          "flatBottomSteering": false, "foldableRearSeats": true, "frontHeadrestsAdjustable": true,
+          "gloveBox": true, "headsUpDisplay": true, "illuminatedGlovebox": false,
+          "leatherWrappedGearKnob": true, "leatherWrappedSteering": true, "metalPedals": false,
+          "parcelTray": false, "rearHeadrestsAdjustable": true, "tachometer": true,
+          "thirdRowSeats": false, "touchscreenSize": "12.3 inch (Triple Display)",
+          "upholstery": true, "woodFinishInterior": true
+        },
+        "exterior": {
+          "activeRearSpoiler": false, "adaptiveLedHeadlamps": false, "alloyWheels": true,
+          "autoFoldOrvm": true, "bodyColouredBumpers": true, "chromeBeltline": true,
+          "connectedLedTailLamps": true, "corneringFogLamps": false, "dualToneExterior": false,
+          "flushDoorHandles": false, "fogLamps": true, "framelessDoors": false,
+          "glossBlackGrille": false, "halogenHeadlamps": false, "headlampWashers": true,
+          "ledDRL": true, "ledFogLamps": true, "ledHeadlamps": true, "ledTailLamps": true,
+          "matrixLedHeadlamps": false, "orvmAutoDimming": true, "orvmElectric": true,
+          "orvmHeated": true, "orvmLedIndicators": true, "rainSensingWiper": true,
+          "rearSpoiler": false, "rearWindowDefogger": true, "rearWindowWiper": true,
+          "roofRails": true, "sharkFinAntenna": true, "skidPlates": true,
+          "sunroof": false, "wheelSize": true, "wheelType": true
+        },
+        "safety": {
+          "abs": true, "activeBonnet": false, "adas": true, "airbags": true,
+          "allWheelDiscBrakes": true, "antiPinchPowerWindows": true, "autoDoorLock": true,
+          "brakeAssist": true, "camera360": true, "childSafetyLocks": true,
+          "curtainAirbag": true, "curtainAirbags": true, "doorAjarWarning": true,
+          "driverAirbag": true, "dynamicStabilityControl": true, "ebd": true,
+          "emergencyStopSignal": true, "engineImmobilizer": true, "esc": true,
+          "frontParkingSensors": true, "hillAssist": true, "hillDescentControl": true,
+          "isofix": true, "kneeAirbag": true, "passengerAirbag": true, "rearCamera": true,
+          "rearCameraType": "360-Degree Panoramic View Monitor", "rearParkingSensors": true,
+          "rearSeatBeltReminder": true, "rolloverMitigation": true, "sideAirbagFront": true,
+          "sideAirbagRear": true, "sideAirbags": true, "speedAlert": true, "tpms": true,
+          "tractionControl": true, "trailerSwayControl": true, "vehicleStabilityManagement": true
+        },
+        "adas": {
+          "adaptiveCruiseControl": true, "autoHighBeam": true, "automaticEmergencyBraking": true,
+          "available": true, "blindSpotMonitor": true, "driverAttentionWarning": true,
+          "forwardCollisionWarning": true, "laneCenteringAssist": true, "laneDepartureWarning": true,
+          "laneKeepAssist": true, "level": "Level 2 (Lexus Safety System+)", "parkingAssistant": true,
+          "rearCrossTrafficAlert": true, "safeExitAssist": true, "trafficSignRecognition": true
+        },
+        "infotainment": {
+          "androidAuto": true, "appleCarplay": true, "bluetooth": true, "dolbyAtmos": false,
+          "gestureControl": false, "headsUpDisplay": true, "markLevinsonAudio": true,
+          "premiumAudio": true, "radio": true, "rearEntertainmentScreens": false,
+          "screenSize": "12.3 inch (Triple Display)", "speakerCount": 25,
+          "steeringControls": true, "touchscreen": true, "usbPorts": true,
+          "voiceAssistant": true, "wirelessAndroidAuto": true, "wirelessAppleCarplay": true
+        },
+        "connectedTech": {
+          "appName": "Lexus Connect", "available": true, "connectedCarTech": true,
+          "diagnostics": true, "eCallICall": true, "findMyCar": true, "geofencing": false,
+          "liveTracking": true, "navigation": true, "navigationWithLiveTraffic": true,
+          "otaUpdates": true, "remoteAcControl": true, "remoteDoorLockUnlock": true,
+          "remoteEngineStart": true, "remoteHornLight": true, "remoteSoftwareUpgrade": true,
+          "sosAlert": true, "stolenVehicleTracking": true
+        },
+        "evHybrid": {
+          "batteryCapacity": false, "dcFastCharging": false, "electricOnly": false,
+          "homeCharging": false, "hybrid": false, "mildHybrid": false, "plugInHybrid": false,
+          "regenerativeBraking": false
+        },
+        "offRoad": {
+          "awd": true, "crawlControl": true, "differentialLock": true, "fourWheelDrive": true,
+          "hillDescentControl": true, "lowRangeTransferCase": true, "terrainModes": true,
+          "multiTerrainSelect": true, "waterWadingMode": true, "wadingDepth": "700 mm"
+        }
+      }
+    },
+    {
+      "id": "lx500d-overtrail",
+      "name": "LX 500d Overtrail",
+      "family": "lx500d-overtrail",
+      "rank": 2,
+      "price": { "exShowroom": 29266000 },
+      "configuration": {
+        "fuel": "Diesel",
+        "engine": "1gd-3-3L-diesel-304hp",
+        "transmission": "Automatic",
+        "gearbox": "10-Speed Automatic",
+        "drivetrain": "4WD (Full-Time)",
+        "seating": 5,
+        "tyreSizeLabel": "265/65 R18 (All-Terrain)"
+      },
+      "performance": {
+        "power": "304 hp (224 kW) @ 4000 rpm",
+        "torque": "700 Nm @ 1600–2600 rpm",
+        "mileageARAI": "6.9 kmpl",
+        "acceleration0To100": "7.8 sec",
+        "topSpeed": "210 km/h"
+      },
+      "wheels": { "size": "18 Inch", "type": "Black All-Terrain Alloy Wheels", "tyreSizeLabel": "265/65 R18" },
+      "comfort": {
+        "powerSteering": true, "airConditioner": true, "automaticClimateControl": true,
+        "fourZoneClimateControl": true, "rearAcVents": true, "cruiseControl": true,
+        "adaptiveCruiseControl": true, "keylessEntry": true, "comfortAccess": true,
+        "pushButtonStart": true, "heatedFrontSeats": true, "heatedRearSeats": true,
+        "ventilatedFrontSeats": true, "ventilatedRearSeats": true, "massageSeats": true,
+        "poweredDriverSeat": true, "poweredPassengerSeat": true, "driverSeatMemory": true,
+        "driverSeatLumbarSupport": true, "wirelessCharging": true, "softCloseDoors": true,
+        "electricParkingBrake": true, "autoHold": true, "driveModes": true,
+        "rainSensingWiper": true, "frontParkingSensors": true, "rearParkingSensors": true,
+        "rearDefogger": true, "rearSunshade": true, "usbCharger": true,
+        "tiltTelescopicSteering": true, "sunroof": false, "ambientLighting": true,
+        "panoramicSunroof": false
+      },
+      "interior": {
+        "digitalCluster": true, "digitalClusterSize": "12.3 inch",
+        "touchscreenSize": "12.3 inch (Triple Display Layout)",
+        "rearEntertainmentScreen": false, "upholstery": "Overtrail Monolith Semi-Aniline Leather",
+        "leatherWrappedSteering": true, "flatBottomSteering": false,
+        "ambientLighting": true, "headsUpDisplay": true, "woodFinishInterior": false,
+        "illuminatedGlovebox": false
+      },
+      "exterior": {
+        "matrixLedHeadlamps": false, "ledDRL": true, "ledTailLamps": true, "alloyWheels": true,
+        "orvmElectric": true, "orvmAutoDimming": true, "orvmHeated": true, "orvmLedIndicators": true,
+        "autoFoldOrvm": true, "flushDoorHandles": false, "headlampWashers": true,
+        "rainSensingWiper": true, "rearWindowDefogger": true, "rearWindowWiper": true,
+        "glossBlackGrille": true, "connectedLedTailLamps": true
+      },
+      "safety": {
+        "airbags": 10, "driverAirbag": true, "passengerAirbag": true, "sideAirbags": true,
+        "curtainAirbags": true, "kneeAirbag": true, "abs": true, "ebd": true,
+        "brakeAssist": true, "esc": true, "tractionControl": true, "tpms": true,
+        "rearCamera": true, "rearCameraType": "360-Degree Panoramic View Monitor",
+        "frontParkingSensors": true, "rearParkingSensors": true, "isofix": true,
+        "speedAlert": true, "engineImmobilizer": true, "allWheelDiscBrakes": true,
+        "camera360": true, "adas": true, "trailerSwayControl": true,
+        "impactSensingAutoDoorUnlock": false
+      },
+      "adas": {
+        "available": true, "level": "Level 2 (Lexus Safety System+)",
+        "adaptiveCruiseControl": true, "forwardCollisionWarning": true,
+        "automaticEmergencyBraking": true, "laneDepartureWarning": true,
+        "laneKeepAssist": true, "laneCenteringAssist": true, "blindSpotMonitor": true,
+        "rearCrossTrafficAlert": true, "parkingAssistant": true, "autoHighBeam": true,
+        "trafficSignRecognition": true, "driverAttentionWarning": true, "safeExitAssist": true
+      },
+      "infotainment": {
+        "touchscreen": true, "screenSize": "12.3 inch", "androidAuto": true, "appleCarplay": true,
+        "wirelessAndroidAuto": true, "wirelessAppleCarplay": true, "bluetooth": true,
+        "usbPorts": true, "speakerCount": 25, "premiumAudio": "Mark Levinson 25-Speaker Surround Sound",
+        "radio": true, "gestureControl": false, "voiceAssistant": true,
+        "rearEntertainmentScreens": false
+      },
+      "connectedTech": {
+        "available": true, "appName": "Lexus Connect", "remoteDoorLockUnlock": true,
+        "remoteHornLight": true, "remoteAcControl": true, "remoteEngineStart": true,
+        "otaUpdates": true, "navigation": true, "navigationWithLiveTraffic": true,
+        "eCallICall": true, "sosAlert": true, "stolenVehicleTracking": true,
+        "findMyCar": true, "diagnostics": true, "liveTracking": true, "remoteSoftwareUpgrade": true
+      },
+      "evHybrid": {
+        "hybrid": false, "mildHybrid": false, "plugInHybrid": false, "batteryCapacity": false,
+        "electricRange": false, "homeCharging": false, "regenerativeBraking": false,
+        "dcFastCharging": false, "electricOnly": false
+      },
+      "offRoad": {
+        "driveType": "4WD (Full-Time)", "awd": true, "fourWheelDrive": true,
+        "hillAssist": true, "hillDescentControl": true, "multiTerrainSelect": true,
+        "crawlControl": true, "lowRangeTransferCase": true, "lockingCenterDiff": true,
+        "reinforcedUnderbody": true, "allTerrainTyres": true, "wadingDepth": "700 mm"
+      },
+      "keyFeatures": [
+        "3.3L Twin-Turbo Diesel V6 (304 hp / 700 Nm)",
+        "Overtrail-Exclusive Reinforced Underbody Protection",
+        "265/65 R18 All-Terrain Tyres",
+        "Overtrail Monolith Dark Green Cabin Theme",
+        "Mark Levinson 25-Speaker Surround Sound",
+        "Lexus Safety System+ (Level 2 ADAS, 10 Airbags)",
+        "Multi-Terrain Select with Crawl Control"
+      ],
+      "comparisonFeatures": {
+        "comfort": {
+          "adaptiveCruiseControl": true, "airConditioner": true, "ambientLighting": true,
+          "autoDimmingIRVM": true, "autoHeadlamps": true, "autoHold": true,
+          "automaticClimateControl": true, "comfortAccess": true, "cruiseControl": true,
+          "cupHoldersFront": true, "cupHoldersRear": true, "driveModes": true,
+          "driverArmrest": true, "driverSeatHeightAdjust": true, "driverSeatLumbarSupport": true,
+          "driverSeatMemory": true, "driverSeatPowered": true, "electricParkingBrake": true,
+          "fourZoneClimateControl": true, "frontArmrest": true, "frontParkingSensors": true,
+          "heatedFrontSeats": true, "heatedRearSeats": true, "idleStopStart": true,
+          "keylessEntry": true, "massageSeats": true, "panoramicSunroof": false,
+          "powerAdjustableOrvm": true, "powerBoot": true, "poweredDriverSeat": true,
+          "poweredPassengerSeat": true, "powerSteering": true, "pushButtonStart": true,
+          "rainSensingWiper": true, "rearAcVents": true, "rearArmrest": true,
+          "rearDefogger": true, "rearParkingSensors": true, "rearSeatRecline": true,
+          "rearSunshade": true, "smartKey": true, "softCloseDoors": true,
+          "steeringMountedControls": true, "sunroof": false, "threeZoneClimateControl": true,
+          "tiltTelescopicSteering": true, "usbCharger": true, "ventilatedFrontSeats": true,
+          "ventilatedRearSeats": true, "voiceCommands": true, "wirelessCharging": true
+        },
+        "interior": {
+          "ambientLighting": true, "analogueCluster": false, "captainSeats": false,
+          "digitalCluster": true, "digitalClusterSize": "12.3 inch", "dualToneInterior": true,
+          "flatBottomSteering": false, "foldableRearSeats": true, "frontHeadrestsAdjustable": true,
+          "gloveBox": true, "headsUpDisplay": true, "illuminatedGlovebox": false,
+          "leatherWrappedGearKnob": true, "leatherWrappedSteering": true, "metalPedals": false,
+          "parcelTray": false, "rearHeadrestsAdjustable": true, "tachometer": true,
+          "thirdRowSeats": false, "touchscreenSize": "12.3 inch (Triple Display)",
+          "upholstery": true, "woodFinishInterior": false
+        },
+        "exterior": {
+          "activeRearSpoiler": false, "adaptiveLedHeadlamps": false, "alloyWheels": true,
+          "autoFoldOrvm": true, "bodyColouredBumpers": false, "chromeBeltline": false,
+          "connectedLedTailLamps": true, "corneringFogLamps": false, "dualToneExterior": false,
+          "flushDoorHandles": false, "fogLamps": true, "framelessDoors": false,
+          "glossBlackGrille": true, "halogenHeadlamps": false, "headlampWashers": true,
+          "ledDRL": true, "ledFogLamps": true, "ledHeadlamps": true, "ledTailLamps": true,
+          "matrixLedHeadlamps": false, "orvmAutoDimming": true, "orvmElectric": true,
+          "orvmHeated": true, "orvmLedIndicators": true, "rainSensingWiper": true,
+          "rearSpoiler": false, "rearWindowDefogger": true, "rearWindowWiper": true,
+          "roofRails": true, "sharkFinAntenna": true, "skidPlates": true,
+          "sunroof": false, "wheelSize": true, "wheelType": true
+        },
+        "safety": {
+          "abs": true, "activeBonnet": false, "adas": true, "airbags": true,
+          "allWheelDiscBrakes": true, "antiPinchPowerWindows": true, "autoDoorLock": true,
+          "brakeAssist": true, "camera360": true, "childSafetyLocks": true,
+          "curtainAirbag": true, "curtainAirbags": true, "doorAjarWarning": true,
+          "driverAirbag": true, "dynamicStabilityControl": true, "ebd": true,
+          "emergencyStopSignal": true, "engineImmobilizer": true, "esc": true,
+          "frontParkingSensors": true, "hillAssist": true, "hillDescentControl": true,
+          "isofix": true, "kneeAirbag": true, "passengerAirbag": true, "rearCamera": true,
+          "rearCameraType": "360-Degree Panoramic View Monitor", "rearParkingSensors": true,
+          "rearSeatBeltReminder": true, "rolloverMitigation": true, "sideAirbagFront": true,
+          "sideAirbagRear": true, "sideAirbags": true, "speedAlert": true, "tpms": true,
+          "tractionControl": true, "trailerSwayControl": true, "vehicleStabilityManagement": true
+        },
+        "adas": {
+          "adaptiveCruiseControl": true, "autoHighBeam": true, "automaticEmergencyBraking": true,
+          "available": true, "blindSpotMonitor": true, "driverAttentionWarning": true,
+          "forwardCollisionWarning": true, "laneCenteringAssist": true, "laneDepartureWarning": true,
+          "laneKeepAssist": true, "level": "Level 2 (Lexus Safety System+)", "parkingAssistant": true,
+          "rearCrossTrafficAlert": true, "safeExitAssist": true, "trafficSignRecognition": true
+        },
+        "infotainment": {
+          "androidAuto": true, "appleCarplay": true, "bluetooth": true, "dolbyAtmos": false,
+          "gestureControl": false, "headsUpDisplay": true, "markLevinsonAudio": true,
+          "premiumAudio": true, "radio": true, "rearEntertainmentScreens": false,
+          "screenSize": "12.3 inch (Triple Display)", "speakerCount": 25,
+          "steeringControls": true, "touchscreen": true, "usbPorts": true,
+          "voiceAssistant": true, "wirelessAndroidAuto": true, "wirelessAppleCarplay": true
+        },
+        "connectedTech": {
+          "appName": "Lexus Connect", "available": true, "connectedCarTech": true,
+          "diagnostics": true, "eCallICall": true, "findMyCar": true, "geofencing": false,
+          "liveTracking": true, "navigation": true, "navigationWithLiveTraffic": true,
+          "otaUpdates": true, "remoteAcControl": true, "remoteDoorLockUnlock": true,
+          "remoteEngineStart": true, "remoteHornLight": true, "remoteSoftwareUpgrade": true,
+          "sosAlert": true, "stolenVehicleTracking": true
+        },
+        "evHybrid": {
+          "batteryCapacity": false, "dcFastCharging": false, "electricOnly": false,
+          "homeCharging": false, "hybrid": false, "mildHybrid": false, "plugInHybrid": false,
+          "regenerativeBraking": false
+        },
+        "offRoad": {
+          "awd": true, "crawlControl": true, "differentialLock": true, "fourWheelDrive": true,
+          "hillDescentControl": true, "lowRangeTransferCase": true, "terrainModes": true,
+          "multiTerrainSelect": true, "waterWadingMode": true, "reinforcedUnderbody": true,
+          "allTerrainTyres": true, "wadingDepth": "700 mm"
+        }
+      }
+    }
+  ]
+}

@@ -196,11 +196,15 @@ def comfort_highlight(variant):
         features.append("Ventilated Seats")
     if comfort.get("wirelessCharging"):
         features.append("Wireless Charging")
-    sunroof = comfort.get("sunroof", {})
-    if sunroof.get("available"):
-        features.append(
-            sunroof.get("type", "Sunroof")
-        )
+        
+    sunroof = comfort.get("sunroof")
+    if isinstance(sunroof, dict):
+        if sunroof.get("available"):
+            features.append(sunroof.get("type", "Sunroof"))
+
+    elif sunroof is True:
+        features.append("Sunroof")
+    
     if features:
         return ", ".join(features)
     return "Standard Comfort Features"

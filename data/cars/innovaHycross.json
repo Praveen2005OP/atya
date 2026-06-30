@@ -4,7 +4,7 @@
   "brand": "Toyota",
   "model": "Innova HyCross",
   "name": "Toyota Innova HyCross",
-  "generation": "Innova HyCross (1st Gen, 2023\u2013present)",
+  "generation": "Innova HyCross (1st Gen, 2023–present)",
   "launchYear": 2023,
   "status": "On Sale",
   "viewer360": {
@@ -43,7 +43,7 @@
     "segment": "Premium MPV",
     "body": "MPV",
     "doors": 5,
-    "safetyRating": "5 Star (Bharat NCAP 2024)",
+    "safetyRating": "5",
     "seatingOptions": [
       7,
       8
@@ -189,7 +189,7 @@
       "height": "1795 mm",
       "wheelbase": "2850 mm",
       "groundClearance": "185 mm",
-      "bootSpace7Seater":{
+      "bootSpace7Seater": {
         "available": true,
         "value": "300 Litres"
       },
@@ -279,7 +279,7 @@
       "automatic": {
         "power": "152 bhp (system)",
         "torque": "187 Nm engine + 206 Nm motor",
-        "gearbox": "e-CVT (Electronic CVT \u2013 Strong Hybrid)",
+        "gearbox": "e-CVT (Electronic CVT – Strong Hybrid)",
         "mileageARAI_7STR": "23.24 kmpl",
         "mileageARAI_8STR": "23.23 kmpl",
         "fuelTank": "52 L"
@@ -672,9 +672,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1304,9 +1305,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": false,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -1936,9 +1938,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -2567,9 +2570,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3199,9 +3203,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -3830,9 +3835,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -4174,7 +4180,7 @@
         "fuel": "Petrol Hybrid",
         "engine": "hybrid_2_0_atkinson",
         "transmission": "Automatic",
-        "gearbox": "e-CVT (Electronic CVT \u2013 Strong Hybrid)",
+        "gearbox": "e-CVT (Electronic CVT – Strong Hybrid)",
         "drivetrain": "FWD",
         "seating": 7,
         "tyreSizeLabel": "215/60 R17",
@@ -4350,7 +4356,7 @@
         "batteryWarranty": "8 years / 1,60,000 km (Hybrid battery)"
       },
       "keyFeatures": [
-        "Strong Hybrid \u2013 23.24 kmpl ARAI",
+        "Strong Hybrid – 23.24 kmpl ARAI",
         "10.1-inch touchscreen",
         "7-inch digital driver display",
         "Cruise control",
@@ -4463,9 +4469,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -4807,7 +4814,7 @@
         "fuel": "Petrol Hybrid",
         "engine": "hybrid_2_0_atkinson",
         "transmission": "Automatic",
-        "gearbox": "e-CVT (Electronic CVT \u2013 Strong Hybrid)",
+        "gearbox": "e-CVT (Electronic CVT – Strong Hybrid)",
         "drivetrain": "FWD",
         "seating": 8,
         "tyreSizeLabel": "215/60 R17",
@@ -4984,7 +4991,7 @@
       },
       "keyFeatures": [
         "8-seater layout",
-        "Strong Hybrid \u2013 23.23 kmpl ARAI",
+        "Strong Hybrid – 23.23 kmpl ARAI",
         "10.1-inch touchscreen",
         "7-inch digital display",
         "Cruise control",
@@ -5094,9 +5101,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": false,
-          "sunroof.available": false,
-          "sunroof.type": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -5438,7 +5446,7 @@
         "fuel": "Petrol Hybrid",
         "engine": "hybrid_2_0_atkinson",
         "transmission": "Automatic",
-        "gearbox": "e-CVT (Electronic CVT \u2013 Strong Hybrid)",
+        "gearbox": "e-CVT (Electronic CVT – Strong Hybrid)",
         "drivetrain": "FWD",
         "seating": 7,
         "tyreSizeLabel": "225/50 R18",
@@ -5623,7 +5631,7 @@
         "Wireless charging",
         "Cooled glovebox",
         "Ottoman 2nd row seats",
-        "Strong Hybrid \u2013 23.24 kmpl",
+        "Strong Hybrid – 23.24 kmpl",
         "10.1-inch touchscreen",
         "Front parking sensors",
         "7 Airbags"
@@ -5729,9 +5737,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -6073,7 +6082,7 @@
         "fuel": "Petrol Hybrid",
         "engine": "hybrid_2_0_atkinson",
         "transmission": "Automatic",
-        "gearbox": "e-CVT (Electronic CVT \u2013 Strong Hybrid)",
+        "gearbox": "e-CVT (Electronic CVT – Strong Hybrid)",
         "drivetrain": "FWD",
         "seating": 8,
         "tyreSizeLabel": "225/50 R18",
@@ -6257,7 +6266,7 @@
         "Wireless charging",
         "LED fog lamps",
         "Ottoman 2nd row",
-        "Strong Hybrid \u2013 23.23 kmpl",
+        "Strong Hybrid – 23.23 kmpl",
         "7 Airbags"
       ],
       "notes": null,
@@ -6361,9 +6370,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -6705,7 +6715,7 @@
         "fuel": "Petrol Hybrid",
         "engine": "hybrid_2_0_atkinson",
         "transmission": "Automatic",
-        "gearbox": "e-CVT (Electronic CVT \u2013 Strong Hybrid)",
+        "gearbox": "e-CVT (Electronic CVT – Strong Hybrid)",
         "drivetrain": "FWD",
         "seating": 7,
         "tyreSizeLabel": "225/50 R18",
@@ -6900,7 +6910,7 @@
         "Ambient lighting",
         "18-inch alloys",
         "Panoramic sunroof",
-        "Strong Hybrid \u2013 23.24 kmpl",
+        "Strong Hybrid – 23.24 kmpl",
         "7 Airbags"
       ],
       "notes": "ZX Hybrid is available in 7-seater configuration only. ZX(O) adds ADAS.",
@@ -7004,9 +7014,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -7348,7 +7359,7 @@
         "fuel": "Petrol Hybrid",
         "engine": "hybrid_2_0_atkinson",
         "transmission": "Automatic",
-        "gearbox": "e-CVT (Electronic CVT \u2013 Strong Hybrid)",
+        "gearbox": "e-CVT (Electronic CVT – Strong Hybrid)",
         "drivetrain": "FWD",
         "seating": 7,
         "tyreSizeLabel": "225/50 R18",
@@ -7532,7 +7543,7 @@
         "batteryWarranty": "8 years / 1,60,000 km (Hybrid battery)"
       },
       "keyFeatures": [
-        "Level 2 ADAS \u2013 full suite",
+        "Level 2 ADAS – full suite",
         "Forward Collision Warning + AEB",
         "Lane Departure Warning + Lane Keep Assist",
         "Blind Spot Monitor + Rear Cross-Traffic Alert",
@@ -7545,7 +7556,7 @@
         "HUD",
         "Panoramic sunroof",
         "Air purifier",
-        "Strong Hybrid \u2013 23.24 kmpl",
+        "Strong Hybrid – 23.24 kmpl",
         "7 Airbags"
       ],
       "notes": "ZX(O) is 7-seater only. Top-of-the-line Innova Hycross variant with full Level 2 ADAS.",
@@ -7649,9 +7660,10 @@
           "speedSensingAutoDoorLock": true,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": true,
-          "sunroof.available": true,
-          "sunroof.type": "Panoramic Sunroof",
+          "sunroof": {
+            "available": true,
+            "type": "Panoramic Sunroof"
+          },
           "thirdRowRemovable": false,
           "thirdRowRemovableSeats": false,
           "tiltSteering": true,
@@ -7983,7 +7995,7 @@
   ],
   "blog": {
     "title": "Toyota Innova HyCross review: India's best premium MPV",
-    "subtitle": "Monocoque platform, strong hybrid efficiency, 7 airbags standard \u2014 this is the Innova reimagined.",
+    "subtitle": "Monocoque platform, strong hybrid efficiency, 7 airbags standard — this is the Innova reimagined.",
     "summary": "The Innova HyCross is a complete departure from the Crysta. Built on TNGA-C, it drives more like a car while offering significantly more space. The hybrid system is the real showstopper, returning over 20 kmpl in real-world city driving.",
     "sections": [
       {
@@ -7995,22 +8007,22 @@
       {
         "heading": "Hybrid System",
         "body": [
-          "The strong hybrid uses a 2.0L Atkinson-cycle petrol engine paired with a NiMH battery and permanent magnet motor. It can run in EV mode at low speeds and seamlessly switches to petrol or a combination. The e-CVT has no traditional gears \u2014 drive is silky smooth."
+          "The strong hybrid uses a 2.0L Atkinson-cycle petrol engine paired with a NiMH battery and permanent magnet motor. It can run in EV mode at low speeds and seamlessly switches to petrol or a combination. The e-CVT has no traditional gears — drive is silky smooth."
         ]
       },
       {
         "heading": "Features",
         "body": [
-          "Even the base G Fleet gets 7 airbags including a knee airbag \u2014 a segment benchmark. Top ZX(O) adds full Level 2 ADAS, JBL audio, HUD, ventilated seats and powered Ottoman second-row seats, making it one of the most feature-rich mass-market MPVs in India."
+          "Even the base G Fleet gets 7 airbags including a knee airbag — a segment benchmark. Top ZX(O) adds full Level 2 ADAS, JBL audio, HUD, ventilated seats and powered Ottoman second-row seats, making it one of the most feature-rich mass-market MPVs in India."
         ]
       }
     ],
     "pros": [
-      "Strong hybrid efficiency \u2014 23+ kmpl ARAI",
+      "Strong hybrid efficiency — 23+ kmpl ARAI",
       "7 airbags standard on every variant",
-      "TNGA platform \u2014 far superior to Crysta's ladder frame",
+      "TNGA platform — far superior to Crysta's ladder frame",
       "Spacious 3-row cabin on monocoque architecture",
-      "Only full ADAS MPV under \u20b932 lakh"
+      "Only full ADAS MPV under ₹32 lakh"
     ],
     "cons": [
       "No diesel option",
