@@ -1,0 +1,779 @@
+{
+  "id": "lamborghini-revuelto",
+  "slug": "revuelto",
+  "brand": "Lamborghini",
+  "model": "Revuelto",
+  "name": "Lamborghini Revuelto",
+  "generation": "LB744 (2023–present)",
+  "launchYear": 2023,
+  "status": "On Sale",
+  "viewer360": {
+    "exterior": {
+      "available": false,
+      "frames": null
+    },
+    "open": {
+      "available": false,
+      "frames": null
+    },
+    "interior": {
+      "available": null
+    }
+  },
+  "hero": {
+    "tagline": "The Definitive Hybrid V12.",
+    "image": "/static/images/car-images/revuelto/pic1.png",
+    "gallery": [
+      "/static/images/car-images/revuelto/pic1.png",
+      "/static/images/car-images/revuelto/pic2.png",
+      "/static/images/car-images/revuelto/pic3.png",
+      "/static/images/car-images/revuelto/pic4.png"
+    ]
+  },
+  "pricing": {
+    "currency": "INR",
+    "exShowroom": {
+      "min": 88900000,
+      "max": 88900000
+    }
+  },
+  "overview": {
+    "segment": "Hybrid Hypercar / Flagship V12 Supercar",
+    "body": "2-Door Coupe (Scissor Doors)",
+    "doors": 2,
+    "safetyRating": "N/A",
+    "seatingOptions": [
+      2
+    ],
+    "fuelTypes": [
+      "Petrol PHEV"
+    ],
+    "transmissions": [
+      "Automatic (8-Speed DCT)"
+    ],
+    "driveTypes": [
+      "AWD (Electric Front + Mechanical Rear)"
+    ],
+    "useCases": [
+      "Track",
+      "Performance",
+      "Status Symbol",
+      "Collectors",
+      "Daily Supercar"
+    ],
+    "minides": "Lamborghini's first hybrid V12 — the Aventador's spiritual successor — pairing an 825 CV naturally-aspirated 6.5L V12 with three electric motors for 1015 CV combined and a silent 10 km EV-only city mode.",
+    "description": "The Lamborghini Revuelto launched in India in late 2023 as the direct successor to the Aventador and Lamborghini's first-ever series-production plug-in hybrid. Unveiled globally on 29 March 2023, it pairs a brand-new naturally-aspirated 6.5L V12 (825 CV on its own) with three electric motors — two front-axle motors for torque-vectoring AWD and one integrated into the new 8-speed dual-clutch transmission — for a combined 1015 CV (1001 bhp) and 807 Nm. The carbon-fibre monocoque 'Monofuselage' chassis is dramatically lighter and stiffer than the Aventador's, with a fully exposed V12 visible through the rear buttresses. A 3.8 kWh battery enables up to 10 km of silent, pure-EV 'Città' driving. The Revuelto is sold as a single, fully-loaded variant in India, with deep Ad Personam customisation available on paint, wheels, and interior trim — including bespoke one-off 'Opera Unica' commissions."
+  },
+  "images": {
+    "logo": "/static/images/logos/lamborghini.png"
+  },
+  "colors": [
+    {
+      "name": "Giallo Inti",
+      "hex": "#F5C518",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Nero Noctis",
+      "hex": "#0A0A0A",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Rosso Bia",
+      "hex": "#8B1A1A",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Blu Eleos",
+      "hex": "#1A2D6B",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Bianco Monocerus",
+      "hex": "#F5F5F5",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Grigio Liquieo",
+      "hex": "#7A7D80",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Verde Selvans",
+      "hex": "#2A5A20",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Arancio Borealis",
+      "hex": "#E05A00",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Blu Astraeus",
+      "hex": "#1F4A6B",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Viola Pasifae",
+      "hex": "#5A1A6B",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Bronzo Zenas",
+      "hex": "#8B5A2B",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Verde Turbine",
+      "hex": "#1E4630",
+      "type": "Standard",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    },
+    {
+      "name": "Ad Personam / Opera Unica (Bespoke Hand-Painted)",
+      "hex": null,
+      "type": "Ad Personam Custom",
+      "variants": [
+        "revuelto-lb744"
+      ]
+    }
+  ],
+  "sharedSpecs": {
+    "dimensions": {
+      "length": "4947 mm",
+      "width": "2266 mm",
+      "height": "1160 mm",
+      "wheelbase": "2779 mm",
+      "groundClearance": "107 mm (standard) / raised via front nose-lift system",
+      "bootSpace": "N/A (Mid-Engine, Minimal Front Storage)",
+      "fuelTank": "90 Litres",
+      "kerbWeight": "1772 kg (dry)",
+      "doors": 2
+    },
+    "suspension": {
+      "front": "Double wishbone with Lamborghini Magneride adaptive dampers",
+      "rear": "Pushrod with Lamborghini Magneride adaptive dampers",
+      "additionalTech": "Active 3-position rear wing; front nose-lift system for speed-breaker clearance; carbon-fibre Monofuselage monocoque chassis"
+    },
+    "steering": {
+      "type": "Electromechanical Power Steering (LDS — Lamborghini Dynamic Steering)",
+      "column": "Fixed Race-Inspired Position"
+    },
+    "brakes": {
+      "front": "CCB Plus Carbon-Ceramic — 10-Piston Fixed Monoblock Aluminium Calipers",
+      "rear": "CCB Plus Carbon-Ceramic — 4-Piston Fixed Monoblock Aluminium Calipers",
+      "brakeAssist": true
+    },
+    "tyres": {
+      "Standard": "20-inch front / 21-inch rear (Bridgestone Potenza)",
+      "Optional": "21-inch front / 22-inch rear"
+    },
+    "platform": "Lamborghini Monofuselage Carbon-Fibre Monocoque",
+    "emissionNorm": "BS VI Phase 2",
+    "e20Compatible": false
+  },
+  "engineDatabase": {
+    "v12-6-5L-na-phev-1015cv": {
+      "id": "v12-6-5L-na-phev-1015cv",
+      "name": "6.5L Naturally Aspirated V12 + 3 Electric Motors (PHEV) — 1015 CV Combined",
+      "engineType": "V12 Naturally Aspirated + Tri-Motor PHEV",
+      "displacement": "6498 cc",
+      "engineLayout": "Mid-Mounted V12 (65° bank angle)",
+      "cylinders": 12,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": false,
+      "fuelSupplySystem": "Direct Injection (V12) + Electric",
+      "redline": "9500 rpm",
+      "hybrid": true,
+      "hybridType": "Plug-In Hybrid (PHEV)",
+      "v12StandaloneOutput": "825 CV (814 bhp) @ 9250 rpm",
+      "electricMotors": "2× Front-Axle Motors (Torque Vectoring) + 1× Transmission-Integrated Motor",
+      "batteryCapacity": "3.8 kWh",
+      "electricRange": "~10 km (EV-only, Città mode)",
+      "chargingPower": "7.4 kW AC (Optional Home Wallbox)",
+      "automatic": {
+        "power": "1015 CV (1001 bhp / 746.5 kW) combined",
+        "torque": "807 Nm combined",
+        "gearbox": "8-Speed Dual-Clutch Automatic (DCT)",
+        "driveType": "AWD (Electric Front + Mechanical Rear)",
+        "acceleration0To100": "2.5 sec",
+        "topSpeed": "350+ km/h",
+        "mileageARAI": "8.4 kmpl (claimed, petrol-electric combined)"
+      }
+    }
+  },
+  "variantFamilies": [
+    {
+      "id": "revuelto-lb744",
+      "name": "Revuelto LB744",
+      "position": "Single Flagship Trim",
+      "tier": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "revuelto-lb744",
+      "name": "Revuelto 6.5 PHEV Coupe (LB744)",
+      "family": "revuelto-lb744",
+      "rank": 1,
+      "price": {
+        "exShowroom": 88900000
+      },
+      "configuration": {
+        "fuel": "Petrol PHEV",
+        "engine": "v12-6-5L-na-phev-1015cv",
+        "transmission": "Automatic",
+        "gearbox": "8-Speed Dual-Clutch Automatic (DCT)",
+        "drivetrain": "AWD (Electric Front + Mechanical Rear)",
+        "seating": 2,
+        "tyreSizeLabel": "20-inch front / 21-inch rear"
+      },
+      "performance": {
+        "power": "1015 CV (1001 bhp / 746.5 kW) combined",
+        "torque": "807 Nm combined",
+        "mileageARAI": "8.4 kmpl (claimed combined)",
+        "acceleration0To100": "2.5 sec",
+        "topSpeed": "350+ km/h"
+      },
+      "wheels": {
+        "size": "20/21 Inch",
+        "type": "Y-Pattern Forged Alloy Wheels (Lamborghini Signature Design)",
+        "tyreSizeLabel": "20-inch front / 21-inch rear"
+      },
+      "comfort": {
+        "powerSteering": true,
+        "airConditioner": true,
+        "automaticClimateControl": true,
+        "threeZoneClimateControl": false,
+        "rearAcVents": false,
+        "cruiseControl": true,
+        "adaptiveCruiseControl": true,
+        "keylessEntry": true,
+        "pushButtonStart": true,
+        "heatedFrontSeats": false,
+        "ventilatedFrontSeats": true,
+        "poweredDriverSeat": false,
+        "poweredPassengerSeat": false,
+        "wirelessCharging": true,
+        "electricParkingBrake": true,
+        "autoHold": false,
+        "driveModes": true,
+        "driveModeTypes": "Città (EV), Strada, Sport, Corsa + Recharge, Hybrid, Performance (13 total modes)",
+        "paddleShifters": true,
+        "rainSensingWiper": false,
+        "frontParkingSensors": true,
+        "rearParkingSensors": true,
+        "rearDefogger": false,
+        "usbCharger": true,
+        "tiltTelescopicSteering": false,
+        "sunroof": {
+          "available": false,
+          "type": null
+        },
+        "ambientLighting": true,
+        "voiceCommands": false,
+        "smartKey": true,
+        "noseLiftSystem": true
+      },
+      "interior": {
+        "digitalCluster": true,
+        "digitalClusterSize": "12.3 inch Digital Instrument Cluster",
+        "touchscreenSize": "8.4 inch Vertical Central Touchscreen + 9.1 inch Passenger Display",
+        "upholstery": "Alcantara / Leather Sport Seats",
+        "leatherWrappedSteering": true,
+        "flatBottomSteering": true,
+        "ambientLighting": true,
+        "headsUpDisplay": false,
+        "yShapedDashboard": true,
+        "exposedCarbonFibreTrim": true,
+        "fighterJetCockpitDesign": true,
+        "illuminatedGlovebox": false,
+        "paddleShifters": true
+      },
+      "exterior": {
+        "matrixLedHeadlamps": false,
+        "ledDRL": true,
+        "ledTailLamps": true,
+        "alloyWheels": true,
+        "orvmElectric": true,
+        "orvmAutoDimming": false,
+        "orvmHeated": false,
+        "orvmLedIndicators": true,
+        "autoFoldOrvm": false,
+        "headlampWashers": false,
+        "rainSensingWiper": false,
+        "rearWindowDefogger": false,
+        "connectedLedTailLamps": true,
+        "activeRearSpoiler": true,
+        "exposedV12Engine": true,
+        "scissorDoors": true,
+        "yShapedLighting": true,
+        "dualToneExterior": false
+      },
+      "safety": {
+        "airbags": 5,
+        "driverAirbag": true,
+        "passengerAirbag": true,
+        "sideAirbags": true,
+        "curtainAirbags": false,
+        "sideAirbagFront": true,
+        "sideAirbagRear": false,
+        "kneeAirbag": true,
+        "abs": true,
+        "ebd": true,
+        "brakeAssist": true,
+        "esc": true,
+        "tractionControl": true,
+        "dynamicStabilityControl": true,
+        "corneringBrakeControl": true,
+        "tpms": true,
+        "rearCamera": true,
+        "rearCameraType": "Rear Parking Camera",
+        "frontParkingSensors": true,
+        "rearParkingSensors": true,
+        "engineImmobilizer": true,
+        "allWheelDiscBrakes": true,
+        "adas": true,
+        "carbonCeramicBrakes": true
+      },
+      "adas": {
+        "available": true,
+        "level": "Level 1+ (Lamborghini LDVI Integrated Dynamics)",
+        "adaptiveCruiseControl": true,
+        "forwardCollisionWarning": true,
+        "automaticEmergencyBraking": false,
+        "laneDepartureWarning": true,
+        "laneKeepAssist": false,
+        "blindSpotMonitor": false,
+        "rearCrossTrafficAlert": true,
+        "autoHighBeam": false,
+        "driverAttentionWarning": false,
+        "trafficSignRecognition": false,
+        "laneChangeWarning": true
+      },
+      "infotainment": {
+        "touchscreen": true,
+        "screenSize": "8.4 inch Vertical Touchscreen + 9.1 inch Passenger Display",
+        "androidAuto": true,
+        "appleCarplay": true,
+        "wirelessAndroidAuto": false,
+        "wirelessAppleCarplay": false,
+        "bluetooth": true,
+        "usbPorts": true,
+        "speakerCount": 10,
+        "premiumAudio": "Lamborghini-Tuned Premium Sound System",
+        "radio": true,
+        "tripleScreen": true,
+        "voiceAssistant": false,
+        "passengerDisplay": true
+      },
+      "connectedTech": {
+        "available": true,
+        "appName": "Lamborghini UNICA App",
+        "remoteDoorLockUnlock": true,
+        "remoteHornLight": false,
+        "remoteAcControl": false,
+        "remoteEngineStart": false,
+        "otaUpdates": true,
+        "navigation": true,
+        "navigationWithLiveTraffic": false,
+        "eCallICall": false,
+        "sosAlert": false,
+        "stolenVehicleTracking": false,
+        "findMyCar": true,
+        "diagnostics": true,
+        "liveTracking": false
+      },
+      "evHybrid": {
+        "hybrid": true,
+        "plugInHybrid": true,
+        "mildHybrid": false,
+        "electricOnly": false,
+        "strongHybrid": false,
+        "dedicatedEvPlatform": false,
+        "regenerativeBraking": true,
+        "regenModes": true,
+        "batteryCapacity": "3.8 kWh",
+        "electricRange": "~10 km (Città EV mode)",
+        "homeCharging": true,
+        "dcFastCharging": false,
+        "batteryCooling": true,
+        "batteryPreconditioning": false,
+        "vehicleToLoad": false,
+        "vehicleToVehicleCharging": false,
+        "onePedalDrive": false
+      },
+      "offRoad": {
+        "driveType": "AWD (Electric Front + Mechanical Rear)",
+        "awd": true,
+        "torqueVectoring": true,
+        "activeAero": true,
+        "noseLiftSystem": true,
+        "groundClearanceNote": "107 mm — Nose-Lift Essential for Indian Roads"
+      },
+      "keyFeatures": [
+        "Lamborghini's First Hybrid V12 — Successor to the Aventador",
+        "825 CV NA V12 + 3 Electric Motors = 1015 CV Combined",
+        "0–100 km/h in 2.5 Seconds | Top Speed 350+ km/h",
+        "13 Drive Modes — Including Silent 10 km EV-Only Città Mode",
+        "Carbon-Fibre Monofuselage Chassis — Lighter & Stiffer than Aventador",
+        "Triple-Screen Cockpit — 12.3-inch Cluster + 8.4-inch + 9.1-inch Passenger Display",
+        "CCB Plus Carbon-Ceramic Brakes — 10-Piston Front Calipers"
+      ],
+      "comparisonFeatures": {
+        "comfort": {
+          "adaptiveCruiseControl": true,
+          "adaptiveMSuspension": false,
+          "airConditioner": true,
+          "airPurifier": false,
+          "ambientLighting": true,
+          "ambientLightingColors": false,
+          "autoDimmingIRVM": false,
+          "autoHeadlamps": false,
+          "autoHold": false,
+          "automaticClimateControl": true,
+          "cabinPreCooling": false,
+          "comfortAccess": false,
+          "cooledGlovebox": false,
+          "cruiseControl": true,
+          "cupHoldersFront": false,
+          "cupHoldersRear": false,
+          "digitalKey": false,
+          "driveModes": true,
+          "driverArmrest": false,
+          "driverSeatHeightAdjust": false,
+          "driverSeatLumbarSupport": false,
+          "driverSeatMemory": false,
+          "driverSeatPowered": false,
+          "dualZoneClimateControl": false,
+          "electricParkingBrake": true,
+          "electronicTailgate": false,
+          "followMeHomeHeadlamps": false,
+          "frontArmrest": false,
+          "frontParkingSensors": true,
+          "frontSeatBackPockets": false,
+          "gestureTailgate": false,
+          "heatedFrontSeats": false,
+          "heatedRearSeats": false,
+          "heater": false,
+          "idleStopStart": false,
+          "keylessEntry": true,
+          "massageSeats": false,
+          "mDriveProfessional": false,
+          "multiZoneClimateControl": false,
+          "oneTouchDownDriverWindow": false,
+          "oneTouchUpDriverWindow": false,
+          "paddleShifters": true,
+          "panoramicSunroof": false,
+          "parkingSensors": false,
+          "powerAdjustableOrvm": false,
+          "powerBoot": false,
+          "poweredCoDriverSeat": false,
+          "poweredDriverSeat": false,
+          "poweredPassengerSeat": false,
+          "powerSteering": true,
+          "pushButtonStart": true,
+          "rainSensingWiper": false,
+          "rearAcVents": false,
+          "rearArmrest": false,
+          "rearDefogger": false,
+          "rearParkingSensors": true,
+          "rearReadingLamp": false,
+          "rearSeatRecline": false,
+          "rearSeatSlide": false,
+          "rearSeatSplit": false,
+          "rearSunshade": false,
+          "rearWindowSunshade": false,
+          "rearWiper": false,
+          "remoteAcStart": false,
+          "remoteEngineStart": false,
+          "seatVentilationRear": false,
+          "smartKey": true,
+          "softCloseDoors": false,
+          "speedSensingDoorLock": false,
+          "steeringMountedControls": false,
+          "sunroof": {
+            "available": false,
+            "type": null
+          },
+          "sunroof.available": false,
+          "sunroof.type": false,
+          "threeZoneClimateControl": false,
+          "tiltSteering": false,
+          "tiltTelescopicSteering": false,
+          "usbCharger": true,
+          "ventilatedFrontSeats": true,
+          "voiceCommands": false,
+          "wirelessCharging": true
+        },
+        "interior": {
+          "ambientLighting": true,
+          "analogueCluster": false,
+          "anthraciteHeadliner": false,
+          "bmwCurvedDisplay": false,
+          "captainSeats": false,
+          "carbonBucketSeats": false,
+          "carbonFibreTrim": true,
+          "digitalCluster": true,
+          "digitalClusterSize": "12.3 inch",
+          "dualScreenDisplay": true,
+          "dualToneDashboard": false,
+          "dualToneInterior": false,
+          "flatBottomSteering": true,
+          "foldableRearSeats": false,
+          "frontHeadrestsAdjustable": false,
+          "gloveBox": false,
+          "headsUpDisplay": false,
+          "headUpDisplay": false,
+          "illuminatedGlovebox": false,
+          "leatherWrappedGearKnob": false,
+          "leatherWrappedSteering": true,
+          "mCarbonRoof": false,
+          "metalPedals": false,
+          "mLeatherSteering": false,
+          "mSeatBelts": false,
+          "paddleShifters": true,
+          "parcelTray": false,
+          "premiumFabricUpholstery": false,
+          "rearHeadrestsAdjustable": false,
+          "secondRowCaptainSeats": false,
+          "tachometer": false,
+          "thirdRowSeats": false,
+          "touchscreenSize": "8.4 inch + 9.1 inch Passenger",
+          "upholstery": true,
+          "woodFinishInterior": false
+        },
+        "exterior": {
+          "activeRearSpoiler": true,
+          "adaptiveLedHeadlamps": false,
+          "alloyWheels": true,
+          "autoFoldOrvm": false,
+          "bodyColouredBumpers": false,
+          "carbonFibreRoof": false,
+          "chromeBeltline": false,
+          "connectedLedTailLamps": true,
+          "corneringFogLamps": false,
+          "dualToneExterior": false,
+          "flushDoorHandles": false,
+          "fogLamps": false,
+          "framelessDoors": false,
+          "frunk": false,
+          "glossBlackGrille": false,
+          "halogenHeadlamps": false,
+          "headlampWashers": false,
+          "laserTailLights": false,
+          "ledDRL": true,
+          "ledFogLamps": false,
+          "ledHeadlamps": false,
+          "ledLightBar": false,
+          "ledProjectorHeadlamps": false,
+          "ledTailLamps": true,
+          "mAerodynamicsPackage": false,
+          "matrixLedHeadlamps": false,
+          "mHighGlossShadowLine": false,
+          "orvmAutoDimming": false,
+          "orvmElectric": true,
+          "orvmHeated": false,
+          "orvmLedIndicators": true,
+          "projectorHeadlamps": false,
+          "quadExhaust": false,
+          "rainSensingWiper": false,
+          "rearSpoiler": false,
+          "rearWindowDefogger": false,
+          "rearWindowWasher": false,
+          "rearWindowWiper": false,
+          "roofRails": false,
+          "sharkFinAntenna": false,
+          "skidPlates": false,
+          "spareWheelAlloy": false,
+          "spareWheelSteel": false,
+          "sunroof": false,
+          "tyreRepairKit": false,
+          "wheelCovers": false,
+          "wheelSize": true,
+          "wheelType": true,
+          "yellowIconHeadlamps": false
+        },
+        "safety": {
+          "abs": true,
+          "activeBonnet": false,
+          "adas": true,
+          "airbags": true,
+          "allWheelDiscBrakes": true,
+          "antiPinchPowerWindows": false,
+          "autoDoorLock": false,
+          "brakeAssist": true,
+          "camera360": false,
+          "childSafetyLocks": false,
+          "corneringBrakeControl": true,
+          "curtainAirbag": false,
+          "curtainAirbags": false,
+          "doorAjarWarning": false,
+          "driverAirbag": true,
+          "dynamicStabilityControl": true,
+          "ebd": true,
+          "emergencyStopSignal": false,
+          "engineImmobilizer": true,
+          "esc": true,
+          "frontParkingSensors": true,
+          "hillAssist": false,
+          "hillDescentControl": false,
+          "impactSensingAutoDoorUnlock": false,
+          "isofix": false,
+          "kneeAirbag": true,
+          "mCompoundBrakes": true,
+          "passengerAirbag": true,
+          "rearCamera": true,
+          "rearCameraType": "Rear Parking Camera",
+          "rearParkingSensors": true,
+          "rearSeatBeltReminder": false,
+          "rolloverMitigation": false,
+          "sideAirbagFront": true,
+          "sideAirbagRear": false,
+          "sideAirbags": true,
+          "speedAlert": false,
+          "tpms": true,
+          "tractionControl": true,
+          "vehicleStabilityManagement": true
+        },
+        "adas": {
+          "adaptiveCruiseControl": true,
+          "autoHighBeam": false,
+          "automaticEmergencyBraking": false,
+          "available": true,
+          "blindSpotCollisionAvoidance": false,
+          "blindSpotMonitor": false,
+          "blindViewMonitor": false,
+          "driverAttentionWarning": false,
+          "forwardCollisionWarning": true,
+          "frontCollisionAvoidanceAssist": false,
+          "laneCenteringAssist": false,
+          "laneDepartureWarning": true,
+          "laneFollowingAssist": false,
+          "laneKeepAssist": false,
+          "level": "Level 1+ (Lamborghini LDVI Integrated Dynamics)",
+          "parkingAssistant": false,
+          "parkingCollisionAvoidance": false,
+          "rearCrossTrafficAlert": true,
+          "rearCrossTrafficAvoidance": false,
+          "reversingAssistant": false,
+          "safeExitAssist": false,
+          "trafficSignRecognition": false
+        },
+        "infotainment": {
+          "androidAuto": false,
+          "appleCarplay": false,
+          "bluetooth": false,
+          "bmwOperatingSystem": false,
+          "connectedNavigation": false,
+          "dolbyAtmos": false,
+          "gestureControl": false,
+          "harmanKardonAudio": false,
+          "headsUpDisplay": false,
+          "premiumAudio": false,
+          "radio": false,
+          "rearEntertainmentScreens": false,
+          "screenSize": false,
+          "speakerCount": false,
+          "steeringControls": false,
+          "touchscreen": false,
+          "usbPorts": false,
+          "voiceAssistant": false,
+          "wirelessAndroidAuto": false,
+          "wirelessAppleCarplay": false
+        },
+        "connectedTech": {
+          "appName": false,
+          "available": false,
+          "connectedCarTech": false,
+          "diagnostics": false,
+          "eCallICall": false,
+          "findMyCar": false,
+          "geofencing": false,
+          "liveTracking": false,
+          "navigation": false,
+          "navigationWithLiveTraffic": false,
+          "otaUpdates": false,
+          "remoteAcControl": false,
+          "remoteDoorLockUnlock": false,
+          "remoteEngineStart": false,
+          "remoteHornLight": false,
+          "remoteSoftwareUpgrade": false,
+          "remoteStart": false,
+          "sosAlert": false,
+          "stolenVehicleTracking": false,
+          "valetMode": false
+        },
+        "evHybrid": {
+          "batteryCapacity": false,
+          "batteryCooling": false,
+          "batteryPreconditioning": false,
+          "dcFastCharging": false,
+          "dedicatedEvPlatform": false,
+          "electricOnly": false,
+          "homeCharging": false,
+          "hybrid": false,
+          "mildHybrid": false,
+          "onePedalDrive": false,
+          "plugInHybrid": false,
+          "regenerativeBraking": false,
+          "regenModes": false,
+          "strongHybrid": false,
+          "vehicleToLoad": false,
+          "vehicleToVehicleCharging": false
+        },
+        "offRoad": {
+          "activeMDifferential": false,
+          "awd": false,
+          "crawlMode": false,
+          "differentialLock": false,
+          "driftMode": false,
+          "fourLow": false,
+          "fourWheelDrive": false,
+          "hillDescentControl": false,
+          "lockingDifferential": false,
+          "lowRangeTransferCase": false,
+          "terrainModes": false,
+          "transferCase": false,
+          "waterWadingMode": false
+        }
+      }
+    }
+  ]
+}
