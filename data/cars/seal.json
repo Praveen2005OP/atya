@@ -9,8 +9,8 @@
   "status": "On Sale",
   "viewer360": {
     "exterior": {
-      "available": false,
-      "frames": null
+      "available": true,
+      "frames": 72
     },
     "open": {
       "available": false,

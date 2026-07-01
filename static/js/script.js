@@ -1,5 +1,61 @@
 let cars = [];
 
+let currentCar = null;
+
+function normalizeCar(car) {
+    const minPrice = Number(car?.pricing?.exShowroom?.min) || 0;
+    const maxPrice = Number(car?.pricing?.exShowroom?.max) || 0;
+    const engineDb = car?.engineDatabase || {};
+    const allPower = [];
+    const allTorque = [];
+    Object.values(engineDb).forEach((engine) => {
+        Object.values(engine).forEach((config) => {
+            if (typeof config === "object" && config.power) {
+                const power = parseFloat(config.power);
+                const torque = parseFloat(config.torque);
+                if (!isNaN(power)) allPower.push(power);
+                if (!isNaN(torque)) allTorque.push(torque);
+            }
+        });
+    });
+    const power = { min: Math.min(...allPower) || 0, max: Math.max(...allPower) || 0 };
+    const torque = { min: Math.min(...allTorque) || 0, max: Math.max(...allTorque) || 0 }
+    return {
+        id: car?.slug || "",
+        slug: car?.slug || "",
+        name: car.fullName || car.name || "",
+        brand: car?.brand || "",
+        minides: car?.overview?.minides || "",
+        summary: car?.overview?.description || "",
+        priceMin: minPrice / 100000,
+        priceMax: maxPrice / 100000,
+        body: car?.overview?.segment || "",
+        bodyType: car?.overview?.body || "",
+        fuel: car?.overview?.fuelTypes || [],
+        transmission: car?.overview?.transmissions || [],
+        safety: car?.overview?.safetyRating ?? "Not tested yet",
+        power,
+        torque,
+        seats: car?.overview?.seatingOptions?.[0] || 5,
+        purpose: [],
+        images: { hero: car?.hero?.image || "" },
+        hero: car?.hero || {},
+        overview: car?.overview || {},
+        pricing: car?.pricing || {},
+        variants: car?.variants || [],
+        original: car,
+    };
+};
+
+// ── Initialize the detail page with the current car data ────────────────────────────────────────────────────────────
+function initializeDetailPage() {
+    const currentCarScript = document.getElementById("current-car-data");
+    if (!currentCarScript) return;
+    const rawCar = JSON.parse(currentCarScript.textContent);
+    currentCar = normalizeCar(rawCar);
+    console.log("Current Car:", currentCar);
+}
+
 const state = {
     query: "",
     budget: "all",
@@ -41,53 +97,7 @@ async function loadCars() {
         if (!carsDataEl) return;
         const djangoCars = JSON.parse(carsDataEl.textContent);
 
-        cars = djangoCars.map((car) => {
-            const minPrice = Number(car?.pricing?.exShowroom?.min) || 0;
-            const maxPrice = Number(car?.pricing?.exShowroom?.max) || 0;
-            const engineDb = car?.engineDatabase || {};
-            const allPower = [];
-            const allTorque = [];
-            Object.values(engineDb).forEach((engine) => {
-                Object.values(engine).forEach((config) => {
-                    if (typeof config === "object" && config.power) {
-                        const power = parseFloat(config.power);
-                        const torque = parseFloat(config.torque);
-                        if (!isNaN(power)) allPower.push(power);
-                        if (!isNaN(torque)) allTorque.push(torque);
-                    }
-                });
-            });
-            const power = { min: Math.min(...allPower) || 0, max: Math.max(...allPower) || 0 };
-            const torque = { min: Math.min(...allTorque) || 0, max: Math.max(...allTorque) || 0 };
-
-            return {
-                id: car?.slug || "",
-                slug: car?.slug || "",
-                name: car.fullName || car.name || "",
-                brand: car?.brand || "",
-                minides: car?.overview?.minides || "",
-                summary: car?.overview?.description || "",
-                priceMin: minPrice / 100000,
-                priceMax: maxPrice / 100000,
-                body: car?.overview?.segment || "",
-                bodyType: car?.overview?.body || "",
-                fuel: car?.overview?.fuelTypes || [],
-                transmission: car?.overview?.transmissions || [],
-                safety: car?.overview?.safetyRating ?? "Not tested yet",
-                power,
-                torque,
-                seats: car?.overview?.seatingOptions?.[0] || 5,
-                purpose: [],
-                images: { hero: car?.hero?.image || "" },
-                hero: car?.hero || {},
-                overview: car?.overview || {},
-                pricing: car?.pricing || {},
-                variants: car?.variants || [],
-                original: car,
-            };
-        });
-        console.log("Cars loaded:", djangoCars);
-        console.log("Mapped cars:", cars);
+        cars = djangoCars.map(normalizeCar);
 
         renderBrands();
         renderCars();
@@ -274,6 +284,57 @@ function comparisonGroups() {
             ],
         },
     ];
+}
+
+// ── for detail page ───────────────────────────────────────────────────────────
+
+function updateVariantComparison(carId) {
+    alert("updateVariantComparison");
+    console.log("updateVariantComparison called");
+
+    console.log("carId:", carId);
+
+    const container = document.getElementById("variantComparisonContent");
+
+    console.log("container:", container);
+
+    const car =
+        currentCar && currentCar.id === carId
+            ? currentCar
+            : cars.find(c => c.id === carId);
+
+    console.log("car:", car);
+
+    const variants = getVariants(car);
+
+    console.log("variants:", variants);
+
+    const selectedIds = state.variantCompare[carId] || [];
+
+    console.log("selectedIds:", selectedIds);
+
+    const selectedItems = selectedIds
+        .map(id => {
+            const variant = variants.find(v => v.id === id);
+            return variant ? { car, variant } : null;
+        })
+        .filter(Boolean);
+
+    console.log("selectedItems:", selectedItems);
+
+    if (!selectedItems.length) {
+
+        container.innerHTML = `
+            <div class="empty-state">
+                <p>Select variants from the list to compare them here.</p>
+            </div>
+        `;
+
+        return;
+    }
+
+    container.innerHTML = renderGroupedComparisonTable(selectedItems);
+
 }
 
 // ── Comparison table ───────────────────────────────────────────────────────────
@@ -765,7 +826,7 @@ document.addEventListener("change", (event) => {
     } else {
         state.variantCompare[carId] = current.filter((id) => id !== variantId);
     }
-    renderAll();
+    updateVariantComparison(carId);
 });
 
 els.themeToggle?.addEventListener("click", () => {
@@ -775,11 +836,24 @@ els.themeToggle?.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    if (!document.getElementById("cars-data")) return;
-    loadCars().then(() => {
-        renderBrands();
-        renderAll();
-    }).catch(console.error);
+    // -----------------------------
+    // Homepage
+    // -----------------------------
+    if (document.getElementById("cars-data")) {
+        loadCars()
+            .then(() => {
+                renderBrands();
+                renderAll();
+            })
+            .catch(console.error);
+    }
+    // -----------------------------
+    // Car Detail Page
+    // -----------------------------
+    if (document.getElementById("current-car-data")) {
+        initializeDetailPage();
+        updateVariantComparison(currentCar.id);
+    }
 });
 
 // ── 360 viewer (unchanged) ─────────────────────────────────────────────────────

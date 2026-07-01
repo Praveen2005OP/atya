@@ -1,11 +1,6 @@
 {% load static %}
 
-<aside class="variant-compare-panel" >
-    <div class="panel-heading">
-        <p class="eyebrow">Same car comparison</p>
-        <h3>Compare variants</h3>
-        <p>Select up to three variants of the {{ car.name }}.</p>
-    </div>
+<!-- <aside class="variant-compare-panel" 
     <div class="empty-state">
         <p>Select variants from the list to compare them here.</p>
     </div>
@@ -17,12 +12,29 @@
             </tr>
         </thead>
         <tbody id="compareBody">
-            <!-- <tr>
+            <tr>
                 <th>Spec</th>
                 <th>{{ car.name }}<span>Smart Petrol Manual</span></th>
                 <th>{{ car.name }}<span>Smart Diesel Manual</span></th>
                 <th>{{ car.name }}<span>Pure Petrol Automatic</span></th>
-            </tr> -->
+            </tr>
         </tbody>
     </table>
+</aside> -->
+<aside class="variant-compare-panel">
+
+    <div class="panel-heading">
+        <p class="eyebrow">Same car comparison</p>
+        <h3>Compare variants</h3>
+        <p>Select up to three variants of the {{ car.name }}.</p>
+    </div>
+
+    <div id="variantComparisonContent">
+
+        <div class="empty-state" id="compareEmptyState">
+            <p>Select variants from the list to compare them here.</p>
+        </div>
+
+    </div>
+
 </aside>
