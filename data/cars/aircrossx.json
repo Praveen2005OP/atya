@@ -1,6 +1,6 @@
 {
   "id": "citroen-aircross-x",
-  "slug": "aircross_x",
+  "slug": "aircrossx",
   "brand": "Citroen",
   "model": "Aircross X",
   "name": "Citroen Aircross X",
@@ -22,12 +22,12 @@
   },
   "hero": {
     "tagline": "Space. Comfort. Smart Innovation.",
-    "image": "/static/images/car-images/aircross_x/pic1.png",
+    "image": "/static/images/car-images/aircrossx/pic1.png",
     "gallery": [
-      "/static/images/car-images/aircross_x/pic1.png",
-      "/static/images/car-images/aircross_x/pic2.png",
-      "/static/images/car-images/aircross_x/pic3.png",
-      "/static/images/car-images/aircross_x/pic4.png"
+      "/static/images/car-images/aircrossx/pic1.png",
+      "/static/images/car-images/aircrossx/pic2.png",
+      "/static/images/car-images/aircrossx/pic3.png",
+      "/static/images/car-images/aircrossx/pic4.png"
     ]
   },
   "pricing": {
@@ -41,7 +41,7 @@
     "segment": "Mid-Size SUV",
     "body": "SUV",
     "doors": 5,
-    "safetyRating": "5 (Bharat NCAP)",
+    "safetyRating": "5",
     "seatingOptions": [
       5,
       7

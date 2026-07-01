@@ -273,7 +273,7 @@
     "platform": "Hyundai-Kia K3",
     "emissionNorm": "BS VI Phase 2",
     "e20Compatible": true,
-    "safetyRating": "5 Star (BNCAP 2026)"
+    "safetyRating": "5"
   },
   "engineDatabase": {
     "petrol_na": {

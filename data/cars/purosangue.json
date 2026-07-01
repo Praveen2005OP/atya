@@ -41,7 +41,7 @@
     "segment": "Super SUV / Ferrari GT SUV",
     "body": "4-Door SUV (Suicide / Coach Doors at rear)",
     "doors": 4,
-    "safetyRating": "N/A",
+    "safetyRating": null,
     "seatingOptions": [
       4
     ],

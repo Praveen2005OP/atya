@@ -41,7 +41,7 @@
     "segment": "Full-Size Luxury SUV (Body-on-Frame)",
     "body": "SUV",
     "doors": 5,
-    "safetyRating": "Not Tested (Global NCAP)",
+    "safetyRating": null,
     "seatingOptions": [
       5
     ],

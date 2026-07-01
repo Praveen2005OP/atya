@@ -41,7 +41,7 @@
     "segment": "Compact Off-Road SUV",
     "body": "SUV (3-Door, Ladder Frame)",
     "doors": 3,
-    "safetyRating": "Not Tested (Global NCAP / Bharat NCAP)",
+    "safetyRating": null,
     "seatingOptions": [
       4
     ],

@@ -229,7 +229,7 @@
     },
     "platform": "TNGA-C (Toyota New Global Architecture)",
     "emissionNorm": "BS VI Phase 2",
-    "safetyRating": "5 Star Bharat NCAP 2024",
+    "safetyRating": "5",
     "e20Compatible": true
   },
   "engineDatabase": {

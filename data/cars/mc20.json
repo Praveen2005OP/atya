@@ -41,7 +41,7 @@
     "segment": "Mid-Engine Supercar",
     "body": "Coupe / Convertible (2-Door, 2-Seater)",
     "doors": 2,
-    "safetyRating": "Not Tested (Global NCAP)",
+    "safetyRating": null,
     "seatingOptions": [
       2
     ],

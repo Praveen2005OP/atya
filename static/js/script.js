@@ -53,7 +53,6 @@ function initializeDetailPage() {
     if (!currentCarScript) return;
     const rawCar = JSON.parse(currentCarScript.textContent);
     currentCar = normalizeCar(rawCar);
-    console.log("Current Car:", currentCar);
 }
 
 const state = {
@@ -289,30 +288,13 @@ function comparisonGroups() {
 // ── for detail page ───────────────────────────────────────────────────────────
 
 function updateVariantComparison(carId) {
-    alert("updateVariantComparison");
-    console.log("updateVariantComparison called");
-
-    console.log("carId:", carId);
-
     const container = document.getElementById("variantComparisonContent");
-
-    console.log("container:", container);
-
     const car =
         currentCar && currentCar.id === carId
             ? currentCar
             : cars.find(c => c.id === carId);
-
-    console.log("car:", car);
-
     const variants = getVariants(car);
-
-    console.log("variants:", variants);
-
     const selectedIds = state.variantCompare[carId] || [];
-
-    console.log("selectedIds:", selectedIds);
-
     const selectedItems = selectedIds
         .map(id => {
             const variant = variants.find(v => v.id === id);
@@ -320,21 +302,16 @@ function updateVariantComparison(carId) {
         })
         .filter(Boolean);
 
-    console.log("selectedItems:", selectedItems);
-
     if (!selectedItems.length) {
-
         container.innerHTML = `
             <div class="empty-state">
                 <p>Select variants from the list to compare them here.</p>
             </div>
         `;
-
         return;
     }
 
     container.innerHTML = renderGroupedComparisonTable(selectedItems);
-
 }
 
 // ── Comparison table ───────────────────────────────────────────────────────────

@@ -41,7 +41,7 @@
     "segment": "Ultra-Luxury Performance SUV",
     "body": "SUV",
     "doors": 5,
-    "safetyRating": "Not Tested (Global NCAP)",
+    "safetyRating": null,
     "seatingOptions": [
       5
     ],

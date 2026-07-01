@@ -41,7 +41,7 @@
     "segment": "Grand Tourer / Super Tourer",
     "body": "2-Door Coupe",
     "doors": 2,
-    "safetyRating": "N/A",
+    "safetyRating": null,
     "seatingOptions": [
       4
     ],

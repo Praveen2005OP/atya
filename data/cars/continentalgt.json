@@ -1,6 +1,6 @@
 {
   "id": "bentley-continental-gt",
-  "slug": "continental gt",
+  "slug": "continentalgt",
   "brand": "Bentley",
   "model": "Continental GT",
   "name": "Bentley Continental GT",
@@ -22,12 +22,12 @@
   },
   "hero": {
     "tagline": "Effortless Power. Uncompromising Luxury.",
-    "image": "/static/images/car-images/continental gt/pic1.png",
+    "image": "/static/images/car-images/continentalgt/pic1.png",
     "gallery": [
-      "/static/images/car-images/continental gt/pic1.png",
-      "/static/images/car-images/continental gt/pic2.png",
-      "/static/images/car-images/continental gt/pic3.png",
-      "/static/images/car-images/continental gt/pic4.png"
+      "/static/images/car-images/continentalgt/pic1.png",
+      "/static/images/car-images/continentalgt/pic2.png",
+      "/static/images/car-images/continentalgt/pic3.png",
+      "/static/images/car-images/continentalgt/pic4.png"
     ]
   },
   "pricing": {
@@ -41,7 +41,7 @@
     "segment": "Ultra-Luxury Grand Tourer",
     "body": "2-Door Coupe (GT) / Convertible (GTC)",
     "doors": 2,
-    "safetyRating": "N/A",
+    "safetyRating": null,
     "seatingOptions": [
       4
     ],

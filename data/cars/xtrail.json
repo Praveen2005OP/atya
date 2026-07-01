@@ -41,7 +41,7 @@
     "segment": "Premium 3-Row SUV",
     "body": "SUV",
     "doors": 5,
-    "safetyRating": "Not Tested (Global NCAP)",
+    "safetyRating": null,
     "seatingOptions": [
       7
     ],

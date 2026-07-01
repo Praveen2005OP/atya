@@ -41,7 +41,7 @@
     "segment": "Ultra-Luxury Full-Size SUV",
     "body": "SUV (Coachbuilt, Bespoke)",
     "doors": 5,
-    "safetyRating": "Not Tested (Global NCAP)",
+    "safetyRating": null,
     "seatingOptions": [
       4,
       5

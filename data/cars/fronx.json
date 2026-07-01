@@ -232,7 +232,7 @@
     "platform": "Heartect (Baleno-based)",
     "emissionNorm": "BS VI Phase 2",
     "e20Compatible": true,
-    "safetyRating": "No NCAP rating (as of 2025)",
+    "safetyRating": null,
     "outlet": "Nexa (Premium)"
   },
   "engineDatabase": {
