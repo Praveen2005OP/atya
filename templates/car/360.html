@@ -1,43 +1,45 @@
 {% load static %}
 
-<span class="badge">Interactive</span>
-<h2>360° Experience</h2>
-<p class="viewer-intro">Explore the vehicle from every angle and experience the cabin in immersive 360°.</p>
-<div class="view-container">
-    <div class="view-stage">
-        <!-- Frame viewer -->
-        <div
-            class="frame-viewer"
-            data-slug="{{ car.slug }}"
-            data-frames="{{ car.viewer360.exterior.frames }}"
-            data-open-frames="{{ car.viewer360.open.frames|default:0 }}"
-        >
+<section class="variant-section" id="variants">
+    <div class="section-header tight">
+        <p class="eyebrow">Interactive</p>
+        <h2>360° Experience</h2>
+    </div>
+    <p class="viewer-intro">Explore the vehicle from every angle and experience the cabin in immersive 360°.</p>
+    <div class="view-container">
+        <div class="view-stage">
+            <!-- Frame viewer -->
+            <div class="frame-viewer" data-slug="{{ car.slug }}" data-frames="{{ car.viewer360.exterior.frames }}"
+                data-open-frames="{{ car.viewer360.open.frames|default:0 }}">
+                {% if car.viewer360.exterior.available %}
+                <img id="car360" src="{% static 'images/car-images/' %}{{ car.slug }}/360/img_0_0_000.webp"
+                    draggable="false">
+                {% elif car.viewer360.open.available %}
+                <img id="car360" src="{% static 'images/car-images/' %}{{ car.slug }}/360-open/img_0_0_000.webp"
+                    draggable="false">
+                {% endif %}
+            </div>
+            <!-- Interior viewer -->
+            <div id="interior360" data-slug="{{ car.slug }}">
+            </div>
+        </div>
+        {% if car.viewer360.exterior.available or car.viewer360.open.available or car.viewer360.interior.available %}
+        <div class="viewer-tabs">
             {% if car.viewer360.exterior.available %}
-            <img id="car360" src="{% static 'images/car-images/' %}{{ car.slug }}/360/img_0_0_000.webp" draggable="false">
-            {% elif car.viewer360.open.available %}
-            <img id="car360" src="{% static 'images/car-images/' %}{{ car.slug }}/360-open/img_0_0_000.webp" draggable="false">
+            <button class="viewer-tab active" data-view="exterior">Exterior</button>
+            {% endif %}
+            {% if car.viewer360.open.available %}
+            <button class="viewer-tab" data-view="open">Doors Open</button>
+            {% endif %}
+            {% if car.viewer360.interior.available %}
+            <button class="viewer-tab" data-view="interior">Interior</button>
             {% endif %}
         </div>
-        <!-- Interior viewer -->
-        <div id="interior360" data-slug="{{ car.slug }}">
+        {% else %}
+        <div class="viewer-unavailable">
+            <h3>360° Experience Unavailable</h3>
+            <p>Interactive view is currently not available for this model.</p>
         </div>
-    </div>
-    {% if car.viewer360.exterior.available or car.viewer360.open.available or car.viewer360.interior.available %}
-    <div class="viewer-tabs">
-        {% if car.viewer360.exterior.available %}
-        <button class="viewer-tab active" data-view="exterior">Exterior</button>
-        {% endif %}
-        {% if car.viewer360.open.available %}
-        <button class="viewer-tab" data-view="open">Doors Open</button>
-        {% endif %}
-        {% if car.viewer360.interior.available %}
-        <button class="viewer-tab" data-view="interior">Interior</button>
         {% endif %}
     </div>
-    {% else %}
-    <div class="viewer-unavailable">
-        <h3>360° Experience Unavailable</h3>
-        <p>Interactive view is currently not available for this model.</p>
-    </div>
-    {% endif %}
-</div>
+</section>

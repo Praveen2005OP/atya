@@ -4,7 +4,7 @@
 <div class="quick-read">
     <div>
         <span>Price</span>
-        <strong>₹{{ car.pricing.exShowroom.min|lakh }}L - ₹{{ car.pricing.exShowroom.max|lakh }}L</strong>
+        <strong>₹{{ car.pricing.exShowroom.min|ex_price }} - ₹{{ car.pricing.exShowroom.max|ex_price }}</strong>
     </div>
     <div>
         <span>Power</span>
@@ -25,7 +25,7 @@
         <h2>Everything important, without the clutter.</h2>
     </div>
     <div class="detail-specs">
-        <div class="spec-tile"><span>Price</span><strong>₹{{ car.pricing.exShowroom.min|lakh }}L - ₹{{ car.pricing.exShowroom.max|lakh }}L</strong></div>
+        <div class="spec-tile"><span>Price</span><strong>₹{{ car.pricing.exShowroom.min|ex_price }} - ₹{{ car.pricing.exShowroom.max|ex_price }}</strong></div>
         <div class="spec-tile"><span>Fuel</span><strong>{{ car.overview.fuelTypes|default:""|join:", " }}</strong></div>
         <div class="spec-tile"><span>Transmission</span><strong>{{ car.overview.transmissions|default:""|join:", " }}</strong></div>
         <div class="spec-tile"><span>Power</span><strong>{{ car.engineDatabase|power }}</strong></div>

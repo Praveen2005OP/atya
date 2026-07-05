@@ -7,7 +7,7 @@
             <div>
                 <span class="badge">{{ variant.family }}</span>
                 <h3>{{ variant.name }}</h3>
-                <p>{{ variant.configuration.fuel }} · {{ variant.configuration.transmission }} · INR {{ variant.price.exShowroom|lakh }}L</p>
+                <p>{{ variant.configuration.fuel }} · {{ variant.configuration.transmission }} · INR {{ variant.price.exShowroom|ex_price }}</p>
             </div>
             <div class="variant-spec-row">
                 <span>{{ variant.performance.power }}</span>

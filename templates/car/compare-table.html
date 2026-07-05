@@ -1,26 +1,5 @@
 {% load static %}
 
-<!-- <aside class="variant-compare-panel" 
-    <div class="empty-state">
-        <p>Select variants from the list to compare them here.</p>
-    </div>
-    <table class="compare-table full-compare-table">
-        <thead id="compareHead">
-            <tr>
-                <th>Spec</th>
-                <th>{{ car.name }}<span>{{ variant.name }}</span></th>
-            </tr>
-        </thead>
-        <tbody id="compareBody">
-            <tr>
-                <th>Spec</th>
-                <th>{{ car.name }}<span>Smart Petrol Manual</span></th>
-                <th>{{ car.name }}<span>Smart Diesel Manual</span></th>
-                <th>{{ car.name }}<span>Pure Petrol Automatic</span></th>
-            </tr>
-        </tbody>
-    </table>
-</aside> -->
 <aside class="variant-compare-panel">
 
     <div class="panel-heading">
@@ -29,12 +8,51 @@
         <p>Select up to three variants of the {{ car.name }}.</p>
     </div>
 
-    <div id="variantComparisonContent">
+    <div class="compare-toolbar">
+        <label class="compare-toggle">
+            <input
+                type="checkbox"
+                id="differenceToggle">
+            Show differences only
+        </label>
+    </div>
 
-        <div class="empty-state" id="compareEmptyState">
-            <p>Select variants from the list to compare them here.</p>
+    <div class="compare-table-wrapper">
+        <div id="variantComparisonContent">
+            <div class="empty-state" id="compareEmptyState">
+                <p>Select variants from the list to compare them here.</p>
+            </div>
         </div>
-
     </div>
 
 </aside>
+<!-- {% load static %}
+
+<aside class="variant-compare-panel">
+
+    <div class="panel-heading">
+        <p class="eyebrow">Same car comparison</p>
+        <h3>Compare variants</h3>
+        <p>Select up to three variants of the {{ car.name }}.</p>
+    </div>
+
+    <div class="compare-toolbar">
+        <label class="compare-toggle">
+            <input
+                type="checkbox"
+                id="differenceToggle"
+                {% if compare_settings.differencesOnly %}checked{% endif %}
+            >
+            Show differences only
+        </label>
+    </div>
+
+    <div class="compare-table-wrapper">
+        <div id="variantComparisonContent">
+            <div class="empty-state" id="compareEmptyState">
+                <p>Select variants from the list to compare them here.</p>
+            </div>
+        </div>
+    </div>
+
+</aside> -->

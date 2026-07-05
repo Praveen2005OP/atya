@@ -5,13 +5,16 @@ import random
 register = template.Library()
 
 @register.filter
-def lakh(value):
+def ex_price(value):
     try:
-        return round(
-            int(value) / 100000,
-            2
-        )
-    except:
+        value = float(value)
+
+        if value >= 10000000:  # 1 Crore or more
+            return f"{round(value / 10000000, 2)} Cr"
+        else:
+            return f"{round(value / 100000, 2)} Lakh"
+
+    except (ValueError, TypeError):
         return value
 
 @register.filter

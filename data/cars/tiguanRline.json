@@ -1,0 +1,623 @@
+{
+  "id": "volkswagen-tiguan-r-line",
+  "slug": "tiguanRline",
+  "brand": "Volkswagen",
+  "model": "Tiguan R-Line",
+  "name": "Volkswagen Tiguan R-Line",
+  "generation": "3rd Gen (2025–present, India)",
+  "launchYear": 2025,
+  "status": "On Sale",
+  "viewer360": {
+    "exterior": {
+      "available": false,
+      "frames": null
+    },
+    "open": {
+      "available": false,
+      "frames": null
+    },
+    "interior": {
+      "available": null
+    }
+  },
+  "hero": {
+    "tagline": "Go BeyondeR.",
+    "image": "/static/images/car-images/tiguanRline/pic1.png",
+    "gallery": [
+      "/static/images/car-images/tiguanRline/pic1.png",
+      "/static/images/car-images/tiguanRline/pic2.png",
+      "/static/images/car-images/tiguanRline/pic3.png",
+      "/static/images/car-images/tiguanRline/pic4.png"
+    ]
+  },
+  "pricing": {
+    "currency": "INR",
+    "exShowroom": {
+      "min": 4711000,
+      "max": 4711000
+    }
+  },
+  "overview": {
+    "segment": "Premium Mid-Size SUV",
+    "body": "SUV",
+    "doors": 5,
+    "safetyRating": "5",
+    "seatingOptions": [
+      5
+    ],
+    "fuelTypes": [
+      "Petrol"
+    ],
+    "transmissions": [
+      "Automatic (7-Speed DSG)"
+    ],
+    "driveTypes": [
+      "AWD (4MOTION)"
+    ],
+    "useCases": [
+      "Highway",
+      "City",
+      "Performance",
+      "Family"
+    ],
+    "minides": "Volkswagen's third-generation Tiguan, offered exclusively in India in its sportiest R-Line trim — featuring a 15-inch touchscreen, Level 2 ADAS, DCC Pro adaptive suspension, 4MOTION AWD, and 9 airbags.",
+    "description": "The third-generation Volkswagen Tiguan launched in India in 2025 in a single fully-loaded R-Line variant at ₹47.11 lakh (ex-showroom). It is powered by a 2.0-litre TSI EVO turbocharged petrol engine producing 204 PS and 320 Nm, paired with a 7-speed DSG and intelligent 4MOTION all-wheel drive. The R-Line brings sporty bumpers front and rear, a connected full-width light bar at the front, gloss-black detailing, 19-inch dual-tone alloy wheels, and 'R' badging throughout. Inside, the cabin features a 15-inch touchscreen with wireless Android Auto and Apple CarPlay, a 10.2-inch digital driver display, a head-up display, panoramic sunroof, DCC Pro adaptive chassis control, massage front seats, configurable ambient lighting, and a full Level 2 ADAS suite including Travel Assist. The Tiguan R-Line holds a 5-star Euro NCAP safety rating and comes with 9 airbags as standard."
+  },
+  "images": {
+    "logo": "/static/images/logos/volkswagen.png"
+  },
+  "colors": [
+    {
+      "name": "Oryx White Mother Of Pearl",
+      "hex": "#F2F2EC",
+      "type": "Pearl",
+      "variants": [
+        "r-line"
+      ]
+    },
+    {
+      "name": "Oyster Silver Metallic",
+      "hex": "#B8B8B8",
+      "type": "Metallic",
+      "variants": [
+        "r-line"
+      ]
+    },
+    {
+      "name": "Persimmon Red Metallic",
+      "hex": "#8B1A1A",
+      "type": "Metallic",
+      "variants": [
+        "r-line"
+      ]
+    },
+    {
+      "name": "Cipressino Green Metallic",
+      "hex": "#2E4A30",
+      "type": "Metallic",
+      "variants": [
+        "r-line"
+      ]
+    },
+    {
+      "name": "Nightshade Blue Metallic",
+      "hex": "#1B2A4A",
+      "type": "Metallic",
+      "variants": [
+        "r-line"
+      ]
+    },
+    {
+      "name": "Grenadilla Black Metallic",
+      "hex": "#0A0A0A",
+      "type": "Metallic",
+      "variants": [
+        "r-line"
+      ]
+    }
+  ],
+  "sharedSpecs": {
+    "dimensions": {
+      "length": "4539 mm",
+      "width": "1859 mm",
+      "height": "1656 mm",
+      "wheelbase": "2680 mm",
+      "groundClearance": "186 mm",
+      "bootSpace": "652 Litres (40:20:40 Split Folding Rear Seats)",
+      "fuelTank": "60 Litres",
+      "kerbWeight": "1655 kg",
+      "doors": 5
+    },
+    "suspension": {
+      "front": "MacPherson Strut with DCC Pro Adaptive Dampers",
+      "rear": "Multi-Link with DCC Pro Adaptive Dampers",
+      "additionalTech": "Dynamic Chassis Control Pro (DCC Pro), Vehicle Dynamics Manager"
+    },
+    "steering": {
+      "type": "Progressive Electric Power Steering",
+      "column": "Tilt and Telescopic Adjustable"
+    },
+    "brakes": {
+      "front": "Ventilated Disc",
+      "rear": "Ventilated Disc",
+      "brakeAssist": true
+    },
+    "tyres": {
+      "standard": "235/50 R19 (19-inch Dual-Tone Alloy Wheels)"
+    },
+    "platform": "MQB Evo (Modular Transverse Matrix, Evolved)",
+    "emissionNorm": "BS VI Phase 2",
+    "e20Compatible": false
+  },
+  "engineDatabase": {
+    "2-0-tsi-evo-204ps": {
+      "id": "2-0-tsi-evo-204ps",
+      "name": "2.0L TSI EVO Turbo Petrol (204 PS)",
+      "engineType": "EA888 Evo Inline-4 Turbo Petrol",
+      "displacement": "1984 cc",
+      "engineLayout": "Inline-4",
+      "cylinders": 4,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": true,
+      "fuelSupplySystem": "Direct + Port Injection",
+      "mildHybrid": false,
+      "automatic": {
+        "power": "204 hp (150 kW) @ 5100 rpm",
+        "torque": "320 Nm @ 1500–4100 rpm",
+        "gearbox": "7-Speed DSG",
+        "driveType": "4MOTION AWD",
+        "acceleration0To100": "7.5 sec",
+        "topSpeed": "210 km/h",
+        "mileageARAI": "12.58 kmpl"
+      }
+    }
+  },
+  "variantFamilies": [
+    {
+      "id": "r-line",
+      "name": "Tiguan R-Line (Single Fully-Loaded Variant)",
+      "position": "Flagship Only Trim",
+      "tier": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "r-line",
+      "name": "Tiguan R-Line",
+      "family": "r-line",
+      "rank": 1,
+      "price": {
+        "exShowroom": 4711000
+      },
+      "configuration": {
+        "fuel": "Petrol",
+        "engine": "2-0-tsi-evo-204ps",
+        "transmission": "Automatic",
+        "gearbox": "7-Speed DSG",
+        "drivetrain": "4MOTION AWD",
+        "seating": 5,
+        "tyreSizeLabel": "235/50 R19"
+      },
+      "performance": {
+        "power": "204 hp (150 kW) @ 5100 rpm",
+        "torque": "320 Nm @ 1500–4100 rpm",
+        "mileageARAI": "12.58 kmpl",
+        "acceleration0To100": "7.5 sec",
+        "topSpeed": "210 km/h"
+      },
+      "wheels": {
+        "size": "19 Inch",
+        "type": "Dual-Tone R-Line Alloy Wheels",
+        "tyreSizeLabel": "235/50 R19"
+      },
+      "comfort": {
+        "powerSteering": true,
+        "airConditioner": true,
+        "automaticClimateControl": true,
+        "threeZoneClimateControl": true,
+        "rearAcVents": true,
+        "cruiseControl": true,
+        "adaptiveCruiseControl": true,
+        "keylessEntry": true,
+        "comfortAccess": false,
+        "pushButtonStart": true,
+        "heatedFrontSeats": true,
+        "heatedRearSeats": false,
+        "ventilatedFrontSeats": false,
+        "massageSeats": true,
+        "poweredDriverSeat": false,
+        "poweredPassengerSeat": false,
+        "driverSeatMemory": false,
+        "driverSeatLumbarSupport": true,
+        "wirelessCharging": true,
+        "softCloseDoors": false,
+        "electricParkingBrake": true,
+        "autoHold": true,
+        "driveModes": true,
+        "rainSensingWiper": true,
+        "frontParkingSensors": true,
+        "rearParkingSensors": true,
+        "rearDefogger": true,
+        "rearSunshade": false,
+        "usbCharger": true,
+        "tiltTelescopicSteering": true,
+        "sunroof": true,
+        "ambientLighting": true,
+        "panoramicSunroof": "Panoramic Sunroof",
+        "dccProAdaptiveSuspension": true
+      },
+      "interior": {
+        "digitalCluster": true,
+        "digitalClusterSize": "10.2 inch",
+        "touchscreenSize": "15 inch",
+        "rearEntertainmentScreen": false,
+        "upholstery": "R-Line Leatherette (All-Black)",
+        "leatherWrappedSteering": true,
+        "flatBottomSteering": false,
+        "ambientLighting": true,
+        "headsUpDisplay": true,
+        "woodFinishInterior": false,
+        "illuminatedGlovebox": false
+      },
+      "exterior": {
+        "matrixLedHeadlamps": true,
+        "ledDRL": true,
+        "ledTailLamps": true,
+        "alloyWheels": true,
+        "orvmElectric": true,
+        "orvmAutoDimming": true,
+        "orvmHeated": true,
+        "orvmLedIndicators": true,
+        "autoFoldOrvm": true,
+        "flushDoorHandles": false,
+        "headlampWashers": true,
+        "rainSensingWiper": true,
+        "rearWindowDefogger": true,
+        "rearWindowWiper": true,
+        "glossBlackGrille": true,
+        "connectedLedTailLamps": false,
+        "connectedLightBar": true,
+        "rBadging": true
+      },
+      "safety": {
+        "airbags": 9,
+        "driverAirbag": true,
+        "passengerAirbag": true,
+        "sideAirbags": true,
+        "curtainAirbags": true,
+        "kneeAirbag": true,
+        "abs": true,
+        "ebd": true,
+        "brakeAssist": true,
+        "esc": true,
+        "tractionControl": true,
+        "tpms": true,
+        "rearCamera": true,
+        "rearCameraType": "Rear View Camera with Parking Sensors",
+        "frontParkingSensors": true,
+        "rearParkingSensors": true,
+        "isofix": true,
+        "speedAlert": true,
+        "engineImmobilizer": true,
+        "allWheelDiscBrakes": true,
+        "camera360": false,
+        "adas": true,
+        "impactSensingAutoDoorUnlock": false,
+        "electronicDifferentialLock": true
+      },
+      "adas": {
+        "available": true,
+        "level": "Level 2 (IQ.Drive Travel Assist)",
+        "adaptiveCruiseControl": true,
+        "forwardCollisionWarning": true,
+        "automaticEmergencyBraking": true,
+        "laneDepartureWarning": true,
+        "laneKeepAssist": true,
+        "laneCenteringAssist": true,
+        "blindSpotMonitor": true,
+        "rearCrossTrafficAlert": true,
+        "parkingAssistant": true,
+        "reversingAssistant": false,
+        "autoHighBeam": true,
+        "trafficSignRecognition": true,
+        "driverAttentionWarning": true,
+        "travelAssist": true,
+        "emergencyAssist": true
+      },
+      "infotainment": {
+        "touchscreen": true,
+        "screenSize": "15 inch",
+        "androidAuto": true,
+        "appleCarplay": true,
+        "wirelessAndroidAuto": true,
+        "wirelessAppleCarplay": true,
+        "bluetooth": true,
+        "usbPorts": true,
+        "speakerCount": 8,
+        "premiumAudio": "8-Speaker Sound System",
+        "radio": true,
+        "gestureControl": false,
+        "voiceAssistant": true,
+        "rearEntertainmentScreens": false,
+        "headsUpDisplay": true
+      },
+      "connectedTech": {
+        "available": false,
+        "appName": false,
+        "remoteDoorLockUnlock": false,
+        "remoteHornLight": false,
+        "remoteAcControl": false,
+        "remoteEngineStart": false,
+        "otaUpdates": false,
+        "navigation": true,
+        "navigationWithLiveTraffic": false,
+        "eCallICall": false,
+        "sosAlert": false,
+        "stolenVehicleTracking": false,
+        "findMyCar": false,
+        "diagnostics": false,
+        "liveTracking": false,
+        "remoteSoftwareUpgrade": false
+      },
+      "evHybrid": {
+        "hybrid": false,
+        "mildHybrid": false,
+        "plugInHybrid": false,
+        "batteryCapacity": false,
+        "electricRange": false,
+        "homeCharging": false,
+        "regenerativeBraking": false,
+        "dcFastCharging": false,
+        "electricOnly": false
+      },
+      "offRoad": {
+        "driveType": "4MOTION AWD",
+        "awd": true,
+        "hillAssist": true,
+        "hillDescentControl": true,
+        "terrainModes": "Onroad, Snow, Off-Road, Custom"
+      },
+      "keyFeatures": [
+        "2.0L TSI EVO (204 PS / 320 Nm) + 7-Speed DSG + 4MOTION AWD",
+        "15-inch Touchscreen — Largest in Segment",
+        "DCC Pro Adaptive Suspension + Vehicle Dynamics Manager",
+        "Level 2 ADAS — IQ.Drive Travel Assist Suite",
+        "9 Airbags + 5-Star Euro NCAP",
+        "Head-Up Display + 10.2-inch Digital Cluster",
+        "Matrix LED Headlamps with Connected Front Light Bar"
+      ],
+      "comparisonFeatures": {
+        "comfort": {
+          "adaptiveCruiseControl": true,
+          "airConditioner": true,
+          "ambientLighting": true,
+          "autoDimmingIRVM": true,
+          "autoHeadlamps": true,
+          "autoHold": true,
+          "automaticClimateControl": true,
+          "comfortAccess": false,
+          "cruiseControl": true,
+          "cupHoldersFront": true,
+          "cupHoldersRear": true,
+          "driveModes": true,
+          "driverArmrest": true,
+          "driverSeatHeightAdjust": true,
+          "driverSeatLumbarSupport": true,
+          "driverSeatMemory": false,
+          "driverSeatPowered": false,
+          "electricParkingBrake": true,
+          "frontArmrest": true,
+          "frontParkingSensors": true,
+          "heatedFrontSeats": true,
+          "heatedRearSeats": false,
+          "idleStopStart": true,
+          "keylessEntry": true,
+          "massageSeats": true,
+          "panoramicSunroof": true,
+          "powerAdjustableOrvm": true,
+          "powerBoot": false,
+          "poweredDriverSeat": false,
+          "poweredPassengerSeat": false,
+          "powerSteering": true,
+          "pushButtonStart": true,
+          "rainSensingWiper": true,
+          "rearAcVents": true,
+          "rearArmrest": true,
+          "rearDefogger": true,
+          "rearParkingSensors": true,
+          "rearSeatRecline": true,
+          "rearSunshade": false,
+          "smartKey": true,
+          "softCloseDoors": false,
+          "steeringMountedControls": true,
+          "sunroof": true,
+          "sunroof.available": true,
+          "sunroof.type": "Panoramic Sunroof",
+          "threeZoneClimateControl": true,
+          "tiltTelescopicSteering": true,
+          "usbCharger": true,
+          "ventilatedFrontSeats": false,
+          "voiceCommands": true,
+          "wirelessCharging": true
+        },
+        "interior": {
+          "ambientLighting": true,
+          "analogueCluster": false,
+          "captainSeats": false,
+          "digitalCluster": true,
+          "digitalClusterSize": "10.2 inch",
+          "dualToneInterior": false,
+          "flatBottomSteering": false,
+          "foldableRearSeats": true,
+          "frontHeadrestsAdjustable": true,
+          "gloveBox": true,
+          "headsUpDisplay": true,
+          "headUpDisplay": true,
+          "illuminatedGlovebox": false,
+          "leatherWrappedGearKnob": true,
+          "leatherWrappedSteering": true,
+          "metalPedals": false,
+          "parcelTray": true,
+          "rearHeadrestsAdjustable": true,
+          "tachometer": true,
+          "thirdRowSeats": false,
+          "touchscreenSize": "15 inch",
+          "upholstery": true,
+          "woodFinishInterior": false
+        },
+        "exterior": {
+          "activeRearSpoiler": false,
+          "adaptiveLedHeadlamps": true,
+          "alloyWheels": true,
+          "autoFoldOrvm": true,
+          "bodyColouredBumpers": true,
+          "chromeBeltline": false,
+          "connectedLedTailLamps": false,
+          "corneringFogLamps": false,
+          "dualToneExterior": false,
+          "flushDoorHandles": false,
+          "fogLamps": false,
+          "framelessDoors": false,
+          "glossBlackGrille": true,
+          "halogenHeadlamps": false,
+          "headlampWashers": true,
+          "ledDRL": true,
+          "ledFogLamps": false,
+          "ledHeadlamps": true,
+          "ledTailLamps": true,
+          "matrixLedHeadlamps": true,
+          "orvmAutoDimming": true,
+          "orvmElectric": true,
+          "orvmHeated": true,
+          "orvmLedIndicators": true,
+          "rainSensingWiper": true,
+          "rearSpoiler": true,
+          "rearWindowDefogger": true,
+          "rearWindowWiper": true,
+          "roofRails": true,
+          "sharkFinAntenna": true,
+          "skidPlates": false,
+          "sunroof": true,
+          "wheelSize": true,
+          "wheelType": true
+        },
+        "safety": {
+          "abs": true,
+          "activeBonnet": false,
+          "adas": true,
+          "airbags": true,
+          "allWheelDiscBrakes": true,
+          "antiPinchPowerWindows": true,
+          "autoDoorLock": true,
+          "brakeAssist": true,
+          "camera360": false,
+          "childSafetyLocks": true,
+          "curtainAirbag": true,
+          "curtainAirbags": true,
+          "doorAjarWarning": true,
+          "driverAirbag": true,
+          "dynamicStabilityControl": true,
+          "ebd": true,
+          "emergencyStopSignal": true,
+          "engineImmobilizer": true,
+          "esc": true,
+          "frontParkingSensors": true,
+          "hillAssist": true,
+          "hillDescentControl": true,
+          "isofix": true,
+          "kneeAirbag": true,
+          "passengerAirbag": true,
+          "rearCamera": true,
+          "rearCameraType": "Rear View Camera with Parking Sensors",
+          "rearParkingSensors": true,
+          "rearSeatBeltReminder": true,
+          "rolloverMitigation": true,
+          "sideAirbagFront": true,
+          "sideAirbagRear": true,
+          "sideAirbags": true,
+          "speedAlert": true,
+          "tpms": true,
+          "tractionControl": true,
+          "vehicleStabilityManagement": true
+        },
+        "adas": {
+          "adaptiveCruiseControl": true,
+          "autoHighBeam": true,
+          "automaticEmergencyBraking": true,
+          "available": true,
+          "blindSpotMonitor": true,
+          "driverAttentionWarning": true,
+          "forwardCollisionWarning": true,
+          "laneCenteringAssist": true,
+          "laneDepartureWarning": true,
+          "laneKeepAssist": true,
+          "level": "Level 2 (IQ.Drive Travel Assist)",
+          "parkingAssistant": true,
+          "rearCrossTrafficAlert": true,
+          "trafficSignRecognition": true,
+          "emergencyAssist": true,
+          "travelAssist": true
+        },
+        "infotainment": {
+          "androidAuto": true,
+          "appleCarplay": true,
+          "bluetooth": true,
+          "dolbyAtmos": false,
+          "gestureControl": false,
+          "headsUpDisplay": true,
+          "premiumAudio": true,
+          "radio": true,
+          "rearEntertainmentScreens": false,
+          "screenSize": "15 inch",
+          "speakerCount": 8,
+          "steeringControls": true,
+          "touchscreen": true,
+          "usbPorts": true,
+          "voiceAssistant": true,
+          "wirelessAndroidAuto": true,
+          "wirelessAppleCarplay": true
+        },
+        "connectedTech": {
+          "appName": false,
+          "available": false,
+          "connectedCarTech": false,
+          "diagnostics": false,
+          "eCallICall": false,
+          "findMyCar": false,
+          "geofencing": false,
+          "liveTracking": false,
+          "navigation": true,
+          "navigationWithLiveTraffic": false,
+          "otaUpdates": false,
+          "remoteAcControl": false,
+          "remoteDoorLockUnlock": false,
+          "remoteEngineStart": false,
+          "remoteHornLight": false,
+          "remoteSoftwareUpgrade": false,
+          "sosAlert": false,
+          "stolenVehicleTracking": false
+        },
+        "evHybrid": {
+          "batteryCapacity": false,
+          "dcFastCharging": false,
+          "electricOnly": false,
+          "homeCharging": false,
+          "hybrid": false,
+          "mildHybrid": false,
+          "plugInHybrid": false,
+          "regenerativeBraking": false
+        },
+        "offRoad": {
+          "awd": true,
+          "differentialLock": false,
+          "fourWheelDrive": true,
+          "hillDescentControl": true,
+          "lowRangeTransferCase": false,
+          "terrainModes": true,
+          "waterWadingMode": false
+        }
+      }
+    }
+  ]
+}

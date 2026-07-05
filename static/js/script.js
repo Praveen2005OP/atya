@@ -65,6 +65,9 @@ const state = {
     selectedBrand: "all",
     compare: [],
     variantCompare: {},
+    compareSettings: {
+        differencesOnly: false,
+    },
     saved: JSON.parse(localStorage.getItem("atyaSavedCars") || "[]"),
 };
 
@@ -148,6 +151,12 @@ function getVariantFamily(variant) {
     return variant?.family || "—";
 }
 
+function metricNumber(value) {
+    if (value == null) return 0;
+    const match = String(value).match(/-?\d+(\.\d+)?/);
+    return match ? parseFloat(match[0]) : 0;
+}
+
 // ── Comparison groups ──────────────────────────────────────────────────────────
 
 function yesNo(value) {
@@ -167,36 +176,99 @@ function comparisonGroups() {
             title: "Price and Variant",
             rows: [
                 ["Variant", ({ variant }) => variant.name],
-                ["Ex-showroom price",
+                [
+                    "Ex-showroom price",
                     ({ variant }) => formatSinglePrice(getVariantPrice(variant) / 100000),
-                    ({ variant }) => getVariantPrice(variant)],
-                ["Fuel", ({ variant }) => variant.configuration?.fuel || "—"],
-                ["Transmission", ({ variant }) => variant.configuration?.transmission || "—"],
-                ["Drivetrain", ({ variant }) => variant.configuration?.drivetrain || "—"],
-                ["Seating", ({ variant }) => `${variant.configuration?.seating || "—"} seats`],
-                ["Tyre size", ({ variant }) => variant.configuration?.tyreSizeLabel || "—"],
+                    ({ variant }) => getVariantPrice(variant),
+                    "min"
+                ],
+                [
+                    "Fuel",
+                    ({ variant }) => variant.configuration?.fuel || "—",
+                    null,
+                    "none"
+                ],
+                [
+                    "Transmission",
+                    ({ variant }) => variant.configuration?.transmission || "—",
+                    null,
+                    "none"
+                ],
+                [
+                    "Drivetrain",
+                    ({ variant }) => variant.configuration?.drivetrain || "—",
+                    null,
+                    "none"
+                ],
+                [
+                    "Seating",
+                    ({ variant }) => `${variant.configuration?.seating || "—"} seats`,
+                    ({ variant }) => Number(variant.configuration?.seating || 0),
+                    "max"
+                ],
+                [
+                    "Tyre size",
+                    ({ variant }) => variant.configuration?.tyreSizeLabel || "—",
+                    null,
+                    "none"
+                ],
             ],
         },
         {
             title: "Performance",
             rows: [
-                ["Power", ({ variant }) => variant.performance?.power || "—"],
-                ["Torque", ({ variant }) => variant.performance?.torque || "—"],
-                ["Mileage / range", ({ variant }) => variant.performance?.mileageARAI || "—"],
+                [
+                    "Power",
+                    ({ variant }) => variant.performance?.power || "—",
+                    ({ variant }) => metricNumber(variant.performance?.power),
+                    "max"
+                ],
+                                [
+                    "Torque",
+                    ({ variant }) => variant.performance?.torque || "—",
+                    ({ variant }) => metricNumber(variant.performance?.torque),
+                    "max"
+                ],
+                                [
+                    "Mileage / range",
+                    ({ variant }) => variant.performance?.mileageARAI || "—",
+                    ({ variant }) => metricNumber(variant.performance?.mileageARAI),
+                    "max"
+                ],
             ],
         },
         {
             title: "Wheels",
             rows: [
-                ["Wheel size", ({ variant }) => variant.wheels?.size || "—"],
-                ["Wheel type", ({ variant }) => variant.wheels?.type || "—"],
-                ["Tyre size", ({ variant }) => variant.wheels?.tyreSizeLabel || "—"],
+                [
+                    "Wheel size",
+                    ({ variant }) => variant.wheels?.size || "—",
+                    ({ variant }) => metricNumber(variant.wheels?.size),
+                    "max"
+                ],
+                                [
+                    "Wheel type",
+                    ({ variant }) => variant.wheels?.type || "—",
+                    ({ variant }) => metricNumber(variant.wheels?.type),
+                    "max"
+                ],
+                                [
+                    "Tyre size",
+                    ({ variant }) => variant.wheels?.tyreSizeLabel || "—",
+                    ({ variant }) => metricNumber(variant.wheels?.tyreSizeLabel),
+                    "max"
+                ],
             ],
         },
         {
             title: "Safety",
             rows: [
-                ["Airbags", ({ variant }) => val(variant.safety?.airbags)],
+                [
+                    "Airbags",
+                    ({ variant }) => val(variant.safety?.airbags),
+                    ({ variant }) => Number(variant.safety?.airbags || 0),
+                    "max"
+                ],
                 ["ABS + EBD", ({ variant }) => bool(variant.safety?.abs && variant.safety?.ebd)],
                 ["ESC", ({ variant }) => bool(variant.safety?.esc)],
                 ["Rear camera", ({ variant }) => variant.safety?.rearCameraType || bool(variant.safety?.rearCamera)],
@@ -241,7 +313,15 @@ function comparisonGroups() {
             title: "Interior",
             rows: [
                 ["Upholstery", ({ variant }) => variant.interior?.upholstery || "—"],
-                ["Digital cluster", ({ variant }) => variant.interior?.digitalCluster ? (variant.interior.digitalClusterSize || "Yes") : "Analogue"],
+                [
+                    "Digital cluster",
+                    ({ variant }) =>
+                        variant.interior?.digitalCluster
+                            ? (variant.interior.digitalClusterSize || "Yes")
+                            : "Analogue",
+                    ({ variant }) => metricNumber(variant.interior?.digitalClusterSize),
+                    "max"
+                ],
                 ["Ambient lighting", ({ variant }) => bool(variant.interior?.ambientLighting)],
                 ["Leather-wrapped steering", ({ variant }) => bool(variant.interior?.leatherWrappedSteering)],
             ],
@@ -331,16 +411,44 @@ function renderGroupedComparisonTable(selected) {
                     <tr class="compare-category-row">
                         <th colspan="${selected.length + 1}">${group.title}</th>
                     </tr>
-                    ${group.rows.map(([label, value, metric]) => {
+                    ${group.rows.map(([label, value, metric, compareType]) => {
+                        const rowValues = selected.map(item => value(item));
+                        const allSame = rowValues.every(v => v === rowValues[0]);
+
+                        if (state.compareSettings.differencesOnly && allSame) {
+                            return "";
+                        }
                         const values = selected.map((item) => metric ? metric(item) : 0);
-                        const max = metric ? Math.max(...values) : 0;
+                        const highest = metric ? Math.max(...values) : 0;
+                        const best = !metric
+                            ? null
+                            : compareType === "min"
+                                ? Math.min(...values)
+                                : Math.max(...values);
+                        const uniqueValues = [...new Set(values)];
+                        const hasWinner =
+                            metric &&
+                            compareType !== "none" &&
+                            uniqueValues.length > 1;
+                        
                         return `
                             <tr>
                                 <th>${label}</th>
                                 ${selected.map((item) => {
                                     const numericValue = metric ? metric(item) : 0;
-                                    const width = metric && max ? Math.max(8, (numericValue / max) * 100) : 0;
-                                    return `<td><strong>${value(item)}</strong>${metric ? `<span class="bar"><i style="width:${width}%"></i></span>` : ""}</td>`;
+                                    const isWinner =
+                                        hasWinner &&
+                                        numericValue === best;
+                                    return `
+                                        <td>
+                                            <strong>
+                                                ${value(item)}
+                                                ${isWinner
+                                                    ? '<span class="winner-badge">BEST</span>'
+                                                    : ''}
+                                            </strong>          
+                                        </td>
+                                    `;     
                                 }).join("")}
                             </tr>
                         `;
@@ -351,72 +459,7 @@ function renderGroupedComparisonTable(selected) {
     `;
 }
 
-// ── Variant section (car detail page) ─────────────────────────────────────────
 
-// function renderVariantSection(car) {
-//     const variants = getVariants(car);
-//     if (!variants.length) return `<section class="variant-section" id="variants"><p>No variant data available.</p></section>`;
-
-//     if (!state.variantCompare[car.id]) {
-//         state.variantCompare[car.id] = variants.slice(0, 3).map((v) => v.id);
-//     }
-
-//     const selectedIds = state.variantCompare[car.id].filter((id) => variants.some((v) => v.id === id));
-//     const selectedVariants = selectedIds.map((id) => variants.find((v) => v.id === id)).filter(Boolean);
-//     const selectedItems = selectedVariants.map((variant) => ({ car, variant }));
-    
-//     return `
-//         <section class="variant-section" id="variants">
-//             <div class="section-heading tight">
-//                 <p class="eyebrow">Variants and equipment</p>
-//                 <h2>${car.name} variants.</h2>
-//             </div>
-//             <div class="variant-layout">
-//                 <div class="variant-list">
-//                     ${variants.map((variant) => {
-//                         const price = getVariantPrice(variant) / 100000;
-//                         const fuel = getVariantFuel(variant);
-//                         const transmission = getVariantTransmission(variant);
-//                         const power = getVariantPower(variant);
-//                         const torque = getVariantTorque(variant);
-//                         const mileage = getVariantMileage(variant);
-//                         return `
-//                             <article class="variant-card">
-//                                 <div>
-//                                     <span class="badge">${getVariantFamily(variant)}</span>
-//                                     <h3>${variant.name}</h3>
-//                                     <p>${fuel} · ${transmission} · ${formatSinglePrice(price)}</p>
-//                                 </div>
-//                                 <div class="variant-spec-row">
-//                                     <span>${power}</span>
-//                                     <span>${torque}</span>
-//                                     <span>${mileage}</span>
-//                                 </div>
-//                                 <label class="compare-check">
-//                                     <input type="checkbox"
-//                                         data-variant-compare="${variant.id}"
-//                                         data-car-id="${car.id}"
-//                                         ${selectedIds.includes(variant.id) ? "checked" : ""} />
-//                                     Compare variant
-//                                 </label>
-//                             </article>
-//                         `;
-//                     }).join("")}
-//                 </div>
-//                 <aside class="variant-compare-panel">
-//                     <div class="panel-heading">
-//                         <p class="eyebrow">Same car comparison</p>
-//                         <h3>Compare variants</h3>
-//                         <p>Select up to three variants of the ${car.name}.</p>
-//                     </div>
-//                     ${selectedVariants.length
-//                         ? renderGroupedComparisonTable(selectedItems)
-//                         : `<div class="empty-state"><p>Select variants from the list to compare them here.</p></div>`}
-//                 </aside>
-//             </div>
-//         </section>
-//     `;
-// }
 
 // ── Compare picker / output ────────────────────────────────────────────────────
 
@@ -595,6 +638,20 @@ function renderCars() {
         `;
     }).join("");
 }
+
+document.addEventListener("change", (e) => {
+    if (e.target.id !== "differenceToggle") return;
+
+    state.compareSettings.differencesOnly = e.target.checked;
+    // Detail page
+    if (currentCar) {
+        updateVariantComparison(currentCar.id);
+    }
+    // Homepage / Compare page
+    if (els.compareOutput) {
+        renderCompareOutput();
+    }
+});
 
 // ── State mutations ────────────────────────────────────────────────────────────
 

@@ -1,3 +1,6 @@
+{% load static %}
+{% load car_filters %}
+
 <article class="car-card" onclick="window.location.href='/car/{{ car.slug }}/'" tabindex="0" role="button" aria-label="Open {{ car.name }} review and specifications">
     <figure>
         <img src="{{ car.images.hero }}" alt="{{ car.name }}">
@@ -11,7 +14,7 @@
         <div class="spec-grid">
             <div class="spec-tile">
                 <span>Price</span>
-                <strong>{{ car.price.min }} - {{ car.price.max }}</strong>
+                <strong>{{ car.price.min|ex_price }} - {{ car.price.max|ex_price }}</strong>
             </div>
             <div class="spec-tile">
                 <span>Power</span>
