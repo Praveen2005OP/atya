@@ -1,3 +1,5 @@
+{% load static %}
+
 <section class="hero">
     <div class="hero-copy">
         <p class="eyebrow">
@@ -13,16 +15,19 @@
             side-by-side comparisons
             without the clutter.
         </p>
-        <form class="hero-search" id="heroSearch" role="search">
-            <label class="sr-only" for="globalSearch">
-                Search cars
-            </label>
-            <input id="globalSearch" type="search" placeholder="Search XUV700, Creta, EV, 5-star safety..."
-                autocomplete="off" >
-            <button class="primary-button" type="submit">
-                Search
-            </button>
-        </form>
+        <div class="hero-search-wrapper">
+            <form class="hero-search" id="heroSearch" role="search">
+                <label class="sr-only" for="globalSearch">
+                    Search cars
+                </label>
+                <input id="globalSearch" type="search" placeholder="Search XUV700, Creta, EV, 5-star safety..."
+                    autocomplete="off" >
+                <button class="primary-button" type="submit">
+                    Search
+                </button>
+            </form>
+            <div class="search-results" id="searchResults"></div>
+        </div>
         <div class="quick-picks">
             <button type="button" data-chip="SUV">
                 SUV
@@ -39,6 +44,6 @@
         </div>
     </div>
     <div class="hero-visual">
-        <img src="static\images\car-images\heroImages\heroImage.png" alt="Premium sports car on a road">
+        <img id="hero-image" src="" alt="Premium sports car on a road">
     </div>
 </section>

@@ -12,6 +12,7 @@
         </title>
         <meta name="description"
             content="Atya is a premium car intelligence website for exploring, filtering, and comparing cars sold in India." />
+        <link rel="icon" type="image/png" href="{% static 'images/logos/atya-logo.png' %}" />
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
@@ -165,7 +166,17 @@
                 </div>
             </section>
         </footer>
-        <script src="{% static 'js/script.js' %}" defer></script>
+        <!-- GSAP -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+            
+        <!-- Pannellum -->
         <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+            
+        <!-- Home -->
+        <script src="{% static 'js/home.js' %}" defer></script>
+            
+        <!-- Main -->
+        <script src="{% static 'js/script.js' %}" defer></script>
     </body>
 </html>

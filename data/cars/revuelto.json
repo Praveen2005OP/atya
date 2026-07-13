@@ -41,7 +41,7 @@
     "segment": "Hybrid Hypercar / Flagship V12 Supercar",
     "body": "2-Door Coupe (Scissor Doors)",
     "doors": 2,
-    "safetyRating": null,
+    "safetyRating": 0,
     "seatingOptions": [
       2
     ],

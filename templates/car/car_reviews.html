@@ -1,15 +1,121 @@
 {% load static %}
+<link rel="stylesheet" href="{% static 'css/car-reviews.css' %}">
 
-<!-- <div>
-    <h2>Car Reviews</h2>
-    <p class="review-intro">Read what automotive experts and enthusiasts have to say about the {{ car.name }}.</p>
-    <div class="review-panels">
+<section class="review-section" data-car-name="{{ car.name }}">
+    <div class="section-header tight">
+        <p class="eyebrow">Your experience with {{ car.name }}</p>
+        <h2>Car Reviews.</h2>
+        <p class="review-intro">Read what automotive experts and enthusiasts have to say about the {{ car.name }}.</p>
+    </div>
+
+    <!-- Ratings dashboard - filled in by car-reviews.js from the JSON data island below -->
+    <div class="review-summary">
+        <div class="score-block">
+            <div class="score-label">Owner rating</div>
+            <div class="score-digits" id="avgScore">0.0</div>
+            <div class="stars score-stars" id="avgStars"></div>
+            <div class="score-count" id="reviewCount">(0 reviews)</div>
+        </div>
+        <div class="rating-bars" id="barsContainer"></div>
+    </div>
+
+    <div class="review-toolbar">
+        <select class="sort-select" id="sortSelect">
+            <option value="newest">Sort by newest review</option>
+            <option value="highest">Highest rated</option>
+            <option value="lowest">Lowest rated</option>
+            <option value="helpful">Most helpful</option>
+        </select>
+        <button class="primary-button" id="openModalBtn" type="button">Write a Review</button>
+    </div>
+
+    <div class="review-panels" id="reviewList">
         {% for review in car.reviews %}
-        <section class="review-panel">
+        <article class="review-panel">
             <h4>{{ review.title }}</h4>
-            <p class="review-author">By {{ review.author }} on {{ review.date }}</p>
+            <p class="review-author">
+                By {{ review.author }} on {{ review.date }}
+                {% if review.verified %}<span class="verified-badge">✓ Verified Owner</span>{% endif %}
+            </p>
+            <div class="review-rating stars" data-rating="{{ review.rating|default:5 }}"></div>
             <p class="review-content">{{ review.content }}</p>
-        </section>
+            {% if review.photos %}
+            <div class="photo-strip">
+                {% for photo in review.photos %}
+                <img class="photo-thumb" src="{{ photo }}" alt="Photo from {{ review.author }}'s review">
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="review-footer">
+                <button class="helpful-btn" data-helpful="{{ review.helpful|default:0 }}" type="button">
+                    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9v9H3V9h3zm0 0l4-7c.6 0 1.6.4 1.6 2l-.6 3.5H15c1 0 1.8.9 1.6 1.9l-1.2 6c-.2 1-1 1.6-2 1.6H6"/></svg>
+                    Helpful (<span class="helpful-count">{{ review.helpful|default:0 }}</span>)
+                </button>
+            </div>
+        </article>
         {% endfor %}
     </div>
-</div> -->
+</section>
+
+<!-- Write a review modal -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="review-modal">
+        <h2>Share your ownership experience</h2>
+        <!-- data-action: where car-reviews.js POSTs the form (fetch, not a native submit) -->
+        <form id="reviewForm" method="POST" data-action="{% url 'submit_review' car_slug %}">
+            {% csrf_token %}
+            <input type="hidden" name="car_name" value="{{ car.name }}">
+            <!-- Filled in by the star picker below before submit -->
+            <input type="hidden" id="ratingInput" name="rating" value="0">
+
+            <div class="field">
+                <label>Your name</label>
+                <input type="text" id="author" name="author" placeholder="e.g. Priya S." required>
+            </div>
+            <div class="field">
+                <label>Your email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <div class="hint">We'll email you a copy of your review. We never share it.</div>
+            </div>
+            <div class="field">
+                <label>Car reviewed</label>
+                <input type="text" value="{{ car.name }}" readonly>
+            </div>
+            <div class="field">
+                <label>Your rating</label>
+                <div class="rate-select" id="rateSelect"></div>
+            </div>
+            <div class="field">
+                <label>Review title</label>
+                <input type="text" id="title" name="title" placeholder="Sum up your experience" required>
+            </div>
+            <div class="field">
+                <label>Review</label>
+                <textarea id="content" name="content" placeholder="Tell other buyers what stood out - ride quality, service, real-world range..." required></textarea>
+            </div>
+            <div class="field">
+                <label>Add photos</label>
+                <div class="upload-zone" id="photos">Drag photos here, or click to browse</div>
+                <input type="file" id="fPhotos" name="photos" accept="image/*" multiple style="display:none;">
+                <div class="upload-preview" id="uploadPreview"></div>
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="secondary-button" id="cancelModalBtn">Cancel</button>
+                <button type="submit" class="primary-button">Post Review</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div class="review-lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img id="lightboxImg" src="" alt="Review photo">
+</div>
+
+<!-- JSON data island: reviews loaded from the DB by car_detail() in views.py,
+    read by car-reviews.js on load. Shape: title, author, date, content,
+    rating, photos, helpful, verified - see Review.to_dict() in models.py. -->
+{{ car.reviews|json_script:"reviews-data" }}
+
+<script src="{% static 'js/car-reviews.js' %}"></script>

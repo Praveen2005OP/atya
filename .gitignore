@@ -14,6 +14,9 @@ __pycache__/
 db.sqlite3
 *.log
 
+# User-uploaded review photos
+media/
+
 # Environment variables
 .env
 

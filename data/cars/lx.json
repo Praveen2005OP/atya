@@ -41,7 +41,7 @@
     "segment": "Full-Size Luxury SUV (Body-on-Frame)",
     "body": "SUV",
     "doors": 5,
-    "safetyRating": null,
+    "safetyRating": 0,
     "seatingOptions": [
       5
     ],

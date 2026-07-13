@@ -133,6 +133,11 @@ STORAGES = {
     },
 }
 
+# Media files (user-uploaded review photos)
+# https://docs.djangoproject.com/en/6.0/topics/files/
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / "media"
+
 # To send feedback via email (configure these settings in production)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # For development, prints emails to console
 EMAIL_HOST = 'smtp.gmail.com'
@@ -141,3 +146,9 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+# Used by cars/fields.py (EncryptedEmailField) to encrypt/decrypt emails
+# stored in the DB. Generate one with:
+#   python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
+# and put it in .env - never commit the key itself.
+FIELD_ENCRYPTION_KEY = os.getenv('FIELD_ENCRYPTION_KEY')

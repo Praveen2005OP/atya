@@ -41,7 +41,7 @@
     "segment": "Mid-Engine Sports Car",
     "body": "Coupe (2-Door, 2-Seater)",
     "doors": 2,
-    "safetyRating": null,
+    "safetyRating": 0,
     "seatingOptions": [
       2
     ],

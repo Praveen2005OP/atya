@@ -41,7 +41,7 @@
     "segment": "Ultra-Luxury Performance SUV",
     "body": "SUV",
     "doors": 5,
-    "safetyRating": null,
+    "safetyRating": 0,
     "seatingOptions": [
       5
     ],

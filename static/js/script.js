@@ -2,6 +2,77 @@ let cars = [];
 
 let currentCar = null;
 
+// ── Number of Cards Displayed ────────────────────────────────────────────────────────────────────────────
+const displayState = {
+    brands_card: 0,
+    car_card: 0
+};
+
+function getCardsPerStep() {
+    if (window.innerWidth <= 768) {
+        return 2;
+    }
+    // Tablet + Small Tablet
+    if (window.innerWidth <= 1100) {
+        return 4;
+    }
+    // Desktop
+    return 8;
+}
+
+function toggleCards(type, totalCards, renderFunction) {
+    const step = getCardsPerStep();
+    if (displayState[type] >= totalCards) {
+        displayState[type] = step;
+    } else {
+        displayState[type] = Math.min(
+            displayState[type] + step,
+            totalCards
+        );
+    }
+    renderFunction();
+}
+
+function updateToggleButton(type, totalCards) {
+    const button = document.getElementById(`${type}Toggle`);
+    if (!button) return;
+    button.textContent =
+        displayState[type] >= totalCards
+            ? "Show Less"
+            : "Show More";
+}
+// ──────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+// ── Card Display Logic ────────────────────────────────────────────────────────────────────────────────
+document
+    .getElementById("brands_cardToggle")
+    .addEventListener("click", () => {
+
+        // Pass renderBrands as a callback reference (not an invoked call),
+        // so it renders AFTER displayState.brands_card has been updated.
+        toggleCards(
+            "brands_card",
+            brandSummary().length,
+            renderBrands
+        );
+
+    });
+
+document
+    .getElementById("car_cardToggle")
+    .addEventListener("click", () => {
+
+        // Same fix: renderCars must run after the new card count is set.
+        toggleCards(
+            "car_card",
+            getFilteredCars().length,
+            renderCars
+        );
+
+    });
+// ───────────────────────────────────────────────────────────────────────────────────────────────
+
 function normalizeCar(car) {
     const minPrice = Number(car?.pricing?.exShowroom?.min) || 0;
     const maxPrice = Number(car?.pricing?.exShowroom?.max) || 0;
@@ -19,7 +90,8 @@ function normalizeCar(car) {
         });
     });
     const power = { min: Math.min(...allPower) || 0, max: Math.max(...allPower) || 0 };
-    const torque = { min: Math.min(...allTorque) || 0, max: Math.max(...allTorque) || 0 }
+    const torque = { min: Math.min(...allTorque) || 0, max: Math.max(...allTorque) || 0 };
+    const safetyRating = parseFloat(car?.overview?.safetyRating);
     return {
         id: car?.slug || "",
         slug: car?.slug || "",
@@ -33,7 +105,7 @@ function normalizeCar(car) {
         bodyType: car?.overview?.body || "",
         fuel: car?.overview?.fuelTypes || [],
         transmission: car?.overview?.transmissions || [],
-        safety: car?.overview?.safetyRating ?? "Not tested yet",
+        safety: isNaN(safetyRating) ? 0 : safetyRating,
         power,
         torque,
         seats: car?.overview?.seatingOptions?.[0] || 5,
@@ -101,9 +173,21 @@ async function loadCars() {
 
         cars = djangoCars.map(normalizeCar);
 
+        // Render every dynamic grid first, so the DOM elements GSAP
+        // needs already exist by the time animations are wired up.
         renderBrands();
         renderCars();
         renderSaved();
+
+        // Initial population of the Compare section (dropdowns + output).
+        // Later updates go through renderAll() via user interaction.
+        if (els.comparePicker) renderComparePicker();
+        if (els.compareOutput) renderCompareOutput();
+
+        // Section-level ScrollTriggers are registered last, only after
+        // every card grid above is real DOM - never before.
+        initHomeAnimations();
+
     } catch (error) {
         console.error("Car data error:", error);
         renderDataError(error);
@@ -223,13 +307,13 @@ function comparisonGroups() {
                     ({ variant }) => metricNumber(variant.performance?.power),
                     "max"
                 ],
-                                [
+                [
                     "Torque",
                     ({ variant }) => variant.performance?.torque || "—",
                     ({ variant }) => metricNumber(variant.performance?.torque),
                     "max"
                 ],
-                                [
+                [
                     "Mileage / range",
                     ({ variant }) => variant.performance?.mileageARAI || "—",
                     ({ variant }) => metricNumber(variant.performance?.mileageARAI),
@@ -246,13 +330,13 @@ function comparisonGroups() {
                     ({ variant }) => metricNumber(variant.wheels?.size),
                     "max"
                 ],
-                                [
+                [
                     "Wheel type",
                     ({ variant }) => variant.wheels?.type || "—",
                     ({ variant }) => metricNumber(variant.wheels?.type),
                     "max"
                 ],
-                                [
+                [
                     "Tyre size",
                     ({ variant }) => variant.wheels?.tyreSizeLabel || "—",
                     ({ variant }) => metricNumber(variant.wheels?.tyreSizeLabel),
@@ -412,47 +496,47 @@ function renderGroupedComparisonTable(selected) {
                         <th colspan="${selected.length + 1}">${group.title}</th>
                     </tr>
                     ${group.rows.map(([label, value, metric, compareType]) => {
-                        const rowValues = selected.map(item => value(item));
-                        const allSame = rowValues.every(v => v === rowValues[0]);
+        const rowValues = selected.map(item => value(item));
+        const allSame = rowValues.every(v => v === rowValues[0]);
 
-                        if (state.compareSettings.differencesOnly && allSame) {
-                            return "";
-                        }
-                        const values = selected.map((item) => metric ? metric(item) : 0);
-                        const highest = metric ? Math.max(...values) : 0;
-                        const best = !metric
-                            ? null
-                            : compareType === "min"
-                                ? Math.min(...values)
-                                : Math.max(...values);
-                        const uniqueValues = [...new Set(values)];
-                        const hasWinner =
-                            metric &&
-                            compareType !== "none" &&
-                            uniqueValues.length > 1;
-                        
-                        return `
+        if (state.compareSettings.differencesOnly && allSame) {
+            return "";
+        }
+        const values = selected.map((item) => metric ? metric(item) : 0);
+        const highest = metric ? Math.max(...values) : 0;
+        const best = !metric
+            ? null
+            : compareType === "min"
+                ? Math.min(...values)
+                : Math.max(...values);
+        const uniqueValues = [...new Set(values)];
+        const hasWinner =
+            metric &&
+            compareType !== "none" &&
+            uniqueValues.length > 1;
+
+        return `
                             <tr>
                                 <th>${label}</th>
                                 ${selected.map((item) => {
-                                    const numericValue = metric ? metric(item) : 0;
-                                    const isWinner =
-                                        hasWinner &&
-                                        numericValue === best;
-                                    return `
+            const numericValue = metric ? metric(item) : 0;
+            const isWinner =
+                hasWinner &&
+                numericValue === best;
+            return `
                                         <td>
                                             <strong>
                                                 ${value(item)}
                                                 ${isWinner
-                                                    ? '<span class="winner-badge">BEST</span>'
-                                                    : ''}
+                    ? '<span class="winner-badge">BEST</span>'
+                    : ''}
                                             </strong>          
                                         </td>
-                                    `;     
-                                }).join("")}
+                                    `;
+        }).join("")}
                             </tr>
                         `;
-                    }).join("")}
+    }).join("")}
                 `).join("")}
             </tbody>
         </table>
@@ -488,11 +572,11 @@ function renderComparePicker() {
                     Select variant
                     <select data-compare-slot-variant="${slot}" ${car ? "" : "disabled"}>
                         ${car
-                            ? variants.map((v) => {
-                                const price = getVariantPrice(v) / 100000;
-                                return `<option value="${v.id}" ${selectedVariantId === v.id ? "selected" : ""}>${v.name} · ${formatSinglePrice(price)}</option>`;
-                            }).join("")
-                            : `<option value="">Choose car first</option>`}
+                ? variants.map((v) => {
+                    const price = getVariantPrice(v) / 100000;
+                    return `<option value="${v.id}" ${selectedVariantId === v.id ? "selected" : ""}>${v.name} · ${formatSinglePrice(price)}</option>`;
+                }).join("")
+                : `<option value="">Choose car first</option>`}
                     </select>
                 </label>
             </div>
@@ -532,13 +616,19 @@ function renderSaved() {
     const savedCars = state.saved.map((id) => cars.find((c) => c.id === id)).filter(Boolean);
     els.savedGrid.innerHTML = savedCars.map((car) => `
         <article class="saved-card">
-            <img src="${car.images.hero}" alt="${car.name}" loading="lazy" />
-            <span class="badge">${car.brand}</span>
-            <h3>${car.name}</h3>
-            <p>${formatPrice(car.priceMin, car.priceMax)} · ${car.safety === "Not tested yet" ? car.safety : `${car.safety} ★ Safety`}</p>
-            <div class="card-actions">
-                <button class="secondary-button" type="button" data-details="${car.id}">Open</button>
-                <button class="secondary-button" type="button" data-save="${car.id}">Remove</button>
+            <figure>
+                <img src="${car.images.hero}" alt="${car.name}" loading="lazy" />
+            </figure>
+            <div class="saved-body">
+                <div>
+                    <span class="badge">${car.brand}</span>
+                    <h3>${car.name}</h3>
+                    <p>${formatPrice(car.priceMin, car.priceMax)} · ${car.safety === 0 ? "Not tested yet" : `${car.safety} ★ Safety`}</p>
+                    <div class="card-actions">
+                        <button class="secondary-button" type="button" data-details="${car.id}">Open</button>
+                        <button class="secondary-button" type="button" data-save="${car.id}">Remove</button>
+                    </div>
+                </div>
             </div>
         </article>
     `).join("");
@@ -586,21 +676,32 @@ function brandSummary() {
     return [...map.entries()].sort(([a], [b]) => a.localeCompare(b));
 }
 
+// Render all visible brand cards
 function renderBrands() {
     if (!els.brandGrid) return;
-    els.brandGrid.innerHTML = brandSummary().map(([brand, info]) => `
-        <button class="brand-card" type="button" data-brand="${brand}" data-initial="${brand.slice(0, 1)}">
-            <div class="brand-logo">
-                <img src="/static/images/logos/${brand.toLowerCase().replace(/\s+/g, "")}.png" alt="${brand}">
-            </div>
-            <h3>${brand}</h3>
-            <p>${info.sample} and ${Math.max(info.count - 1, 0)} more</p>
-            <div class="meta-row">
-                <span class="badge">${info.count} cars</span>
-                <span class="badge">from INR ${info.min.toFixed(1)}L</span>
-            </div>
-        </button>
-    `).join("");
+    // Get all available brands
+    const brands = brandSummary();
+    if (!displayState.brands_card) {
+        displayState.brands_card = getCardsPerStep();
+    }
+    els.brandGrid.innerHTML = brands
+        // Show only the currently allowed number of cards
+        .slice(0, displayState.brands_card)
+        .map(([brand, info]) => `
+            <button class="brand-card" type="button" data-brand="${brand}" data-initial="${brand.slice(0, 1)}">
+                <div class="brand-logo">
+                    <img src="/static/images/logos/${brand.toLowerCase().replace(/\s+/g, "")}.png" alt="${brand}">
+                </div>
+                <h3>${brand}</h3>
+                <p>${info.sample} and ${Math.max(info.count - 1, 0)} more</p>
+                <div class="meta-row">
+                    <span class="badge">${info.count} cars</span>
+                    <span class="badge">from INR ${info.min.toFixed(1)}L</span>
+                </div>
+            </button>
+        `).join("");
+    // Update Show More / Show Less button text
+    updateToggleButton("brands_card", brands.length);
 }
 
 // ── Car grid ───────────────────────────────────────────────────────────────────
@@ -608,35 +709,42 @@ function renderBrands() {
 function renderCars() {
     const filtered = getFilteredCars();
     if (els.resultCount) els.resultCount.textContent = `${filtered.length} car${filtered.length === 1 ? "" : "s"} found`;
-    els.carGrid.innerHTML = filtered.map((car) => {
-        const saved = state.saved.includes(car.id);
-        const comparing = state.compare.some((item) => item.carId === car.id);
-        return `
-            <article class="car-card" onclick="window.location.href='/car/${car.slug}/'" tabindex="0" role="button" aria-label="Open ${car.name} review and specifications">
-                <figure>
-                    <img src="${car.images.hero}" alt="${car.name}" loading="lazy" />
-                </figure>
-                <div class="card-body">
-                    <div>
-                        <span class="badge">${car.brand}</span>
-                        <h3>${car.name}</h3>
-                        <p>${car.minides}</p>
+    if (!displayState.car_card) {
+        displayState.car_card = getCardsPerStep();
+    }
+
+    els.carGrid.innerHTML = filtered
+        .slice(0, displayState.car_card)
+        .map((car) => {
+            const saved = state.saved.includes(car.id);
+            const comparing = state.compare.some((item) => item.carId === car.id);
+            return `
+                <article class="car-card" onclick="window.location.href='/car/${car.slug}/'" tabindex="0" role="button" aria-label="Open ${car.name} review and specifications">
+                    <figure>
+                        <img src="${car.images.hero}" alt="${car.name}" loading="lazy" />
+                    </figure>
+                    <div class="card-body">
+                        <div>
+                            <span class="badge">${car.brand}</span>
+                            <h3>${car.name}</h3>
+                            <p>${car.minides}</p>
+                        </div>
+                        <div class="spec-grid">
+                            <div class="spec-tile"><span>Price</span><strong>${formatPrice(car.priceMin, car.priceMax)}</strong></div>
+                            <div class="spec-tile"><span>Power</span><strong>${car.power.min === car.power.max ? `${car.power.max} hp` : `${car.power.min}–${car.power.max} hp`}</strong></div>
+                            <div class="spec-tile"><span>Torque</span><strong>${car.torque.min === car.torque.max ? `${car.torque.max} Nm` : `${car.torque.min}–${car.torque.max} Nm`}</strong></div>
+                            <div class="spec-tile"><span>Safety</span><strong>${car.safety === "Not tested yet" ? car.safety : `${car.safety} ★ Safety`}</strong></div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="secondary-button" type="button" data-details="${car.id}">Read review</button>
+                            <button class="secondary-button" type="button" data-save="${car.id}">${saved ? "Saved" : "Save"}</button>
+                            <button class="primary-button" type="button" data-compare="${car.id}">${comparing ? "Selected" : "Compare"}</button>
+                        </div>
                     </div>
-                    <div class="spec-grid">
-                        <div class="spec-tile"><span>Price</span><strong>${formatPrice(car.priceMin, car.priceMax)}</strong></div>
-                        <div class="spec-tile"><span>Power</span><strong>${car.power.min === car.power.max ? `${car.power.max} hp` : `${car.power.min}–${car.power.max} hp`}</strong></div>
-                        <div class="spec-tile"><span>Torque</span><strong>${car.torque.min === car.torque.max ? `${car.torque.max} Nm` : `${car.torque.min}–${car.torque.max} Nm`}</strong></div>
-                        <div class="spec-tile"><span>Safety</span><strong>${car.safety === "Not tested yet" ? car.safety : `${car.safety} ★ Safety`}</strong></div>
-                    </div>
-                    <div class="card-actions">
-                        <button class="secondary-button" type="button" data-details="${car.id}">Read review</button>
-                        <button class="secondary-button" type="button" data-save="${car.id}">${saved ? "Saved" : "Save"}</button>
-                        <button class="primary-button" type="button" data-compare="${car.id}">${comparing ? "Selected" : "Compare"}</button>
-                    </div>
-                </div>
-            </article>
-        `;
-    }).join("");
+                </article>
+            `;
+        }).join("");
+    updateToggleButton("car_card", filtered.length);
 }
 
 document.addEventListener("change", (e) => {
@@ -873,13 +981,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // -----------------------------
     // Homepage
     // -----------------------------
+    // loadCars() owns the full render -> animate -> initHomeAnimations
+    // sequence internally, so nothing further is needed here.
     if (document.getElementById("cars-data")) {
-        loadCars()
-            .then(() => {
-                renderBrands();
-                renderAll();
-            })
-            .catch(console.error);
+        loadCars().catch(console.error);
     }
     // -----------------------------
     // Car Detail Page
@@ -889,6 +994,14 @@ document.addEventListener("DOMContentLoaded", () => {
         updateVariantComparison(currentCar.id);
     }
 });
+
+// ── Hero Image Changing Function ─────────────────────────────────────────────────────
+window.onload = function () {
+    const hero = 11;
+    const randomNum = Math.floor(Math.random() * hero) + 1;
+    const finalImage = `/static/images/car-images/heroImages/${randomNum}.png`;
+    document.getElementById("hero-image").src = finalImage;
+}
 
 // ── 360 viewer (unchanged) ─────────────────────────────────────────────────────
 
@@ -944,7 +1057,7 @@ if (frameViewer) {
                 if (!interiorLoaded) {
                     pannellum.viewer("interior360", {
                         type: "cubemap",
-                        cubeMap: [1,2,3,4,5,6].map((n) => `/static/images/car-images/${slug}/interior/${n}.webp`),
+                        cubeMap: [1, 2, 3, 4, 5, 6].map((n) => `/static/images/car-images/${slug}/interior/${n}.webp`),
                         autoLoad: true, autoRotate: -2, mouseZoom: true,
                         showZoomCtrl: false, showFullscreenCtrl: false,
                     });
@@ -979,3 +1092,18 @@ if (frameViewer) {
     frameViewer.style.display = "block"; interiorViewer.style.display = "none";
     updateFrame(); startAutoRotate();
 }
+
+// ===============================
+// Hero Animations
+// ===============================
+// ── Home Page Animation ───────────────────────────────────────────────────────────────────────────────
+// initHomeAnimations() is no longer called from here directly - it now
+// runs at the end of loadCars(), after every card grid has real DOM
+// content, so ScrollTrigger never searches for elements that don't exist yet.
+// ──────────────────────────────────────────────────────────────────────────────────────────────────────
+
+// ── Car Detail Page Animation ─────────────────────────────────────────────────────────────────────────
+if (document.querySelector(".car-detail-page")) {
+    initCarAnimations();
+}
+// ──────────────────────────────────────────────────────────────────────────────────────────────────────

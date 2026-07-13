@@ -41,7 +41,7 @@
     "segment": "Coupe",
     "body": "2-door Coupe / Targa",
     "doors": 2,
-    "safetyRating": null,
+    "safetyRating": 0,
     "seatingOptions": [
       4
     ],

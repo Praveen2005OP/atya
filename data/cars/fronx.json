@@ -41,7 +41,7 @@
     "segment": "Compact SUV / Crossover",
     "body": "SUV",
     "doors": 5,
-    "safetyRating": null,
+    "safetyRating": 0,
     "seatingOptions": [
       5
     ],
@@ -232,7 +232,7 @@
     "platform": "Heartect (Baleno-based)",
     "emissionNorm": "BS VI Phase 2",
     "e20Compatible": true,
-    "safetyRating": null,
+    "safetyRating": 0,
     "outlet": "Nexa (Premium)"
   },
   "engineDatabase": {

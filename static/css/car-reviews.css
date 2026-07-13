@@ -1,0 +1,494 @@
+/* ==========================================================================
+    Car Reviews section - styled to match Atya's existing theme tokens
+    (see static/css/styles.css :root). Everything here is scoped under
+    .review-section / the modal & lightbox ids so it can't leak into or
+    collide with the rest of the site's styles.
+   ========================================================================== */
+
+
+.review-section {
+    display: grid;
+    gap: 1rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background:
+        linear-gradient(135deg, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 36%),
+        var(--surface);
+}
+/* .review-section {
+    padding: clamp(2rem, 4vw, 3.5rem) clamp(1rem, 3vw, 1.6rem) 0;
+} */
+
+.review-section h3 {
+    max-width: 18ch;
+    font-size: clamp(1.8rem, 4vw, 3.35rem);
+}
+
+.review-kicker {
+    width: fit-content;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--accent-2);
+    background: var(--surface-2);
+    font-size: 0.74rem;
+    font-weight: 850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.review-section .section-header {
+    margin-bottom: clamp(1.4rem, 3vw, 2rem);
+}
+
+.review-section .section-header h2 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.review-intro {
+    max-width: 640px;
+    margin: 0.6rem 0 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* ---------- Toolbar ---------- */
+.review-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+}
+
+.sort-select {
+    appearance: none;
+    min-height: 2.8rem;
+    padding: 0 2.2rem 0 1rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%23a7aaa4' stroke-width='1.6' fill='none'/></svg>")
+        no-repeat right 1rem center,
+        var(--surface);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ---------- Ratings summary card ---------- */
+.review-summary {
+    display: flex;
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.75rem;
+    margin-bottom: 1.75rem;
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.score-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 150px;
+}
+
+.score-label {
+    font-size: 0.74rem;
+    font-weight: 850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+}
+
+.score-digits {
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.score-stars {
+    margin-top: 0.6rem;
+}
+
+.score-count {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+}
+
+.rating-bars {
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.bar-row .label {
+    width: 42px;
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.bar-track {
+    flex: 1;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--surface-3);
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, transparent), var(--accent));
+}
+
+.bar-row .count {
+    width: 30px;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+/* Stars (shared by summary + individual reviews) */
+.stars {
+    display: inline-flex;
+    gap: 2px;
+}
+
+.stars svg {
+    width: 16px;
+    height: 16px;
+}
+
+.score-stars svg {
+    width: 18px;
+    height: 18px;
+}
+
+.star-fill {
+    fill: var(--accent);
+}
+
+.star-empty {
+    fill: none;
+    stroke: var(--muted);
+    stroke-width: 1.4;
+}
+
+/* ---------- Review list ---------- */
+.review-panel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    background: var(--surface);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-panel:hover {
+    border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+    box-shadow: 0 15px 45px color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.review-panel h4 {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    margin: 0 0 0.3rem;
+}
+
+.review-author {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent-2);
+    background: color-mix(in srgb, var(--accent-2) 16%, transparent);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+}
+
+.review-rating {
+    margin: 0.75rem 0 0.5rem;
+}
+
+.review-content {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+}
+
+.photo-strip {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.photo-thumb {
+    width: 76px;
+    height: 76px;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid var(--line);
+    transition: transform 0.15s ease;
+}
+
+.photo-thumb:hover {
+    transform: scale(1.05);
+}
+
+.review-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.helpful-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 2.2rem;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0 0.9rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.helpful-btn svg {
+    width: 13px;
+    height: 13px;
+}
+
+.helpful-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.helpful-btn.liked {
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* ---------- Write-a-review modal ---------- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 9, 9, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    z-index: 100;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.review-modal {
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    padding: 1.75rem;
+}
+
+.review-modal h2 {
+    font-size: 1.3rem;
+    margin: 0 0 1.1rem;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.field label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--surface-2);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.field input[readonly] {
+    color: var(--muted);
+}
+
+.field .hint {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.rate-select {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.rate-select svg {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.upload-zone {
+    border: 2px dashed var(--line);
+    border-radius: 0.7rem;
+    padding: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    color: var(--muted);
+    font-size: 0.82rem;
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.upload-zone.drag {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.upload-preview {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.6rem;
+}
+
+.upload-preview .thumb-wrap {
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.upload-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.upload-preview .remove {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--danger);
+    color: #fff;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: flex-end;
+    margin-top: 1.25rem;
+}
+
+/* ---------- Lightbox ---------- */
+.review-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 9, 9, 0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 1.75rem;
+}
+
+.review-lightbox.open {
+    display: flex;
+}
+
+.review-lightbox img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 0.6rem;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 560px) {
+    .review-summary {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .score-digits {
+        font-size: 2.5rem;
+    }
+}
