@@ -41,7 +41,7 @@
     "segment": "Compact Off-Road SUV",
     "body": "SUV (3-Door, Ladder Frame)",
     "doors": 3,
-    "safetyRating": 0,
+    "safetyRating": 4,
     "seatingOptions": [
       4
     ],

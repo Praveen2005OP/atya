@@ -38,7 +38,7 @@
     "segment": "Coupe",
     "body": "Performance Coupe",
     "doors": 2,
-    "safetyRating": 0,
+    "safetyRating": 5,
     "seatingOptions": [
       4
     ],

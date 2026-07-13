@@ -43,7 +43,7 @@
     "segment": "Full-size SUV",
     "body": "SUV",
     "doors": 5,
-    "safetyRating": 0,
+    "safetyRating": 5,
     "seatingOptions": [
       7
     ],

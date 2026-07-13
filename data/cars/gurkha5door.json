@@ -41,7 +41,7 @@
     "segment": "Compact Off-Road SUV (7-Seater)",
     "body": "SUV (5-Door, Ladder Frame)",
     "doors": 5,
-    "safetyRating": 0,
+    "safetyRating": 4,
     "seatingOptions": [
       7
     ],

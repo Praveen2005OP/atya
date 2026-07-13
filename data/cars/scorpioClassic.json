@@ -40,7 +40,7 @@
     "segment": "Mid-Size SUV",
     "body": "Body-on-frame SUV",
     "doors": 5,
-    "safetyRating": 0,
+    "safetyRating": 2,
     "seatingOptions": [
       7,
       9

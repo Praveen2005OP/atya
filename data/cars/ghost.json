@@ -41,7 +41,7 @@
     "segment": "Luxury Salon",
     "body": "Ultra-Luxury Full-Size Sedan",
     "doors": 4,
-    "safetyRating": 0,
+    "safetyRating": 5,
     "seatingOptions": [
       4,
       5

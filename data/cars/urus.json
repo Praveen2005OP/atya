@@ -41,7 +41,7 @@
     "segment": "Super SUV / Luxury Performance SUV",
     "body": "5-Door SUV",
     "doors": 5,
-    "safetyRating": 0,
+    "safetyRating": 5,
     "seatingOptions": [
       5
     ],

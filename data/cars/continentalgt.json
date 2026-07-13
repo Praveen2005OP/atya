@@ -41,7 +41,7 @@
     "segment": "Ultra-Luxury Grand Tourer",
     "body": "2-Door Coupe (GT) / Convertible (GTC)",
     "doors": 2,
-    "safetyRating": 0,
+    "safetyRating": 5,
     "seatingOptions": [
       4
     ],
