@@ -1,41 +1,12 @@
 /* ==========================================================================
-    Car Reviews section - styled to match Atya's existing theme tokens
-    (see static/css/styles.css :root). Everything here is scoped under
-    .review-section / the modal & lightbox ids so it can't leak into or
-    collide with the rest of the site's styles.
+   Car Reviews section - styled to match Atya's existing theme tokens
+   (see static/css/styles.css :root). Everything here is scoped under
+   .review-section / the modal & lightbox ids so it can't leak into or
+   collide with the rest of the site's styles.
    ========================================================================== */
 
-
 .review-section {
-    display: grid;
-    gap: 1rem;
-    padding: clamp(1rem, 3vw, 1.5rem);
-    border: 1px solid var(--line);
-    border-radius: 0.75rem;
-    background:
-        linear-gradient(135deg, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 36%),
-        var(--surface);
-}
-/* .review-section {
     padding: clamp(2rem, 4vw, 3.5rem) clamp(1rem, 3vw, 1.6rem) 0;
-} */
-
-.review-section h3 {
-    max-width: 18ch;
-    font-size: clamp(1.8rem, 4vw, 3.35rem);
-}
-
-.review-kicker {
-    width: fit-content;
-    padding: 0.35rem 0.7rem;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    color: var(--accent-2);
-    background: var(--surface-2);
-    font-size: 0.74rem;
-    font-weight: 850;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
 }
 
 .review-section .section-header {
@@ -275,6 +246,7 @@
 .review-footer {
     display: flex;
     justify-content: flex-end;
+    gap: 0.5rem;
     margin-top: 1rem;
 }
 
@@ -308,6 +280,27 @@
     background: color-mix(in srgb, var(--accent) 14%, transparent);
     border-color: var(--accent);
     color: var(--accent);
+}
+
+.delete-review-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 2.2rem;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0 0.9rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.delete-review-btn:hover {
+    border-color: var(--danger);
+    color: var(--danger);
 }
 
 /* ---------- Write-a-review modal ---------- */

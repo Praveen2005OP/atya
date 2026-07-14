@@ -252,3 +252,26 @@ def submit_review(request, slug):
         print(f"Review confirmation email failed: {exc}")
 
     return JsonResponse({"success": True, "review": review.to_dict()})
+
+
+@require_POST
+def delete_review(request, slug, review_id):
+    """
+    Deletes a review only if the submitted email matches the one it was
+    posted with. review.email decrypts automatically on read (see
+    EncryptedEmailField in cars/fields.py), so this compares plain text.
+    """
+    submitted_email = request.POST.get("email", "").strip()
+    if not submitted_email:
+        return JsonResponse({"error": "Please enter the email you reviewed with."}, status=400)
+
+    try:
+        review = Review.objects.get(id=review_id, car_slug=slug.lower())
+    except Review.DoesNotExist:
+        return JsonResponse({"error": "Review not found."}, status=404)
+
+    if review.email.strip().lower() != submitted_email.lower():
+        return JsonResponse({"error": "That email doesn't match this review."}, status=403)
+
+    review.delete()  # ReviewPhoto rows cascade-delete with it
+    return JsonResponse({"success": True})

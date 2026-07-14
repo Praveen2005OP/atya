@@ -1,7 +1,7 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/car-reviews.css' %}">
 
-<section class="review-section" data-car-name="{{ car.name }}">
+<section class="review-section" data-car-name="{{ car.name }}" data-car-slug="{{ car_slug }}">
     <div class="section-header tight">
         <p class="eyebrow">Your experience with {{ car.name }}</p>
         <h2>Car Reviews.</h2>
@@ -47,6 +47,11 @@
             </div>
             {% endif %}
             <div class="review-footer">
+                <button class="delete-review-btn" data-review-id="{{ review.id }}" type="button">
+                    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9l4-7c.6 0 1.6.4 1.6 2l-.6 3.5H15c1 0 1.8.9 1.6 1.9l-1.2 6c-.2 1-1 1.6-2 1.6H6v-9z"/>
+                    </svg>
+                    Delete
+                </button>
                 <button class="helpful-btn" data-helpful="{{ review.helpful|default:0 }}" type="button">
                     <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9v9H3V9h3zm0 0l4-7c.6 0 1.6.4 1.6 2l-.6 3.5H15c1 0 1.8.9 1.6 1.9l-1.2 6c-.2 1-1 1.6-2 1.6H6"/></svg>
                     Helpful (<span class="helpful-count">{{ review.helpful|default:0 }}</span>)
@@ -107,6 +112,24 @@
     </div>
 </div>
 
+<!-- Delete review confirmation -->
+<div class="modal-overlay" id="deleteModalOverlay">
+    <div class="review-modal">
+        <h2>Delete this review?</h2>
+        <p class="review-intro">Enter the email you used when posting it to confirm - this can't be undone.</p>
+        <form id="deleteReviewForm">
+            <div class="field">
+                <label>Your email</label>
+                <input type="email" id="deleteEmail" placeholder="you@example.com" required>
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="secondary-button" id="cancelDeleteBtn">Cancel</button>
+                <button type="submit" class="primary-button">Delete Review</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <!-- Lightbox -->
 <div class="review-lightbox" id="lightbox">
     <span class="lightbox-close" id="lightboxClose">&times;</span>
@@ -114,8 +137,8 @@
 </div>
 
 <!-- JSON data island: reviews loaded from the DB by car_detail() in views.py,
-    read by car-reviews.js on load. Shape: title, author, date, content,
-    rating, photos, helpful, verified - see Review.to_dict() in models.py. -->
+     read by car-reviews.js on load. Shape: title, author, date, content,
+     rating, photos, helpful, verified - see Review.to_dict() in models.py. -->
 {{ car.reviews|json_script:"reviews-data" }}
 
 <script src="{% static 'js/car-reviews.js' %}"></script>

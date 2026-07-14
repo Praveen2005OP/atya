@@ -67,6 +67,7 @@ class Review(models.Model):
         before rendering car-detail.html - no JS changes required.
         """
         return {
+            "id": self.id,
             "title": self.title,
             "author": self.author,
             "date": self.created_at.date().isoformat(),

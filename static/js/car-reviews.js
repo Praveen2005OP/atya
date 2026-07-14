@@ -1,7 +1,7 @@
 /* ==========================================================================
-   Car Reviews widget
-   Self-contained: only touches elements inside templates/car/car_reviews.html,
-   so it can't collide with home.js / script.js on the homepage.
+    Car Reviews widget
+    Self-contained: only touches elements inside templates/car/car_reviews.html,
+    so it can't collide with home.js / script.js on the homepage.
    ========================================================================== */
 
 /* ---------------- Star icon helper ---------------- */
@@ -17,11 +17,12 @@ function starsHTML(rating) {
 }
 
 /* ---------------- Load reviews rendered by Django ----------------
-   Reads the json_script data island produced by car_detail() in
-   views.py (car.reviews = [review.to_dict() for review in ...]).
-   Guards against anything other than a real array (missing key, null,
-   or an empty string all fall back to []) so a data hiccup can't crash
-   this whole script and silently break every button below it. */
+    Reads the json_script data island produced by car_detail() in
+    views.py (car.reviews = [review.to_dict() for review in ...]).
+    Guards against anything other than a real array (missing key, null,
+    or an empty string all fall back to []) so a data hiccup can't crash
+    this whole script and silently break every button below it. */
+
 const reviewsDataEl = document.getElementById('reviews-data');
 let rawReviews = [];
 if (reviewsDataEl) {
@@ -35,6 +36,8 @@ if (reviewsDataEl) {
 
 // Normalize fields so partial review dicts still render fine.
 let reviews = rawReviews.map((r) => ({
+    // Database ID (used for delete)
+    id: r.id,
     title: r.title || '',
     author: r.author || 'Anonymous',
     email: r.email || '',
@@ -67,12 +70,11 @@ function renderReviewSummary() {
             const stars = 5 - idx;
             const pct = total ? Math.round((count / total) * 100) : 0;
             return `<div class="bar-row">
-      <span class="label">${stars} star</span>
-      <span class="bar-track"><span class="bar-fill" style="width:${pct}%"></span></span>
-      <span class="count">${count}</span>
-    </div>`;
-        })
-        .join('');
+                <span class="label">${stars} star</span>
+                <span class="bar-track"><span class="bar-fill" style="width:${pct}%"></span></span>
+                <span class="count">${count}</span>
+            </div>`;
+        }).join('');
 }
 
 /* ---------------- Review list ---------------- */
@@ -96,8 +98,8 @@ function renderReviewList(sortMode) {
             const realIndex = reviews.indexOf(r);
             const photosHTML = r.photos.length
                 ? `<div class="photo-strip">${r.photos
-                      .map((src) => `<img class="photo-thumb" src="${src}" data-review="${realIndex}">`)
-                      .join('')}</div>`
+                    .map((src) => `<img class="photo-thumb" src="${src}" data-review="${realIndex}">`)
+                    .join('')}</div>`
                 : '';
             const dateStr = new Date(r.date).toLocaleDateString('en-IN', {
                 day: 'numeric',
@@ -105,22 +107,26 @@ function renderReviewList(sortMode) {
                 year: 'numeric'
             });
             return `<article class="review-panel">
-      <h4>${r.title}</h4>
-      <p class="review-author">By ${r.author} on ${dateStr}
-        ${r.verified ? '<span class="verified-badge">✓ Verified Owner</span>' : ''}
-      </p>
-      <div class="review-rating stars">${starsHTML(r.rating)}</div>
-      <p class="review-content">${r.content}</p>
-      ${photosHTML}
-      <div class="review-footer">
-        <button class="helpful-btn ${r.liked ? 'liked' : ''}" data-review="${realIndex}">
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9v9H3V9h3zm0 0l4-7c.6 0 1.6.4 1.6 2l-.6 3.5H15c1 0 1.8.9 1.6 1.9l-1.2 6c-.2 1-1 1.6-2 1.6H6"/></svg>
-          Helpful (${r.helpful})
-        </button>
-      </div>
-    </article>`;
-        })
-        .join('');
+                <h4>${r.title}</h4>
+                <p class="review-author">By ${r.author} on ${dateStr}
+                    ${r.verified ? '<span class="verified-badge">✓ Verified Owner</span>' : ''}
+                </p>
+                <div class="review-rating stars">${starsHTML(r.rating)}</div>
+                <p class="review-content">${r.content}</p>
+                ${photosHTML}
+                <div class="review-footer">
+                    <button class="delete-review-btn" data-review-id="${r.id}" type="button">
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9l4-7c.6 0 1.6.4 1.6 2l-.6 3.5H15c1 0 1.8.9 1.6 1.9l-1.2 6c-.2 1-1 1.6-2 1.6H6v-9z"/>
+                        </svg>
+                        Delete
+                    </button>
+                    <button class="helpful-btn ${r.liked ? 'liked' : ''}" data-review="${realIndex}">
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9v9H3V9h3zm0 0l4-7c.6 0 1.6.4 1.6 2l-.6 3.5H15c1 0 1.8.9 1.6 1.9l-1.2 6c-.2 1-1 1.6-2 1.6H6"/></svg>
+                        Helpful (${r.helpful})
+                    </button>
+                </div>
+            </article>`;
+        }).join('');
 
     container.querySelectorAll('.photo-thumb').forEach((img) => {
         img.addEventListener('click', () => openReviewLightbox(img.src));
@@ -133,6 +139,9 @@ function renderReviewList(sortMode) {
             reviews[idx].helpful += reviews[idx].liked ? 1 : -1;
             renderReviewList(document.getElementById('sortSelect').value);
         });
+    });
+    container.querySelectorAll('.delete-review-btn').forEach((btn) => {
+        btn.addEventListener('click', () => openDeleteModal(+btn.dataset.reviewId));
     });
 }
 
@@ -236,14 +245,12 @@ function syncFileInputFromPending() {
 
 function renderReviewUploadPreview() {
     uploadPreview.innerHTML = pendingReviewPhotoFiles
-        .map(
-            (file, i) => `
-    <div class="thumb-wrap">
-      <img src="${URL.createObjectURL(file)}">
-      <div class="remove" data-idx="${i}">&times;</div>
-    </div>`
-        )
-        .join('');
+        .map((file, i) => `
+            <div class="thumb-wrap">
+                <img src="${URL.createObjectURL(file)}">
+                <div class="remove" data-idx="${i}">&times;</div>
+            </div>`
+        ).join('');
     uploadPreview.querySelectorAll('.remove').forEach((btn) => {
         btn.addEventListener('click', () => {
             pendingReviewPhotoFiles.splice(+btn.dataset.idx, 1);
@@ -303,6 +310,69 @@ reviewForm.addEventListener('submit', async (e) => {
     } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = originalLabel;
+    }
+});
+
+/* ---------------- Delete review (email-confirmed) ---------------- */
+const carSlug = document.querySelector('.review-section')?.dataset.carSlug || '';
+const deleteModalOverlay = document.getElementById('deleteModalOverlay');
+const deleteReviewForm = document.getElementById('deleteReviewForm');
+let pendingDeleteReviewId = null;
+
+function openDeleteModal(reviewId) {
+    pendingDeleteReviewId = reviewId;
+    document.getElementById('deleteEmail').value = '';
+    deleteModalOverlay.classList.add('open');
+}
+function closeDeleteModal() {
+    deleteModalOverlay.classList.remove('open');
+    pendingDeleteReviewId = null;
+}
+document.getElementById('cancelDeleteBtn').addEventListener('click', closeDeleteModal);
+deleteModalOverlay.addEventListener('click', (e) => {
+    if (e.target === deleteModalOverlay) closeDeleteModal();
+});
+
+deleteReviewForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!pendingDeleteReviewId) return;
+
+    const email = document.getElementById('deleteEmail').value.trim();
+    if (!isValidReviewEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    const submitBtn = deleteReviewForm.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+
+    try {
+        const formData = new FormData();
+        formData.append('email', email);
+        formData.append(
+            'csrfmiddlewaretoken',
+            reviewForm.querySelector('[name=csrfmiddlewaretoken]').value
+        );
+
+        const response = await fetch(`/car/${carSlug}/review/${pendingDeleteReviewId}/delete/`, {
+            method: 'POST',
+            body: formData
+        });
+        const data = await response.json();
+
+        if (!response.ok || data.error) {
+            alert(data.error || 'Could not delete this review.');
+            return;
+        }
+
+        reviews = reviews.filter((r) => r.id !== pendingDeleteReviewId);
+        renderReviewsSection();
+        closeDeleteModal();
+    } catch (err) {
+        console.error('Review deletion failed:', err);
+        alert('Something went wrong. Please try again.');
+    } finally {
+        submitBtn.disabled = false;
     }
 });
 
