@@ -860,6 +860,7 @@ function initTheme() {
     if (savedTheme === "light") document.documentElement.classList.add("light");
     startRayAnimation();
 }
+initTheme();
 
 // ── Events ─────────────────────────────────────────────────────────────────────
 

@@ -456,7 +456,7 @@ img {
     border-radius: 999px;
     font-weight: 750;
     border: 1px solid var(--line);
-    color: white;
+    color: var(--text);
     background: transparent;
     cursor: pointer;
     transition:
@@ -483,7 +483,7 @@ img {
     border-radius: 999px;
     font-weight: 750;
     border: 1px solid var(--line);
-    color: white;
+    color: var(--text);
     background: transparent;
     cursor: pointer;
     margin-top: 1rem;
@@ -507,7 +507,7 @@ img {
     padding: 0 1rem;
     border: 1px solid var(--line);
     border-radius: 999px;
-    color: white;
+    color: var(--text);
     background: transparent;
     font-weight: 750;
     transition:
@@ -739,7 +739,7 @@ h3 {
 .section-heading {
     display: grid;
     grid-template-columns: minmax(0, 0.55fr) minmax(16rem, 0.45fr);
-    gap: 1rem;
+    gap: 2rem;
     align-items: end;
     margin-bottom: clamp(1.6rem, 4vw, 3rem);
 }
@@ -855,12 +855,6 @@ h3 {
     right: 1rem;
     bottom: 1rem;
     z-index: 1;
-}
-
-.brand-card:hover,
-.car-card:hover {
-    transform: translateY(-4px);
-    transition: transform .3s ease;
 }
 
 .meta-row,
@@ -1823,6 +1817,14 @@ h3 {
     gap: 0.75rem;
 }
 
+/* These sit on the hero photo overlay (always dark), not the theme
+   surface - keep them white in both light and dark mode, unlike
+   .secondary-button elsewhere which follows var(--text). */
+.detail-actions .secondary-button,
+.detail-actions .secondary-link-button {
+    color: white;
+}
+
 .car-blog {
     display: grid;
     gap: 1.1rem;
@@ -2513,14 +2515,11 @@ h3 {
     border-bottom: 2px solid var(--accent);
 }
 
-.viewer-stage {
-    width: min(80vw, 850px);
-    margin-inline: auto;
-}
-
 .view-stage {
     position: relative;
     min-height: 460px;
+    width: min(80vw, 850px);
+    margin-inline: auto;
 }
 
 .frame-viewer,
@@ -2717,4 +2716,33 @@ h3 {
     letter-spacing: .05em;
     background: rgba(16,185,129,.15);
     color: #10b981;
+}
+
+.review-section {
+    display: grid;
+    gap: 1rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background:
+        linear-gradient(135deg, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 36%),
+        var(--surface);
+}
+
+.review-section h3 {
+    max-width: 18ch;
+    font-size: clamp(1.8rem, 4vw, 3.35rem);
+}
+
+.review-kicker {
+    width: fit-content;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--accent-2);
+    background: var(--surface-2);
+    font-size: 0.74rem;
+    font-weight: 850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
