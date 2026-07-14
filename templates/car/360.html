@@ -7,6 +7,7 @@
     </div>
     <p class="viewer-intro">Explore the vehicle from every angle and experience the cabin in immersive 360°.</p>
     <div class="view-container">
+        {% if car.viewer360.exterior.available or car.viewer360.open.available or car.viewer360.interior.available %}
         <div class="view-stage">
             <!-- Frame viewer -->
             <div class="frame-viewer" data-slug="{{ car.slug }}" data-frames="{{ car.viewer360.exterior.frames }}"
@@ -23,6 +24,7 @@
             <div id="interior360" data-slug="{{ car.slug }}">
             </div>
         </div>
+        {% endif %}
         {% if car.viewer360.exterior.available or car.viewer360.open.available or car.viewer360.interior.available %}
         <div class="viewer-tabs">
             {% if car.viewer360.exterior.available %}

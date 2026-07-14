@@ -45,32 +45,35 @@ function updateToggleButton(type, totalCards) {
 
 
 // ── Card Display Logic ────────────────────────────────────────────────────────────────────────────────
+// These buttons only exist on the homepage - guard with ?. so pages that
+// don't have them (car detail, about, faq, etc.) don't throw here and
+// silently break every script.js line that comes after this one.
 document
-    .getElementById("brands_cardToggle")
-    .addEventListener("click", () => {
+.getElementById("brands_cardToggle")
+?.addEventListener("click", () => {
 
-        // Pass renderBrands as a callback reference (not an invoked call),
-        // so it renders AFTER displayState.brands_card has been updated.
-        toggleCards(
-            "brands_card",
-            brandSummary().length,
-            renderBrands
-        );
+    // Pass renderBrands as a callback reference (not an invoked call),
+    // so it renders AFTER displayState.brands_card has been updated.
+    toggleCards(
+        "brands_card",
+        brandSummary().length,
+        renderBrands
+    );
 
-    });
+});
 
 document
-    .getElementById("car_cardToggle")
-    .addEventListener("click", () => {
+.getElementById("car_cardToggle")
+?.addEventListener("click", () => {
 
-        // Same fix: renderCars must run after the new card count is set.
-        toggleCards(
-            "car_card",
-            getFilteredCars().length,
-            renderCars
-        );
+    // Same fix: renderCars must run after the new card count is set.
+    toggleCards(
+        "car_card",
+        getFilteredCars().length,
+        renderCars
+    );
 
-    });
+});
 // ───────────────────────────────────────────────────────────────────────────────────────────────
 
 function normalizeCar(car) {
@@ -90,8 +93,7 @@ function normalizeCar(car) {
         });
     });
     const power = { min: Math.min(...allPower) || 0, max: Math.max(...allPower) || 0 };
-    const torque = { min: Math.min(...allTorque) || 0, max: Math.max(...allTorque) || 0 };
-    const safetyRating = parseFloat(car?.overview?.safetyRating);
+    const torque = { min: Math.min(...allTorque) || 0, max: Math.max(...allTorque) || 0 }
     return {
         id: car?.slug || "",
         slug: car?.slug || "",
@@ -105,7 +107,7 @@ function normalizeCar(car) {
         bodyType: car?.overview?.body || "",
         fuel: car?.overview?.fuelTypes || [],
         transmission: car?.overview?.transmissions || [],
-        safety: isNaN(safetyRating) ? 0 : safetyRating,
+        safety: car?.overview?.safetyRating ?? "Not tested yet",
         power,
         torque,
         seats: car?.overview?.seatingOptions?.[0] || 5,
@@ -175,8 +177,8 @@ async function loadCars() {
 
         // Render every dynamic grid first, so the DOM elements GSAP
         // needs already exist by the time animations are wired up.
-        renderBrands();
-        renderCars();
+        renderBrands();   // also triggers animateBrandCards()
+        renderCars();     // also triggers animateCarCards()
         renderSaved();
 
         // Initial population of the Compare section (dropdowns + output).
@@ -307,13 +309,13 @@ function comparisonGroups() {
                     ({ variant }) => metricNumber(variant.performance?.power),
                     "max"
                 ],
-                [
+                                [
                     "Torque",
                     ({ variant }) => variant.performance?.torque || "—",
                     ({ variant }) => metricNumber(variant.performance?.torque),
                     "max"
                 ],
-                [
+                                [
                     "Mileage / range",
                     ({ variant }) => variant.performance?.mileageARAI || "—",
                     ({ variant }) => metricNumber(variant.performance?.mileageARAI),
@@ -330,13 +332,13 @@ function comparisonGroups() {
                     ({ variant }) => metricNumber(variant.wheels?.size),
                     "max"
                 ],
-                [
+                                [
                     "Wheel type",
                     ({ variant }) => variant.wheels?.type || "—",
                     ({ variant }) => metricNumber(variant.wheels?.type),
                     "max"
                 ],
-                [
+                                [
                     "Tyre size",
                     ({ variant }) => variant.wheels?.tyreSizeLabel || "—",
                     ({ variant }) => metricNumber(variant.wheels?.tyreSizeLabel),
@@ -496,47 +498,47 @@ function renderGroupedComparisonTable(selected) {
                         <th colspan="${selected.length + 1}">${group.title}</th>
                     </tr>
                     ${group.rows.map(([label, value, metric, compareType]) => {
-        const rowValues = selected.map(item => value(item));
-        const allSame = rowValues.every(v => v === rowValues[0]);
+                        const rowValues = selected.map(item => value(item));
+                        const allSame = rowValues.every(v => v === rowValues[0]);
 
-        if (state.compareSettings.differencesOnly && allSame) {
-            return "";
-        }
-        const values = selected.map((item) => metric ? metric(item) : 0);
-        const highest = metric ? Math.max(...values) : 0;
-        const best = !metric
-            ? null
-            : compareType === "min"
-                ? Math.min(...values)
-                : Math.max(...values);
-        const uniqueValues = [...new Set(values)];
-        const hasWinner =
-            metric &&
-            compareType !== "none" &&
-            uniqueValues.length > 1;
-
-        return `
+                        if (state.compareSettings.differencesOnly && allSame) {
+                            return "";
+                        }
+                        const values = selected.map((item) => metric ? metric(item) : 0);
+                        const highest = metric ? Math.max(...values) : 0;
+                        const best = !metric
+                            ? null
+                            : compareType === "min"
+                                ? Math.min(...values)
+                                : Math.max(...values);
+                        const uniqueValues = [...new Set(values)];
+                        const hasWinner =
+                            metric &&
+                            compareType !== "none" &&
+                            uniqueValues.length > 1;
+                        
+                        return `
                             <tr>
                                 <th>${label}</th>
                                 ${selected.map((item) => {
-            const numericValue = metric ? metric(item) : 0;
-            const isWinner =
-                hasWinner &&
-                numericValue === best;
-            return `
+                                    const numericValue = metric ? metric(item) : 0;
+                                    const isWinner =
+                                        hasWinner &&
+                                        numericValue === best;
+                                    return `
                                         <td>
                                             <strong>
                                                 ${value(item)}
                                                 ${isWinner
-                    ? '<span class="winner-badge">BEST</span>'
-                    : ''}
+                                                    ? '<span class="winner-badge">BEST</span>'
+                                                    : ''}
                                             </strong>          
                                         </td>
-                                    `;
-        }).join("")}
+                                    `;     
+                                }).join("")}
                             </tr>
                         `;
-    }).join("")}
+                    }).join("")}
                 `).join("")}
             </tbody>
         </table>
@@ -572,11 +574,11 @@ function renderComparePicker() {
                     Select variant
                     <select data-compare-slot-variant="${slot}" ${car ? "" : "disabled"}>
                         ${car
-                ? variants.map((v) => {
-                    const price = getVariantPrice(v) / 100000;
-                    return `<option value="${v.id}" ${selectedVariantId === v.id ? "selected" : ""}>${v.name} · ${formatSinglePrice(price)}</option>`;
-                }).join("")
-                : `<option value="">Choose car first</option>`}
+                            ? variants.map((v) => {
+                                const price = getVariantPrice(v) / 100000;
+                                return `<option value="${v.id}" ${selectedVariantId === v.id ? "selected" : ""}>${v.name} · ${formatSinglePrice(price)}</option>`;
+                            }).join("")
+                            : `<option value="">Choose car first</option>`}
                     </select>
                 </label>
             </div>
@@ -623,7 +625,7 @@ function renderSaved() {
                 <div>
                     <span class="badge">${car.brand}</span>
                     <h3>${car.name}</h3>
-                    <p>${formatPrice(car.priceMin, car.priceMax)} · ${car.safety === 0 ? "Not tested yet" : `${car.safety} ★ Safety`}</p>
+                    <p>${formatPrice(car.priceMin, car.priceMax)} · ${car.safety === "Not tested yet" ? car.safety : `${car.safety} ★ Safety`}</p>
                     <div class="card-actions">
                         <button class="secondary-button" type="button" data-details="${car.id}">Open</button>
                         <button class="secondary-button" type="button" data-save="${car.id}">Remove</button>
@@ -745,6 +747,8 @@ function renderCars() {
             `;
         }).join("");
     updateToggleButton("car_card", filtered.length);
+    // Animate cards after every render (only newly added ones actually move)
+    animateCarCards();
 }
 
 document.addEventListener("change", (e) => {
@@ -996,11 +1000,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ── Hero Image Changing Function ─────────────────────────────────────────────────────
-window.onload = function () {
+window.onload = function() {
+    const heroImage = document.getElementById("hero-image");
+    if (!heroImage) return;
     const hero = 11;
     const randomNum = Math.floor(Math.random() * hero) + 1;
-    const finalImage = `/static/images/car-images/heroImages/${randomNum}.png`;
-    document.getElementById("hero-image").src = finalImage;
+    heroImage.src = `/static/images/car-images/heroImages/${randomNum}.png`;
 }
 
 // ── 360 viewer (unchanged) ─────────────────────────────────────────────────────
@@ -1057,7 +1062,7 @@ if (frameViewer) {
                 if (!interiorLoaded) {
                     pannellum.viewer("interior360", {
                         type: "cubemap",
-                        cubeMap: [1, 2, 3, 4, 5, 6].map((n) => `/static/images/car-images/${slug}/interior/${n}.webp`),
+                        cubeMap: [1,2,3,4,5,6].map((n) => `/static/images/car-images/${slug}/interior/${n}.webp`),
                         autoLoad: true, autoRotate: -2, mouseZoom: true,
                         showZoomCtrl: false, showFullscreenCtrl: false,
                     });
@@ -1088,7 +1093,16 @@ if (frameViewer) {
     });
     frameViewer.addEventListener("touchend", () => { dragging = false; startAutoRotate(); });
 
-    currentFolder = "360"; currentFrame = 0;
+    // Match whatever the server actually rendered as the initial image -
+    // some cars only have the "doors open" set, not a plain exterior 360.
+    if (Number(frameViewer.dataset.frames) > 0) {
+        currentFolder = "360";
+        totalFrames = Number(frameViewer.dataset.frames);
+    } else if (Number(frameViewer.dataset.openFrames) > 0) {
+        currentFolder = "360-open";
+        totalFrames = Number(frameViewer.dataset.openFrames);
+    }
+    currentFrame = 0;
     frameViewer.style.display = "block"; interiorViewer.style.display = "none";
     updateFrame(); startAutoRotate();
 }
@@ -1103,7 +1117,7 @@ if (frameViewer) {
 // ──────────────────────────────────────────────────────────────────────────────────────────────────────
 
 // ── Car Detail Page Animation ─────────────────────────────────────────────────────────────────────────
-if (document.querySelector(".car-detail-page")) {
+if (document.querySelector(".car-detail-page") && typeof initCarAnimations === "function") {
     initCarAnimations();
 }
 // ──────────────────────────────────────────────────────────────────────────────────────────────────────
