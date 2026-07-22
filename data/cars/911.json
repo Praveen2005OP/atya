@@ -7,6 +7,7 @@
   "generation": "992.2 (2025 facelift)",
   "launchYear": 2025,
   "status": "On Sale",
+  "colorfolder": true,
   "viewer360": {
     "exterior": {
       "available": false,
@@ -70,9 +71,39 @@
   },
   "colors": [
     {
-      "name": "Guards Red",
-      "hex": "#AA1111",
+      "name": "Black",
+      "hex": "#0A0A0A",
       "type": "Solid",
+      "variants": [
+        "carrera",
+        "carrera-s",
+        "carrera-gts",
+        "carrera-4",
+        "carrera-4s",
+        "carrera-4-gts",
+        "targa-4",
+        "targa-4s"
+      ]
+    },
+    {
+      "name": "Carmine Red",
+      "hex": "#8B0000",
+      "type": "Solid",
+      "variants": [
+        "carrera",
+        "carrera-s",
+        "carrera-gts",
+        "carrera-4",
+        "carrera-4s",
+        "carrera-4-gts",
+        "targa-4",
+        "targa-4s"
+      ]
+    },
+    {
+      "name": "Cartagena Yellow Metallic",
+      "hex": "#C8B400",
+      "type": "Metallic",
       "variants": [
         "carrera",
         "carrera-s",
@@ -115,23 +146,8 @@
       ]
     },
     {
-      "name": "Carrara White Metallic",
-      "hex": "#F0EEE9",
-      "type": "Metallic",
-      "variants": [
-        "carrera",
-        "carrera-s",
-        "carrera-gts",
-        "carrera-4",
-        "carrera-4s",
-        "carrera-4-gts",
-        "targa-4",
-        "targa-4s"
-      ]
-    },
-    {
-      "name": "Black (Standard)",
-      "hex": "#0A0A0A",
+      "name": "Guards Red",
+      "hex": "#AA1111",
       "type": "Solid",
       "variants": [
         "carrera",
@@ -145,21 +161,8 @@
       ]
     },
     {
-      "name": "Shark Blue",
-      "hex": "#1F3A5F",
-      "type": "Metallic",
-      "variants": [
-        "carrera",
-        "carrera-s",
-        "carrera-4",
-        "carrera-4s",
-        "targa-4",
-        "targa-4s"
-      ]
-    },
-    {
-      "name": "Agate Grey Metallic",
-      "hex": "#7A7D80",
+      "name": "Ice Grey Metallic",
+      "hex": "#C8C8C8",
       "type": "Metallic",
       "variants": [
         "carrera",
@@ -173,12 +176,78 @@
       ]
     },
     {
-      "name": "Python Green",
-      "hex": "#4A5E2F",
-      "type": "Special",
+      "name": "Jet Black Metallic",
+      "hex": "#1A1A1A",
+      "type": "Metallic",
       "variants": [
+        "carrera",
+        "carrera-s",
         "carrera-gts",
-        "carrera-4-gts"
+        "carrera-4",
+        "carrera-4s",
+        "carrera-4-gts",
+        "targa-4",
+        "targa-4s"
+      ]
+    },
+    {
+      "name": "Lugano Blue",
+      "hex": "#1A4A8C",
+      "type": "Metallic",
+      "variants": [
+        "carrera",
+        "carrera-s",
+        "carrera-gts",
+        "carrera-4",
+        "carrera-4s",
+        "carrera-4-gts",
+        "targa-4",
+        "targa-4s"
+      ]
+    },
+    {
+      "name": "Provence",
+      "hex": "#8C7AB8",
+      "type": "Metallic",
+      "variants": [
+        "carrera",
+        "carrera-s",
+        "carrera-gts",
+        "carrera-4",
+        "carrera-4s",
+        "carrera-4-gts",
+        "targa-4",
+        "targa-4s"
+      ]
+    },
+    {
+      "name": "Vanadium Grey Metallic",
+      "hex": "#5A5C5E",
+      "type": "Metallic",
+      "variants": [
+        "carrera",
+        "carrera-s",
+        "carrera-gts",
+        "carrera-4",
+        "carrera-4s",
+        "carrera-4-gts",
+        "targa-4",
+        "targa-4s"
+      ]
+    },
+    {
+      "name": "White",
+      "hex": "#F5F5F5",
+      "type": "Solid",
+      "variants": [
+        "carrera",
+        "carrera-s",
+        "carrera-gts",
+        "carrera-4",
+        "carrera-4s",
+        "carrera-4-gts",
+        "targa-4",
+        "targa-4s"
       ]
     }
   ],

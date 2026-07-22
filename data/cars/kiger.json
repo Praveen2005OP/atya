@@ -7,10 +7,11 @@
   "generation": "1st Gen Facelift (2025–present)",
   "launchYear": 2021,
   "status": "On Sale",
+  "colorfolder": false,
   "viewer360": {
     "exterior": {
-      "available": true,
-      "frames": 72
+      "available": false,
+      "frames": null
     },
     "open": {
       "available": false,

@@ -1,0 +1,661 @@
+{
+  "id": "audi-rs5-sportback",
+  "slug": "rs5sportback",
+  "brand": "Audi",
+  "model": "RS5",
+  "name": "Audi RS5 Sportback",
+  "generation": "RS5 Sportback Facelift (B9.5, 2020–)",
+  "launchYear": 2021,
+  "status": "On Sale",
+  "colorfolder": false,
+  "viewer360": {
+    "exterior": {
+      "available": false,
+      "frames": null
+    },
+    "open": {
+      "available": false,
+      "frames": null
+    },
+    "interior": {
+      "available": null
+    }
+  },
+  "hero": {
+    "tagline": "Performance without compromise.",
+    "image": "/static/images/car-images/rs5sportback/pic1.png",
+    "gallery": [
+      "/static/images/car-images/rs5sportback/pic1.png",
+      "/static/images/car-images/rs5sportback/pic2.png",
+      "/static/images/car-images/rs5sportback/pic3.png",
+      "/static/images/car-images/rs5sportback/pic4.png"
+    ]
+  },
+  "pricing": {
+    "currency": "INR",
+    "exShowroom": {
+      "min": 10700000,
+      "max": 10700000,
+      "note": "CBU import — price varies with options"
+    }
+  },
+  "overview": {
+    "segment": "Performance Luxury Sportback",
+    "body": "5-door Sportback (Fastback)",
+    "doors": 5,
+    "safetyRating": "5",
+    "safetyRatingBody": "Euro NCAP",
+    "seatingOptions": [
+      5
+    ],
+    "fuelTypes": [
+      "Petrol"
+    ],
+    "transmissions": [
+      "Automatic"
+    ],
+    "driveTypes": [
+      "AWD"
+    ],
+    "useCases": [
+      "Performance",
+      "Grand Touring",
+      "Track Day",
+      "Daily Driver",
+      "Highway"
+    ],
+    "minides": "Twin-turbo V6, quattro AWD, and five doors — the RS5 Sportback is the everyday performance car done right.",
+    "description": "The Audi RS5 Sportback (B9.5 facelift) is sold in India as a CBU import, priced at ₹1.07 Crore (ex-showroom). It is powered by a 2.9-litre biturbo V6 TFSI producing 444 bhp at 5,700 rpm and 600 Nm from 1,900–5,000 rpm, paired with an 8-speed tiptronic automatic and Audi's quattro permanent all-wheel drive. The RS5 Sportback sprints from 0–100 km/h in 3.9 seconds and is electronically limited to 250 km/h (280 km/h with the RS Dynamic package). Features include Matrix LED headlamps with dynamic indicators, a 12.3-inch Audi Virtual Cockpit Plus, a 10.1-inch MMI touch display, Bang & Olufsen 3D sound system, RS sport suspension, six airbags, and a frameless door design. The RS5 Sportback competes with the BMW M4 Competition Gran Coupe and Mercedes-AMG C 43 in India."
+  },
+  "images": {
+    "logo": "/static/images/logos/audi.png"
+  },
+  "colors": [
+    {
+      "name": "Nardo Grey",
+      "hex": "#9B9B9B",
+      "type": "Monotone",
+      "variants": [
+        "sportback"
+      ]
+    },
+    {
+      "name": "Tango Red Metallic",
+      "hex": "#B22222",
+      "type": "Metallic",
+      "variants": [
+        "sportback"
+      ]
+    },
+    {
+      "name": "Mythos Black Metallic",
+      "hex": "#1A1A1A",
+      "type": "Metallic",
+      "variants": [
+        "sportback"
+      ]
+    },
+    {
+      "name": "Glacier White Metallic",
+      "hex": "#F0F0EE",
+      "type": "Metallic",
+      "variants": [
+        "sportback"
+      ]
+    },
+    {
+      "name": "Navarra Blue Metallic",
+      "hex": "#1A3A5C",
+      "type": "Metallic",
+      "variants": [
+        "sportback"
+      ]
+    },
+    {
+      "name": "Daytona Grey Pearl Effect",
+      "hex": "#5A5E62",
+      "type": "Pearl",
+      "variants": [
+        "sportback"
+      ]
+    }
+  ],
+  "sharedSpecs": {
+    "dimensions": {
+      "length": "4783 mm",
+      "width": "1866 mm",
+      "height": "1409 mm",
+      "wheelbase": "2832 mm",
+      "frontTrack": "1626 mm",
+      "rearTrack": "1623 mm",
+      "groundClearance": "140 mm",
+      "bootSpace": "480 Litres",
+      "fuelTank": "58 Litres",
+      "kerbWeight": "1800 kg",
+      "doors": 5
+    },
+    "suspension": {
+      "front": "5-link axle with RS Sport Suspension",
+      "rear": "5-link axle with RS Sport Suspension",
+      "additionalTech": "Optional RS Sport Suspension Plus with Dynamic Ride Control (DRC)"
+    },
+    "steering": {
+      "type": "Electromechanical Power Steering (Progressive steering — optional)",
+      "column": "Electrically Adjustable"
+    },
+    "brakes": {
+      "front": "Compound Disc Brakes — 374 mm (RS Black brake calipers)",
+      "rear": "Compound Disc Brakes — 310 mm",
+      "brakeAssist": true,
+      "optionalCeramicBrakes": "RS Ceramic brake system available as option (380 mm front)"
+    },
+    "tyres": {
+      "front": "255/40 R19",
+      "rear": "255/40 R19",
+      "optionalTyre": "275/35 R20"
+    },
+    "platform": "Audi MLB Evo",
+    "driveSystem": "quattro permanent AWD with sport differential (optional)",
+    "emissionNorm": "BS6 Phase 2 (Euro 6d equivalent)",
+    "importType": "CBU"
+  },
+  "engineDatabase": {
+    "29-v6-biturbo": {
+      "id": "29-v6-biturbo",
+      "name": "2.9L Biturbo V6 TFSI",
+      "engineType": "Twin-Turbocharged V6 TFSI",
+      "displacement": "2894 cc",
+      "engineLayout": "V6, Longitudinal Front-Mid",
+      "cylinders": 6,
+      "cylinderConfiguration": "V6 — 90°",
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": true,
+      "turboConfig": "Twin Turbocharger (bi-turbo)",
+      "fuelSupplySystem": "Direct Injection (TFSI)",
+      "compressionRatio": "10.1:1",
+      "specificOutput": "153 bhp/litre",
+      "automatic": {
+        "power": "444 bhp (450 PS) @ 5700 rpm",
+        "torque": "600 Nm @ 1900–5000 rpm",
+        "gearbox": "8-Speed Tiptronic Automatic",
+        "driveType": "AWD (quattro)",
+        "acceleration0to100": "3.9 sec",
+        "topSpeed": "250 km/h (electronically limited)",
+        "topSpeedWithPackage": "280 km/h (with RS Dynamic package)",
+        "mileageARAI": "10.8 kmpl"
+      }
+    }
+  },
+  "variantFamilies": [
+    {
+      "id": "sportback",
+      "name": "Sportback",
+      "position": "Standard (single variant sold in India)",
+      "tier": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "rs5-sportback",
+      "name": "RS5 Sportback",
+      "family": "sportback",
+      "rank": 1,
+      "price": {
+        "currency": "INR",
+        "exShowroom": 10700000,
+        "note": "CBU import — ex-showroom New Delhi"
+      },
+      "configuration": {
+        "fuel": "Petrol",
+        "engine": "2.9L Biturbo V6 TFSI",
+        "transmission": "Automatic",
+        "gearbox": "8-Speed Tiptronic Automatic",
+        "drivetrain": "AWD (quattro permanent)",
+        "seating": 5,
+        "tyreSizeFront": "255/40 R19",
+        "tyreSizeRear": "255/40 R19"
+      },
+      "performance": {
+        "power": "444 bhp (450 PS) @ 5700 rpm",
+        "torque": "600 Nm @ 1900–5000 rpm",
+        "acceleration0to100": "3.9 sec",
+        "topSpeed": "250 km/h (electronically limited)",
+        "topSpeedWithRSDynamic": "280 km/h",
+        "mileageARAI": "10.8 kmpl"
+      },
+      "wheels": {
+        "size": "19 Inch",
+        "type": "19-inch 10-spoke RS alloy wheels",
+        "tyreSizeFront": "255/40 R19",
+        "tyreSizeRear": "255/40 R19",
+        "optional20inch": "20-inch RS alloy wheels (275/35 R20) — optional"
+      },
+      "driveDynamics": {
+        "quattroAWD": true,
+        "sportDifferential": "Optional",
+        "drivingModes": "Comfort, Auto, Dynamic, Individual (via Audi drive select)",
+        "rsSportSuspension": true,
+        "rsSportSuspensionPlus": "Optional (DRC)",
+        "rsBrakes": true,
+        "rsBrakeCaliperColour": "Black",
+        "ceramicBrakes": "Optional",
+        "launchControl": true,
+        "cylinderDeactivation": false,
+        "engineSound": "RS sport exhaust with active sound management"
+      },
+      "comfort": {
+        "powerSteering": true,
+        "airConditioner": true,
+        "heater": true,
+        "adjustableSteering": "Electrically Adjustable Column",
+        "rearAcVents": true,
+        "rearReadingLamp": true,
+        "cruiseControl": true,
+        "adaptiveCruiseControlNote": "ACC with stop-and-go",
+        "keylessEntry": true,
+        "pushButtonStart": true,
+        "automaticClimateControl": true,
+        "dualZoneClimateControl": true,
+        "airQualityControl": false,
+        "ventilatedFrontSeats": true,
+        "ventilatedRearSeats": false,
+        "heatedFrontSeats": true,
+        "heatedRearSeats": false,
+        "heatedSteeringWheel": true,
+        "wirelessCharging": true,
+        "poweredFrontSeats": true,
+        "poweredSeatNote": "RS sport seats — electrically adjustable with memory",
+        "seatMemory": true,
+        "rearWindowSunblind": true,
+        "activeNoiseCancellation": false,
+        "driveModes": true,
+        "driveModeTypes": "Comfort, Auto, Dynamic, Individual (Audi drive select)",
+        "parkingSensors": "Front & Rear",
+        "rearSeatCentreArmrest": true,
+        "frontCupHolders": true,
+        "rearCupHolders": true,
+        "accessoryPowerOutlet": true,
+        "trunkLight": true,
+        "vanityMirror": true,
+        "sunroof": {
+          "available": true,
+          "type": "Panoramic Sunroof"
+        },
+        "electronicTailgate": true,
+        "voiceCommands": true,
+        "usbCharger": "Front & Rear (USB-C)",
+        "speedSensingAutoDoorLock": true,
+        "followMeHomeHeadlamps": true,
+        "electricParkingBrake": true,
+        "autoHold": true,
+        "paddleShifters": true,
+        "softCloseDoors": false,
+        "framelessDoors": true
+      },
+      "interior": {
+        "digitalCluster": true,
+        "digitalClusterSize": "12.3 inch Audi Virtual Cockpit Plus",
+        "virtualCockpitPlus": true,
+        "infotainmentScreenSize": "10.1 inch MMI Touch",
+        "ambientLighting": true,
+        "ambientLightingZones": true,
+        "upholstery": "Fine Nappa Leather (RS sport seats)",
+        "leatherWrappedSteering": true,
+        "leatherWrappedGearKnob": false,
+        "flatBottomSteering": true,
+        "tachometer": true,
+        "gloveBox": true,
+        "autoDimmingIRVM": true,
+        "headUpDisplay": true,
+        "carbonFibreInserts": true,
+        "aluminiumInserts": true,
+        "rsSpecificCluster": true,
+        "rsClusterNote": "RS-specific Virtual Cockpit views with G-force meter, lap timer, performance data"
+      },
+      "exterior": {
+        "ledDRL": true,
+        "matrixLedHeadlamps": true,
+        "matrixLedNote": "Matrix LED headlamps with dynamic turn indicators",
+        "ledHeadlamps": true,
+        "projectorHeadlamps": false,
+        "ledFogLamps": false,
+        "ledTailLamps": true,
+        "alloyWheels": true,
+        "rainSensingWiper": true,
+        "rearWindowWiper": false,
+        "rearWindowDefogger": true,
+        "roofRails": false,
+        "rearSpoiler": true,
+        "diffuserRear": true,
+        "sharkFinAntenna": true,
+        "orvm": "Electrically Adjustable + Heated + Auto Fold + Memory",
+        "autoHeadlamps": true,
+        "outsideRearViewMirrorTurnIndicators": true,
+        "honeycombSingleframeGrille": true,
+        "glossBlackGrille": true,
+        "rsBodyKitIntegrated": true,
+        "widenedWheelArches": true,
+        "quattroLetteringRear": true,
+        "sportsExhaust": true,
+        "exhaustTips": "Oval quad exhaust tips",
+        "framelessDoorWindows": true
+      },
+      "safety": {
+        "airbags": 6,
+        "driverAirbag": true,
+        "passengerAirbag": true,
+        "sideAirbagFront": true,
+        "curtainAirbag": true,
+        "sideAirbagRear": false,
+        "kneeAirbag": false,
+        "abs": true,
+        "ebd": true,
+        "brakeAssist": true,
+        "esc": true,
+        "tractionControl": true,
+        "tpms": true,
+        "rearCamera": true,
+        "rearCameraType": "Reversing camera with dynamic guidelines",
+        "surroundCamera": false,
+        "hillAssist": true,
+        "hillDescentControl": false,
+        "isofix": true,
+        "childSafetyLocks": true,
+        "seatBeltWarning": true,
+        "doorAjarWarning": true,
+        "speedAlert": false,
+        "engineImmobilizer": true,
+        "impactSensingAutoDoorUnlock": true,
+        "antiPinchPowerWindows": true,
+        "pretensionerSeatbelts": true,
+        "adas": true,
+        "launchControl": true,
+        "rsDynamicPackageOptional": true
+      },
+      "infotainment": {
+        "touchscreen": true,
+        "screenSize": "10.1 inch MMI Touch",
+        "virtualCockpit": "12.3 inch Audi Virtual Cockpit Plus",
+        "androidAuto": true,
+        "appleCarplay": true,
+        "wirelessAndroidAuto": false,
+        "wirelessAppleCarplay": false,
+        "bluetooth": true,
+        "usbPorts": true,
+        "speakerCount": 19,
+        "speakerPositions": "Bang & Olufsen 3D Premium Sound System",
+        "premiumAudio": true,
+        "premiumAudioBrand": "Bang & Olufsen 3D",
+        "dolbyAtmos": false,
+        "radio": true,
+        "tripleScreen": false,
+        "connectedNavigation": true,
+        "mmiBluetooth": true,
+        "audiConnect": true,
+        "voiceControl": true,
+        "headUpDisplay": true
+      },
+      "adas": {
+        "available": true,
+        "level": "Level 2",
+        "forwardCollisionWarning": true,
+        "automaticEmergencyBraking": true,
+        "speedAssistSystem": true,
+        "trafficSignRecognition": true,
+        "laneDepartureWarning": true,
+        "laneKeepAssist": true,
+        "driverAttentionWarning": true,
+        "adaptiveCruiseControl": true,
+        "adaptiveCruiseNote": "Adaptive Cruise Control with Stop-and-Go",
+        "blindSpotMonitor": true,
+        "rearCrossTrafficAlert": true,
+        "autoHighBeam": true,
+        "parkingAid": true,
+        "emergencyAssist": true
+      },
+      "connectedTech": {
+        "available": true,
+        "alexa": false,
+        "chatgpt": false,
+        "liveLocation": true,
+        "liveWeather": true,
+        "navigationWithTraffic": true,
+        "smartwatchApp": false,
+        "valetMode": false,
+        "sosButton": true,
+        "eCallICall": true,
+        "rsa": false,
+        "adrenox": false,
+        "myAudi": true,
+        "myAudiNote": "myAudi app — remote vehicle status, geofencing, e-call, service booking",
+        "audiConnect": true,
+        "otaUpdates": false,
+        "remoteDoorLockUnlock": true,
+        "remoteACControl": false,
+        "stolenVehicleTracking": true,
+        "geofencing": true
+      },
+      "evHybrid": {
+        "batteryCooling": false,
+        "batteryPreconditioning": false,
+        "dcFastCharging": false,
+        "homeCharging": false,
+        "onePedalDrive": false,
+        "regenModes": false,
+        "vehicleToLoad": false,
+        "vehicleToVehicleCharging": false
+      },
+      "offRoad": {
+        "awd": true,
+        "crawlMode": false,
+        "differentialLock": false,
+        "fourLow": false,
+        "hillDescentControl": false,
+        "terrainModes": false,
+        "transferCase": false,
+        "waterWadingMode": false,
+        "sportDifferential": "Optional"
+      },
+      "keyFeatures": [
+        "444 bhp / 600 Nm 2.9L Biturbo V6 TFSI",
+        "0–100 km/h in 3.9 sec | 250 km/h top speed",
+        "quattro permanent AWD",
+        "8-speed Tiptronic Automatic",
+        "12.3-inch Audi Virtual Cockpit Plus with RS display",
+        "10.1-inch MMI Touch infotainment",
+        "Matrix LED headlamps with dynamic indicators",
+        "Bang & Olufsen 3D 19-speaker premium audio",
+        "RS sport seats in Fine Nappa Leather",
+        "Level 2 ADAS with ACC stop-and-go",
+        "Panoramic sunroof",
+        "Head-up display",
+        "Audi drive select (4 modes)",
+        "RS Black brake calipers",
+        "Heated & ventilated front seats",
+        "myAudi connected car app",
+        "Frameless door windows",
+        "480 L boot space"
+      ],
+      "comparisonFeatures": {
+        "comfort": {
+          "accessoryPowerOutlet": true,
+          "activeNoiseCancellation": false,
+          "adaptiveCruiseControl": true,
+          "adjustableSteering": true,
+          "airConditioner": true,
+          "airQualityControl": false,
+          "ambientLighting": true,
+          "autoDimmingIRVM": true,
+          "autoHeadlamps": true,
+          "autoHold": true,
+          "automaticClimateControl": true,
+          "cruiseControl": true,
+          "driveModes": true,
+          "driveModeTypes": true,
+          "dualZoneClimateControl": true,
+          "electricParkingBrake": true,
+          "electronicTailgate": true,
+          "heater": true,
+          "heatedFrontSeats": true,
+          "heatedSteeringWheel": true,
+          "keylessEntry": true,
+          "paddleShifters": true,
+          "panoramicSunroof": true,
+          "parkingSensors": true,
+          "poweredFrontSeats": true,
+          "pushButtonStart": true,
+          "rearAcVents": true,
+          "rearSeatCentreArmrest": true,
+          "rearWindowSunblind": true,
+          "seatMemory": true,
+          "speedSensingAutoDoorLock": true,
+          "sunroof": true,
+          "ventilatedFrontSeats": true,
+          "wirelessCharging": true
+        },
+        "interior": {
+          "ambientLighting": true,
+          "autoDimmingIRVM": true,
+          "carbonFibreInserts": true,
+          "digitalCluster": true,
+          "digitalClusterSize": true,
+          "flatBottomSteering": true,
+          "headUpDisplay": true,
+          "leatherUpholstery": true,
+          "leatherWrappedSteering": true,
+          "rsSpecificCluster": true,
+          "steeringMountedControls": true,
+          "tachometer": true,
+          "upholstery": true,
+          "virtualCockpit": true
+        },
+        "exterior": {
+          "alloyWheels": true,
+          "autoHeadlamps": true,
+          "diffuserRear": true,
+          "framelessDoorWindows": true,
+          "glossBlackGrille": true,
+          "honeycombGrille": true,
+          "ledDRL": true,
+          "ledHeadlamps": true,
+          "ledTailLamps": true,
+          "matrixLedHeadlamps": true,
+          "orvm": true,
+          "orvmAutoFold": true,
+          "orvmElectric": true,
+          "orvmHeated": true,
+          "outsideRearViewMirrorTurnIndicators": true,
+          "rainSensingWiper": true,
+          "rearSpoiler": true,
+          "rearWindowDefogger": true,
+          "rsBodyKit": true,
+          "sunroof": true,
+          "widenedWheelArches": true
+        },
+        "safety": {
+          "abs": true,
+          "adas": true,
+          "airbags": true,
+          "antiPinchPowerWindows": true,
+          "brakeAssist": true,
+          "camera360": false,
+          "curtainAirbag": true,
+          "doorAjarWarning": true,
+          "ebd": true,
+          "engineImmobilizer": true,
+          "esc": true,
+          "hillAssist": true,
+          "isofix": true,
+          "launchControl": true,
+          "pretensionerSeatbelts": true,
+          "rearCamera": true,
+          "rearParkingSensors": true,
+          "rsBrakes": true,
+          "seatBeltWarning": true,
+          "sideAirbagFront": true,
+          "surroundCamera": false,
+          "tpms": true,
+          "tractionControl": true
+        },
+        "adas": {
+          "adaptiveCruiseControl": true,
+          "autoHighBeam": true,
+          "automaticEmergencyBraking": true,
+          "available": true,
+          "blindSpotMonitor": true,
+          "driverAttentionWarning": true,
+          "emergencyAssist": true,
+          "forwardCollisionWarning": true,
+          "laneDepartureWarning": true,
+          "laneKeepAssist": true,
+          "level": true,
+          "rearCrossTrafficAlert": true,
+          "speedAssistSystem": true,
+          "trafficSignRecognition": true
+        },
+        "infotainment": {
+          "androidAuto": true,
+          "appleCarplay": true,
+          "bluetooth": true,
+          "connectedNavigation": true,
+          "dolbyAtmos": false,
+          "headUpDisplay": true,
+          "mmiBluetooth": true,
+          "premiumAudio": true,
+          "premiumAudioBrand": true,
+          "radio": true,
+          "screenSize": true,
+          "speakerCount": true,
+          "touchscreen": true,
+          "usbPorts": true,
+          "virtualCockpit": true,
+          "voiceControl": true,
+          "wirelessAndroidAuto": false,
+          "wirelessAppleCarplay": false
+        },
+        "connectedTech": {
+          "adrenox": false,
+          "alexa": false,
+          "audiConnect": true,
+          "available": true,
+          "chatgpt": false,
+          "eCallICall": true,
+          "geofencing": true,
+          "liveLocation": true,
+          "liveWeather": true,
+          "myAudi": true,
+          "navigationWithTraffic": true,
+          "otaUpdates": false,
+          "remoteDoorLockUnlock": true,
+          "rsa": false,
+          "smartwatchApp": false,
+          "sosButton": true,
+          "stolenVehicleTracking": true,
+          "valetMode": false
+        },
+        "evHybrid": {
+          "batteryCooling": false,
+          "batteryPreconditioning": false,
+          "dcFastCharging": false,
+          "homeCharging": false,
+          "onePedalDrive": false,
+          "regenModes": false,
+          "vehicleToLoad": false,
+          "vehicleToVehicleCharging": false
+        },
+        "offRoad": {
+          "awd": true,
+          "crawlMode": false,
+          "differentialLock": false,
+          "fourLow": false,
+          "hillDescentControl": false,
+          "sportDifferential": false,
+          "terrainModes": false,
+          "transferCase": false,
+          "waterWadingMode": false
+        }
+      }
+    }
+  ]
+}

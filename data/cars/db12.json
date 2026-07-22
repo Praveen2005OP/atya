@@ -7,6 +7,7 @@
   "generation": "DB12 (2023–present)",
   "launchYear": 2023,
   "status": "On Sale",
+  "colorfolder": true,
   "viewer360": {
     "exterior": {
       "available": false,
@@ -64,13 +65,125 @@
     "description": "The Aston Martin DB12 launched in India on 29 September 2023 as the successor to the DB11, replacing the old V12 lineup entirely with a single Mercedes-AMG-sourced 4.0L twin-turbo V8. Billed as the world's first 'Super Tourer', it pairs genuine supercar pace (0-100 in 3.6 sec, 325 km/h top speed) with everyday GT comfort. The chassis is 7% stiffer than the DB11's, and the cabin is built on Aston's own E&E electrical architecture with a new 10.25-inch touchscreen, 12.3-inch digital cluster, and a Bowers & Wilkins 1,170W 15-speaker surround system. In October 2025, Aston revealed the range-topping DB12 S, sharing the same 4.0L V8 but uprated by 20 PS, with sportier suspension tuning and unique styling cues. India offers the DB12 in the standard Coupe and the higher-output S specification — both finished entirely through Aston Martin's 'Q' personal commissioning programme."
   },
   "images": {
-    "logo": "/static/images/logos/aston-martin.png"
+    "logo": "/static/images/logos/aston-martin.png",
+    "colorfolder": "/static/images/car-images/db12/color/"
   },
   "colors": [
+    {
+      "name": "Buckinghamshire Green",
+      "hex": "#1A4D2E",
+      "type": "Standard",
+      "image": "BuckinghamshireGreen.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Lime Essence",
+      "hex": "#A8C800",
+      "type": "Standard",
+      "image": "LimeEssence.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Plasma Blue",
+      "hex": "#1A3A8C",
+      "type": "Standard",
+      "image": "PlasmaBlue.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Satin Onyx Black",
+      "hex": "#1A1A1A",
+      "type": "Satin",
+      "image": "SatinOnyxBlack.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Satin Lunar White",
+      "hex": "#F0EEE9",
+      "type": "Satin",
+      "image": "SatinLunarWhite.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Aluminite Silver",
+      "hex": "#B8B8B8",
+      "type": "Standard",
+      "image": "AluminiteSilver.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
     {
       "name": "Iridescent Emerald",
       "hex": "#0E5E45",
       "type": "Standard",
+      "image": "IridescentEmerald.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Aston Martin Racing Green",
+      "hex": "#1A3D1A",
+      "type": "Standard",
+      "image": "AstonMartinRacingGreen.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Onyx Black",
+      "hex": "#0A0A0A",
+      "type": "Standard",
+      "image": "OnyxBlack.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Magnetic Silver",
+      "hex": "#8C8C8C",
+      "type": "Standard",
+      "image": "MagneticSilver.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Concours Blue",
+      "hex": "#0A2A6E",
+      "type": "Standard",
+      "image": "ConcoursBlue.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Elwood Blue",
+      "hex": "#1A7AB8",
+      "type": "Standard",
+      "image": "ElwoodBlue.png",
       "variants": [
         "db12-coupe",
         "db12-s"
@@ -80,6 +193,67 @@
       "name": "Hyper Red",
       "hex": "#C8102E",
       "type": "Standard",
+      "image": "HyperRed.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Photon Lime",
+      "hex": "#C8E000",
+      "type": "Standard",
+      "image": "PhotonLime.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Magneto Bronze",
+      "hex": "#6B4A1A",
+      "type": "Standard",
+      "image": "MagnetoBronze.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Storm Purple",
+      "hex": "#4A1A6B",
+      "type": "Standard",
+      "image": "StormPurple.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Ultramarine Black",
+      "hex": "#0A0A1A",
+      "type": "Standard",
+      "image": "UltramarineBlack.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Satin Xenon Grey",
+      "hex": "#6B6E70",
+      "type": "Satin",
+      "image": "SatinXenonGrey.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Satin Aston Martin Racing Green",
+      "hex": "#1A3D1A",
+      "type": "Satin",
+      "image": "SatinAstonMartinRacingGreen.png",
       "variants": [
         "db12-coupe",
         "db12-s"
@@ -89,42 +263,37 @@
       "name": "Xenon Grey",
       "hex": "#7A7D80",
       "type": "Standard",
+      "image": "XenonGrey.png",
       "variants": [
         "db12-coupe",
         "db12-s"
       ]
     },
     {
-      "name": "Neutron White",
-      "hex": "#F0EEE9",
+      "name": "Ion Blue",
+      "hex": "#1A5A8C",
       "type": "Standard",
+      "image": "IonBlue.png",
       "variants": [
         "db12-coupe",
         "db12-s"
       ]
     },
     {
-      "name": "Satin Aluminite Silver",
-      "hex": "#B8B8B8",
-      "type": "Satin",
-      "variants": [
-        "db12-coupe",
-        "db12-s"
-      ]
-    },
-    {
-      "name": "Quasar Blue",
-      "hex": "#1F3A6B",
+      "name": "Cosmos Orange",
+      "hex": "#E05A00",
       "type": "Standard",
+      "image": "CosmosOrange.png",
       "variants": [
         "db12-coupe",
         "db12-s"
       ]
     },
     {
-      "name": "Ultra Yellow",
-      "hex": "#F0C800",
+      "name": "Zenith White",
+      "hex": "#F5F5F5",
       "type": "Standard",
+      "image": "ZenithWhite.png",
       "variants": [
         "db12-coupe",
         "db12-s"
@@ -134,6 +303,247 @@
       "name": "Jet Black",
       "hex": "#0A0A0A",
       "type": "Standard",
+      "image": "JetBlack.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Ultra Yellow",
+      "hex": "#F0C800",
+      "type": "Standard",
+      "image": "UltraYellow.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Minotaur Green",
+      "hex": "#2A5A20",
+      "type": "Standard",
+      "image": "MinotaurGreen.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Titanium Grey",
+      "hex": "#5A5C5E",
+      "type": "Standard",
+      "image": "TitaniumGrey.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Supernova Red",
+      "hex": "#A01010",
+      "type": "Standard",
+      "image": "SupernovaRed.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Volcano Red",
+      "hex": "#B81A1A",
+      "type": "Standard",
+      "image": "VolcanoRed.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Satin Aluminite Silver",
+      "hex": "#B8B8B8",
+      "type": "Satin",
+      "image": "SatinAluminiteSilver.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Digital Violet",
+      "hex": "#5A1A8C",
+      "type": "Standard",
+      "image": "DigitalViolet.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Kermit Green",
+      "hex": "#4AC820",
+      "type": "Standard",
+      "image": "KermitGreen.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Lightning Silver",
+      "hex": "#C8C8C8",
+      "type": "Standard",
+      "image": "LightningSilver.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Scorpus Red",
+      "hex": "#8B0000",
+      "type": "Standard",
+      "image": "ScorpusRed.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Seychelles Blue",
+      "hex": "#1A4A8C",
+      "type": "Standard",
+      "image": "SeychellesBlue.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Neutron White",
+      "hex": "#F0EEE9",
+      "type": "Standard",
+      "image": "NeutronWhite.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Cumberland Grey",
+      "hex": "#4A4D50",
+      "type": "Standard",
+      "image": "CumberlandGrey.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Silver Birch Provenance",
+      "hex": "#D0D0C8",
+      "type": "Provenance",
+      "image": "SilverBirchProvenance.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Spirit Silver",
+      "hex": "#A8A8A8",
+      "type": "Standard",
+      "image": "SpiritSilver.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Oberon Black",
+      "hex": "#141414",
+      "type": "Standard",
+      "image": "OberonBlack.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "China Grey",
+      "hex": "#8C8C8C",
+      "type": "Standard",
+      "image": "ChinaGrey.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Liquid Crimson",
+      "hex": "#7A0A0A",
+      "type": "Standard",
+      "image": "LiquidCrimson.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Lunar White",
+      "hex": "#EDEDEA",
+      "type": "Standard",
+      "image": "LunarWhite.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Dubonnet Rosso",
+      "hex": "#6B0A0A",
+      "type": "Standard",
+      "image": "DubonnetRosso.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Synapse Orange",
+      "hex": "#E06400",
+      "type": "Standard",
+      "image": "SynapseOrange.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Satin Titanium Grey",
+      "hex": "#5A5C5E",
+      "type": "Satin",
+      "image": "SatinTitaniumGrey.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Quasar Blue",
+      "hex": "#1F3A6B",
+      "type": "Standard",
+      "image": "QuasarBlue.png",
+      "variants": [
+        "db12-coupe",
+        "db12-s"
+      ]
+    },
+    {
+      "name": "Apex Grey",
+      "hex": "#3A3C3E",
+      "type": "Standard",
+      "image": "ApexGrey.png",
       "variants": [
         "db12-coupe",
         "db12-s"
@@ -143,6 +553,7 @@
       "name": "Q by Aston Martin (Bespoke Commissioning)",
       "hex": null,
       "type": "Personal Commissioning",
+      "image": null,
       "variants": [
         "db12-coupe",
         "db12-s"
@@ -422,8 +833,6 @@
         "mildHybrid": false,
         "plugInHybrid": false,
         "electricOnly": false,
-        "strongHybrid": false,
-        "dedicatedEvPlatform": false,
         "regenerativeBraking": false,
         "batteryCapacity": false
       },
@@ -439,54 +848,28 @@
         "Bowers & Wilkins 1,170W 15-Speaker Surround Sound",
         "10.25-inch Touchscreen + 12.3-inch Digital Cluster",
         "Aston Martin E&E Architecture — All-New Electronics",
-        "Carbon-Ceramic Brakes Available (Optional)"
+        "Carbon-Ceramic Brakes Available (Optional)",
+        "48 colour options via Q by Aston Martin"
       ],
       "comparisonFeatures": {
         "comfort": {
           "adaptiveCruiseControl": true,
-          "adaptiveMSuspension": true,
           "airConditioner": true,
-          "airPurifier": false,
           "ambientLighting": true,
-          "ambientLightingColors": true,
           "autoDimmingIRVM": true,
           "autoHeadlamps": true,
           "autoHold": true,
           "automaticClimateControl": true,
-          "cabinPreCooling": false,
           "comfortAccess": true,
-          "cooledGlovebox": false,
           "cruiseControl": true,
-          "cupHoldersFront": true,
-          "cupHoldersRear": false,
-          "digitalKey": false,
           "driveModes": true,
-          "driverArmrest": true,
-          "driverSeatHeightAdjust": true,
           "driverSeatLumbarSupport": true,
           "driverSeatMemory": true,
           "driverSeatPowered": true,
-          "dualZoneClimateControl": false,
           "electricParkingBrake": true,
-          "electronicTailgate": false,
-          "followMeHomeHeadlamps": false,
-          "frontArmrest": true,
-          "frontParkingSensors": true,
-          "frontSeatBackPockets": false,
-          "gestureTailgate": false,
           "heatedFrontSeats": true,
-          "heatedRearSeats": false,
-          "heater": false,
-          "idleStopStart": false,
           "keylessEntry": true,
-          "massageSeats": false,
-          "mDriveProfessional": false,
-          "multiZoneClimateControl": false,
-          "oneTouchDownDriverWindow": false,
-          "oneTouchUpDriverWindow": false,
           "paddleShifters": true,
-          "panoramicSunroof": false,
-          "parkingSensors": false,
           "powerAdjustableOrvm": true,
           "powerBoot": true,
           "poweredCoDriverSeat": true,
@@ -495,164 +878,68 @@
           "powerSteering": true,
           "pushButtonStart": true,
           "rainSensingWiper": true,
-          "rearAcVents": false,
-          "rearArmrest": false,
           "rearDefogger": true,
           "rearParkingSensors": true,
-          "rearReadingLamp": false,
-          "rearSeatRecline": false,
-          "rearSeatSlide": false,
-          "rearSeatSplit": false,
-          "rearSunshade": false,
-          "rearWindowSunshade": false,
-          "rearWiper": false,
-          "remoteAcStart": false,
-          "remoteEngineStart": false,
-          "seatVentilationRear": false,
           "smartKey": true,
-          "softCloseDoors": false,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": {
-            "available": false,
-            "type": null
-          },
-          "sunroof.available": false,
-          "sunroof.type": false,
-          "threeZoneClimateControl": false,
-          "tiltSteering": false,
           "tiltTelescopicSteering": true,
           "usbCharger": true,
           "ventilatedFrontSeats": true,
-          "voiceCommands": false,
           "wirelessCharging": true
         },
         "interior": {
           "ambientLighting": true,
-          "analogueCluster": false,
-          "anthraciteHeadliner": false,
-          "bmwCurvedDisplay": false,
-          "captainSeats": false,
-          "carbonBucketSeats": false,
           "carbonFibreTrim": true,
           "digitalCluster": true,
           "digitalClusterSize": "12.3 inch",
-          "dualScreenDisplay": false,
-          "dualToneDashboard": false,
-          "dualToneInterior": false,
           "flatBottomSteering": true,
-          "foldableRearSeats": false,
           "frontHeadrestsAdjustable": true,
           "gloveBox": true,
-          "headsUpDisplay": false,
-          "headUpDisplay": false,
           "illuminatedGlovebox": true,
           "leatherWrappedGearKnob": true,
           "leatherWrappedSteering": true,
-          "mCarbonRoof": false,
-          "metalPedals": false,
-          "mLeatherSteering": false,
-          "mSeatBelts": false,
           "paddleShifters": true,
-          "parcelTray": false,
-          "premiumFabricUpholstery": false,
-          "rearHeadrestsAdjustable": false,
-          "secondRowCaptainSeats": false,
           "tachometer": true,
-          "thirdRowSeats": false,
           "touchscreenSize": "10.25 inch",
-          "upholstery": true,
-          "woodFinishInterior": false
+          "upholstery": true
         },
         "exterior": {
-          "activeRearSpoiler": false,
           "adaptiveLedHeadlamps": true,
           "alloyWheels": true,
           "autoFoldOrvm": true,
-          "bodyColouredBumpers": false,
-          "carbonFibreRoof": false,
-          "chromeBeltline": false,
           "connectedLedTailLamps": true,
-          "corneringFogLamps": false,
-          "dualToneExterior": false,
           "flushDoorHandles": true,
-          "fogLamps": false,
-          "framelessDoors": false,
-          "frunk": false,
-          "glossBlackGrille": false,
-          "halogenHeadlamps": false,
           "headlampWashers": true,
-          "laserTailLights": false,
           "ledDRL": true,
-          "ledFogLamps": false,
           "ledHeadlamps": true,
-          "ledLightBar": false,
-          "ledProjectorHeadlamps": false,
           "ledTailLamps": true,
-          "mAerodynamicsPackage": false,
           "matrixLedHeadlamps": true,
-          "mHighGlossShadowLine": false,
           "orvmAutoDimming": true,
           "orvmElectric": true,
           "orvmHeated": true,
           "orvmLedIndicators": true,
-          "projectorHeadlamps": false,
-          "quadExhaust": false,
           "rainSensingWiper": true,
-          "rearSpoiler": false,
           "rearWindowDefogger": true,
-          "rearWindowWasher": false,
-          "rearWindowWiper": false,
-          "roofRails": false,
-          "sharkFinAntenna": false,
-          "skidPlates": false,
-          "spareWheelAlloy": false,
-          "spareWheelSteel": false,
-          "sunroof": false,
-          "tyreRepairKit": false,
-          "wheelCovers": false,
           "wheelSize": true,
-          "wheelType": true,
-          "yellowIconHeadlamps": false
+          "wheelType": true
         },
         "safety": {
           "abs": true,
-          "activeBonnet": false,
           "adas": true,
           "airbags": true,
           "allWheelDiscBrakes": true,
-          "antiPinchPowerWindows": false,
-          "autoDoorLock": false,
           "brakeAssist": true,
-          "camera360": false,
-          "childSafetyLocks": false,
           "corneringBrakeControl": true,
-          "curtainAirbag": false,
-          "curtainAirbags": false,
-          "doorAjarWarning": false,
-          "driverAirbag": true,
           "dynamicStabilityControl": true,
           "ebd": true,
-          "emergencyStopSignal": false,
           "engineImmobilizer": true,
           "esc": true,
           "frontParkingSensors": true,
-          "hillAssist": false,
-          "hillDescentControl": false,
-          "impactSensingAutoDoorUnlock": false,
-          "isofix": false,
-          "kneeAirbag": false,
           "mCompoundBrakes": true,
-          "passengerAirbag": true,
           "rearCamera": true,
           "rearCameraType": "Rear Parking Camera",
           "rearParkingSensors": true,
-          "rearSeatBeltReminder": false,
-          "rolloverMitigation": false,
-          "sideAirbagFront": false,
-          "sideAirbagRear": false,
-          "sideAirbags": false,
-          "speedAlert": false,
           "tpms": true,
           "tractionControl": true,
           "vehicleStabilityManagement": true
@@ -662,101 +949,62 @@
           "autoHighBeam": true,
           "automaticEmergencyBraking": true,
           "available": true,
-          "blindSpotCollisionAvoidance": false,
           "blindSpotMonitor": true,
-          "blindViewMonitor": false,
           "driverAttentionWarning": true,
           "forwardCollisionWarning": true,
-          "frontCollisionAvoidanceAssist": false,
-          "laneCenteringAssist": false,
           "laneDepartureWarning": false,
-          "laneFollowingAssist": false,
           "laneKeepAssist": false,
           "level": "Level 1+ (Aston Martin E&E Driver Assistance)",
-          "parkingAssistant": false,
-          "parkingCollisionAvoidance": false,
-          "rearCrossTrafficAlert": false,
-          "rearCrossTrafficAvoidance": false,
-          "reversingAssistant": false,
-          "safeExitAssist": false,
           "trafficSignRecognition": true
         },
         "infotainment": {
-          "androidAuto": false,
-          "appleCarplay": false,
-          "bluetooth": false,
-          "bmwOperatingSystem": false,
-          "connectedNavigation": false,
-          "dolbyAtmos": false,
-          "gestureControl": false,
-          "harmanKardonAudio": false,
-          "headsUpDisplay": false,
-          "premiumAudio": false,
-          "radio": false,
-          "rearEntertainmentScreens": false,
-          "screenSize": false,
-          "speakerCount": false,
-          "steeringControls": false,
-          "touchscreen": false,
-          "usbPorts": false,
-          "voiceAssistant": false,
-          "wirelessAndroidAuto": false,
-          "wirelessAppleCarplay": false
+          "androidAuto": true,
+          "appleCarplay": true,
+          "bluetooth": true,
+          "connectedNavigation": true,
+          "premiumAudio": true,
+          "radio": true,
+          "screenSize": true,
+          "speakerCount": true,
+          "touchscreen": true,
+          "usbPorts": true,
+          "voiceAssistant": true,
+          "wirelessAndroidAuto": true,
+          "wirelessAppleCarplay": true
         },
         "connectedTech": {
-          "appName": false,
-          "available": false,
-          "connectedCarTech": false,
-          "diagnostics": false,
-          "eCallICall": false,
-          "findMyCar": false,
-          "geofencing": false,
-          "liveTracking": false,
-          "navigation": false,
-          "navigationWithLiveTraffic": false,
-          "otaUpdates": false,
-          "remoteAcControl": false,
-          "remoteDoorLockUnlock": false,
-          "remoteEngineStart": false,
-          "remoteHornLight": false,
-          "remoteSoftwareUpgrade": false,
-          "remoteStart": false,
-          "sosAlert": false,
-          "stolenVehicleTracking": false,
-          "valetMode": false
+          "available": true,
+          "diagnostics": true,
+          "eCallICall": true,
+          "findMyCar": true,
+          "liveTracking": true,
+          "navigation": true,
+          "navigationWithLiveTraffic": true,
+          "otaUpdates": true,
+          "remoteDoorLockUnlock": true,
+          "remoteHornLight": true,
+          "sosAlert": true,
+          "stolenVehicleTracking": true
         },
         "evHybrid": {
-          "batteryCapacity": false,
           "batteryCooling": false,
           "batteryPreconditioning": false,
           "dcFastCharging": false,
-          "dedicatedEvPlatform": false,
-          "electricOnly": false,
           "homeCharging": false,
           "hybrid": false,
-          "mildHybrid": false,
           "onePedalDrive": false,
           "plugInHybrid": false,
           "regenerativeBraking": false,
-          "regenModes": false,
-          "strongHybrid": false,
           "vehicleToLoad": false,
           "vehicleToVehicleCharging": false
         },
         "offRoad": {
-          "activeMDifferential": false,
           "awd": false,
           "crawlMode": false,
           "differentialLock": false,
-          "driftMode": false,
           "fourLow": false,
-          "fourWheelDrive": false,
-          "hillDescentControl": false,
-          "lockingDifferential": false,
-          "lowRangeTransferCase": false,
           "terrainModes": false,
-          "transferCase": false,
-          "waterWadingMode": false
+          "transferCase": false
         }
       }
     },
@@ -939,8 +1187,6 @@
         "mildHybrid": false,
         "plugInHybrid": false,
         "electricOnly": false,
-        "strongHybrid": false,
-        "dedicatedEvPlatform": false,
         "regenerativeBraking": false,
         "batteryCapacity": false
       },
@@ -956,54 +1202,28 @@
         "0–100 km/h in 3.4 Seconds | Top Speed 327 km/h",
         "Alcantara Sport Interior Trim",
         "Revealed October 2025 — Flagship DB12 Specification",
-        "Carbon-Ceramic Brakes Available (Optional)"
+        "Carbon-Ceramic Brakes Available (Optional)",
+        "48 colour options via Q by Aston Martin"
       ],
       "comparisonFeatures": {
         "comfort": {
           "adaptiveCruiseControl": true,
-          "adaptiveMSuspension": true,
           "airConditioner": true,
-          "airPurifier": false,
           "ambientLighting": true,
-          "ambientLightingColors": true,
           "autoDimmingIRVM": true,
           "autoHeadlamps": true,
           "autoHold": true,
           "automaticClimateControl": true,
-          "cabinPreCooling": false,
           "comfortAccess": true,
-          "cooledGlovebox": false,
           "cruiseControl": true,
-          "cupHoldersFront": true,
-          "cupHoldersRear": false,
-          "digitalKey": false,
           "driveModes": true,
-          "driverArmrest": true,
-          "driverSeatHeightAdjust": true,
           "driverSeatLumbarSupport": true,
           "driverSeatMemory": true,
           "driverSeatPowered": true,
-          "dualZoneClimateControl": false,
           "electricParkingBrake": true,
-          "electronicTailgate": false,
-          "followMeHomeHeadlamps": false,
-          "frontArmrest": true,
-          "frontParkingSensors": true,
-          "frontSeatBackPockets": false,
-          "gestureTailgate": false,
           "heatedFrontSeats": true,
-          "heatedRearSeats": false,
-          "heater": false,
-          "idleStopStart": false,
           "keylessEntry": true,
-          "massageSeats": false,
-          "mDriveProfessional": false,
-          "multiZoneClimateControl": false,
-          "oneTouchDownDriverWindow": false,
-          "oneTouchUpDriverWindow": false,
           "paddleShifters": true,
-          "panoramicSunroof": false,
-          "parkingSensors": false,
           "powerAdjustableOrvm": true,
           "powerBoot": true,
           "poweredCoDriverSeat": true,
@@ -1012,164 +1232,69 @@
           "powerSteering": true,
           "pushButtonStart": true,
           "rainSensingWiper": true,
-          "rearAcVents": false,
-          "rearArmrest": false,
           "rearDefogger": true,
           "rearParkingSensors": true,
-          "rearReadingLamp": false,
-          "rearSeatRecline": false,
-          "rearSeatSlide": false,
-          "rearSeatSplit": false,
-          "rearSunshade": false,
-          "rearWindowSunshade": false,
-          "rearWiper": false,
-          "remoteAcStart": false,
-          "remoteEngineStart": false,
-          "seatVentilationRear": false,
           "smartKey": true,
-          "softCloseDoors": false,
           "speedSensingDoorLock": true,
           "steeringMountedControls": true,
-          "sunroof": {
-            "available": false,
-            "type": null
-          },
-          "sunroof.available": false,
-          "sunroof.type": false,
-          "threeZoneClimateControl": false,
-          "tiltSteering": false,
           "tiltTelescopicSteering": true,
           "usbCharger": true,
           "ventilatedFrontSeats": true,
-          "voiceCommands": false,
           "wirelessCharging": true
         },
         "interior": {
           "ambientLighting": true,
-          "analogueCluster": false,
-          "anthraciteHeadliner": false,
-          "bmwCurvedDisplay": false,
-          "captainSeats": false,
-          "carbonBucketSeats": false,
           "carbonFibreTrim": true,
           "digitalCluster": true,
           "digitalClusterSize": "12.3 inch",
-          "dualScreenDisplay": false,
-          "dualToneDashboard": false,
-          "dualToneInterior": false,
           "flatBottomSteering": true,
-          "foldableRearSeats": false,
           "frontHeadrestsAdjustable": true,
           "gloveBox": true,
-          "headsUpDisplay": false,
-          "headUpDisplay": false,
           "illuminatedGlovebox": true,
           "leatherWrappedGearKnob": true,
           "leatherWrappedSteering": true,
-          "mCarbonRoof": false,
-          "metalPedals": false,
-          "mLeatherSteering": false,
-          "mSeatBelts": false,
           "paddleShifters": true,
-          "parcelTray": false,
-          "premiumFabricUpholstery": false,
-          "rearHeadrestsAdjustable": false,
-          "secondRowCaptainSeats": false,
           "tachometer": true,
-          "thirdRowSeats": false,
           "touchscreenSize": "10.25 inch",
-          "upholstery": true,
-          "woodFinishInterior": false
+          "upholstery": true
         },
         "exterior": {
-          "activeRearSpoiler": false,
           "adaptiveLedHeadlamps": true,
           "alloyWheels": true,
           "autoFoldOrvm": true,
-          "bodyColouredBumpers": false,
-          "carbonFibreRoof": false,
-          "chromeBeltline": false,
           "connectedLedTailLamps": true,
-          "corneringFogLamps": false,
-          "dualToneExterior": false,
           "flushDoorHandles": true,
-          "fogLamps": false,
-          "framelessDoors": false,
-          "frunk": false,
-          "glossBlackGrille": false,
-          "halogenHeadlamps": false,
           "headlampWashers": true,
-          "laserTailLights": false,
           "ledDRL": true,
-          "ledFogLamps": false,
           "ledHeadlamps": true,
-          "ledLightBar": false,
-          "ledProjectorHeadlamps": false,
           "ledTailLamps": true,
-          "mAerodynamicsPackage": false,
           "matrixLedHeadlamps": true,
-          "mHighGlossShadowLine": false,
           "orvmAutoDimming": true,
           "orvmElectric": true,
           "orvmHeated": true,
           "orvmLedIndicators": true,
-          "projectorHeadlamps": false,
-          "quadExhaust": false,
           "rainSensingWiper": true,
-          "rearSpoiler": false,
           "rearWindowDefogger": true,
-          "rearWindowWasher": false,
-          "rearWindowWiper": false,
-          "roofRails": false,
-          "sharkFinAntenna": false,
-          "skidPlates": false,
-          "spareWheelAlloy": false,
-          "spareWheelSteel": false,
-          "sunroof": false,
-          "tyreRepairKit": false,
-          "wheelCovers": false,
+          "sTrim": true,
           "wheelSize": true,
-          "wheelType": true,
-          "yellowIconHeadlamps": false
+          "wheelType": true
         },
         "safety": {
           "abs": true,
-          "activeBonnet": false,
           "adas": true,
           "airbags": true,
           "allWheelDiscBrakes": true,
-          "antiPinchPowerWindows": false,
-          "autoDoorLock": false,
           "brakeAssist": true,
-          "camera360": false,
-          "childSafetyLocks": false,
           "corneringBrakeControl": true,
-          "curtainAirbag": false,
-          "curtainAirbags": false,
-          "doorAjarWarning": false,
-          "driverAirbag": true,
           "dynamicStabilityControl": true,
           "ebd": true,
-          "emergencyStopSignal": false,
           "engineImmobilizer": true,
           "esc": true,
           "frontParkingSensors": true,
-          "hillAssist": false,
-          "hillDescentControl": false,
-          "impactSensingAutoDoorUnlock": false,
-          "isofix": false,
-          "kneeAirbag": false,
           "mCompoundBrakes": true,
-          "passengerAirbag": true,
           "rearCamera": true,
           "rearCameraType": "Rear Parking Camera",
           "rearParkingSensors": true,
-          "rearSeatBeltReminder": false,
-          "rolloverMitigation": false,
-          "sideAirbagFront": false,
-          "sideAirbagRear": false,
-          "sideAirbags": false,
-          "speedAlert": false,
           "tpms": true,
           "tractionControl": true,
           "vehicleStabilityManagement": true
@@ -1179,101 +1304,62 @@
           "autoHighBeam": true,
           "automaticEmergencyBraking": true,
           "available": true,
-          "blindSpotCollisionAvoidance": false,
           "blindSpotMonitor": true,
-          "blindViewMonitor": false,
           "driverAttentionWarning": true,
           "forwardCollisionWarning": true,
-          "frontCollisionAvoidanceAssist": false,
-          "laneCenteringAssist": false,
           "laneDepartureWarning": false,
-          "laneFollowingAssist": false,
           "laneKeepAssist": false,
           "level": "Level 1+ (Aston Martin E&E Driver Assistance)",
-          "parkingAssistant": false,
-          "parkingCollisionAvoidance": false,
-          "rearCrossTrafficAlert": false,
-          "rearCrossTrafficAvoidance": false,
-          "reversingAssistant": false,
-          "safeExitAssist": false,
           "trafficSignRecognition": true
         },
         "infotainment": {
-          "androidAuto": false,
-          "appleCarplay": false,
-          "bluetooth": false,
-          "bmwOperatingSystem": false,
-          "connectedNavigation": false,
-          "dolbyAtmos": false,
-          "gestureControl": false,
-          "harmanKardonAudio": false,
-          "headsUpDisplay": false,
-          "premiumAudio": false,
-          "radio": false,
-          "rearEntertainmentScreens": false,
-          "screenSize": false,
-          "speakerCount": false,
-          "steeringControls": false,
-          "touchscreen": false,
-          "usbPorts": false,
-          "voiceAssistant": false,
-          "wirelessAndroidAuto": false,
-          "wirelessAppleCarplay": false
+          "androidAuto": true,
+          "appleCarplay": true,
+          "bluetooth": true,
+          "connectedNavigation": true,
+          "premiumAudio": true,
+          "radio": true,
+          "screenSize": true,
+          "speakerCount": true,
+          "touchscreen": true,
+          "usbPorts": true,
+          "voiceAssistant": true,
+          "wirelessAndroidAuto": true,
+          "wirelessAppleCarplay": true
         },
         "connectedTech": {
-          "appName": false,
-          "available": false,
-          "connectedCarTech": false,
-          "diagnostics": false,
-          "eCallICall": false,
-          "findMyCar": false,
-          "geofencing": false,
-          "liveTracking": false,
-          "navigation": false,
-          "navigationWithLiveTraffic": false,
-          "otaUpdates": false,
-          "remoteAcControl": false,
-          "remoteDoorLockUnlock": false,
-          "remoteEngineStart": false,
-          "remoteHornLight": false,
-          "remoteSoftwareUpgrade": false,
-          "remoteStart": false,
-          "sosAlert": false,
-          "stolenVehicleTracking": false,
-          "valetMode": false
+          "available": true,
+          "diagnostics": true,
+          "eCallICall": true,
+          "findMyCar": true,
+          "liveTracking": true,
+          "navigation": true,
+          "navigationWithLiveTraffic": true,
+          "otaUpdates": true,
+          "remoteDoorLockUnlock": true,
+          "remoteHornLight": true,
+          "sosAlert": true,
+          "stolenVehicleTracking": true
         },
         "evHybrid": {
-          "batteryCapacity": false,
           "batteryCooling": false,
           "batteryPreconditioning": false,
           "dcFastCharging": false,
-          "dedicatedEvPlatform": false,
-          "electricOnly": false,
           "homeCharging": false,
           "hybrid": false,
-          "mildHybrid": false,
           "onePedalDrive": false,
           "plugInHybrid": false,
           "regenerativeBraking": false,
-          "regenModes": false,
-          "strongHybrid": false,
           "vehicleToLoad": false,
           "vehicleToVehicleCharging": false
         },
         "offRoad": {
-          "activeMDifferential": false,
           "awd": false,
           "crawlMode": false,
           "differentialLock": false,
-          "driftMode": false,
           "fourLow": false,
-          "fourWheelDrive": false,
-          "hillDescentControl": false,
-          "lockingDifferential": false,
-          "lowRangeTransferCase": false,
           "terrainModes": false,
-          "transferCase": false,
-          "waterWadingMode": false
+          "transferCase": false
         }
       }
     }

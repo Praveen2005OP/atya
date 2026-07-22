@@ -7,10 +7,19 @@
   "generation": "Amalfi Spider (F154e, 2026–)",
   "launchYear": 2026,
   "status": "On Sale",
+  "colorfolder": false,
   "viewer360": {
-    "exterior": { "available": true, "frames": 72 },
-    "open": { "available": true, "frames": 72 },
-    "interior": { "available": null }
+    "exterior": {
+      "available": false,
+      "frames": null
+    },
+    "open": {
+      "available": false,
+      "frames": null
+    },
+    "interior": {
+      "available": null
+    }
   },
   "hero": {
     "tagline": "Open air. Pure Ferrari.",
@@ -35,11 +44,25 @@
     "body": "2+ Spider (Soft-top Convertible)",
     "doors": 2,
     "safetyRating": null,
-    "seatingOptions": ["2+"],
-    "fuelTypes": ["Petrol"],
-    "transmissions": ["Automatic"],
-    "driveTypes": ["RWD"],
-    "useCases": ["Grand Touring", "Open-top Driving", "Weekend", "Collector", "Track Day"],
+    "seatingOptions": [
+      "2+"
+    ],
+    "fuelTypes": [
+      "Petrol"
+    ],
+    "transmissions": [
+      "Automatic"
+    ],
+    "driveTypes": [
+      "RWD"
+    ],
+    "useCases": [
+      "Grand Touring",
+      "Open-top Driving",
+      "Weekend",
+      "Collector",
+      "Track Day"
+    ],
     "minides": "The Roma Spider's successor — a front-mid V8 open-top GT with 631 bhp, Z-fold soft-top in 13.5 seconds, and Ferrari's most intuitive cockpit yet.",
     "description": "The Ferrari Amalfi Spider debuted in March 2026 as the open-top counterpart to the Amalfi coupé, replacing the Roma Spider. It is built around a 3.9-litre twin-turbocharged V8 (F154e family) producing 631 bhp at 7,500 rpm and 760 Nm from 3,000–5,750 rpm, driving the rear wheels via an 8-speed F1 dual-clutch transmission. The Z-fold electrically operated fabric roof opens in just 13.5 seconds at speeds up to 60 km/h. The Amalfi Spider weighs 1,556 kg (dry) — 86 kg more than the coupé — yet matches its 3.3-second 0–100 km/h time and 320 km/h top speed. Key tech includes Side Slip Control 6.1, active aerodynamics with a three-position dynamic rear wing, a dual-cockpit interior layout with three digital displays, an 8-inch central touchscreen, Apple CarPlay, Android Auto, SAE Level 2 ADAS, and a wind deflector for open-top comfort. Luggage capacity is 255 litres (roof up) or 172 litres (roof down). Weight distribution is 48:52 front-to-rear."
   },
@@ -47,17 +70,94 @@
     "logo": "/static/images/logos/ferrari.png"
   },
   "colors": [
-    { "name": "Rosso Corsa", "hex": "#C8102E", "type": "Standard", "variants": ["base"] },
-    { "name": "Nero", "hex": "#0D0D0D", "type": "Standard", "variants": ["base"] },
-    { "name": "Bianco Avus", "hex": "#F0F0EE", "type": "Standard", "variants": ["base"] },
-    { "name": "Blu Scozia", "hex": "#1A3F6F", "type": "Standard", "variants": ["base"] },
-    { "name": "Verde British Racing", "hex": "#1C4220", "type": "Standard", "variants": ["base"] },
-    { "name": "Verde Costiera", "hex": "#2E6B4F", "type": "Standard", "variants": ["base"] },
-    { "name": "Giallo Ambra", "hex": "#D4A017", "type": "Standard", "variants": ["base"] },
-    { "name": "Blu Elettrico", "hex": "#0033A0", "type": "Standard", "variants": ["base"] },
-    { "name": "Azzurro La Plata", "hex": "#8ABBD0", "type": "Standard", "variants": ["base"] },
-    { "name": "Rosso Tramonto", "hex": "#C0392B", "type": "Spider Exclusive", "variants": ["base"] },
-    { "name": "Grigio Silverstone Opaco", "hex": "#7B7B7B", "type": "Matte", "variants": ["base"] }
+    {
+      "name": "Rosso Corsa",
+      "hex": "#C8102E",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Nero",
+      "hex": "#0D0D0D",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Bianco Avus",
+      "hex": "#F0F0EE",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Blu Scozia",
+      "hex": "#1A3F6F",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Verde British Racing",
+      "hex": "#1C4220",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Verde Costiera",
+      "hex": "#2E6B4F",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Giallo Ambra",
+      "hex": "#D4A017",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Blu Elettrico",
+      "hex": "#0033A0",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Azzurro La Plata",
+      "hex": "#8ABBD0",
+      "type": "Standard",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Rosso Tramonto",
+      "hex": "#C0392B",
+      "type": "Spider Exclusive",
+      "variants": [
+        "base"
+      ]
+    },
+    {
+      "name": "Grigio Silverstone Opaco",
+      "hex": "#7B7B7B",
+      "type": "Matte",
+      "variants": [
+        "base"
+      ]
+    }
   ],
   "sharedSpecs": {
     "dimensions": {
@@ -218,7 +318,10 @@
         "accessoryPowerOutlet": true,
         "trunkLight": true,
         "vanityMirror": true,
-        "sunroof": { "available": false, "type": "Open-top Spider — no sunroof" },
+        "sunroof": {
+          "available": false,
+          "type": "Open-top Spider — no sunroof"
+        },
         "electronicTailgate": false,
         "voiceCommands": false,
         "usbCharger": "Front (USB-C)",

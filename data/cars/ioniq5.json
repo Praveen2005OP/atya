@@ -7,10 +7,19 @@
   "generation": "Ioniq 5 Facelift 2026",
   "launchYear": 2026,
   "status": "On Sale",
+  "colorfolder": false,
   "viewer360": {
-    "exterior": { "available": true, "frames": 72 },
-    "open": { "available": false, "frames": null },
-    "interior": { "available": null }
+    "exterior": {
+      "available": false,
+      "frames": null
+    },
+    "open": {
+      "available": false,
+      "frames": null
+    },
+    "interior": {
+      "available": null
+    }
   },
   "hero": {
     "tagline": "Charge forward. Drive the future.",
@@ -35,11 +44,25 @@
     "doors": 5,
     "safetyRating": "5",
     "safetyRatingBody": "Euro NCAP",
-    "seatingOptions": [5],
-    "fuelTypes": ["Electric"],
-    "transmissions": ["Automatic"],
-    "driveTypes": ["RWD"],
-    "useCases": ["Family", "Highway", "Premium EV", "Tech-focused", "Long Range"],
+    "seatingOptions": [
+      5
+    ],
+    "fuelTypes": [
+      "Electric"
+    ],
+    "transmissions": [
+      "Automatic"
+    ],
+    "driveTypes": [
+      "RWD"
+    ],
+    "useCases": [
+      "Family",
+      "Highway",
+      "Premium EV",
+      "Tech-focused",
+      "Long Range"
+    ],
     "minides": "Retro-futuristic design meets flagship EV tech — the Ioniq 5 facelift redefines what an electric SUV can be.",
     "description": "The Hyundai Ioniq 5 facelift (2026) is launched in India at ₹55.70 lakh (ex-showroom). It is powered by an 84 kWh battery with a single PMS motor producing 225 bhp, offering a claimed ARAI range of 690 km. It supports 350 kW DC fast charging (10–80% in 18 minutes) and 11 kW AC charging. Features include dual 12.3-inch screens, 8-way powered driver's seat, wireless Android Auto & Apple CarPlay, dual-zone climate control, 8 airbags, Level 2 ADAS, OTA updates, Remote Smart Parking Assist 2 (RSPA2), Blind-Spot Collision Avoidance, and V2L (Vehicle-to-Load) capability. Available in a single RWD variant."
   },
@@ -51,25 +74,33 @@
       "name": "Gravity Gold Matte",
       "hex": "#C8A84B",
       "type": "Matte Monotone",
-      "variants": ["rwd"]
+      "variants": [
+        "rwd"
+      ]
     },
     {
       "name": "Optic White",
       "hex": "#F5F5F5",
       "type": "Monotone",
-      "variants": ["rwd"]
+      "variants": [
+        "rwd"
+      ]
     },
     {
       "name": "Midnight Black Pearl",
       "hex": "#0D0D0D",
       "type": "Monotone",
-      "variants": ["rwd"]
+      "variants": [
+        "rwd"
+      ]
     },
     {
       "name": "Titan Grey",
       "hex": "#5A5C5E",
       "type": "Monotone",
-      "variants": ["rwd"]
+      "variants": [
+        "rwd"
+      ]
     }
   ],
   "sharedSpecs": {
@@ -195,7 +226,10 @@
         "accessoryPowerOutlet": true,
         "trunkLight": true,
         "vanityMirror": true,
-        "sunroof": { "available": false, "type": null },
+        "sunroof": {
+          "available": false,
+          "type": null
+        },
         "electronicTailgate": true,
         "voiceCommands": true,
         "usbCharger": "Front & Rear (USB-A + USB-C)",

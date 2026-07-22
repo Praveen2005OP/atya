@@ -7,6 +7,7 @@
   "generation": "Triber Facelift 2025",
   "launchYear": 2025,
   "status": "On Sale",
+  "colorfolder": true,
   "viewer360": {
     "exterior": {
       "available": true,
@@ -132,7 +133,7 @@
       ]
     },
     {
-      "name": "Ice Cool White with Mystery Black roof",
+      "name": "Ice Cool White with Mystery Black Roof",
       "hex": "#F0EFE9",
       "type": "Dual Tone",
       "variants": [

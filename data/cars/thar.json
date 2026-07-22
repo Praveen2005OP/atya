@@ -7,6 +7,7 @@
   "generation": "Thar Gen2 Facelift 2025",
   "launchYear": 2025,
   "status": "On Sale",
+  "colorfolder": true,
   "viewer360": {
     "exterior": {
       "available": true,

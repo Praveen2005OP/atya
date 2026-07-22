@@ -10,6 +10,10 @@
 
         {% include 'car/spec-sheet.html' %}
 
+        {% if car.colorfolder %}
+            {% include 'car/color.html' %}
+        {% endif %}
+
         {% include 'car/360.html' %}
 
         {% include 'car/car-blog.html' %}
@@ -18,3 +22,5 @@
 </article>
 {{ car|json_script:"current-car-data" }}
 {% endblock %}
+
+<script src="{% static 'js/color.js' %}"></script>

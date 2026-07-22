@@ -7,6 +7,7 @@
   "generation": "Urus SE (2024 facelift) / Urus S / Urus Performante",
   "launchYear": 2018,
   "status": "On Sale",
+  "colorfolder": true,
   "viewer360": {
     "exterior": {
       "available": false,

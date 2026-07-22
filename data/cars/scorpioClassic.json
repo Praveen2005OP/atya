@@ -7,6 +7,7 @@
   "generation": "Scorpio Classic",
   "launchYear": 2022,
   "status": "On Sale",
+  "colorfolder": true,
   "viewer360": {
     "exterior": {
       "available": false,
@@ -86,7 +87,7 @@
       ]
     },
     {
-      "name": "Napoli Black",
+      "name": "Stealth Black",
       "hex": "#111111",
       "type": "Monotone",
       "variants": [

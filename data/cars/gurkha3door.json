@@ -7,6 +7,7 @@
   "generation": "3rd Gen (3-Door, 2024 Update)",
   "launchYear": 2021,
   "status": "On Sale",
+  "colorfolder": true,
   "viewer360": {
     "exterior": {
       "available": false,

@@ -7,6 +7,7 @@
   "generation": "Scorpio N Z101",
   "launchYear": 2022,
   "status": "On Sale",
+  "colorfolder": true,
   "viewer360": {
     "exterior": {
       "available": true,
@@ -74,7 +75,35 @@
   "colors": [
     {
       "name": "Everest White",
-      "hex": "#F5F5F0",
+      "hex": "#CFCFD0",
+      "type": "Monotone",
+      "variants": [
+        "z2",
+        "z4",
+        "z6",
+        "z8s",
+        "z8",
+        "z8t",
+        "z8l"
+      ]
+    },
+    {
+      "name": "Stealth Black",
+      "hex": "#131313",
+      "type": "Monotone",
+      "variants": [
+        "z2",
+        "z4",
+        "z6",
+        "z8s",
+        "z8",
+        "z8t",
+        "z8l"
+      ]
+    },
+    {
+      "name": "Valyrian Silver",
+      "hex": "#A8A9AB",
       "type": "Monotone",
       "variants": [
         "z2",
@@ -101,8 +130,8 @@
       ]
     },
     {
-      "name": "Napoli Black",
-      "hex": "#141414",
+      "name": "Midnight Black",
+      "hex": "#0A0A0A",
       "type": "Monotone",
       "variants": [
         "z2",
@@ -110,79 +139,6 @@
         "z6",
         "z8s",
         "z8",
-        "z8t",
-        "z8l"
-      ]
-    },
-    {
-      "name": "Grand Canyon Brown",
-      "hex": "#6B4226",
-      "type": "Monotone",
-      "variants": [
-        "z4",
-        "z6",
-        "z8s",
-        "z8",
-        "z8t",
-        "z8l"
-      ]
-    },
-    {
-      "name": "Dune Sand",
-      "hex": "#C8A96E",
-      "type": "Monotone",
-      "variants": [
-        "z4",
-        "z6",
-        "z8s",
-        "z8",
-        "z8t",
-        "z8l"
-      ]
-    },
-    {
-      "name": "Blazing Bronze",
-      "hex": "#7B4F2E",
-      "type": "Monotone",
-      "variants": [
-        "z8",
-        "z8t",
-        "z8l"
-      ]
-    },
-    {
-      "name": "Red Rage",
-      "hex": "#A81C1C",
-      "type": "Monotone",
-      "variants": [
-        "z8",
-        "z8t",
-        "z8l"
-      ]
-    },
-    {
-      "name": "Deep Forest with Napoli Black",
-      "hex": "#2D4A32-#141414",
-      "type": "Dualtone",
-      "variants": [
-        "z8t",
-        "z8l"
-      ]
-    },
-    {
-      "name": "Everest White with Napoli Black",
-      "hex": "#F5F5F0-#141414",
-      "type": "Dualtone",
-      "variants": [
-        "z8t",
-        "z8l"
-      ]
-    },
-    {
-      "name": "Dune Sand with Napoli Black",
-      "hex": "#C8A96E-#141414",
-      "type": "Dualtone",
-      "variants": [
         "z8t",
         "z8l"
       ]

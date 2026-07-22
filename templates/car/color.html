@@ -1,0 +1,23 @@
+{% load static %}
+
+{{ car|json_script:"current-car-data" }}   <!-- this is use to pass the car data to the color.js file -->
+
+<section class="variant-section" id="colors">
+    <div class="section-header tight">
+        <p class="eyebrow">Colors</p>
+        <h2>{{ car.name }} Colors.</h2>
+    </div>
+    <div class="color-variant-layout" id="colorContainer">
+        <div class="color-variant-info">
+            <p id="colorName"></p>
+        </div>
+        <div class="color-navigation">
+            <button class="nav-btn" id="prevBtn">←</button>
+            <img id="colorImage" src="" alt="">
+            <button class="nav-btn" id="nextBtn">→</button>
+        </div>
+        <div id="swatchContainer"></div>
+    </div>
+</section>
+
+<script src="{% static 'js/color.js' %}"></script>
