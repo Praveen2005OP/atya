@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/lamborghini.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://configurator.lamborghini.com/configurator/model/32006-20111/MBV-21706-2026?lang=eng&country=in"
+  },
   "colors": [
     {
       "name": "Giallo Inti",

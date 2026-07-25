@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/porsche.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://configurator.porsche.com/en-IN/mode/model/9YAAI1"
+  },
   "colors": [
     {
       "name": "White",

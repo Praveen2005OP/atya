@@ -70,6 +70,10 @@
   "images": {
     "logo": "/static/images/logos/mercedes-benz.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://www.mercedes-benz.co.in/passengercars/mercedes-benz-cars/car-configurator.html/motorization/CCci/IN/en/bm/4656002_001?gagcmid=GA_23227944361_187583063666_782351085599&gclsrc=aw.ds&gad_source=1&gad_campaignid=23227944361&gbraid=0AAAAADccPp1cnNYosJHEd4G6VTFEbT6bF&gclid=Cj0KCQjw94bTBhDQARIsAN3vv0xbdmKxerLVo4ZKMlP8l8HaaoB2XNlOetLBDqBP3YzzLDoIfl6XWL4aAj4jEALw_wcB"
+  },
   "colors": [
     {
       "name": "Obsidian Black Metallic",

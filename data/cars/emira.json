@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/lotus.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://www.lotuscars.com/en-IN/configurator/emira/emira-turbo"
+  },
   "colors": [
     {
       "name": "Hethel Yellow",

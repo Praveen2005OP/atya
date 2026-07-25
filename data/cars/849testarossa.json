@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/ferrari.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://carconfigurator.ferrari.com/en_EN/ferrari_car_configurator/849testarossa/default/exterior/liveries?configuration=c8a87fb7335005a9c6452eabcf892801bf9fef8a3b290a15beabc2e67d2ed028&isStreaming=falsehttps://carconfigurator.ferrari.com/en_EN/ferrari_car_configurator/849testarossa/default?_gl=1*wcyxo1*_ga*MTExMDg3ODI0Ny4xNzg0NzgyNTIy*_ga_JM1HT9B412*czE3ODQ3OTA3MzYkbzIkZzEkdDE3ODQ3OTA3NTMkajQzJGwwJGgyNzkwMzY1NTQ."
+  },
   "colors": [
     {
       "name": "Rosso Corsa",

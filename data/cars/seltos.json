@@ -73,6 +73,10 @@
   "images": {
     "logo": "/static/images/logos/kia.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Glacier White Pearl",

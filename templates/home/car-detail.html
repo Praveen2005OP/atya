@@ -10,7 +10,7 @@
 
         {% include 'car/spec-sheet.html' %}
 
-        {% if car.colorfolder %}
+        {% if car.colorfolder or car.moreColorInfo.available %}
             {% include 'car/color.html' %}
         {% endif %}
 

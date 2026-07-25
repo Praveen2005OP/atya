@@ -69,6 +69,10 @@
   "images": {
     "logo": "/static/images/logos/renault.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Ice Cool White",

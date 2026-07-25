@@ -68,6 +68,10 @@
     "logo": "/static/images/logos/aston-martin.png",
     "colorfolder": "/static/images/car-images/db12/color/"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Buckinghamshire Green",

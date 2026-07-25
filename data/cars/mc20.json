@@ -66,6 +66,10 @@
   "images": {
     "logo": "/static/images/logos/maserati.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://www.maserati.com/in/en/shopping-tools/configurator?modelCode=8411210&modelName=MCP#/main/exteriors"
+  },
   "colors": [
     {
       "name": "Nero Enigma",

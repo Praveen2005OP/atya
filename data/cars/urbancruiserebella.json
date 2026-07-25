@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/toyota.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Celestial White",

@@ -71,6 +71,10 @@
   "images": {
     "logo": "/static/images/logos/land-rover.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Santorini Black",

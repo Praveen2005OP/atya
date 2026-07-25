@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/volkswagen.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Oryx White Mother Of Pearl",

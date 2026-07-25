@@ -86,6 +86,10 @@
   "images": {
     "logo": "/static/images/logos/maruti-suzuki.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Nexa Blue",

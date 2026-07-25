@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/vinfast.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Infinity Blanc",

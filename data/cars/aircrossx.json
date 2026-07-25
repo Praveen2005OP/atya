@@ -69,6 +69,10 @@
   "images": {
     "logo": "/static/images/logos/citroen.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Polar White",

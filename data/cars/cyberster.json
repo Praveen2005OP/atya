@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/mg.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Flare Red with Black Roof",

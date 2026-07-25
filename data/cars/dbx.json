@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/aston-martin.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://configurator.astonmartin.com/IN/model-select/M230/AM842"
+  },
   "colors": [
     {
       "name": "Jet Black",

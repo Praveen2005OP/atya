@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/land-rover.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://www.rangerover.com/lr/en_in/l560_k265/4czc7/ipr/personalise/engine/?_gl=1*1kl0if0*_gcl_au*NjQ5MzA0NDY3LjE3ODQ3OTQzNTM.*FPAU*NjQ5MzA0NDY3LjE3ODQ3OTQzNTM.*_ga*MjEzMDY5MTY3MS4xNzg0Nzk0Mzc1*_ga_SZ75ZYT5R1*czE3ODQ4MDM0NzQkbzMkZzEkdDE3ODQ4MDQzMjkkajUyJGwwJGgxODc2OTMyMTcy*_fplc*Sm5QNE44NXJxRERLYnFSaXlGamJMU2hUNUQ2dkIwZDBGNlhVSklDQ2ZsZDM3NWNHSzVoU2JSUFBnamhSbEFnb2V2QXZoN080Q0JSb0RsM25uSDlVSlhVTmtZUlhoaHhLUUdxSnlMUVlZcE9FNElpSVZHVTJ1ZWlIJTJCVXV1RFElM0QlM0Q.&ajs_aid=e99a73d0-a98a-4096-9b7a-6b3f2a10f615&ajs_sid=1784804321861"
+  },
   "colors": [
     {
       "name": "Santorini Black",

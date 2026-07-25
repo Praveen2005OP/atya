@@ -74,6 +74,10 @@
   "images": {
     "logo": "/static/images/logos/hyundai.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Atlas White",

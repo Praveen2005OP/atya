@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/mini.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Chili Red",

@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/tata.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Lunar White",

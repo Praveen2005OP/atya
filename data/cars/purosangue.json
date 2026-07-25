@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/ferrari.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://carconfigurator.ferrari.com/en_US/ferrari_car_configurator/purosangue/default/exterior?configuration=205b274eaa4989a525b894ccae0251788c80ad1c92a8e21a8f5fbf3ba0050d69&isStreaming=false"
+  },
   "colors": [
     {
       "name": "Rosso Corsa",

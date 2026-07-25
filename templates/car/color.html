@@ -1,23 +1,58 @@
 {% load static %}
+<link rel="stylesheet" href="{% static 'css/color.css' %}">
 
 {{ car|json_script:"current-car-data" }}   <!-- this is use to pass the car data to the color.js file -->
 
 <section class="variant-section" id="colors">
-    <div class="section-header tight">
-        <p class="eyebrow">Colors</p>
-        <h2>{{ car.name }} Colors.</h2>
-    </div>
-    <div class="color-variant-layout" id="colorContainer">
-        <div class="color-variant-info">
-            <p id="colorName"></p>
+    {% if car.colorfolder %}
+        <div class="section-header tight">
+            <p class="eyebrow">Colors</p>
+            <h2>{{ car.name }} Colors.</h2>
         </div>
-        <div class="color-navigation">
-            <button class="nav-btn" id="prevBtn">←</button>
-            <img id="colorImage" src="" alt="">
-            <button class="nav-btn" id="nextBtn">→</button>
+        <div class="color-variant-layout" id="colorContainer">
+            <div class="color-variant-info">
+                <p id="colorName"></p>
+            </div>
+            <div class="color-navigation">
+                <button class="nav-btn" id="prevBtn">←</button>
+                <img id="colorImage" src="" alt="">
+                <button class="nav-btn" id="nextBtn">→</button>
+            </div>
+            <div id="swatchContainer"></div>
         </div>
-        <div id="swatchContainer"></div>
+    {% endif %}
+    {% if car.moreColorInfo.available %}
+    <div class="configurator-card">
+        <div class="configurator-left">
+            <p class="eyebrow">
+                Official Configurator
+            </p>
+            <h3>
+                Build Your Perfect {{ car.name }}
+            </h3>
+            <p class="configurator-description">
+                Design your ideal {{ car.name }} with the official {{ car.brand }}
+                Configurator. Experiment with factory paint finishes, wheel designs,
+                premium interior materials, performance options and exclusive accessories
+                to build a car that's uniquely yours, exactly as it would leave the factory.
+            </p>
+        </div>
+        <div class="configurator-bottom">
+            <a href="{{ car.moreColorInfo.url }}" target="_blank" rel="noopener noreferrer" class="configurator-btn">
+                Launch Configurator
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H9M17 7V15"/>
+                </svg>
+            </a>
+            <div class="configurator-preview">
+                <div>
+                    <h4>🎨 3D Car Preview</h4>
+                    <p>Official Builder</p>
+                </div>
+            </div>
+        </div>
     </div>
+    {% endif %}
 </section>
 
 <script src="{% static 'js/color.js' %}"></script>

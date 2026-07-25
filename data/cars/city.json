@@ -71,6 +71,10 @@
   "images": {
     "logo": "/static/images/logos/honda.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Platinum White Pearl",

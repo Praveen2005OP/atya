@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/bentley.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://www.bentleymotors.com/en/misc/car-configurator.html/select/continental_gt/continental_gt_mulliner"
+  },
   "colors": [
     {
       "name": "Glacier White",

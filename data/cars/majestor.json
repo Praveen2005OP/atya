@@ -70,6 +70,10 @@
   "images": {
     "logo": "/static/images/logos/mg.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Pearl White",

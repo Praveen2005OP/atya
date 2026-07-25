@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/rollsroyce.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://configure.rolls-roycemotorcars.com/en_LU/configure/RR31/21HA/1DF,1DZ,2VB,319,322,460,477,4HC,4NM,4T6,4T7,548,5AC,5AS,5AV,5DF,5DN,654,6AC,6AE,6AK,6C4,6CP,6FR,6NX,6PA,6U3,853,880,8KL,8R3,8R9,8S3,8WD,L0E_VE,L1T,L1U_HQ,L2U,LAN_FW,LAP_FW,LAS_FW,LAV,LAX_VC,LCP,LE1_R9K,LE5_FW,LL1_VC,LL2_VE,LL3_UW,LLE,LM0_UW,LM1_VC,LM2_VE,LM3_VE,LM8_TU,LM9_UW,LMA_VC,LMB_VC,LMC_VE,LMD_VC,LMF_VE,LMK_VC,LML_VC,LMP_VC,LMS_VC,LMT_UW,LMU_VE,LMW_UW,LMX_UW,LMY_UW,RA1,RA5,RAE,RAP,RAVC,RBT,RBY,RC5,RC7,RKL,RP9,RPE,RRS,RSF,RSL,RUX,YR9K,Z0G,Z9C,ZH0,ZHB"
+  },
   "colors": [
     {
       "name": "English White",

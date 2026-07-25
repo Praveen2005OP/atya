@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/nissan.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Pearl White",

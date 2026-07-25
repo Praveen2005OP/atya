@@ -3,422 +3,427 @@
 
 <div class="variant-list">
     {% for variant in car.variants %}    
-        <article class="variant-card">
-            <div>
+        <details class="variant-card">
+            <summary>
                 <span class="badge">{{ variant.family }}</span>
-                <h3>{{ variant.name }}</h3>
-                <p>{{ variant.configuration.fuel }} · {{ variant.configuration.transmission }} · INR {{ variant.price.exShowroom|ex_price }}</p>
-            </div>
-            <div class="variant-spec-row">
-                <span>{{ variant.performance.power }}</span>
-                <span>{{ variant.performance.torque }}</span>
-                <span>{{ variant.performance.mileageARAI }}</span>
-            </div>
-            <ul>
-                <li>{{ variant.configuration.seating }}-seat layout</li>
-                <li>{{ variant|carplay_type }}</li>
-                <li>{{ variant|adas_type }}</li>
-                <li>{{ variant|comfort_highlight }}</li>
-            </ul>
-            <section class="variant-configurations">
-                <h4>Available Features in this variant</h4>
-                <div class="configuration-grid">
-                    <!-- Powertrain -->
-                    <div>
-                        <span>Powertrain</span>
-                        <ul>
-                            <li>
-                                <strong>{{ variant.configuration.fuel }} {{ variant.configuration.transmission }}</strong>
-                                <span>{{ variant.configuration.engine }} · {{ variant.configuration.transmission }}</span>
-                            </li>
-                        </ul>
+                <div>
+                    
+                    <h3>{{ variant.name }}</h3>
+                    <p>{{ variant.configuration.fuel }} · {{ variant.configuration.transmission }} · INR {{ variant.price.exShowroom|ex_price }}</p>
+                </div>
+            </summary>
+            <dl>
+                <div class="variant-spec-row">
+                    <span>{{ variant.performance.power }}</span>
+                    <span>{{ variant.performance.torque }}</span>
+                    <span>{{ variant.performance.mileageARAI }}</span>
+                </div>
+                <ul class="basic">
+                    <li>{{ variant.configuration.seating }}-seat layout</li>
+                    <li>{{ variant|carplay_type }}</li>
+                    <li>{{ variant|adas_type }}</li>
+                    <li>{{ variant|comfort_highlight }}</li>
+                </ul>
+                <section class="variant-configurations">
+                    <h4>Available Features in this variant</h4>
+                    <div class="configuration-grid">
+                        <!-- Powertrain -->
+                        <div>
+                            <span>Powertrain</span>
+                            <ul>
+                                <li>
+                                    <strong>{{ variant.configuration.fuel }} {{ variant.configuration.transmission }}</strong>
+                                    <span>{{ variant.configuration.engine }} · {{ variant.configuration.transmission }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- equipped features -->
+                        <div>
+                            <span>Equipment choices</span>
+                            <dl>
+                                <div>
+                                    <dt>Seating</dt>
+                                    <dd>{{ variant.configuration.seating }}-seating layout</dd>
+                                </div>
+                                <div>
+                                    <dt>Drive</dt>
+                                    <dd>{{ variant.configuration.drivetrain }}</dd>
+                                </div>
+                                <div>
+                                    <dt>Wheels</dt>
+                                    <dd>{{ variant.wheels.tyreSizeLabel }} · {{ variant.wheels.type }}</dd>
+                                </div>
+                                <div>
+                                    <dt>Safety pack</dt>
+                                    <dd>{{ variant.safety.airbags }} airbags, {{ variant|safety_features }}</dd>
+                                </div>
+                                <div>
+                                    <dt>Comfort pack</dt>
+                                    <dd>{{ variant|random_comfort }}</dd>
+                                </div>
+                            </dl>
+                        </div>
                     </div>
-                    <!-- equipped features -->
-                    <div>
-                        <span>Equipment choices</span>
+                </section>
+                <div class="variant-detail-groups">
+                    <details class="variant-detail-group">
+                        <summary>Engine and Performance</summary>
                         <dl>
                             <div>
-                                <dt>Seating</dt>
-                                <dd>{{ variant.configuration.seating }}-seating layout</dd>
+                                <dt>Engine/Motor</dt>
+                                <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"name" }}</dd>
                             </div>
                             <div>
-                                <dt>Drive</dt>
+                                <dt>Displacement</dt>
+                                <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"displacement" }}</dd>
+                            </div>
+                            <div>
+                                <dt>Cylinders</dt>
+                                <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"cylinders" }}</dd>
+                            </div>
+                            <div>
+                                <dt>Fuel</dt>
+                                <dd>{{ variant.configuration.fuel }}</dd>
+                            </div>
+                            <div>
+                                <dt>Transmission</dt>
+                                <dd>{{ variant.configuration.transmission }}</dd>
+                            </div>
+                            <div>
+                                <dt>Drivetrain</dt>
                                 <dd>{{ variant.configuration.drivetrain }}</dd>
                             </div>
                             <div>
-                                <dt>Wheels</dt>
-                                <dd>{{ variant.wheels.tyreSizeLabel }} · {{ variant.wheels.type }}</dd>
+                                <dt>Power</dt>
+                                <dd>{{ variant.performance.power }}</dd>
                             </div>
                             <div>
-                                <dt>Safety pack</dt>
-                                <dd>{{ variant.safety.airbags }} airbags, {{ variant|safety_features }}</dd>
+                                <dt>Torque</dt>
+                                <dd>{{ variant.performance.torque }}</dd>
                             </div>
                             <div>
-                                <dt>Comfort pack</dt>
-                                <dd>{{ variant|random_comfort }}</dd>
+                                <dt>Mileage/Range</dt>
+                                <dd>{{ variant.performance.mileageARAI }}</dd>
+                            </div>
+                            <div>
+                                <dt>Emission Standard</dt>
+                                <dd>{{ car.sharedSpecs.emissionNorm }}</dd>
                             </div>
                         </dl>
-                    </div>
+                    </details>
+                    <details class="variant-detail-group">
+                        <summary>Dimensions and Capacity</summary>
+                        <dl>
+                            <div>
+                                <dt>Length</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.length }}</dd>
+                            </div>
+                            <div>
+                                <dt>Width</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.width }}</dd>
+                            </div>
+                            <div>
+                                <dt>Height</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.height }}</dd>
+                            </div>
+                            <div>
+                                <dt>Wheelbase</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.wheelbase }}</dd>
+                            </div>
+                            <div>
+                                <dt>Ground Clearance</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.groundClearance }}</dd>
+                            </div>
+                            {% if car.sharedSpecs.dimensions.bootSpace.available %}
+                                <div>
+                                    <dt>Boot Space</dt>
+                                    <dd>{{ car.sharedSpecs.dimensions.bootSpace.value }}</dd>
+                                </div>
+                            {% endif %}
+                            {% if car.sharedSpecs.dimensions.bootSpace7Seater.available %}
+                                <div>
+                                    <dt>Boot Space (7-Seater)</dt>
+                                    <dd>{{ car.sharedSpecs.dimensions.bootSpace7Seater.value }}</dd>
+                                </div>
+                            {% endif %}
+                            {% if car.sharedSpecs.dimensions.bootSpaceThirdRowFolded.available %}
+                                <div>
+                                    <dt>Boot Space (Third Row Folded)</dt>
+                                    <dd>{{ car.sharedSpecs.dimensions.bootSpaceThirdRowFolded.value }}</dd>
+                                </div>
+                            {% endif %}
+                            {% if car.sharedSpecs.dimensions.bootSpaceMaximum.available %}
+                                <div>
+                                    <dt>Boot Space (Maximum)</dt>
+                                    <dd>{{ car.sharedSpecs.dimensions.bootSpaceMaximum.value }}</dd>
+                                </div>
+                            {% endif %}
+                            {% if variant.configuration.fuel == "CNG" %}
+                                <div>
+                                    <dt>Boot Space (CNG)</dt>
+                                    <dd>{{ car.sharedSpecs.dimensions.bootSpaceCNG }}</dd>
+                                </div>
+                            {% endif %}
+                            <div>
+                                <dt>Fuel Tank Capacity</dt>
+                                <dd>{{ car.sharedSpecs.dimensions.fuelTank }}</dd>
+                            </div>
+                            {% if variant.configuration.fuel == "CNG" %}
+                                <div>
+                                    <dt>Fuel Tank Capacity (CNG)</dt>
+                                    <dd>{{ car.sharedSpecs.dimensions.fuelTankCNG }}</dd>
+                                </div>
+                            {% endif %}
+                        </dl>
+                    </details>
+                    <details class="variant-detail-group">
+                        <summary>Suspension, Brakes and Tyres</summary>
+                        <dl>
+                            <div>
+                                <dt>Front Suspension</dt>
+                                <dd>{{ car.sharedSpecs.suspension.front }}</dd>
+                            </div>
+                            <div>
+                                <dt>Rear Suspension</dt>
+                                <dd>{{ car.sharedSpecs.suspension.rear }}</dd>
+                            </div>
+                            <div>
+                                <dt>Front Brakes</dt>
+                                <dd>{{ car.sharedSpecs.brakes.front }}</dd>
+                            </div>
+                            <div>
+                                <dt>Rear Brakes</dt>
+                                <dd>{{ car.sharedSpecs.brakes.rear }}</dd>
+                            </div>
+                            <div>
+                                <dt>Tyres/Wheel Size</dt>
+                                <dd>{{ variant.wheels.tyreSizeLabel }} {{ variant.wheels.type }}</dd>
+                            </div>
+                        </dl>
+                    </details>
+                    <details class="variant-detail-group">
+                        <summary>Safety and Driver Assistance</summary>
+                        <dl>
+                            <div>
+                                <dt>Safety Rating</dt>
+                                <dd>{{ car.sharedSpecs.safetyRating }}</dd>
+                            </div>
+                            <div>
+                                <dt>Airbags</dt>
+                                <dd>{{ variant.safety.airbags }}</dd>
+                            </div>
+                            <div>
+                                <dt>Anti-lock Braking System (ABS)</dt>
+                                <dd>{{ variant.safety.abs|yesno:"Yes,No" }}</dd>
+                            </div>
+                            <div>
+                                <dt>Electronic Brakeforce Distribution (EBD)</dt>
+                                <dd>{{ variant.safety.ebd|yesno:"Yes,No" }}</dd>
+                            </div>
+                            <div>
+                                <dt>Electronic Stability Control (ESC)</dt>
+                                <dd>{{ variant.safety.esc|yesno:"Yes,No" }}</dd>
+                            </div>
+                            <div>
+                                <dt>Hill hold assist</dt>
+                                <dd>{{ variant.safety.hillAssist|yesno:"Yes,No" }}</dd>
+                            </div>
+                            <div>
+                                <dt>Tyre Pressure Monitoring System (TPMS)</dt>
+                                <dd>{{ variant.safety.tpms|yesno:"Yes,No" }}</dd>
+                            </div>
+                            <div>
+                                <dt>ISOFix Child Seat Anchors</dt>
+                                <dd>{{ variant.safety.isofix|yesno:"Yes,No" }}</dd>
+                            </div>
+                            <div>
+                                <dt>360 Camera</dt>
+                                <dd>{{ variant.safety.surroundCamera|yesno:"Yes,No" }}</dd>
+                            </div>
+                            <div>
+                                <dt>Advanced Driver Assistance Systems (ADAS)</dt>
+                                <dd>{{ variant.safety.adas|yesno:"Yes,No" }}</dd>
+                            </div>
+                            <div>
+                                {% if variant.comfort.parkingSensors == null %}
+                                    <dt>Parking Sensors</dt>
+                                    <dd>Not Available</dd>
+                                {% else %}
+                                    <dt>Parking Sensors</dt>
+                                    <dd>{{ variant.comfort.parkingSensors }}</dd>
+                                {% endif %}
+                            </div>
+                        </dl>
+                    </details>
+                    <details class="variant-detail-group">
+                        <summary>Comfort and Convenience</summary>
+                        <dl>
+                            <div>
+                                <dt>Climate Control</dt>
+                                {% if variant.comfort.airConditioner and variant.comfort.automaticClimateControl %}
+                                    <dd>Automatic AC</dd>
+                                {% elif variant.comfort.airConditioner and variant.comfort.airConditioner %}
+                                    <dd>Manual AC</dd>
+                                {% else %}
+                                    <dd>No AC</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Ventilated Seats</dt>
+                                {% if variant.comfort.ventilatedFrontSeats and variant.comfort.ventilatedRearSeats %}
+                                    <dd>Both Front and Rear</dd>
+                                {% elif variant.comfort.ventilatedFrontSeats %}
+                                    <dd>Only Front Seats</dd>
+                                {% elif variant.comfort.ventilatedRearSeats %}
+                                    <dd>Only Rear Seats</dd>
+                                {% else %}
+                                    <dd>No</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Front Power Seats</dt>
+                                {% if variant.comfort.frontPowerSeats %}
+                                    <dd>Yes</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Sunroof</dt>
+                                {% if variant.comfort.sunroof.available %}
+                                    <dd>{{ variant.comfort.sunroof.type }}</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Cruise Control</dt>
+                                {% if variant.comfort.cruiseControl %}
+                                    <dd>Yes</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Keyless Entry</dt>
+                                {% if variant.comfort.keylessEntry %}
+                                    <dd>Yes</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Push Button Start</dt>
+                                {% if variant.comfort.pushButtonStart %}
+                                    <dd>Yes</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Rear AC Ventilation</dt>
+                                {% if variant.comfort.rearAcVents %}
+                                    <dd>Yes</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                        </dl>
+                    </details>
+                    <details class="variant-detail-group">
+                        <summary>Infotainment and Connectivity</summary>
+                        <dl>
+                            <div>
+                                <dt>Infotainment Screen Size</dt>
+                                {% if variant.infotainment.screenSize %}
+                                    <dd>{{ variant.infotainment.screenSize }}</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Apple CarPlay</dt>
+                                {% if variant.infotainment.wirelessappleCarplay %}
+                                    <dd>Wireless Apple CarPlay</dd>
+                                {% elif variant.infotainment.appleCarplay %}
+                                    <dd>Apple CarPlay</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Android Auto</dt>
+                                {% if variant.infotainment.wirelessAndroidAuto %}
+                                    <dd>Wireless Android Auto</dd>
+                                {% elif variant.infotainment.androidAuto %}
+                                    <dd>Android Auto</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <!-- <div>
+                                <dt>Instrument cluster</dt>
+                                <dd></dd>
+                            </div> -->
+                            <div>
+                                <dt>Speakers</dt>
+                                {% if variant.infotainment.speakerCount != null and variant.infotainment.dolbyAtmos %}
+                                    <dd>{{ variant.infotainment.speakerCount }} with Dolby Atmos</dd>
+                                {% elif variant.infotainment.speakerCount != null and variant.infotainment.premiumAudio %}
+                                    <dd>{{ variant.infotainment.speakerCount }} with Premium Audio</dd>
+                                {% elif variant.infotainment.speakerCount != null %}
+                                    <dd>{{ variant.infotainment.speakerCount }}</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Connected Car Tech</dt>
+                                {% if variant.connectedTech.available %}
+                                    <dd>Available</dd>
+                                {% else %}
+                                    <dd>Not Available</dd>
+                                {% endif %}
+                            </div>
+                        </dl>
+                    </details>
+                    <details class="variant-detail-group">
+                        <summary>Exterior Equipment</summary>
+                        <dl>
+                            <div>
+                                <dt>Headlamp</dt>
+                                {% if variant.exterior.ledDRL and variant.exterior.ledHeadlamps and variant.exterior.ledTaillamps and variant.exterior.projectionHeadlamps %}
+                                    <dd>Full LED lighting package with projector headlamps</dd>
+                                {% elif variant.exterior.ledDRL and variant.exterior.ledHeadlamps and variant.exterior.ledTaillamps %}
+                                    <dd>Complete LED lighting setup</dd>
+                                {% elif variant.exterior.ledDRL and variant.exterior.ledHeadlamps %}
+                                    <dd>LED DRLs with LED headlamps</dd>
+                                {% elif variant.exterior.ledHeadlamps and variant.exterior.projectionHeadlamps %}
+                                    <dd>Projector LED headlamps</dd>
+                                {% elif variant.exterior.ledHeadlamps %}
+                                    <dd>LED headlamps</dd>
+                                {% elif variant.exterior.projectionHeadlamps %}
+                                    <dd>Projection headlamps</dd>
+                                {% elif variant.exterior.ledDRL %}
+                                    <dd>LED DRLs and Halogen headlamps</dd>
+                                {% elif variant.exterior.ledTaillamps %}
+                                    <dd>LED tail lamps</dd>
+                                {% else %}
+                                    <dd>Halogen lighting setup</dd>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <dt>Wheels</dt>
+                                <dd>{{ variant.exterior.wheelSize }} inch alloy wheels</dd>
+                            </div>
+                        </dl>
+                    </details>
                 </div>
-            </section>
-            <div class="variant-detail-groups">
-                <details class="variant-detail-group">
-                    <summary>Engine and Performance</summary>
-                    <dl>
-                        <div>
-                            <dt>Engine/Motor</dt>
-                            <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"name" }}</dd>
-                        </div>
-                        <div>
-                            <dt>Displacement</dt>
-                            <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"displacement" }}</dd>
-                        </div>
-                        <div>
-                            <dt>Cylinders</dt>
-                            <dd>{{ car.engineDatabase|lookup:variant.configuration.engine|lookup:"cylinders" }}</dd>
-                        </div>
-                        <div>
-                            <dt>Fuel</dt>
-                            <dd>{{ variant.configuration.fuel }}</dd>
-                        </div>
-                        <div>
-                            <dt>Transmission</dt>
-                            <dd>{{ variant.configuration.transmission }}</dd>
-                        </div>
-                        <div>
-                            <dt>Drivetrain</dt>
-                            <dd>{{ variant.configuration.drivetrain }}</dd>
-                        </div>
-                        <div>
-                            <dt>Power</dt>
-                            <dd>{{ variant.performance.power }}</dd>
-                        </div>
-                        <div>
-                            <dt>Torque</dt>
-                            <dd>{{ variant.performance.torque }}</dd>
-                        </div>
-                        <div>
-                            <dt>Mileage/Range</dt>
-                            <dd>{{ variant.performance.mileageARAI }}</dd>
-                        </div>
-                        <div>
-                            <dt>Emission Standard</dt>
-                            <dd>{{ car.sharedSpecs.emissionNorm }}</dd>
-                        </div>
-                    </dl>
-                </details>
-                <details class="variant-detail-group">
-                    <summary>Dimensions and Capacity</summary>
-                    <dl>
-                        <div>
-                            <dt>Length</dt>
-                            <dd>{{ car.sharedSpecs.dimensions.length }}</dd>
-                        </div>
-                        <div>
-                            <dt>Width</dt>
-                            <dd>{{ car.sharedSpecs.dimensions.width }}</dd>
-                        </div>
-                        <div>
-                            <dt>Height</dt>
-                            <dd>{{ car.sharedSpecs.dimensions.height }}</dd>
-                        </div>
-                        <div>
-                            <dt>Wheelbase</dt>
-                            <dd>{{ car.sharedSpecs.dimensions.wheelbase }}</dd>
-                        </div>
-                        <div>
-                            <dt>Ground Clearance</dt>
-                            <dd>{{ car.sharedSpecs.dimensions.groundClearance }}</dd>
-                        </div>
-                        {% if car.sharedSpecs.dimensions.bootSpace.available %}
-                            <div>
-                                <dt>Boot Space</dt>
-                                <dd>{{ car.sharedSpecs.dimensions.bootSpace.value }}</dd>
-                            </div>
-                        {% endif %}
-                        {% if car.sharedSpecs.dimensions.bootSpace7Seater.available %}
-                            <div>
-                                <dt>Boot Space (7-Seater)</dt>
-                                <dd>{{ car.sharedSpecs.dimensions.bootSpace7Seater.value }}</dd>
-                            </div>
-                        {% endif %}
-                        {% if car.sharedSpecs.dimensions.bootSpaceThirdRowFolded.available %}
-                            <div>
-                                <dt>Boot Space (Third Row Folded)</dt>
-                                <dd>{{ car.sharedSpecs.dimensions.bootSpaceThirdRowFolded.value }}</dd>
-                            </div>
-                        {% endif %}
-                        {% if car.sharedSpecs.dimensions.bootSpaceMaximum.available %}
-                            <div>
-                                <dt>Boot Space (Maximum)</dt>
-                                <dd>{{ car.sharedSpecs.dimensions.bootSpaceMaximum.value }}</dd>
-                            </div>
-                        {% endif %}
-                        {% if variant.configuration.fuel == "CNG" %}
-                            <div>
-                                <dt>Boot Space (CNG)</dt>
-                                <dd>{{ car.sharedSpecs.dimensions.bootSpaceCNG }}</dd>
-                            </div>
-                        {% endif %}
-                        <div>
-                            <dt>Fuel Tank Capacity</dt>
-                            <dd>{{ car.sharedSpecs.dimensions.fuelTank }}</dd>
-                        </div>
-                        {% if variant.configuration.fuel == "CNG" %}
-                            <div>
-                                <dt>Fuel Tank Capacity (CNG)</dt>
-                                <dd>{{ car.sharedSpecs.dimensions.fuelTankCNG }}</dd>
-                            </div>
-                        {% endif %}
-                    </dl>
-                </details>
-                <details class="variant-detail-group">
-                    <summary>Suspension, Brakes and Tyres</summary>
-                    <dl>
-                        <div>
-                            <dt>Front Suspension</dt>
-                            <dd>{{ car.sharedSpecs.suspension.front }}</dd>
-                        </div>
-                        <div>
-                            <dt>Rear Suspension</dt>
-                            <dd>{{ car.sharedSpecs.suspension.rear }}</dd>
-                        </div>
-                        <div>
-                            <dt>Front Brakes</dt>
-                            <dd>{{ car.sharedSpecs.brakes.front }}</dd>
-                        </div>
-                        <div>
-                            <dt>Rear Brakes</dt>
-                            <dd>{{ car.sharedSpecs.brakes.rear }}</dd>
-                        </div>
-                        <div>
-                            <dt>Tyres/Wheel Size</dt>
-                            <dd>{{ variant.wheels.tyreSizeLabel }} {{ variant.wheels.type }}</dd>
-                        </div>
-                    </dl>
-                </details>
-                <details class="variant-detail-group">
-                    <summary>Safety and Driver Assistance</summary>
-                    <dl>
-                        <div>
-                            <dt>Safety Rating</dt>
-                            <dd>{{ car.sharedSpecs.safetyRating }}</dd>
-                        </div>
-                        <div>
-                            <dt>Airbags</dt>
-                            <dd>{{ variant.safety.airbags }}</dd>
-                        </div>
-                        <div>
-                            <dt>Anti-lock Braking System (ABS)</dt>
-                            <dd>{{ variant.safety.abs|yesno:"Yes,No" }}</dd>
-                        </div>
-                        <div>
-                            <dt>Electronic Brakeforce Distribution (EBD)</dt>
-                            <dd>{{ variant.safety.ebd|yesno:"Yes,No" }}</dd>
-                        </div>
-                        <div>
-                            <dt>Electronic Stability Control (ESC)</dt>
-                            <dd>{{ variant.safety.esc|yesno:"Yes,No" }}</dd>
-                        </div>
-                        <div>
-                            <dt>Hill hold assist</dt>
-                            <dd>{{ variant.safety.hillAssist|yesno:"Yes,No" }}</dd>
-                        </div>
-                        <div>
-                            <dt>Tyre Pressure Monitoring System (TPMS)</dt>
-                            <dd>{{ variant.safety.tpms|yesno:"Yes,No" }}</dd>
-                        </div>
-                        <div>
-                            <dt>ISOFix Child Seat Anchors</dt>
-                            <dd>{{ variant.safety.isofix|yesno:"Yes,No" }}</dd>
-                        </div>
-                        <div>
-                            <dt>360 Camera</dt>
-                            <dd>{{ variant.safety.surroundCamera|yesno:"Yes,No" }}</dd>
-                        </div>
-                        <div>
-                            <dt>Advanced Driver Assistance Systems (ADAS)</dt>
-                            <dd>{{ variant.safety.adas|yesno:"Yes,No" }}</dd>
-                        </div>
-                        <div>
-                            {% if variant.comfort.parkingSensors == null %}
-                                <dt>Parking Sensors</dt>
-                                <dd>Not Available</dd>
-                            {% else %}
-                                <dt>Parking Sensors</dt>
-                                <dd>{{ variant.comfort.parkingSensors }}</dd>
-                            {% endif %}
-                        </div>
-                    </dl>
-                </details>
-                <details class="variant-detail-group">
-                    <summary>Comfort and Convenience</summary>
-                    <dl>
-                        <div>
-                            <dt>Climate Control</dt>
-                            {% if variant.comfort.airConditioner and variant.comfort.automaticClimateControl %}
-                                <dd>Automatic AC</dd>
-                            {% elif variant.comfort.airConditioner and variant.comfort.airConditioner %}
-                                <dd>Manual AC</dd>
-                            {% else %}
-                                <dd>No AC</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Ventilated Seats</dt>
-                            {% if variant.comfort.ventilatedFrontSeats and variant.comfort.ventilatedRearSeats %}
-                                <dd>Both Front and Rear</dd>
-                            {% elif variant.comfort.ventilatedFrontSeats %}
-                                <dd>Only Front Seats</dd>
-                            {% elif variant.comfort.ventilatedRearSeats %}
-                                <dd>Only Rear Seats</dd>
-                            {% else %}
-                                <dd>No</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Front Power Seats</dt>
-                            {% if variant.comfort.frontPowerSeats %}
-                                <dd>Yes</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Sunroof</dt>
-                            {% if variant.comfort.sunroof.available %}
-                                <dd>{{ variant.comfort.sunroof.type }}</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Cruise Control</dt>
-                            {% if variant.comfort.cruiseControl %}
-                                <dd>Yes</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Keyless Entry</dt>
-                            {% if variant.comfort.keylessEntry %}
-                                <dd>Yes</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Push Button Start</dt>
-                            {% if variant.comfort.pushButtonStart %}
-                                <dd>Yes</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Rear AC Ventilation</dt>
-                            {% if variant.comfort.rearAcVents %}
-                                <dd>Yes</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                    </dl>
-                </details>
-                <details class="variant-detail-group">
-                    <summary>Infotainment and Connectivity</summary>
-                    <dl>
-                        <div>
-                            <dt>Infotainment Screen Size</dt>
-                            {% if variant.infotainment.screenSize %}
-                                <dd>{{ variant.infotainment.screenSize }}</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Apple CarPlay</dt>
-                            {% if variant.infotainment.wirelessappleCarplay %}
-                                <dd>Wireless Apple CarPlay</dd>
-                            {% elif variant.infotainment.appleCarplay %}
-                                <dd>Apple CarPlay</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Android Auto</dt>
-                            {% if variant.infotainment.wirelessAndroidAuto %}
-                                <dd>Wireless Android Auto</dd>
-                            {% elif variant.infotainment.androidAuto %}
-                                <dd>Android Auto</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <!-- <div>
-                            <dt>Instrument cluster</dt>
-                            <dd></dd>
-                        </div> -->
-                        <div>
-                            <dt>Speakers</dt>
-                            {% if variant.infotainment.speakerCount != null and variant.infotainment.dolbyAtmos %}
-                                <dd>{{ variant.infotainment.speakerCount }} with Dolby Atmos</dd>
-                            {% elif variant.infotainment.speakerCount != null and variant.infotainment.premiumAudio %}
-                                <dd>{{ variant.infotainment.speakerCount }} with Premium Audio</dd>
-                            {% elif variant.infotainment.speakerCount != null %}
-                                <dd>{{ variant.infotainment.speakerCount }}</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Connected Car Tech</dt>
-                            {% if variant.connectedTech.available %}
-                                <dd>Available</dd>
-                            {% else %}
-                                <dd>Not Available</dd>
-                            {% endif %}
-                        </div>
-                    </dl>
-                </details>
-                <details class="variant-detail-group">
-                    <summary>Exterior Equipment</summary>
-                    <dl>
-                        <div>
-                            <dt>Headlamp</dt>
-                            {% if variant.exterior.ledDRL and variant.exterior.ledHeadlamps and variant.exterior.ledTaillamps and variant.exterior.projectionHeadlamps %}
-                                <dd>Full LED lighting package with projector headlamps</dd>
-                            {% elif variant.exterior.ledDRL and variant.exterior.ledHeadlamps and variant.exterior.ledTaillamps %}
-                                <dd>Complete LED lighting setup</dd>
-                            {% elif variant.exterior.ledDRL and variant.exterior.ledHeadlamps %}
-                                <dd>LED DRLs with LED headlamps</dd>
-                            {% elif variant.exterior.ledHeadlamps and variant.exterior.projectionHeadlamps %}
-                                <dd>Projector LED headlamps</dd>
-                            {% elif variant.exterior.ledHeadlamps %}
-                                <dd>LED headlamps</dd>
-                            {% elif variant.exterior.projectionHeadlamps %}
-                                <dd>Projection headlamps</dd>
-                            {% elif variant.exterior.ledDRL %}
-                                <dd>LED DRLs and Halogen headlamps</dd>
-                            {% elif variant.exterior.ledTaillamps %}
-                                <dd>LED tail lamps</dd>
-                            {% else %}
-                                <dd>Halogen lighting setup</dd>
-                            {% endif %}
-                        </div>
-                        <div>
-                            <dt>Wheels</dt>
-                            <dd>{{ variant.exterior.wheelSize }} inch alloy wheels</dd>
-                        </div>
-                    </dl>
-                </details>
-            </div>
-            <label class="compare-check">
-                <input type="checkbox" data-variant-compare="{{ variant.id }}" data-car-id="{{ car.slug }}">
-                Compare Variant   
-            </label>
-        </article>
+                <label class="compare-check">
+                    <input type="checkbox" data-variant-compare="{{ variant.id }}" data-car-id="{{ car.slug }}">
+                    Compare Variant   
+                </label>
+            </dl>
+        </details>
     {% endfor %}
 </div>

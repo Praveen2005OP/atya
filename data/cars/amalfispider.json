@@ -69,6 +69,10 @@
   "images": {
     "logo": "/static/images/logos/ferrari.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://carconfigurator.ferrari.com/en_EN/ferrari_car_configurator/amalfi/default"
+  },
   "colors": [
     {
       "name": "Rosso Corsa",

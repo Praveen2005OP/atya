@@ -69,6 +69,10 @@
   "images": {
     "logo": "/static/images/logos/porsche.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://media.porsche.com/paint-to-sample/en/911"
+  },
   "colors": [
     {
       "name": "Black",

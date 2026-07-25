@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/volkswagen.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Candy White",

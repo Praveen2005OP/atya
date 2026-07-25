@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/mahindra.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Tango Red",

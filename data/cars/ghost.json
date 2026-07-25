@@ -68,6 +68,10 @@
   "images": {
     "logo": "/static/images/logos/rollsroyce.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://configure.rolls-roycemotorcars.com/en_LU/configure/RR21/21GZ/1DF,1DZ,2VB,319,322,3CD,453,454,460,4HC,4NM,4T6,4T7,548,5AC,5AS,5AV,5DF,5DN,654,6AC,6AE,6AK,6C4,6CP,6FR,6NX,6PA,6U3,853,880,8KL,8R3,8R9,8S3,8TF,8WD,L0E_HT,L1T,L1U_SH,LAN_HT,LAP_HT,LAS_BN,LAT_HT,LAV,LAX_HT,LCE_HT,LCP,LE1_R9L,LE5_HT,LL1_HB,LL2_HT,LLE,LM0_HB,LM1_HB,LM8_TU,LM9_R7,LMA_HB,LMB_HT,LMC_BN,LMD_HB,LMF_BN,LMK_HB,LML_HT,LMN_HB,LMP_HB,LMQ_HB,LMS_HB,LMT_HB,LMU_HT,LMW_HB,LMX_HB,LMY_HB,LMZ_HB,RA1,RA5,RAE,RAHB,RAP,RBT,RC5,RC7,REN,REV_BN,RKN,RM3,RPE,RRS,RSL,RSV_BN,RSW_HT,RUX,WR9L,Z0D,Z9C,Z9D,ZH0,ZHB"
+  },
   "colors": [
     {
       "name": "Black Diamond Metallic",

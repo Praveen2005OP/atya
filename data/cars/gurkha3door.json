@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/force-motors.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Green",

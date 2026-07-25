@@ -67,6 +67,10 @@
   "images": {
     "logo": "/static/images/logos/lexus.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Sonic Quartz",

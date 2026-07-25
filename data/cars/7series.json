@@ -70,6 +70,10 @@
   "images": {
     "logo": "/static/images/logos/bmw.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Black Sapphire Metallic",

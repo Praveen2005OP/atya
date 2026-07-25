@@ -70,6 +70,10 @@
   "images": {
     "logo": "/static/images/logos/audi.png"
   },
+  "moreColorInfo": {
+    "available": false,
+    "url": null
+  },
   "colors": [
     {
       "name": "Nardo Grey",

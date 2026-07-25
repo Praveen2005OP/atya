@@ -72,6 +72,10 @@
   "images": {
     "logo": "/static/images/logos/mercedesbenz.png"
   },
+  "moreColorInfo": {
+    "available": true,
+    "url": "https://www.mercedes-benz.co.in/passengercars/models/saloon-long/s-class/overview.html?gagcmid=GA_20685282901_153411965503_783430890668&gclsrc=aw.ds&gad_source=1&gad_campaignid=20685282901"
+  },
   "colors": [
     {
       "name": "Obsidian Black Metallic",
