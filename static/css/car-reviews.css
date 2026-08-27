@@ -1,12 +1,12 @@
-/* ==========================================================================
-   Car Reviews section - styled to match Atya's existing theme tokens
-   (see static/css/styles.css :root). Everything here is scoped under
-   .review-section / the modal & lightbox ids so it can't leak into or
-   collide with the rest of the site's styles.
-   ========================================================================== */
+/*  ==========================================================================
+    Car Reviews section - styled to match Atya's existing theme tokens
+    (see static/css/styles.css :root). Everything here is scoped under
+    .review-section / the modal & lightbox ids so it can't leak into or
+    collide with the rest of the site's styles.
+    ==========================================================================  */
 
 .review-section {
-    padding: clamp(2rem, 4vw, 3.5rem) clamp(1rem, 3vw, 1.6rem) 0;
+    padding: 1.5rem 2rem;
 }
 
 .review-section .section-header {

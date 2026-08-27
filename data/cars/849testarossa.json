@@ -62,7 +62,23 @@
       "Collectors"
     ],
     "minides": "Ferrari's most powerful production car ever — 1,050 CV from a twin-turbo V8 + three electric motors, 0-100 in 2.25 sec, 330 km/h, 415 kg downforce. The SF90's successor and the Revuelto's nemesis.",
-    "description": "Debuted in India on 14 March 2026 at ₹10.37 crore (ex-showroom), the Ferrari 849 Testarossa is the direct successor to the SF90 Stradale and Ferrari's most powerful series-production car ever built. Named after the legendary 1984 Testarossa, it revives the iconic nameplate with a radically modern PHEV architecture. The powertrain pairs a mid-mounted 4.0L twin-turbo V8 (830 CV standalone) with three electric motors — two on the front axle for torque-vectoring AWD and one integrated within the 8-speed DCT — for a combined 1,050 CV and 900 Nm. Performance: 0-100 km/h in 2.25 sec, 0-200 in 6.3 sec, 330 km/h top speed. The 7.45 kWh battery provides up to 25 km of silent EV driving. Active aerodynamics generate 415 kg of downforce at 250 km/h via a twin-tail split rear spoiler. The cabin is driver-focused with a 16-inch digital driver's display (no central touchscreen), a 9-inch passenger screen, physical steering wheel controls (no haptics), and wireless Apple CarPlay/Android Auto integrated into the driver's display. Ferrari's Tailor Made programme offers unlimited personalisation. Deliveries in India begin H2 2026."
+    "description": "Debuted in India on 14 March 2026 at ₹10.37 crore (ex-showroom), the Ferrari 849 Testarossa is the direct successor to the SF90 Stradale and Ferrari's most powerful series-production car ever built. Named after the legendary 1984 Testarossa, it revives the iconic nameplate with a radically modern PHEV architecture. The powertrain pairs a mid-mounted 4.0L twin-turbo V8 (830 CV standalone) with three electric motors — two on the front axle for torque-vectoring AWD and one integrated within the 8-speed DCT — for a combined 1,050 CV and 900 Nm. Performance: 0-100 km/h in 2.25 sec, 0-200 in 6.3 sec, 330 km/h top speed. The 7.45 kWh battery provides up to 25 km of silent EV driving. Active aerodynamics generate 415 kg of downforce at 250 km/h via a twin-tail split rear spoiler. The cabin is driver-focused with a 16-inch digital driver's display (no central touchscreen), a 9-inch passenger screen, physical steering wheel controls (no haptics), and wireless Apple CarPlay/Android Auto integrated into the driver's display. Ferrari's Tailor Made programme offers unlimited personalisation. Deliveries in India begin H2 2026.",
+    "blogParagraphs": [
+      "The Ferrari 849 Testarossa sits in the hybrid hypercar space of the Indian market, priced at INR 10.37 Cr (ex-showroom). On paper, it brings a petrol PHEV powertrain, an 8-speed DCT automatic, and a clear focus on outright acceleration, track-honed handling, and flagship Ferrari theatre.",
+      "What makes this car interesting is not just one number. It is the combination of 1,050 CV, 900 Nm, a 2-seat mid-engine cockpit, up to 25 km of silent EV range, and 415 kg of downforce at 250 km/h. That blend tells you where the Ferrari 849 Testarossa fits: it is built for buyers who want SF90-level performance with genuine daily-usable EV drivability layered on top.",
+      "In typical Indian use, the important questions are simple: is the ride manageable outside a track, does the electric-only mode help in city traffic, is the driver-focused cabin (no central touchscreen) something you'll adapt to, and does the personalisation budget fit your plans? The Ferrari 849 Testarossa answers those questions best for shoppers looking at track, performance, status symbol, collectors use cases."
+    ],
+    "whyItStandsOut": [
+      "1,050 CV combined output makes it Ferrari's most powerful series-production car ever built.",
+      "A 2.25 sec 0-100 sprint and 330 km/h top speed put it at the very top of the hypercar class.",
+      "Up to 25 km of silent EV driving adds genuine everyday usability rarely seen at this performance level."
+    ],
+    "whatToCheckBeforeBuying": [
+      "There is no central touchscreen — all controls sit on the 16-inch driver display and steering wheel, so factor in the learning curve.",
+      "Ferrari's Tailor Made programme can meaningfully push the final price well past the base ₹10.37 Cr.",
+      "With deliveries only starting H2 2026, waiting periods and allocation should be discussed with the dealer early."
+    ],
+    "verdict": "Choose the Ferrari 849 Testarossa if you want outright acceleration, track-honed handling, and flagship Ferrari theatre in a mid-engine coupe body style. Shortlist it against close rivals on price, powertrain character, everyday EV usability, and the exact configuration you plan to buy."
   },
   "images": {
     "logo": "/static/images/logos/ferrari.png"
@@ -75,7 +91,7 @@
     {
       "name": "Rosso Corsa",
       "hex": "#CC0000",
-      "type": "Standard",
+      "type": "Standard", 
       "variants": [
         "849-testarossa-v8-phev"
       ]
@@ -184,7 +200,7 @@
       "electricRange": "25 km (EV mode, claimed)",
       "chargingPower": "7.4 kW AC",
       "automatic": {
-        "power": "1,050 CV (1,036 bhp / 772 kW) combined system output",
+        "power": "1050 bhp",
         "torque": "900 Nm combined",
         "gearbox": "8-Speed DCT (Dual-Clutch)",
         "driveType": "AWD (Electric Front + Mechanical Rear)",
@@ -221,7 +237,7 @@
         "tyreSizeLabel": "Front 255/35 R21, Rear 305/30 R21"
       },
       "performance": {
-        "power": "1,050 CV (1,036 bhp / 772 kW) combined",
+        "power": "1036 bhp combined",
         "torque": "900 Nm combined",
         "mileageARAI": "7.5 kmpl (claimed)",
         "acceleration0To100": "2.25 sec",

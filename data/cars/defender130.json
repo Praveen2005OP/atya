@@ -1,277 +1,272 @@
 {
-  "id": "audi-a8",
-  "slug": "a8",
-  "brand": "Audi",
-  "model": "A8",
-  "name": "Audi A8 L",
-  "generation": "D5 Facelift (2022–present)",
+  "id": "land-rover-defender-130",
+  "slug": "defender130",
+  "brand": "Land Rover",
+  "model": "Defender 130",
+  "name": "Land Rover Defender 130",
+  "generation": "L663 (2022–present, 2025 facelift update)",
   "launchYear": 2022,
   "status": "On Sale",
-  "colorfolder": false,
   "viewer360": {
     "exterior": {
-      "available": true,
-      "frames": 72
+      "available": false,
+      "frames": null
     },
     "open": {
       "available": false,
       "frames": null
     },
     "interior": {
-      "available": true
+      "available": null
     }
   },
   "hero": {
-    "tagline": "Vorsprung durch Technik. Perfected.",
-    "image": "/static/images/car-images/a8/pic1.png",
+    "tagline": "Eight Seats. No Compromises.",
+    "image": "/static/images/car-images/defender130/pic1.png",
     "gallery": [
-      "/static/images/car-images/a8/pic1.png",
-      "/static/images/car-images/a8/pic2.png",
-      "/static/images/car-images/a8/pic3.png",
-      "/static/images/car-images/a8/pic4.png"
+      "/static/images/car-images/defender130/pic1.png",
+      "/static/images/car-images/defender130/pic2.png",
+      "/static/images/car-images/defender130/pic3.png",
+      "/static/images/car-images/defender130/pic4.png"
     ]
   },
   "pricing": {
     "currency": "INR",
     "exShowroom": {
-      "min": 129000000,
-      "max": 162000000
+      "min": 14500000,
+      "max": 18600000
     }
   },
   "overview": {
-    "segment": "Luxury Salon",
-    "body": "Full-Size Luxury Sedan",
-    "doors": 4,
-    "safetyRating": "5",
+    "segment": "Luxury 8-Seat Off-Road SUV",
+    "body": "5-Door Extended SUV (3-Row)",
+    "doors": 5,
+    "safetyRating": "5 (Euro NCAP)",
     "seatingOptions": [
-      4,
-      5
+      7,
+      8
     ],
     "fuelTypes": [
+      "Mild-Hybrid Diesel",
       "Petrol"
     ],
     "transmissions": [
-      "Automatic (8-Speed Tiptronic)"
+      "Automatic (ZF 8-Speed)"
     ],
     "driveTypes": [
-      "quattro AWD"
+      "AWD"
     ],
     "useCases": [
-      "Chauffeur-Driven",
-      "Owner-Driven",
-      "Business",
+      "Large Family",
       "Long-Distance",
-      "Status Symbol"
+      "Off-Road",
+      "Adventure"
     ],
-    "minides": "Audi's flagship reimagined — Digital Matrix LED headlamps, predictive active suspension, Bang & Olufsen 3D sound, and quattro AWD in a long-wheelbase cabin.",
-    "description": "The Audi A8 L (D5 facelift) launched in India in July 2022 in two variants: Celebration Edition and Technology. Both are exclusively long-wheelbase (LWB) and powered by a single 3.0L TFSI V6 mild-hybrid drivetrain producing 340 PS. Key features include Digital Matrix LED headlamps with animated Audi logo projections, dual 10.1-inch MMI Touch displays, a 12.3-inch Virtual Cockpit Plus cluster, 30-colour ambient lighting, Predictive Active Suspension (front camera scans road and pre-conditions suspension), quattro AWD with adaptive air suspension, four-zone climate control, and a 1,920W Bang & Olufsen Advanced Sound System with 23 speakers. The Technology variant adds rear-seat recline, rear entertainment, and the full Executive package. An armoured Security version is also available on request.",
-    "blogParagraphs": [
-      "The Audi A8 L sits in the luxury salon space of the Indian market, priced between INR 1.29 Cr - 1.62 Cr. On paper, it brings a single 3.0L TFSI V6 mild-hybrid petrol powertrain, an 8-speed Tiptronic automatic, and a clear focus on refined comfort, understated presence, and effortless long-distance cruising.",
-      "What makes this car interesting is not just one number. It is the combination of 340 PS, 500 Nm, quattro AWD with Predictive Active Suspension, a 1,920W 23-speaker Bang & Olufsen system, and a 5-star safety score. That blend tells you where the Audi A8 L fits: it is built for buyers who want to be chauffeured in genuine comfort while quattro AWD keeps things composed if they choose to drive themselves.",
-      "In typical Indian use, the important questions are simple: does the predictive suspension actually smooth out broken roads, is the rear seat experience upgraded enough on the Technology variant, is the cabin tech intuitive day to day, and does the variant you want justify the price? The Audi A8 L answers those questions best for shoppers looking at chauffeur-driven, business, long-distance, status symbol use cases."
-    ],
-    "whyItStandsOut": [
-      "Predictive Active Suspension reads the road via a front camera and pre-adjusts the ride before you feel the bump.",
-      "Digital Matrix LED headlamps with animated logo projection and a 1,920W 23-speaker Bang & Olufsen system add real showroom theatre.",
-      "quattro AWD as standard on every variant gives it a stability edge many RWD-only rivals in this segment don't offer."
-    ],
-    "whatToCheckBeforeBuying": [
-      "The full Executive rear package — power recline, slide, and dual rear entertainment screens — is exclusive to the Technology variant, so the base Celebration Edition misses out on the flagship rear-seat experience.",
-      "A single 340 PS engine option means there's no higher-output variant to step up to if you want more performance.",
-      "Even with a 5-star rating and Level 2 ADAS, features like these should be cross-checked variant-wise before finalising."
-    ],
-    "verdict": "Choose the Audi A8 L if you want refined comfort, understated presence, and effortless long-distance cruising in a full-size luxury sedan body style. Shortlist it against close rivals on price, rear-seat experience, ride quality, and the exact variant you plan to buy."
+    "minides": "The longest Defender ever — 5358mm, 8 seats across 3 full-adult rows, 3022mm wheelbase, and the same 900mm wading and Terrain Response 2 as the 90 and 110. Available in D300 diesel mild-hybrid or 518 PS V8.",
+    "description": "The Defender 130 is the extended-wheelbase, 3-row version of the Defender 110, adding 340mm of length for a dedicated third row of adult-sized seats. In India it is offered in two variants — D300 (₹1.45 Cr, diesel mild-hybrid, 8 seats) and V8 P500 (₹1.86 Cr, 518 PS supercharged V8, 7 seats). The 130 shares the 3022mm wheelbase with the 110 but has a longer 5358mm overall length and a unique overhanging rear design to accommodate the third row. Boot space in 8-seat configuration is 389 litres, expanding massively with the third row folded. All off-road hardware — 900mm water wading, air suspension, twin-speed transfer case, Terrain Response 2 — is carried over unchanged. The 2025 update brings the 13.1-inch Pivi Pro Gen 2 and improved cabin refinement."
   },
   "images": {
-    "logo": "/static/images/logos/audi.png"
-  },
-  "moreColorInfo": {
-    "available": false,
-    "url": null
+    "logo": "/static/images/logos/land-rover.png"
   },
   "colors": [
     {
-      "name": "Mythos Black Metallic",
-      "hex": "#0A0A0A",
-      "type": "Metallic",
+      "name": "Santorini Black",
+      "hex": "#1A1A1A",
+      "type": "Solid",
       "variants": [
-        "a8l-celebration",
-        "a8l-technology"
+        "d130-d300",
+        "d130-p500"
       ]
     },
     {
-      "name": "Floret Silver Metallic",
-      "hex": "#C0C0C0",
-      "type": "Metallic",
-      "variants": [
-        "a8l-celebration",
-        "a8l-technology"
-      ]
-    },
-    {
-      "name": "Glacier White Metallic",
+      "name": "Fuji White",
       "hex": "#F0EEE9",
-      "type": "Metallic",
+      "type": "Solid",
       "variants": [
-        "a8l-celebration",
-        "a8l-technology"
+        "d130-d300",
+        "d130-p500"
       ]
     },
     {
-      "name": "Manhattan Grey Metallic",
+      "name": "Eiger Grey",
       "hex": "#7A7D80",
       "type": "Metallic",
       "variants": [
-        "a8l-celebration",
-        "a8l-technology"
+        "d130-d300",
+        "d130-p500"
       ]
     },
     {
-      "name": "Terra Grey Metallic",
-      "hex": "#5C5C5C",
+      "name": "Silicon Silver",
+      "hex": "#B8B8B8",
       "type": "Metallic",
       "variants": [
-        "a8l-celebration",
-        "a8l-technology"
+        "d130-d300",
+        "d130-p500"
       ]
     },
     {
-      "name": "Vesuvius Grey Metallic",
-      "hex": "#6B6B6B",
+      "name": "Charente Grey",
+      "hex": "#5A5A5A",
       "type": "Metallic",
       "variants": [
-        "a8l-celebration",
-        "a8l-technology"
+        "d130-d300",
+        "d130-p500"
       ]
     },
     {
-      "name": "Firmament Blue Metallic",
-      "hex": "#1F3A6B",
+      "name": "Carpathian Grey",
+      "hex": "#3A3A3A",
       "type": "Metallic",
       "variants": [
-        "a8l-celebration",
-        "a8l-technology"
+        "d130-d300",
+        "d130-p500"
       ]
     },
     {
-      "name": "District Green Metallic",
-      "hex": "#2A4030",
+      "name": "Sedona Red",
+      "hex": "#8B2020",
       "type": "Metallic",
       "variants": [
-        "a8l-celebration",
-        "a8l-technology"
+        "d130-d300",
+        "d130-p500"
       ]
     }
   ],
   "sharedSpecs": {
     "dimensions": {
-      "length": "5302 mm",
-      "width": "1945 mm",
-      "height": "1473 mm",
-      "wheelbase": "3128 mm",
-      "groundClearance": "124–174 mm (adaptive air suspension)",
-      "bootSpace": "505 Litres",
-      "fuelTank": "82 Litres",
-      "kerbWeight": "2045–2095 kg",
-      "doors": 4
+      "length": "5358 mm",
+      "width": "2105 mm",
+      "height": "1967 mm",
+      "wheelbase": "3022 mm",
+      "groundClearance": "226 mm (standard) / 294 mm (raised)",
+      "bootSpace": "389 Litres (8 seats) / 1232 Litres (3rd row folded) / 2516 Litres (all folded)",
+      "fuelTank": "90 Litres",
+      "kerbWeight": "2350–2445 kg",
+      "doors": 5
     },
     "suspension": {
-      "front": "Five-link independent with adaptive air springs + Predictive Active Suspension",
-      "rear": "Trapezoidal-link independent with adaptive air springs + rear-axle steering",
-      "additionalTech": "Predictive Active Suspension — front camera reads road and pre-adjusts suspension; standard adaptive air suspension with 5 levels; rear-axle steering up to 5°"
+      "front": "Independent Double Wishbone + Electronic Air Suspension",
+      "rear": "Independent Integral Link + Electronic Air Suspension",
+      "additionalTech": "Terrain Response 2 with Auto Mode; 5-height air suspension"
     },
     "steering": {
-      "type": "Electromechanical progressive speed-sensitive steering",
-      "column": "Electrically adjustable reach and rake; rear-axle steering (standard)"
+      "type": "Electric Power Assisted Steering (EPAS)",
+      "column": "Adjustable Reach and Rake"
     },
     "brakes": {
-      "front": "6-piston fixed caliper, 400 mm ventilated disc",
-      "rear": "4-piston floating caliper, 350 mm ventilated disc",
+      "front": "Single-Piston Ventilated Disc (D300) / Compound 4-Piston Fixed (V8)",
+      "rear": "Single-Piston Floating Caliper",
       "brakeAssist": true
     },
     "tyres": {
-      "Celebration Edition": "245/45 R19 (standard) / 265/40 R20 optional",
-      "Technology": "265/40 R20 (standard)"
+      "d300": "255/55 R20 (20-inch Alloy)",
+      "v8": "275/45 R22 (22-inch Alloy)"
     },
-    "platform": "MLB Evo (Modular Longitudinal Matrix)",
+    "platform": "D7x Aluminium Monocoque (Land Rover IIIA platform)",
     "emissionNorm": "BS VI Phase 2",
-    "e20Compatible": true
+    "e20Compatible": true,
+    "waterWading": "900 mm",
+    "towingCapacity": "3500 kg"
   },
   "engineDatabase": {
-    "crec-3-0L-v6-tfsi-340ps": {
-      "id": "crec-3-0L-v6-tfsi-340ps",
-      "name": "3.0L TFSI V6 Turbo Petrol + 48V MHEV (55 TFSI)",
-      "engineType": "V6 Turbocharged Petrol + 48V ISG Mild Hybrid",
-      "displacement": "2995 cc",
-      "engineLayout": "V6",
+    "d300-3L-diesel": {
+      "id": "d300-3L-diesel",
+      "name": "D300 3.0L Mild-Hybrid Diesel Inline-6 (48V)",
+      "engineType": "Inline-6 Turbo Diesel + 48V MHEV",
+      "displacement": "2997 cc",
+      "engineLayout": "Inline-6",
       "cylinders": 6,
       "valvesPerCylinder": 4,
       "valvetrain": "DOHC",
       "turbocharged": true,
-      "fuelSupplySystem": "Direct Injection (TFSI)",
+      "fuelSupplySystem": "CRDi",
       "mildHybrid": true,
-      "mildHybridSystem": "48V Belt-Alternator Starter (BAS)",
+      "mildHybridSystem": "48V Belt-Integrated Starter Generator (BISG)",
       "automatic": {
-        "power": "340 PS (250 kW) @ 5000–6400 rpm",
-        "torque": "500 Nm @ 1370–4500 rpm",
-        "gearbox": "8-Speed Tiptronic Automatic",
-        "driveType": "quattro AWD",
-        "acceleration0To100": "5.7 sec",
-        "topSpeed": "250 km/h (electronically limited)",
-        "mileageARAI": "11.01 kmpl (ARAI)"
+        "power": "300 PS (221 kW) @ 4000 rpm",
+        "torque": "650 Nm @ 1500–2500 rpm",
+        "gearbox": "ZF 8-Speed Automatic",
+        "driveType": "AWD",
+        "acceleration0To100": "6.6 sec",
+        "topSpeed": "209 km/h",
+        "mileageARAI": "13.11 kmpl (WLTP combined)"
+      }
+    },
+    "p500-v8-5L": {
+      "id": "p500-v8-5L",
+      "name": "P500 5.0L Supercharged V8 Petrol",
+      "engineType": "V8 Supercharged Petrol",
+      "displacement": "4999 cc",
+      "engineLayout": "V8",
+      "cylinders": 8,
+      "valvesPerCylinder": 4,
+      "valvetrain": "DOHC",
+      "turbocharged": false,
+      "supercharged": true,
+      "fuelSupplySystem": "Port Injection",
+      "automatic": {
+        "power": "518 PS (381 kW) @ 6000–6500 rpm",
+        "torque": "625 Nm @ 2500–5500 rpm",
+        "gearbox": "ZF 8-Speed Automatic",
+        "driveType": "AWD",
+        "acceleration0To100": "4.9 sec",
+        "topSpeed": "240 km/h",
+        "mileageARAI": "6.8 kmpl (WLTP combined)"
       }
     }
   },
   "variantFamilies": [
     {
-      "id": "celebration",
-      "name": "Celebration Edition",
-      "position": "Base",
+      "id": "d130-d300",
+      "name": "Defender 130 D300",
+      "position": "Base (8-Seat Diesel)",
       "tier": 1
     },
     {
-      "id": "technology",
-      "name": "Technology",
-      "position": "Premium",
+      "id": "d130-p500",
+      "name": "Defender 130 V8 P500",
+      "position": "Top V8 (7-Seat)",
       "tier": 2
     }
   ],
   "variants": [
     {
-      "id": "a8l-celebration",
-      "name": "A8 L 55 TFSI Celebration Edition",
-      "family": "celebration",
-      "rank": 1,
+      "id": "d130-d300",
+      "name": "Defender 130 D300",
+      "family": "d130",
+      "rank": 9,
       "price": {
-        "exShowroom": 13400000
+        "exShowroom": 14500000
       },
       "configuration": {
-        "fuel": "Petrol",
-        "engine": "crec-3-0L-v6-tfsi-340ps",
+        "fuel": "Diesel",
+        "engine": "d300-3L-diesel",
         "transmission": "Automatic",
-        "gearbox": "8-Speed Tiptronic Automatic",
-        "drivetrain": "quattro AWD",
-        "seating": 5,
-        "tyreSizeLabel": "245/45 R19"
+        "gearbox": "ZF 8-Speed Automatic",
+        "drivetrain": "AWD",
+        "seating": 8,
+        "tyreSizeLabel": "255/55 R20",
+        "bodyStyle": "130",
+        "doors": 5
       },
       "performance": {
-        "power": "340 PS (250 kW) @ 5000–6400 rpm",
-        "torque": "500 Nm @ 1370–4500 rpm",
-        "mileageARAI": "11.01 kmpl (ARAI)",
-        "acceleration0To100": "5.7 sec",
-        "topSpeed": "250 km/h (electronically limited)"
+        "power": "300 PS (221 kW) @ 4000 rpm",
+        "torque": "650 Nm @ 1500–2500 rpm",
+        "mileageARAI": "12.5 kmpl (WLTP)",
+        "acceleration0To100": "7.1 sec",
+        "topSpeed": "209 km/h"
       },
       "wheels": {
-        "size": "19 Inch",
-        "type": "5-Arm Turbine Dual-Tone Alloy Wheels",
-        "tyreSizeLabel": "245/45 R19"
+        "size": "20 Inch",
+        "type": "Gloss Bright Alloy Wheels",
+        "tyreSizeLabel": "255/55 R20"
       },
       "comfort": {
         "powerSteering": true,
         "airConditioner": true,
         "automaticClimateControl": true,
-        "threeZoneClimateControl": false,
-        "fourZoneClimateControl": true,
+        "threeZoneClimateControl": true,
         "rearAcVents": true,
         "cruiseControl": true,
         "adaptiveCruiseControl": true,
@@ -283,7 +278,7 @@
         "heatedRearSeats": true,
         "ventilatedFrontSeats": true,
         "seatVentilationRear": true,
-        "massageSeats": true,
+        "massageSeats": false,
         "poweredDriverSeat": true,
         "poweredPassengerSeat": true,
         "poweredCoDriverSeat": true,
@@ -294,7 +289,7 @@
         "electricParkingBrake": true,
         "autoHold": true,
         "driveModes": true,
-        "paddleShifters": true,
+        "paddleShifters": false,
         "rainSensingWiper": true,
         "frontParkingSensors": true,
         "rearParkingSensors": true,
@@ -312,25 +307,22 @@
         "voiceCommands": true,
         "remoteAcStart": true,
         "smartKey": true,
-        "rearSeatRecline": false,
-        "rearSeatSlide": false,
+        "rearSeatRecline": true,
         "idleStopStart": true
       },
       "interior": {
         "digitalCluster": true,
-        "digitalClusterSize": "12.3 inch Audi Virtual Cockpit Plus",
-        "touchscreenSize": "Dual 10.1 inch MMI Touch Display",
-        "upholstery": "Valcona Leather",
+        "digitalClusterSize": "12.3 inch Interactive Driver Display",
+        "touchscreenSize": "13.1 inch Pivi Pro Gen 2",
+        "upholstery": "Textile/Partial Leather",
         "leatherWrappedSteering": true,
         "flatBottomSteering": false,
         "ambientLighting": true,
         "headsUpDisplay": true,
-        "woodFinishInterior": true,
-        "dualScreenDisplay": true,
-        "illuminatedGlovebox": true,
-        "paddleShifters": true,
-        "ambientLightingColors": "30-colour",
-        "rearEntertainmentScreen": false
+        "woodFinishInterior": false,
+        "dualScreenDisplay": false,
+        "thirdRowSeats": true,
+        "rearEntertainmentScreens": false
       },
       "exterior": {
         "matrixLedHeadlamps": true,
@@ -346,13 +338,17 @@
         "headlampWashers": true,
         "rainSensingWiper": true,
         "rearWindowDefogger": true,
+        "rearWindowWiper": true,
+        "roofRails": true,
+        "skidPlates": true,
         "connectedLedTailLamps": true,
-        "chromeBeltline": true,
-        "digitalMatrixHeadlamps": true,
-        "oledTailLamps": true
+        "quadExhaust": false,
+        "glossBlackGrille": false,
+        "mHighGlossShadowLine": false,
+        "activeRearSpoiler": false
       },
       "safety": {
-        "airbags": 8,
+        "airbags": 6,
         "driverAirbag": true,
         "passengerAirbag": true,
         "sideAirbags": true,
@@ -368,7 +364,7 @@
         "corneringBrakeControl": true,
         "tpms": true,
         "rearCamera": true,
-        "rearCameraType": "360-Degree Surround View Camera",
+        "rearCameraType": "360-Degree Surround View Camera with ClearSight",
         "frontParkingSensors": true,
         "rearParkingSensors": true,
         "isofix": true,
@@ -380,11 +376,12 @@
         "impactSensingAutoDoorUnlock": true,
         "emergencyStopSignal": true,
         "rearSeatBeltReminder": true,
-        "hillAssist": true
+        "hillAssist": true,
+        "hillDescentControl": true
       },
       "adas": {
         "available": true,
-        "level": "Level 2 (Audi AI — Adaptive Cruise Assist + Active Lane Assist + Pre Sense)",
+        "level": "Level 2 (Land Rover Drive Pro Pack — Adaptive Cruise Assist + Lane Keep + AEB)",
         "adaptiveCruiseControl": true,
         "forwardCollisionWarning": true,
         "automaticEmergencyBraking": true,
@@ -400,32 +397,31 @@
         "driverAttentionWarning": true,
         "laneFollowingAssist": true,
         "blindSpotCollisionAvoidance": true,
-        "frontCollisionAvoidanceAssist": true,
-        "parkingCollisionAvoidance": true
+        "frontCollisionAvoidanceAssist": true
       },
       "infotainment": {
         "touchscreen": true,
-        "screenSize": "Dual 10.1 inch MMI Touch Display",
+        "screenSize": "13.1 inch Pivi Pro Gen 2",
         "androidAuto": true,
         "appleCarplay": true,
         "wirelessAndroidAuto": true,
         "wirelessAppleCarplay": true,
         "bluetooth": true,
         "usbPorts": true,
-        "speakerCount": 23,
-        "premiumAudio": "Bang & Olufsen Advanced 3D Sound System — 23 Speakers, 1920W, 3D Surround",
+        "speakerCount": 11,
+        "premiumAudio": "Meridian Sound System (11 Speakers)",
         "radio": true,
         "tripleScreen": false,
         "gestureControl": false,
-        "voiceAssistant": true,
-        "rearEntertainmentScreens": false
+        "voiceAssistant": true
       },
       "connectedTech": {
         "available": true,
-        "appName": "myAudi App / Audi Connect",
+        "appName": "JLR Connected Services / Land Rover Remote App",
         "remoteDoorLockUnlock": true,
         "remoteHornLight": true,
         "remoteAcControl": true,
+        "remoteEngineStart": true,
         "otaUpdates": true,
         "navigation": true,
         "navigationWithLiveTraffic": true,
@@ -457,17 +453,30 @@
         "onePedalDrive": false
       },
       "offRoad": {
-        "driveType": "quattro AWD",
-        "awd": true
+        "driveType": "AWD",
+        "awd": true,
+        "crawlMode": true,
+        "differentialLock": true,
+        "fourLow": true,
+        "fourWheelDrive": true,
+        "hillDescentControl": true,
+        "lockingDifferential": true,
+        "lowRangeTransferCase": true,
+        "terrainModes": true,
+        "transferCase": true,
+        "waterWadingMode": true,
+        "terrainResponseModes": "Auto, Grass/Gravel/Snow, Mud/Ruts, Sand, Rock Crawl",
+        "waterWadingDepth": "900 mm",
+        "octaMode": false
       },
       "keyFeatures": [
-        "3.0L TFSI V6 + 48V Mild Hybrid — 340 PS / 500 Nm",
-        "quattro AWD + 8-Speed Tiptronic Automatic",
-        "Predictive Active Suspension (Camera-Based Road Scanning)",
-        "Digital Matrix LED Headlamps with Animated Audi Logo Projection",
-        "Dual 10.1-inch MMI Touch + 12.3-inch Virtual Cockpit Plus",
-        "Bang & Olufsen 3D Advanced Sound — 23 Speakers, 1920W",
-        "30-Colour Ambient Lighting | Panoramic Sunroof | 4-Zone Climate Control"
+        "Extended Wheelbase — 5358 mm Length / 3022 mm WB",
+        "8-Seat Configuration (3 Rows)",
+        "3.0L D300 Diesel + 48V Mild Hybrid",
+        "Second Row Captain Seats (Optional)",
+        "Terrain Response 2",
+        "Air Suspension",
+        "900 mm Water Wading"
       ],
       "comparisonFeatures": {
         "comfort": {
@@ -507,13 +516,13 @@
           "heater": false,
           "idleStopStart": true,
           "keylessEntry": true,
-          "massageSeats": true,
+          "massageSeats": false,
           "mDriveProfessional": false,
           "multiZoneClimateControl": true,
           "oneTouchDownDriverWindow": false,
           "oneTouchUpDriverWindow": false,
-          "paddleShifters": true,
-          "panoramicSunroof": true,
+          "paddleShifters": false,
+          "panoramicSunroof": false,
           "parkingSensors": false,
           "powerAdjustableOrvm": true,
           "powerBoot": true,
@@ -528,7 +537,7 @@
           "rearDefogger": true,
           "rearParkingSensors": true,
           "rearReadingLamp": true,
-          "rearSeatRecline": false,
+          "rearSeatRecline": true,
           "rearSeatSlide": false,
           "rearSeatSplit": false,
           "rearSunshade": true,
@@ -547,7 +556,7 @@
           },
           "sunroof.available": false,
           "sunroof.type": false,
-          "threeZoneClimateControl": false,
+          "threeZoneClimateControl": true,
           "tiltSteering": false,
           "tiltTelescopicSteering": true,
           "usbCharger": true,
@@ -564,8 +573,8 @@
           "carbonBucketSeats": false,
           "carbonFibreTrim": false,
           "digitalCluster": true,
-          "digitalClusterSize": "12.3 inch Virtual Cockpit Plus",
-          "dualScreenDisplay": true,
+          "digitalClusterSize": "12.3 inch Interactive Driver Display",
+          "dualScreenDisplay": false,
           "dualToneDashboard": true,
           "dualToneInterior": false,
           "flatBottomSteering": false,
@@ -588,9 +597,9 @@
           "secondRowCaptainSeats": false,
           "tachometer": true,
           "thirdRowSeats": false,
-          "touchscreenSize": "Dual 10.1 inch MMI Touch displays",
+          "touchscreenSize": "11.4 inch Pivi Pro",
           "upholstery": true,
-          "woodFinishInterior": true
+          "woodFinishInterior": false
         },
         "exterior": {
           "activeRearSpoiler": false,
@@ -599,7 +608,7 @@
           "autoFoldOrvm": true,
           "bodyColouredBumpers": false,
           "carbonFibreRoof": false,
-          "chromeBeltline": true,
+          "chromeBeltline": false,
           "connectedLedTailLamps": true,
           "corneringFogLamps": false,
           "dualToneExterior": false,
@@ -630,10 +639,10 @@
           "rearSpoiler": false,
           "rearWindowDefogger": true,
           "rearWindowWasher": false,
-          "rearWindowWiper": false,
-          "roofRails": false,
+          "rearWindowWiper": true,
+          "roofRails": true,
           "sharkFinAntenna": false,
-          "skidPlates": false,
+          "skidPlates": true,
           "spareWheelAlloy": false,
           "spareWheelSteel": false,
           "sunroof": false,
@@ -666,14 +675,14 @@
           "esc": true,
           "frontParkingSensors": true,
           "hillAssist": true,
-          "hillDescentControl": false,
+          "hillDescentControl": true,
           "impactSensingAutoDoorUnlock": true,
           "isofix": true,
           "kneeAirbag": false,
           "mCompoundBrakes": false,
           "passengerAirbag": true,
           "rearCamera": true,
-          "rearCameraType": "360-Degree Surround View Camera",
+          "rearCameraType": "360-Degree Surround View Camera with ClearSight",
           "rearParkingSensors": true,
           "rearSeatBeltReminder": true,
           "rolloverMitigation": false,
@@ -700,7 +709,7 @@
           "laneDepartureWarning": true,
           "laneFollowingAssist": true,
           "laneKeepAssist": true,
-          "level": "Level 2 (Audi AI Active Lane Assist + Adaptive Cruise Assist)",
+          "level": "Level 2 (Land Rover Drive Pro Pack — Adaptive Cruise, Lane Keep, Emergency Braking)",
           "parkingAssistant": true,
           "parkingCollisionAvoidance": true,
           "rearCrossTrafficAlert": true,
@@ -722,8 +731,8 @@
           "premiumAudio": true,
           "radio": true,
           "rearEntertainmentScreens": false,
-          "screenSize": "Dual 10.1 inch MMI Touch",
-          "speakerCount": 23,
+          "screenSize": "11.4 inch Pivi Pro",
+          "speakerCount": 11,
           "steeringControls": true,
           "touchscreen": true,
           "usbPorts": true,
@@ -732,7 +741,7 @@
           "wirelessAppleCarplay": true
         },
         "connectedTech": {
-          "appName": "myAudi App",
+          "appName": "JLR Connect / Land Rover Remote App",
           "available": true,
           "connectedCarTech": true,
           "diagnostics": true,
@@ -745,7 +754,7 @@
           "otaUpdates": true,
           "remoteAcControl": true,
           "remoteDoorLockUnlock": true,
-          "remoteEngineStart": false,
+          "remoteEngineStart": true,
           "remoteHornLight": true,
           "remoteSoftwareUpgrade": true,
           "remoteStart": false,
@@ -754,7 +763,7 @@
           "valetMode": false
         },
         "evHybrid": {
-          "batteryCapacity": "0.5 kWh (48V buffer)",
+          "batteryCapacity": "0.5 kWh (48V)",
           "batteryCooling": false,
           "batteryPreconditioning": false,
           "dcFastCharging": false,
@@ -774,55 +783,56 @@
         "offRoad": {
           "activeMDifferential": false,
           "awd": true,
-          "crawlMode": false,
-          "differentialLock": false,
+          "crawlMode": true,
+          "differentialLock": true,
           "driftMode": false,
-          "fourLow": false,
+          "fourLow": true,
           "fourWheelDrive": true,
-          "hillDescentControl": false,
-          "lockingDifferential": false,
-          "lowRangeTransferCase": false,
-          "terrainModes": false,
-          "transferCase": false,
-          "waterWadingMode": false
+          "hillDescentControl": true,
+          "lockingDifferential": true,
+          "lowRangeTransferCase": true,
+          "terrainModes": true,
+          "transferCase": true,
+          "waterWadingMode": true
         }
       }
     },
     {
-      "id": "a8l-technology",
-      "name": "A8 L 55 TFSI Technology",
-      "family": "technology",
-      "rank": 2,
+      "id": "d130-p500",
+      "name": "Defender 130 V8 P500",
+      "family": "d130",
+      "rank": 10,
       "price": {
-        "exShowroom": 15700000
+        "exShowroom": 18600000
       },
       "configuration": {
         "fuel": "Petrol",
-        "engine": "crec-3-0L-v6-tfsi-340ps",
+        "engine": "p500-v8-5L",
         "transmission": "Automatic",
-        "gearbox": "8-Speed Tiptronic Automatic",
-        "drivetrain": "quattro AWD",
-        "seating": 4,
-        "tyreSizeLabel": "265/40 R20"
+        "gearbox": "ZF 8-Speed Automatic",
+        "drivetrain": "AWD",
+        "seating": 7,
+        "tyreSizeLabel": "275/45 R22",
+        "bodyStyle": "130",
+        "doors": 5
       },
       "performance": {
-        "power": "340 PS (250 kW) @ 5000–6400 rpm",
-        "torque": "500 Nm @ 1370–4500 rpm",
-        "mileageARAI": "11.01 kmpl (ARAI)",
-        "acceleration0To100": "5.7 sec",
-        "topSpeed": "250 km/h (electronically limited)"
+        "power": "518 PS (381 kW) @ 6000 rpm",
+        "torque": "625 Nm @ 2500–5500 rpm",
+        "mileageARAI": "6.8 kmpl (WLTP)",
+        "acceleration0To100": "5.3 sec",
+        "topSpeed": "225 km/h"
       },
       "wheels": {
-        "size": "20 Inch",
-        "type": "5-Arm Turbine Dual-Tone Alloy Wheels (20-inch)",
-        "tyreSizeLabel": "265/40 R20"
+        "size": "22 Inch",
+        "type": "V8 Gloss Dark Grey Alloy Wheels",
+        "tyreSizeLabel": "275/45 R22"
       },
       "comfort": {
         "powerSteering": true,
         "airConditioner": true,
         "automaticClimateControl": true,
-        "threeZoneClimateControl": false,
-        "fourZoneClimateControl": true,
+        "threeZoneClimateControl": true,
         "rearAcVents": true,
         "cruiseControl": true,
         "adaptiveCruiseControl": true,
@@ -864,24 +874,21 @@
         "remoteAcStart": true,
         "smartKey": true,
         "rearSeatRecline": true,
-        "rearSeatSlide": true,
-        "idleStopStart": true
+        "idleStopStart": false
       },
       "interior": {
         "digitalCluster": true,
-        "digitalClusterSize": "12.3 inch Audi Virtual Cockpit Plus",
-        "touchscreenSize": "Dual 10.1 inch MMI Touch Display",
-        "upholstery": "Valcona Leather",
+        "digitalClusterSize": "12.3 inch Interactive Driver Display",
+        "touchscreenSize": "13.1 inch Pivi Pro Gen 2",
+        "upholstery": "Windsor Leather",
         "leatherWrappedSteering": true,
         "flatBottomSteering": false,
         "ambientLighting": true,
         "headsUpDisplay": true,
-        "woodFinishInterior": true,
-        "dualScreenDisplay": true,
-        "illuminatedGlovebox": true,
-        "paddleShifters": true,
-        "ambientLightingColors": "30-colour",
-        "rearEntertainmentScreen": "Dual 10.1 inch Rear MMI Displays"
+        "woodFinishInterior": false,
+        "dualScreenDisplay": false,
+        "thirdRowSeats": true,
+        "rearEntertainmentScreens": false
       },
       "exterior": {
         "matrixLedHeadlamps": true,
@@ -897,13 +904,17 @@
         "headlampWashers": true,
         "rainSensingWiper": true,
         "rearWindowDefogger": true,
+        "rearWindowWiper": true,
+        "roofRails": true,
+        "skidPlates": true,
         "connectedLedTailLamps": true,
-        "chromeBeltline": true,
-        "digitalMatrixHeadlamps": true,
-        "oledTailLamps": true
+        "quadExhaust": true,
+        "glossBlackGrille": false,
+        "mHighGlossShadowLine": false,
+        "activeRearSpoiler": false
       },
       "safety": {
-        "airbags": 8,
+        "airbags": 6,
         "driverAirbag": true,
         "passengerAirbag": true,
         "sideAirbags": true,
@@ -919,7 +930,7 @@
         "corneringBrakeControl": true,
         "tpms": true,
         "rearCamera": true,
-        "rearCameraType": "360-Degree Surround View Camera",
+        "rearCameraType": "360-Degree Surround View Camera with ClearSight",
         "frontParkingSensors": true,
         "rearParkingSensors": true,
         "isofix": true,
@@ -931,11 +942,12 @@
         "impactSensingAutoDoorUnlock": true,
         "emergencyStopSignal": true,
         "rearSeatBeltReminder": true,
-        "hillAssist": true
+        "hillAssist": true,
+        "hillDescentControl": true
       },
       "adas": {
         "available": true,
-        "level": "Level 2 (Audi AI — Adaptive Cruise Assist + Active Lane Assist + Pre Sense)",
+        "level": "Level 2 (Land Rover Drive Pro Pack — Adaptive Cruise Assist + Lane Keep + AEB)",
         "adaptiveCruiseControl": true,
         "forwardCollisionWarning": true,
         "automaticEmergencyBraking": true,
@@ -951,32 +963,31 @@
         "driverAttentionWarning": true,
         "laneFollowingAssist": true,
         "blindSpotCollisionAvoidance": true,
-        "frontCollisionAvoidanceAssist": true,
-        "parkingCollisionAvoidance": true
+        "frontCollisionAvoidanceAssist": true
       },
       "infotainment": {
         "touchscreen": true,
-        "screenSize": "Dual 10.1 inch MMI Touch Display",
+        "screenSize": "13.1 inch Pivi Pro Gen 2",
         "androidAuto": true,
         "appleCarplay": true,
         "wirelessAndroidAuto": true,
         "wirelessAppleCarplay": true,
         "bluetooth": true,
         "usbPorts": true,
-        "speakerCount": 23,
-        "premiumAudio": "Bang & Olufsen Advanced 3D Sound System — 23 Speakers, 1920W, 3D Surround",
+        "speakerCount": 20,
+        "premiumAudio": "Meridian Signature 3D Sound (20 Speakers)",
         "radio": true,
         "tripleScreen": false,
         "gestureControl": false,
-        "voiceAssistant": true,
-        "rearEntertainmentScreens": true
+        "voiceAssistant": true
       },
       "connectedTech": {
         "available": true,
-        "appName": "myAudi App / Audi Connect",
+        "appName": "JLR Connected Services / Land Rover Remote App",
         "remoteDoorLockUnlock": true,
         "remoteHornLight": true,
         "remoteAcControl": true,
+        "remoteEngineStart": true,
         "otaUpdates": true,
         "navigation": true,
         "navigationWithLiveTraffic": true,
@@ -991,16 +1002,16 @@
       },
       "evHybrid": {
         "hybrid": false,
-        "mildHybrid": true,
+        "mildHybrid": false,
         "plugInHybrid": false,
         "electricOnly": false,
         "strongHybrid": false,
         "dedicatedEvPlatform": false,
-        "regenerativeBraking": true,
+        "regenerativeBraking": false,
         "regenModes": false,
         "vehicleToLoad": false,
         "vehicleToVehicleCharging": false,
-        "batteryCapacity": "0.5 kWh (48V buffer)",
+        "batteryCapacity": false,
         "batteryCooling": false,
         "batteryPreconditioning": false,
         "dcFastCharging": false,
@@ -1008,17 +1019,30 @@
         "onePedalDrive": false
       },
       "offRoad": {
-        "driveType": "quattro AWD",
-        "awd": true
+        "driveType": "AWD",
+        "awd": true,
+        "crawlMode": true,
+        "differentialLock": true,
+        "fourLow": true,
+        "fourWheelDrive": true,
+        "hillDescentControl": true,
+        "lockingDifferential": true,
+        "lowRangeTransferCase": true,
+        "terrainModes": true,
+        "transferCase": true,
+        "waterWadingMode": true,
+        "terrainResponseModes": "Auto, Grass/Gravel/Snow, Mud/Ruts, Sand, Rock Crawl",
+        "waterWadingDepth": "900 mm",
+        "octaMode": false
       },
       "keyFeatures": [
-        "Full Executive Rear Package — Power Recline + Slide + Leg Rest",
-        "Dual 10.1-inch Rear MMI Entertainment Screens",
-        "4-Seater Configuration with Individual Rear Seats",
-        "Extended Leather Package (Valcona Leather throughout)",
-        "20-inch Audi Exclusive Alloy Wheels",
-        "OLED Rear Light Units (Dynamic Animated Signature)",
-        "Audi AI Traffic Jam Pilot Ready (Level 2+)"
+        "Defender 130 V8 — 8-Seat SUV with 518 PS",
+        "0–100 km/h in 5.3 sec",
+        "Quad Exhaust + V8 Badging",
+        "Meridian 3D 20-Speaker Audio",
+        "Extended Wheelbase — Maximum Space",
+        "3 Rows of Adult-Sized Seating",
+        "Adaptive Dynamics + Roll Stability Control"
       ],
       "comparisonFeatures": {
         "comfort": {
@@ -1056,7 +1080,7 @@
           "heatedFrontSeats": true,
           "heatedRearSeats": true,
           "heater": false,
-          "idleStopStart": true,
+          "idleStopStart": false,
           "keylessEntry": true,
           "massageSeats": true,
           "mDriveProfessional": false,
@@ -1064,7 +1088,7 @@
           "oneTouchDownDriverWindow": false,
           "oneTouchUpDriverWindow": false,
           "paddleShifters": true,
-          "panoramicSunroof": true,
+          "panoramicSunroof": false,
           "parkingSensors": false,
           "powerAdjustableOrvm": true,
           "powerBoot": true,
@@ -1080,7 +1104,7 @@
           "rearParkingSensors": true,
           "rearReadingLamp": true,
           "rearSeatRecline": true,
-          "rearSeatSlide": true,
+          "rearSeatSlide": false,
           "rearSeatSplit": false,
           "rearSunshade": true,
           "rearWindowSunshade": true,
@@ -1098,7 +1122,7 @@
           },
           "sunroof.available": false,
           "sunroof.type": false,
-          "threeZoneClimateControl": false,
+          "threeZoneClimateControl": true,
           "tiltSteering": false,
           "tiltTelescopicSteering": true,
           "usbCharger": true,
@@ -1115,8 +1139,8 @@
           "carbonBucketSeats": false,
           "carbonFibreTrim": false,
           "digitalCluster": true,
-          "digitalClusterSize": "12.3 inch Virtual Cockpit Plus",
-          "dualScreenDisplay": true,
+          "digitalClusterSize": "12.3 inch Interactive Driver Display",
+          "dualScreenDisplay": false,
           "dualToneDashboard": true,
           "dualToneInterior": false,
           "flatBottomSteering": false,
@@ -1139,9 +1163,9 @@
           "secondRowCaptainSeats": false,
           "tachometer": true,
           "thirdRowSeats": false,
-          "touchscreenSize": "Dual 10.1 inch MMI Touch displays",
+          "touchscreenSize": "11.4 inch Pivi Pro",
           "upholstery": true,
-          "woodFinishInterior": true
+          "woodFinishInterior": false
         },
         "exterior": {
           "activeRearSpoiler": false,
@@ -1150,7 +1174,7 @@
           "autoFoldOrvm": true,
           "bodyColouredBumpers": false,
           "carbonFibreRoof": false,
-          "chromeBeltline": true,
+          "chromeBeltline": false,
           "connectedLedTailLamps": true,
           "corneringFogLamps": false,
           "dualToneExterior": false,
@@ -1176,15 +1200,15 @@
           "orvmHeated": true,
           "orvmLedIndicators": true,
           "projectorHeadlamps": false,
-          "quadExhaust": false,
+          "quadExhaust": true,
           "rainSensingWiper": true,
           "rearSpoiler": false,
           "rearWindowDefogger": true,
           "rearWindowWasher": false,
-          "rearWindowWiper": false,
-          "roofRails": false,
+          "rearWindowWiper": true,
+          "roofRails": true,
           "sharkFinAntenna": false,
-          "skidPlates": false,
+          "skidPlates": true,
           "spareWheelAlloy": false,
           "spareWheelSteel": false,
           "sunroof": false,
@@ -1217,14 +1241,14 @@
           "esc": true,
           "frontParkingSensors": true,
           "hillAssist": true,
-          "hillDescentControl": false,
+          "hillDescentControl": true,
           "impactSensingAutoDoorUnlock": true,
           "isofix": true,
           "kneeAirbag": false,
           "mCompoundBrakes": false,
           "passengerAirbag": true,
           "rearCamera": true,
-          "rearCameraType": "360-Degree Surround View Camera",
+          "rearCameraType": "360-Degree Surround View Camera with ClearSight",
           "rearParkingSensors": true,
           "rearSeatBeltReminder": true,
           "rolloverMitigation": false,
@@ -1251,7 +1275,7 @@
           "laneDepartureWarning": true,
           "laneFollowingAssist": true,
           "laneKeepAssist": true,
-          "level": "Level 2 (Audi AI Active Lane Assist + Adaptive Cruise Assist)",
+          "level": "Level 2 (Land Rover Drive Pro Pack — Adaptive Cruise, Lane Keep, Emergency Braking)",
           "parkingAssistant": true,
           "parkingCollisionAvoidance": true,
           "rearCrossTrafficAlert": true,
@@ -1268,13 +1292,13 @@
           "connectedNavigation": true,
           "dolbyAtmos": false,
           "gestureControl": false,
-          "harmanKardonAudio": false,
+          "harmanKardonAudio": true,
           "headsUpDisplay": true,
           "premiumAudio": true,
           "radio": true,
-          "rearEntertainmentScreens": true,
-          "screenSize": "Dual 10.1 inch MMI Touch",
-          "speakerCount": 23,
+          "rearEntertainmentScreens": false,
+          "screenSize": "11.4 inch Pivi Pro",
+          "speakerCount": 20,
           "steeringControls": true,
           "touchscreen": true,
           "usbPorts": true,
@@ -1283,7 +1307,7 @@
           "wirelessAppleCarplay": true
         },
         "connectedTech": {
-          "appName": "myAudi App",
+          "appName": "JLR Connect / Land Rover Remote App",
           "available": true,
           "connectedCarTech": true,
           "diagnostics": true,
@@ -1296,7 +1320,7 @@
           "otaUpdates": true,
           "remoteAcControl": true,
           "remoteDoorLockUnlock": true,
-          "remoteEngineStart": false,
+          "remoteEngineStart": true,
           "remoteHornLight": true,
           "remoteSoftwareUpgrade": true,
           "remoteStart": false,
@@ -1305,7 +1329,7 @@
           "valetMode": false
         },
         "evHybrid": {
-          "batteryCapacity": "0.5 kWh (48V buffer)",
+          "batteryCapacity": false,
           "batteryCooling": false,
           "batteryPreconditioning": false,
           "dcFastCharging": false,
@@ -1313,10 +1337,10 @@
           "electricOnly": false,
           "homeCharging": false,
           "hybrid": false,
-          "mildHybrid": true,
+          "mildHybrid": false,
           "onePedalDrive": false,
           "plugInHybrid": false,
-          "regenerativeBraking": true,
+          "regenerativeBraking": false,
           "regenModes": false,
           "strongHybrid": false,
           "vehicleToLoad": false,
@@ -1325,17 +1349,17 @@
         "offRoad": {
           "activeMDifferential": false,
           "awd": true,
-          "crawlMode": false,
-          "differentialLock": false,
+          "crawlMode": true,
+          "differentialLock": true,
           "driftMode": false,
-          "fourLow": false,
+          "fourLow": true,
           "fourWheelDrive": true,
-          "hillDescentControl": false,
-          "lockingDifferential": false,
-          "lowRangeTransferCase": false,
-          "terrainModes": false,
-          "transferCase": false,
-          "waterWadingMode": false
+          "hillDescentControl": true,
+          "lockingDifferential": true,
+          "lowRangeTransferCase": true,
+          "terrainModes": true,
+          "transferCase": true,
+          "waterWadingMode": true
         }
       }
     }
