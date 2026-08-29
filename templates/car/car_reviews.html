@@ -138,8 +138,8 @@
 </div>
 
 <!-- JSON data island: reviews loaded from the DB by car_detail() in views.py,
-     read by car-reviews.js on load. Shape: title, author, date, content,
-     rating, photos, helpful, verified - see Review.to_dict() in models.py. -->
+    read by car-reviews.js on load. Shape: title, author, date, content,
+    rating, photos, helpful, verified - see Review.to_dict() in models.py. -->
 {{ car.reviews|json_script:"reviews-data" }}
 
-<script src="{% static 'js/car-reviews.js' %}?v=2"></script>
+<script src="{% static 'js/car-reviews.js' %}?v=3"></script>

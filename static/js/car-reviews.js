@@ -277,11 +277,13 @@ reviewForm.addEventListener('submit', async (e) => {
         alert('Please select a star rating.');
         return;
     }
+
     const email = document.getElementById('email').value.trim();
     if (!isValidReviewEmail(email)) {
         alert('Please enter a valid email address.');
         return;
     }
+
     document.getElementById('ratingInput').value = currentRating;
 
     const submitBtn = reviewForm.querySelector('button[type="submit"]');
@@ -290,36 +292,32 @@ reviewForm.addEventListener('submit', async (e) => {
     submitBtn.textContent = 'Posting...';
 
     try {
-        const response = await fetch(form.action, {
-            method: "POST",
+        const formData = new FormData(reviewForm);
+        const csrfToken = reviewForm.querySelector('[name=csrfmiddlewaretoken]').value;
+        const submitUrl = reviewForm.dataset.action;
+
+        const response = await fetch(submitUrl, {
+            method: 'POST',
             body: formData,
             headers: {
-                "X-CSRFToken": csrfToken,
-                "X-Requested-With": "XMLHttpRequest",
+                'X-CSRFToken': csrfToken,
+                'X-Requested-With': 'XMLHttpRequest',
             },
         });
-    
-        const text = await response.text();
-    
-        let data = {};
-        try {
-            data = JSON.parse(text);
-        } catch (e) {
-            data = {};
+
+        const data = await response.json();
+
+        if (!response.ok || data.success !== true) {
+            throw new Error(data.error || 'Review submit failed');
         }
-    
-        if (response.ok) {
-            window.location.reload();
-            return;
-        }
-    
-        throw new Error(data.error || text || "Review submit failed");
+
+        window.location.reload();
     } catch (error) {
-        console.error("Review submit failed:", error);
-        alert("Could not submit your review right now. Please check your connection and try again.");
+        console.error('Review submit failed:', error);
+        alert('Could not submit your review right now. Please check your connection and try again.');
     } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = "Submit";
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
     }
 });
 
