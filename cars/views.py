@@ -161,7 +161,6 @@ def contact(request):
 def partner_dealer(request):
     return render(request, "partner-dealer.html")
 
-
 @require_POST
 def submit_review(request, slug):
     author = request.POST.get("author", "").strip()
@@ -172,34 +171,33 @@ def submit_review(request, slug):
     car_name = request.POST.get("car_name", "").strip()
 
     if not all([author, email_addr, title, content, rating]):
-        return JsonResponse(
-            {"success": False, "error": "Please fill in every field before submitting."},
-            status=400,
-        )
+        messages.error(request, "Please fill in every field before submitting.")
+        return redirect("car_detail", slug=slug)
 
     try:
         rating = int(rating)
     except ValueError:
-        return JsonResponse(
-            {"success": False, "error": "Please select a star rating."},
-            status=400,
-        )
+        messages.error(request, "Please select a star rating.")
+        return redirect("car_detail", slug=slug)
 
     if not 1 <= rating <= 5:
-        return JsonResponse(
-            {"success": False, "error": "Please select a star rating."},
-            status=400,
-        )
+        messages.error(request, "Please select a star rating.")
+        return redirect("car_detail", slug=slug)
 
-    review = Review.objects.create(
-        car_slug=slug.lower(),
-        car_name=car_name,
-        author=author,
-        email=email_addr,
-        title=title,
-        content=content,
-        rating=rating,
-    )
+    try:
+        review = Review.objects.create(
+            car_slug=slug.lower(),
+            car_name=car_name,
+            author=author,
+            email=email_addr,
+            title=title,
+            content=content,
+            rating=rating,
+        )
+    except Exception as exc:
+        print(f"Review save failed: {exc}")
+        messages.error(request, "Review could not be saved right now.")
+        return redirect("car_detail", slug=slug)
 
     try:
         for photo in request.FILES.getlist("photos"):
@@ -209,36 +207,18 @@ def submit_review(request, slug):
 
     try:
         subject = f"Thanks for reviewing the {car_name or review.car_slug}!"
-        html_content = f"""
-        <div style="max-width:700px; margin:auto; background:#ffffff; border-radius:16px; overflow:hidden; font-family:Segoe UI,Arial,sans-serif;">
-            <div style="background:#111827; color:white; padding:24px;">
-                <h2 style="margin:0;">Your Atya Review Is Live</h2>
-            </div>
-            <div style="padding:24px;">
-                <p>Hi {review.author},</p>
-                <p>Thanks for sharing your experience with the <strong>{car_name or review.car_slug}</strong>.</p>
-                <p><strong>Rating:</strong> {"*" * review.rating}</p>
-                <p><strong>Title:</strong> {review.title}</p>
-                <hr>
-                <p>{review.content}</p>
-            </div>
-        </div>
-        """
-
         email = EmailMultiAlternatives(
             subject=subject,
             body=f"Thanks for reviewing the {car_name or review.car_slug}, {review.author}!",
             from_email=settings.EMAIL_HOST_USER,
             to=[review.email],
         )
-        email.attach_alternative(html_content, "text/html")
         email.send(fail_silently=True)
     except Exception as exc:
         print(f"Review confirmation email failed: {exc}")
 
     messages.success(request, "Review submitted successfully.")
     return redirect("car_detail", slug=slug)
-
 
 @require_POST
 def delete_review(request, slug, review_id):
