@@ -270,16 +270,16 @@ function isValidReviewEmail(value) {
     the Review (+ photos) to the DB and emails a confirmation to the
     reviewer. On success, the server's saved review is added to the list
     so the page updates without a full reload. */
-reviewForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
+reviewForm.addEventListener('submit', (e) => {
     if (currentRating === 0) {
+        e.preventDefault();
         alert('Please select a star rating.');
         return;
     }
 
     const email = document.getElementById('email').value.trim();
     if (!isValidReviewEmail(email)) {
+        e.preventDefault();
         alert('Please enter a valid email address.');
         return;
     }
@@ -287,45 +287,8 @@ reviewForm.addEventListener('submit', async (e) => {
     document.getElementById('ratingInput').value = currentRating;
 
     const submitBtn = reviewForm.querySelector('button[type="submit"]');
-    const originalLabel = submitBtn.textContent;
     submitBtn.disabled = true;
     submitBtn.textContent = 'Posting...';
-
-    try {
-        const formData = new FormData(reviewForm);
-        const submitUrl = reviewForm.dataset.action;
-
-        const response = await fetch(submitUrl, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest',
-            },
-        });
-
-        if (response.ok) {
-            window.location.reload();
-            return;
-        }
-
-        const text = await response.text();
-        let message = 'Review submit failed';
-
-        try {
-            const data = JSON.parse(text);
-            message = data.error || message;
-        } catch (err) {
-            message = text || message;
-        }
-
-        throw new Error(message);
-    } catch (error) {
-        console.error('Review submit failed:', error);
-        alert('Could not submit your review right now. Please check your connection and try again.');
-    } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalLabel;
-    }
 });
 
 /* ---------------- Delete review (email-confirmed) ---------------- */

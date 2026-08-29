@@ -236,10 +236,8 @@ def submit_review(request, slug):
     except Exception as exc:
         print(f"Review confirmation email failed: {exc}")
 
-    return JsonResponse({
-        "success": True,
-        "message": "Review submitted successfully."
-    })
+    messages.success(request, "Review submitted successfully.")
+    return redirect("car_detail", slug=slug)
 
 
 @require_POST

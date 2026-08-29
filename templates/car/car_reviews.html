@@ -68,7 +68,7 @@
     <div class="review-modal">
         <h2>Share your ownership experience</h2>
         <!-- data-action: where car-reviews.js POSTs the form (fetch, not a native submit) -->
-        <form id="reviewForm" method="POST" data-action="{% url 'submit_review' car_slug %}">
+        <form id="reviewForm" method="POST" data-action="{% url 'submit_review' car_slug %}" enctype="multipart/form-data">
             {% csrf_token %}
             <input type="hidden" name="car_name" value="{{ car.name }}">
             <!-- Filled in by the star picker below before submit -->
@@ -142,4 +142,4 @@
     rating, photos, helpful, verified - see Review.to_dict() in models.py. -->
 {{ car.reviews|json_script:"reviews-data" }}
 
-<script src="{% static 'js/car-reviews.js' %}?v=4"></script>
+<script src="{% static 'js/car-reviews.js' %}?v=5"></script>
