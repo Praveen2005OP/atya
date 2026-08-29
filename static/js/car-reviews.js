@@ -201,10 +201,10 @@ function renderRatingSelector() {
 }
 renderRatingSelector();
 
-/* Photo upload - drag & drop + click.
-   Real File objects are kept in pendingReviewPhotoFiles and synced into
-   the hidden #fPhotos input via DataTransfer, so FormData(reviewForm)
-   picks them up automatically on submit - no separate upload step. */
+/*  Photo upload - drag & drop + click.
+    Real File objects are kept in pendingReviewPhotoFiles and synced into
+    the hidden #fPhotos input via DataTransfer, so FormData(reviewForm)
+    picks them up automatically on submit - no separate upload step. */
 let pendingReviewPhotoFiles = [];
 const uploadZone = document.getElementById('photos');
 const fPhotos = document.getElementById('fPhotos');
@@ -266,10 +266,10 @@ function isValidReviewEmail(value) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
-/* Submit new review - POSTs to submit_review() in views.py, which saves
-   the Review (+ photos) to the DB and emails a confirmation to the
-   reviewer. On success, the server's saved review is added to the list
-   so the page updates without a full reload. */
+/*  Submit new review - POSTs to submit_review() in views.py, which saves
+    the Review (+ photos) to the DB and emails a confirmation to the
+    reviewer. On success, the server's saved review is added to the list
+    so the page updates without a full reload. */
 reviewForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -290,27 +290,36 @@ reviewForm.addEventListener('submit', async (e) => {
     submitBtn.textContent = 'Posting...';
 
     try {
-        const response = await fetch(reviewForm.dataset.action, {
-            method: 'POST',
-            body: new FormData(reviewForm)
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "X-CSRFToken": csrfToken,
+                "X-Requested-With": "XMLHttpRequest",
+            },
         });
-        const data = await response.json();
-
-        if (!response.ok || data.error) {
-            alert(data.error || 'Something went wrong. Please try again.');
+    
+        const text = await response.text();
+    
+        let data = {};
+        try {
+            data = JSON.parse(text);
+        } catch (e) {
+            data = {};
+        }
+    
+        if (response.ok) {
+            window.location.reload();
             return;
         }
-
-        reviews.unshift({ ...data.review, liked: false });
-        document.getElementById('sortSelect').value = 'newest';
-        renderReviewsSection();
-        closeReviewModal();
-    } catch (err) {
-        console.error('Review submission failed:', err);
-        alert('Could not submit your review right now. Please check your connection and try again.');
+    
+        throw new Error(data.error || text || "Review submit failed");
+    } catch (error) {
+        console.error("Review submit failed:", error);
+        alert("Could not submit your review right now. Please check your connection and try again.");
     } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalLabel;
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit";
     }
 });
 
