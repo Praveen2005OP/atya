@@ -1,13 +1,12 @@
 import json
 from pathlib import Path
+from django.conf import settings
 from django.contrib import messages
+from django.core.mail import EmailMultiAlternatives
 from django.http import JsonResponse
 from django.shortcuts import redirect, render
 from django.views.decorators.http import require_POST
-
-from atya import settings
 from .models import Feedback, Review, ReviewPhoto
-from django.core.mail import EmailMultiAlternatives
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
