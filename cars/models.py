@@ -1,6 +1,5 @@
 from xml.parsers.expat import model
 from django.db import models
-
 from .fields import EncryptedEmailField
 
 # Create your models here.
@@ -42,7 +41,7 @@ class Review(models.Model):
     )
 
     author = models.CharField(max_length=100)
-    email = EncryptedEmailField(help_text="Stored encrypted (see cars/fields.py) - never shown in the admin list, only on individual review pages.")
+    email = models.EmailField()
     title = models.CharField(max_length=150)
     content = models.TextField()
     rating = models.PositiveSmallIntegerField(choices=RATING_CHOICES, default=5)

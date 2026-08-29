@@ -39,10 +39,14 @@ def car_detail(request,slug):
     if car is not None:
         # Reviews live in the DB (Review model), not the car JSON files -
         # car.reviews is what car_reviews.html / car-reviews.js render.
-        car["reviews"] = [
-            review.to_dict()
-            for review in Review.objects.filter(car_slug=normalized_slug)
-        ]
+        try:
+            car["reviews"] = [
+                review.to_dict()
+                for review in Review.objects.filter(car_slug=normalized_slug).defer("email")
+            ]
+        except Exception as exc:
+            print(f"Review load failed: {exc}")
+            car["reviews"] = []
 
     return render(
         request,
