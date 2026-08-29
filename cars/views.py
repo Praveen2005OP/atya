@@ -164,14 +164,6 @@ def partner_dealer(request):
 
 @require_POST
 def submit_review(request, slug):
-    """
-    Handles the 'Write a Review' modal on the car detail page
-    (fetch() POST from static/js/car-reviews.js). Saves the review
-    (+ any uploaded photos) to the DB and emails a confirmation to the
-    reviewer, the same way feedback() saves + emails above - except
-    here the email goes to the reviewer's own address, not the admin.
-    Returns JSON so the widget can update itself without a full reload.
-    """
     author = request.POST.get("author", "").strip()
     email_addr = request.POST.get("email", "").strip()
     title = request.POST.get("title", "").strip()
@@ -180,15 +172,24 @@ def submit_review(request, slug):
     car_name = request.POST.get("car_name", "").strip()
 
     if not all([author, email_addr, title, content, rating]):
-        return JsonResponse({"error": "Please fill in every field before submitting."}, status=400)
+        return JsonResponse(
+            {"success": False, "error": "Please fill in every field before submitting."},
+            status=400,
+        )
 
     try:
         rating = int(rating)
     except ValueError:
-        return JsonResponse({"error": "Please select a star rating."}, status=400)
+        return JsonResponse(
+            {"success": False, "error": "Please select a star rating."},
+            status=400,
+        )
 
     if not 1 <= rating <= 5:
-        return JsonResponse({"error": "Please select a star rating."}, status=400)
+        return JsonResponse(
+            {"success": False, "error": "Please select a star rating."},
+            status=400,
+        )
 
     review = Review.objects.create(
         car_slug=slug.lower(),
@@ -200,57 +201,45 @@ def submit_review(request, slug):
         rating=rating,
     )
 
-    for photo in request.FILES.getlist("photos"):
-        ReviewPhoto.objects.create(review=review, image=photo)
+    try:
+        for photo in request.FILES.getlist("photos"):
+            ReviewPhoto.objects.create(review=review, image=photo)
+    except Exception as exc:
+        print(f"Review photo upload failed: {exc}")
 
-    # Email confirmation to the reviewer (not the site admin)
-    subject = f"🚗 Thanks for reviewing the {car_name or review.car_slug}!"
-    html_content = f"""
-    <div style="max-width:700px; margin:auto; background:#ffffff; border-radius:16px; overflow:hidden; font-family:Segoe UI,Arial,sans-serif;">
-        <div style="background:#111827; color:white; padding:24px;">
-            <h2 style="margin:0;">
-                🚗 Your Atya Review Is Live
-            </h2>
-        </div>
-        <div style="padding:24px;">
-            <p>Hi {review.author},</p>
-            <p>Thanks for sharing your experience with the <strong>{car_name or review.car_slug}</strong>. Your review is now visible to other Atya buyers.</p>
-            <table style="width:100%; border-collapse:collapse;">
-                <tr>
-                    <td><strong>Rating</strong></td>
-                    <td>{'⭐' * review.rating}</td>
-                </tr>
-                <tr>
-                    <td><strong>Title</strong></td>
-                    <td>{review.title}</td>
-                </tr>
-            </table>
-            <hr style="margin:20px 0;">
-            <h3>Your Review</h3>
-            <div style="background:#f8fafc; padding:16px; border-left:4px solid #2563eb; border-radius:10px;">
-                {review.content}
+    try:
+        subject = f"Thanks for reviewing the {car_name or review.car_slug}!"
+        html_content = f"""
+        <div style="max-width:700px; margin:auto; background:#ffffff; border-radius:16px; overflow:hidden; font-family:Segoe UI,Arial,sans-serif;">
+            <div style="background:#111827; color:white; padding:24px;">
+                <h2 style="margin:0;">Your Atya Review Is Live</h2>
+            </div>
+            <div style="padding:24px;">
+                <p>Hi {review.author},</p>
+                <p>Thanks for sharing your experience with the <strong>{car_name or review.car_slug}</strong>.</p>
+                <p><strong>Rating:</strong> {"*" * review.rating}</p>
+                <p><strong>Title:</strong> {review.title}</p>
+                <hr>
+                <p>{review.content}</p>
             </div>
         </div>
-        <div style="background:#f8fafc; padding:16px 24px; color:#64748b; font-size:14px;">
-            Thanks for helping other buyers make better decisions - Team Atya
-        </div>
-    </div>
-    """
-    email = EmailMultiAlternatives(
-        subject=subject,
-        body=f"Thanks for reviewing the {car_name or review.car_slug}, {review.author}!",
-        from_email=settings.EMAIL_HOST_USER,
-        to=[review.email],
-    )
-    email.attach_alternative(html_content, "text/html")
-    try:
-        email.send()
+        """
+
+        email = EmailMultiAlternatives(
+            subject=subject,
+            body=f"Thanks for reviewing the {car_name or review.car_slug}, {review.author}!",
+            from_email=settings.EMAIL_HOST_USER,
+            to=[review.email],
+        )
+        email.attach_alternative(html_content, "text/html")
+        email.send(fail_silently=True)
     except Exception as exc:
-        # The review is already saved - a failed email shouldn't undo that
-        # or block the response, just note it for debugging.
         print(f"Review confirmation email failed: {exc}")
 
-    return JsonResponse({"success": True, "review": review.to_dict()})
+    return JsonResponse({
+        "success": True,
+        "message": "Review submitted successfully."
+    })
 
 
 @require_POST
