@@ -293,25 +293,32 @@ reviewForm.addEventListener('submit', async (e) => {
 
     try {
         const formData = new FormData(reviewForm);
-        const csrfToken = reviewForm.querySelector('[name=csrfmiddlewaretoken]').value;
         const submitUrl = reviewForm.dataset.action;
 
         const response = await fetch(submitUrl, {
             method: 'POST',
             body: formData,
             headers: {
-                'X-CSRFToken': csrfToken,
                 'X-Requested-With': 'XMLHttpRequest',
             },
         });
 
-        const data = await response.json();
-
-        if (!response.ok || data.success !== true) {
-            throw new Error(data.error || 'Review submit failed');
+        if (response.ok) {
+            window.location.reload();
+            return;
         }
 
-        window.location.reload();
+        const text = await response.text();
+        let message = 'Review submit failed';
+
+        try {
+            const data = JSON.parse(text);
+            message = data.error || message;
+        } catch (err) {
+            message = text || message;
+        }
+
+        throw new Error(message);
     } catch (error) {
         console.error('Review submit failed:', error);
         alert('Could not submit your review right now. Please check your connection and try again.');
