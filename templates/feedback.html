@@ -17,7 +17,7 @@
         </p>
         {% if messages %}
             {% for message in messages %}
-                <div class="alert-success">
+                <div class="{% if message.tags == 'error' %}alert-error{% else %}alert-success{% endif %}">
                     {{ message }}
                 </div>
             {% endfor %}
@@ -37,34 +37,18 @@
                     Feedback Type
                 </label>
                 <select id="category" name="category" required>
-                    <option>General Feedback</option>
-                    <option>Bug Report</option>
-                    <option>Feature Request</option>
-                    <option>Data Correction</option>
-                    <option>UI / Design Feedback</option>
+                    {% for value, label in category_choices %}
+                    <option value="{{ value }}">{{ label }}</option>
+                    {% endfor %}
                 </select>
             </div>
             <div class="feedback-rating">
+                {% for value, label in rating_choices %}
                 <label class="rating-option">
-                    <input type="radio" name="rating" value="love">
-                    <span>😍 Love it</span>
+                    <input type="radio" name="rating" value="{{ value }}"{% if forloop.first %} required{% endif %}>
+                    <span>{{ label }}</span>
                 </label>
-                <label class="rating-option">
-                    <input type="radio" name="rating" value="good">
-                    <span>🙂 Good</span>
-                </label>
-                <label class="rating-option">
-                    <input type="radio" name="rating" value="average">
-                    <span>😐 Average</span>
-                </label>
-                <label class="rating-option">
-                    <input type="radio" name="rating" value="needs-work">
-                    <span>😕 Needs work</span>
-                </label>
-                <label class="rating-option">
-                    <input type="radio" name="rating" value="bug">
-                    <span>🐞 Found a bug</span>
-                </label>
+                {% endfor %}
             </div>
             <div class="form-group">
                 <label for="message">Your Feedback</label>

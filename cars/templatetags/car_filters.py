@@ -61,7 +61,7 @@ def power(engine_database):
         return (
             f"{int(max(powers))} bhp"
         )
-    except:
+    except Exception:
         return "N/A"
 
 @register.filter
@@ -100,7 +100,7 @@ def mileage(engine_database):
         return (
             f"{max(mileages):.1f} kmpl"
         )
-    except:
+    except Exception:
         return "N/A"
 
 @register.filter
@@ -137,7 +137,7 @@ def torque(engine_database):
         return (
             f"{int(max(torques))} Nm"
         )
-    except:
+    except Exception:
         return "N/A"
 
 @register.filter
@@ -156,7 +156,7 @@ def random_usecases(usecases):
                 shuffled[:2]
             )
         )
-    except:
+    except Exception:
         return ""
 
 
@@ -229,7 +229,7 @@ def random_comfort(variant):
                 shuffled[:3]
             )
         )
-    except:
+    except Exception:
         return ""
 
 @register.filter

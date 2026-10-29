@@ -3,50 +3,66 @@ from pathlib import Path
 from django.conf import settings
 from django.contrib import messages
 from django.core.mail import EmailMultiAlternatives
-from django.http import JsonResponse
+from django.db.models import F
+from django.http import Http404, JsonResponse
 from django.shortcuts import redirect, render
+from django.utils.html import escape, linebreaks
 from django.views.decorators.http import require_POST
+from PIL import Image
 from .models import Feedback, Review, ReviewPhoto
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+CARS_PATH = BASE_DIR / "data" / "cars"
+
+MAX_REVIEW_PHOTOS = 5
+MAX_REVIEW_PHOTO_SIZE = 5 * 1024 * 1024  # 5 MB
+
+# Parsed car JSON, reused until a file in data/cars is added/removed/edited.
+_cars_cache = {"signature": None, "cars": []}
 
 def load_cars():
-    cars_path = BASE_DIR / "data" / "cars"
-    cars = []
-    for file in cars_path.glob("*.json"):
-        with open(file, encoding="utf-8") as f:
-            car = json.load(f)
-            cars.append(car)
-    return cars
+    files = sorted(CARS_PATH.glob("*.json"))
+    signature = tuple((file.name, file.stat().st_mtime_ns) for file in files)
+    if signature != _cars_cache["signature"]:
+        cars = []
+        for file in files:
+            with open(file, encoding="utf-8") as f:
+                cars.append(json.load(f))
+        _cars_cache["cars"] = cars
+        _cars_cache["signature"] = signature
+    return _cars_cache["cars"]
+
+def normalize_slug(slug):
+    return slug.lower().replace("_", "-")
 
 def car_detail(request,slug):
     cars = load_cars()
-    normalized_slug = slug.lower()
+    normalized_slug = normalize_slug(slug)
     car = next(
         (
             car for car in cars
-            if (
-                car.get("slug", "")
-                .lower()
-                .replace("_", "-")
-                ==
-                normalized_slug
-            )
+            if normalize_slug(car.get("slug", "")) == normalized_slug
         ),
         None
     )
 
-    if car is not None:
-        # Reviews live in the DB (Review model), not the car JSON files -
-        # car.reviews is what car_reviews.html / car-reviews.js render.
-        try:
-            car["reviews"] = [
-                review.to_dict()
-                for review in Review.objects.filter(car_slug=normalized_slug).defer("email")
-            ]
-        except Exception as exc:
-            print(f"Review load failed: {exc}")
-            car["reviews"] = []
+    if car is None:
+        raise Http404("Car not found")
+
+    # Shallow copy so adding "reviews" doesn't leak into the cached car.
+    car = dict(car)
+    # Reviews live in the DB (Review model), not the car JSON files -
+    # car.reviews is what car_reviews.html / car-reviews.js render.
+    liked_ids = set(request.session.get("liked_reviews", []))
+    try:
+        car["reviews"] = []
+        for review in Review.objects.filter(car_slug=normalized_slug).defer("email").prefetch_related("photos"):
+            review_dict = review.to_dict()
+            review_dict["liked"] = review.id in liked_ids
+            car["reviews"].append(review_dict)
+    except Exception as exc:
+        print(f"Review load failed: {exc}")
+        car["reviews"] = []
 
     return render(
         request,
@@ -93,17 +109,32 @@ def faq(request):
     )
 
 def feedback(request):
-    if request.method == "POST":        
+    if request.method == "POST":
+        name = request.POST.get("name", "").strip()
+        email_addr = request.POST.get("email", "").strip()
+        rating = request.POST.get("rating", "")
+        category = request.POST.get("category", "")
+        message = request.POST.get("message", "").strip()
+
+        if (
+            not all([name, email_addr, message])
+            or rating not in dict(Feedback.RATING_CHOICES)
+            or category not in dict(Feedback.CATEGORY_CHOICES)
+        ):
+            messages.error(request, "Please fill in every field and pick a rating.")
+            return redirect("feedback")
+
         # Save feedback
         feedback_obj = Feedback.objects.create(
-            name=request.POST.get("name"),
-            email=request.POST.get("email"),
-            rating=request.POST.get("rating"),
-            category=request.POST.get("category"),
-            message=request.POST.get("message"),
+            name=name,
+            email=email_addr,
+            rating=rating,
+            category=category,
+            message=message,
         )
-        # Send email notification (optional)
-        subject = f"🚗 Atya Feedback • {feedback_obj.category}"
+        # Send email notification (optional). Every user-supplied value is
+        # escaped so it can't inject HTML into the notification email.
+        subject = f"🚗 Atya Feedback • {feedback_obj.get_category_display()}"
         html_content = f"""
         <div style="max-width:700px; margin:auto; background:#ffffff; border-radius:16px; overflow:hidden; font-family:Segoe UI,Arial,sans-serif;">
             <div style="background:#111827; color:white; padding:24px;">
@@ -115,25 +146,25 @@ def feedback(request):
                 <table style="width:100%; border-collapse:collapse;">
                     <tr>
                         <td><strong>Name</strong></td>
-                        <td>{feedback_obj.name}</td>
+                        <td>{escape(feedback_obj.name)}</td>
                     </tr>
                     <tr>
                         <td><strong>Email</strong></td>
-                        <td>{feedback_obj.email}</td>
+                        <td>{escape(feedback_obj.email)}</td>
                     </tr>
                     <tr>
                         <td><strong>Category</strong></td>
-                        <td>{feedback_obj.category}</td>
+                        <td>{escape(feedback_obj.get_category_display())}</td>
                     </tr>
                     <tr>
                         <td><strong>Rating</strong></td>
-                        <td>{feedback_obj.rating}</td>
+                        <td>{escape(feedback_obj.get_rating_display())}</td>
                     </tr>
                 </table>
                 <hr style="margin:20px 0;">
                 <h3>Feedback Message</h3>
                 <div style="background:#f8fafc; padding:16px; border-left:4px solid #2563eb; border-radius:10px;">
-                    {feedback_obj.message}
+                    {linebreaks(feedback_obj.message, autoescape=True)}
                 </div>
             </div>
             <div style="background:#f8fafc; padding:16px 24px; color:#64748b; font-size:14px;">
@@ -141,29 +172,55 @@ def feedback(request):
             </div>
         </div>
         """
-        email = EmailMultiAlternatives(
-            subject=subject,
-            body=feedback_obj.message,
-            from_email=settings.EMAIL_HOST_USER,
-            to=[settings.EMAIL_HOST_USER],
-        )
-        email.attach_alternative(
-            html_content,
-            "text/html"
-        )
-        email.send()
+        try:
+            email = EmailMultiAlternatives(
+                subject=subject,
+                body=feedback_obj.message,
+                from_email=settings.EMAIL_HOST_USER,
+                to=[settings.EMAIL_HOST_USER],
+            )
+            email.attach_alternative(
+                html_content,
+                "text/html"
+            )
+            email.send()
+        except Exception as exc:
+            # Feedback is already saved - a mail outage shouldn't 500 the page.
+            print(f"Feedback email failed: {exc}")
         messages.success(
             request,
             "Thank you! Your feedback has been submitted successfully."
         )
         return redirect("feedback")
-    return render(request, "feedback.html")
+    return render(
+        request,
+        "feedback.html",
+        {
+            "rating_choices": Feedback.RATING_CHOICES,
+            "category_choices": Feedback.CATEGORY_CHOICES,
+        }
+    )
 
 def contact(request):
     return render(request, "contact.html")
 
 def partner_dealer(request):
     return render(request, "partner-dealer.html")
+
+def validate_review_photos(photos):
+    """Returns an error message if any upload isn't a real, reasonably sized image."""
+    if len(photos) > MAX_REVIEW_PHOTOS:
+        return f"You can attach up to {MAX_REVIEW_PHOTOS} photos."
+    for photo in photos:
+        if photo.size > MAX_REVIEW_PHOTO_SIZE:
+            return f"{photo.name} is larger than 5 MB."
+        try:
+            Image.open(photo).verify()
+        except Exception:
+            return f"{photo.name} isn't a valid image."
+        finally:
+            photo.seek(0)
+    return None
 
 @require_POST
 def submit_review(request, slug):
@@ -188,9 +245,15 @@ def submit_review(request, slug):
         messages.error(request, "Please select a star rating.")
         return redirect("car_detail", slug=slug)
 
+    photos = request.FILES.getlist("photos")
+    photo_error = validate_review_photos(photos)
+    if photo_error:
+        messages.error(request, photo_error)
+        return redirect("car_detail", slug=slug)
+
     try:
         review = Review.objects.create(
-            car_slug=slug.lower(),
+            car_slug=normalize_slug(slug),
             car_name=car_name,
             author=author,
             email=email_addr,
@@ -204,7 +267,7 @@ def submit_review(request, slug):
         return redirect("car_detail", slug=slug)
 
     try:
-        for photo in request.FILES.getlist("photos"):
+        for photo in photos:
             ReviewPhoto.objects.create(review=review, image=photo)
     except Exception as exc:
         print(f"Review photo upload failed: {exc}")
@@ -236,7 +299,7 @@ def delete_review(request, slug, review_id):
         return JsonResponse({"error": "Please enter the email you reviewed with."}, status=400)
 
     try:
-        review = Review.objects.get(id=review_id, car_slug=slug.lower())
+        review = Review.objects.get(id=review_id, car_slug=normalize_slug(slug))
     except Review.DoesNotExist:
         return JsonResponse({"error": "Review not found."}, status=404)
 
@@ -245,3 +308,27 @@ def delete_review(request, slug, review_id):
 
     review.delete()  # ReviewPhoto rows cascade-delete with it
     return JsonResponse({"success": True})
+
+@require_POST
+def toggle_helpful(request, slug, review_id):
+    """
+    Marks/unmarks a review as helpful. The visitor's session remembers
+    which reviews they've liked, so refreshing or clicking twice can't
+    inflate helpful_count.
+    """
+    if not Review.objects.filter(id=review_id, car_slug=normalize_slug(slug)).exists():
+        return JsonResponse({"error": "Review not found."}, status=404)
+
+    liked_ids = set(request.session.get("liked_reviews", []))
+    if review_id in liked_ids:
+        liked_ids.discard(review_id)
+        Review.objects.filter(id=review_id, helpful_count__gt=0).update(helpful_count=F("helpful_count") - 1)
+        liked = False
+    else:
+        liked_ids.add(review_id)
+        Review.objects.filter(id=review_id).update(helpful_count=F("helpful_count") + 1)
+        liked = True
+    request.session["liked_reviews"] = sorted(liked_ids)
+
+    helpful = Review.objects.values_list("helpful_count", flat=True).get(id=review_id)
+    return JsonResponse({"helpful": helpful, "liked": liked})

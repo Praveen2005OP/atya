@@ -8,6 +8,12 @@
         <p class="review-intro">Read what automotive experts and enthusiasts have to say about the {{ car.name }}.</p>
     </div>
 
+    {% if messages %}
+        {% for message in messages %}
+            <div class="{% if message.tags == 'error' %}alert-error{% else %}alert-success{% endif %}">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
     <!-- Ratings dashboard - filled in by car-reviews.js from the JSON data island below -->
     <div class="review-summary">
         <div class="score-block">
@@ -53,7 +59,7 @@
                     </svg>
                     Delete
                 </button>
-                <button class="helpful-btn" data-helpful="{{ review.helpful|default:0 }}" type="button">
+                <button class="helpful-btn{% if review.liked %} liked{% endif %}" data-review-id="{{ review.id }}" type="button">
                     <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9v9H3V9h3zm0 0l4-7c.6 0 1.6.4 1.6 2l-.6 3.5H15c1 0 1.8.9 1.6 1.9l-1.2 6c-.2 1-1 1.6-2 1.6H6"/></svg>
                     Helpful (<span class="helpful-count">{{ review.helpful|default:0 }}</span>)
                 </button>
@@ -102,6 +108,7 @@
             <div class="field">
                 <label>Add photos</label>
                 <div class="upload-zone" id="photos">Drag photos here, or click to browse</div>
+                <div class="hint">Up to 5 photos, 5 MB each.</div>
                 <input type="file" id="fPhotos" name="photos" accept="image/*" multiple style="display:none;">
                 <div class="upload-preview" id="uploadPreview"></div>
             </div>
@@ -142,4 +149,4 @@
     rating, photos, helpful, verified - see Review.to_dict() in models.py. -->
 {{ car.reviews|json_script:"reviews-data" }}
 
-<script src="{% static 'js/car-reviews.js' %}?v=5"></script>
+<script src="{% static 'js/car-reviews.js' %}?v=6"></script>

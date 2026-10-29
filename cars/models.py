@@ -1,5 +1,6 @@
-from xml.parsers.expat import model
 from django.db import models
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
 from .fields import EncryptedEmailField
 
 # Create your models here.
@@ -7,7 +8,7 @@ class Feedback(models.Model):
     RATING_CHOICES = [ ("love", "😍 Love Atya"), ("helpful", "🙂 Helpful"), ("average", "😐 Average"), ("missing", "😕 Missing Features"), ("bug", "🐞 Found a Bug"), ]
     CATEGORY_CHOICES = [ ("general", "General Feedback"), ("bug", "Bug Report"), ("feature", "Feature Request"), ("data", "Data Correction"), ("ui", "UI / Design Feedback"), ]
     name = models.CharField(max_length=100)
-    email = models.EmailField()
+    email = EncryptedEmailField()
     rating = models.CharField(max_length=20, choices=RATING_CHOICES)
     category = models.CharField(max_length=20, choices=CATEGORY_CHOICES)
     message = models.TextField()
@@ -41,7 +42,7 @@ class Review(models.Model):
     )
 
     author = models.CharField(max_length=100)
-    email = models.EmailField()
+    email = EncryptedEmailField()
     title = models.CharField(max_length=150)
     content = models.TextField()
     rating = models.PositiveSmallIntegerField(choices=RATING_CHOICES, default=5)
@@ -86,3 +87,15 @@ class ReviewPhoto(models.Model):
 
     def __str__(self):
         return f"Photo for review #{self.review_id}"
+
+
+@receiver(post_delete, sender=ReviewPhoto)
+def delete_review_photo_file(sender, instance, **kwargs):
+    # Deleting the row (directly or via Review cascade) doesn't remove the
+    # file itself - without this, deleted reviews leave orphaned photos in
+    # MEDIA_ROOT / Cloudinary.
+    if instance.image:
+        try:
+            instance.image.delete(save=False)
+        except Exception as exc:
+            print(f"Review photo file delete failed: {exc}")

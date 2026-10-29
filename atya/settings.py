@@ -30,7 +30,17 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ["*"]
+# Comma-separated, e.g. ALLOWED_HOSTS=atya.in,www.atya.in in .env / Render.
+ALLOWED_HOSTS = [
+    host.strip()
+    for host in os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1,.onrender.com").split(",")
+    if host.strip()
+]
+
+# Render sets this automatically for the service's own *.onrender.com URL.
+RENDER_EXTERNAL_HOSTNAME = os.getenv("RENDER_EXTERNAL_HOSTNAME")
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # Application definition
 
@@ -135,7 +145,19 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+# Uploads (review photos) go to Cloudinary when CLOUDINARY_URL is set -
+# required on Render, whose disk is wiped on every redeploy. Without it
+# (local dev) they're saved under MEDIA_ROOT as before.
+USE_CLOUDINARY = bool(os.getenv("CLOUDINARY_URL"))
+
 STORAGES = {
+    "default": {
+        "BACKEND": (
+            "cars.storage.CloudinaryMediaStorage"
+            if USE_CLOUDINARY
+            else "django.core.files.storage.FileSystemStorage"
+        ),
+    },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },

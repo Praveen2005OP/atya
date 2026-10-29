@@ -17,13 +17,23 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.static import serve
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('cars.urls')),
 ]
 
-if settings.DEBUG:
+if settings.USE_CLOUDINARY:
+    pass  # Photo URLs point straight at Cloudinary's CDN.
+elif settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+else:
+    # static() is a no-op when DEBUG is off, so serve local uploads directly.
+    # Only a fallback - files on Render's disk are lost on redeploy, so set
+    # CLOUDINARY_URL there.
+    urlpatterns += [
+        re_path(r"^media/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT}),
+    ]
     

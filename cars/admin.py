@@ -6,7 +6,8 @@ from .models import Feedback, Review, ReviewPhoto
 class FeedbackAdmin(admin.ModelAdmin):
     list_display = ("name", "email", "rating", "category", "created_at")
     list_filter = ("rating", "category")
-    search_fields = ("name", "email", "message")
+    # email is encrypted in the DB, so it can't be searched with SQL LIKE.
+    search_fields = ("name", "message")
 
 
 class ReviewPhotoInline(admin.TabularInline):

@@ -2363,6 +2363,19 @@ h3 {
     font-weight: 600;
 }
 
+.alert-error {
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    background:
+        rgba(239, 68, 68, 0.15);
+    border:
+        1px solid rgba(239, 68, 68, 0.35);
+    color:
+        rgb(252, 165, 165);
+    font-weight: 600;
+}
+
 /* Contact page */
 .contact-grid {
     display: grid;
