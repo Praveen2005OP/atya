@@ -15,6 +15,8 @@ plus clean side-by-side comparisons without the clutter.
 ![Cloudinary](https://img.shields.io/badge/Media-Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 ![Render](https://img.shields.io/badge/Hosted%20on-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
+### [🌐 Live Demo: atya.onrender.com](https://atya.onrender.com/)
+
 **77 cars · 32 brands · 29 interactive 360° views**
 
 </div>
@@ -154,6 +156,8 @@ pip install -r requirements.txt && python manage.py migrate && python manage.py 
 ```
 
 **Start command:** `gunicorn atya.wsgi`
+
+Live at **https://atya.onrender.com/**. The free plan sleeps when idle, so the first visit can take up to a minute to load.
 
 Set these in **Render → your service → Environment**:
 `SECRET_KEY`, `DEBUG=False`, `DATABASE_URL`, `FIELD_ENCRYPTION_KEY`, `CLOUDINARY_URL`,
