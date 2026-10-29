@@ -14,7 +14,7 @@
         {% endfor %}
     {% endif %}
 
-    <!-- Ratings dashboard - filled in by car-reviews.js from the JSON data island below -->
+    <!-- Ratings dashboard - filled in by static/js/car/reviews.js from the JSON data island below -->
     <div class="review-summary">
         <div class="score-block">
             <div class="score-label">Owner rating</div>
@@ -73,7 +73,6 @@
 <div class="modal-overlay" id="modalOverlay">
     <div class="review-modal">
         <h2>Share your ownership experience</h2>
-        <!-- data-action: where car-reviews.js POSTs the form (fetch, not a native submit) -->
         <form id="reviewForm" method="POST" action="{% url 'submit_review' car_slug %}" enctype="multipart/form-data">
             {% csrf_token %}
             <input type="hidden" name="car_name" value="{{ car.name }}">
@@ -145,8 +144,6 @@
 </div>
 
 <!-- JSON data island: reviews loaded from the DB by car_detail() in views.py,
-    read by car-reviews.js on load. Shape: title, author, date, content,
+    read by static/js/car/reviews.js on load. Shape: title, author, date, content,
     rating, photos, helpful, verified - see Review.to_dict() in models.py. -->
 {{ car.reviews|json_script:"reviews-data" }}
-
-<script src="{% static 'js/car-reviews.js' %}?v=6"></script>

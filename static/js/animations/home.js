@@ -1,15 +1,19 @@
 // ═══════════════════════════════════════════════════════════════════════
 // Home Page Animations (GSAP + ScrollTrigger)
 // ═══════════════════════════════════════════════════════════════════════
+// gsap / ScrollTrigger come from the CDN <script> tags in base.html. If the
+// CDN fails to load, animations are skipped instead of breaking the page.
 
-gsap.registerPlugin(ScrollTrigger);
+const { gsap, ScrollTrigger } = window;
+const hasGsap = Boolean(gsap && ScrollTrigger);
+if (hasGsap) gsap.registerPlugin(ScrollTrigger);
 
 const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
 ).matches;
 
-function initHomeAnimations() {
-    if (!document.querySelector("#homePage")) return;
+export function initHomeAnimations() {
+    if (!hasGsap || !document.querySelector("#homePage")) return;
 
     initHeroAnimation();
     initBrandsAnimation();
@@ -21,7 +25,7 @@ function initHomeAnimations() {
     window.addEventListener("load", () => ScrollTrigger.refresh());
 }
 
-// ── Hero Section Animation (unchanged) ──────────────────────────────
+// ── Hero Section Animation ───────────────────────────────────────
 function initHeroAnimation() {
     if (!document.querySelector(".hero")) return;
 
@@ -32,9 +36,6 @@ function initHeroAnimation() {
         );
         return;
     }
-
-    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
-    gsap.registerPlugin(ScrollTrigger);
 
     const heroTL = gsap.timeline({
         defaults: { duration: 0.9, ease: "power3.out" }
@@ -109,9 +110,9 @@ function initFinderAnimation() {
 // re-render (Show More / filtering) only animates newly added cards.
 let animatedCarCount = 0;
 
-// Called by script.js every time renderCars() rebuilds #carGrid.
-function animateCarCards() {
-    if (prefersReducedMotion) return;
+// Called by renderCars() (home/car-grid.js) every time #carGrid is rebuilt.
+export function animateCarCards() {
+    if (!hasGsap || prefersReducedMotion) return;
 
     const cards = gsap.utils.toArray("#carGrid .car-card");
     const newCards = cards.slice(animatedCarCount);

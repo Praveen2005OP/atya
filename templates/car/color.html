@@ -1,7 +1,6 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/color.css' %}">
 
-{{ car|json_script:"current-car-data" }}   <!-- this is use to pass the car data to the color.js file -->
 
 <section class="variant-section" id="colors">
     {% if car.colorfolder %}
@@ -55,4 +54,3 @@
     {% endif %}
 </section>
 
-<script src="{% static 'js/color.js' %}"></script>
