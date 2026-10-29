@@ -96,11 +96,11 @@ function initFinderAnimation() {
     if (!document.querySelector("#explore")) return;
 
     if (prefersReducedMotion) {
-        gsap.set("#explore .finder-panel > *", { clearProps: "all" });
+        gsap.set("#explore .finder-heading > *, #explore .finder-panel > *", { clearProps: "all" });
         return;
     }
 
-    gsap.from("#explore .finder-panel > *", {
+    gsap.from("#explore .finder-heading > *, #explore .finder-panel > *", {
         y: 30, opacity: 0, duration: 0.7, stagger: 0.08, ease: "power3.out",
         scrollTrigger: { trigger: "#explore", start: "top 70%", toggleActions: "play none none reverse" }
     });

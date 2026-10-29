@@ -11,6 +11,7 @@ import {
     toggleCompare, removeCompareSlot, setSlotCar, setSlotVariant,
 } from "./compare.js";
 import { renderSaved, toggleSave } from "./garage.js";
+import { initFinderHeading } from "./finder-heading.js";
 import { initHomeAnimations } from "../animations/home.js";
 
 // Re-renders everything that depends on saved / compared cars.
@@ -147,5 +148,6 @@ export function initHome() {
     }
 
     bindEvents();
+    initFinderHeading();
     initHomeAnimations();
 }

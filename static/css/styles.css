@@ -917,23 +917,50 @@ h3 {
     box-shadow: var(--shadow);
 }
 
-.finder-panel {
+/* Finder card = .finder-heading (top half) + .finder-panel (filters).
+   Only the heading is sticky: on scroll the filters move away and
+   "Smart search / Find cars fast." stays pinned under the header.
+   --header-height is set by static/js/ui/header.js. */
+.finder-heading {
     position: sticky;
-    top: 5rem;
+    top: var(--header-height, 5rem);
     z-index: 10;
-    margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 1rem 1rem 1.25rem;
     border: 1px solid var(--line);
-    border-radius: 0.75rem;
+    border-bottom: 0;
+    border-radius: 0.75rem 0.75rem 0 0;
+    background: color-mix(in srgb, var(--surface) 90%, transparent);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(18px);
+    transition: border-radius 160ms ease, box-shadow 160ms ease;
+}
+
+/* Joined to the filters card below (beats .section-heading.tight's margin). */
+.section-heading.finder-heading {
+    margin-bottom: 0;
+}
+
+/* Pinned: becomes a card of its own (class toggled in home/finder-heading.js). */
+.finder-heading.is-stuck {
+    border-bottom: 1px solid var(--line);
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: var(--shadow);
+}
+
+.finder-heading .eyebrow {
+    margin-bottom: 1rem;
+}
+
+.finder-panel {
+    margin-bottom: 1rem;
+    padding: 0 1rem 1rem;
+    border: 1px solid var(--line);
+    border-top: 0;
+    border-radius: 0 0 0.75rem 0.75rem;
     background: color-mix(in srgb, var(--surface) 90%, transparent);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(18px);
     box-shadow: var(--shadow);
-}
-
-.finder-panel .eyebrow {
-    grid-column: 1 / -1;
-    margin-bottom: 1rem;
 }
 
 .filters {
@@ -1964,7 +1991,7 @@ h3 {
 
     /* Sticky panels */
     .variant-compare-panel,
-    .finder-panel {
+    .finder-heading {
         position: static;
         top: auto;
     }
