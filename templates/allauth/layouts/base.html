@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% comment %}
+    Any django-allauth page (Google login error, "continue" screens) renders
+    inside the site layout, in the same card as the login / signup pages.
+{% endcomment %}
+
+{% block title %}{% block head_title %}{% endblock head_title %} | Atya{% endblock %}
+
+{% block main %}
+<section class="feedback-page auth-page">
+    <div class="feedback-container auth-card allauth-page">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="{% if message.tags == 'error' %}alert-error{% else %}alert-success{% endif %}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% block content %}{% endblock content %}
+    </div>
+</section>
+{% endblock %}

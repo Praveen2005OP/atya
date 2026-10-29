@@ -67,6 +67,7 @@ export function initReviews() {
         photos: r.photos || [],
         helpful: r.helpful || 0,
         liked: !!r.liked,
+        mine: !!r.mine,
         verified: !!r.verified
     }));
 
@@ -155,7 +156,15 @@ export function initReviews() {
             btn.addEventListener('click', () => toggleHelpful(+btn.dataset.reviewId, btn));
         });
         container.querySelectorAll('.delete-review-btn').forEach((btn) => {
-            btn.addEventListener('click', () => openDeleteModal(+btn.dataset.reviewId));
+            btn.addEventListener('click', () => {
+                const review = reviews.find((r) => r.id === +btn.dataset.reviewId);
+                // Your own review (logged in): no email needed, just confirm.
+                if (review?.mine) {
+                    if (confirm("Delete your review? This can't be undone.")) deleteReview(review.id);
+                } else {
+                    openDeleteModal(+btn.dataset.reviewId);
+                }
+            });
         });
     }
 
@@ -330,8 +339,9 @@ export function initReviews() {
             return;
         }
 
-        const email = document.getElementById('email').value.trim();
-        if (!isValidReviewEmail(email)) {
+        // Logged-in users have no email field - the server uses their account email.
+        const emailInput = document.getElementById('email');
+        if (emailInput && !isValidReviewEmail(emailInput.value.trim())) {
             e.preventDefault();
             alert('Please enter a valid email address.');
             return;
@@ -344,7 +354,30 @@ export function initReviews() {
         submitBtn.textContent = 'Posting...';
     });
 
-    /* ---------------- Delete review (email-confirmed) ---------------- */
+    /* ---------------- Delete review ----------------
+        Your own reviews (logged in) delete straight away; anyone else's
+        needs the email it was posted with (delete_review() in views.py). */
+    async function deleteReview(reviewId, email = '') {
+        const formData = new FormData();
+        if (email) formData.append('email', email);
+        formData.append('csrfmiddlewaretoken', getCsrfToken());
+
+        const response = await fetch(`/car/${carSlug}/review/${reviewId}/delete/`, {
+            method: 'POST',
+            body: formData
+        });
+        const data = await response.json();
+
+        if (!response.ok || data.error) {
+            alert(data.error || 'Could not delete this review.');
+            return false;
+        }
+
+        reviews = reviews.filter((r) => r.id !== reviewId);
+        renderReviewsSection();
+        return true;
+    }
+
     const deleteModalOverlay = document.getElementById('deleteModalOverlay');
     const deleteReviewForm = document.getElementById('deleteReviewForm');
     let pendingDeleteReviewId = null;
@@ -377,24 +410,7 @@ export function initReviews() {
         submitBtn.disabled = true;
 
         try {
-            const formData = new FormData();
-            formData.append('email', email);
-            formData.append('csrfmiddlewaretoken', getCsrfToken());
-
-            const response = await fetch(`/car/${carSlug}/review/${pendingDeleteReviewId}/delete/`, {
-                method: 'POST',
-                body: formData
-            });
-            const data = await response.json();
-
-            if (!response.ok || data.error) {
-                alert(data.error || 'Could not delete this review.');
-                return;
-            }
-
-            reviews = reviews.filter((r) => r.id !== pendingDeleteReviewId);
-            renderReviewsSection();
-            closeDeleteModal();
+            if (await deleteReview(pendingDeleteReviewId, email)) closeDeleteModal();
         } catch (err) {
             console.error('Review deletion failed:', err);
             alert('Something went wrong. Please try again.');

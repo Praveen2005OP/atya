@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="feedback-page auth-page">
+    <div class="feedback-container auth-card">
+        <span class="legal-label">{% block eyebrow %}Account{% endblock %}</span>
+        <h1>{% block heading %}{% endblock %}</h1>
+        {% block intro %}{% endblock %}
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="{% if message.tags == 'error' %}alert-error{% else %}alert-success{% endif %}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+
+        {% block body %}{% endblock %}
+    </div>
+</section>
+{% endblock %}

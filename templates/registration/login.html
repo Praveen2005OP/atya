@@ -1,0 +1,20 @@
+{% extends "accounts/auth_base.html" %}
+
+{% block title %}Log in | Atya{% endblock %}
+{% block eyebrow %}Welcome back{% endblock %}
+{% block heading %}Log in{% endblock %}
+{% block intro %}<p class="feedback-intro">Write reviews under your name and manage them from any device.</p>{% endblock %}
+
+{% block body %}
+{% include "accounts/_google_button.html" %}
+<form class="feedback-form" method="post" novalidate>
+    {% csrf_token %}
+    {% include "accounts/_form_fields.html" %}
+    <input type="hidden" name="next" value="{{ next }}">
+    <div class="auth-row">
+        <a class="auth-link" href="{% url 'password_reset' %}">Forgot password?</a>
+    </div>
+    <button type="submit" class="primary-button auth-submit">Log in</button>
+</form>
+<p class="auth-switch">New to Atya? <a href="{% url 'signup' %}{% if next %}?next={{ next|urlencode }}{% endif %}">Create an account</a></p>
+{% endblock %}

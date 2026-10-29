@@ -81,13 +81,19 @@
 
             <div class="field">
                 <label>Your name</label>
-                <input type="text" id="author" name="author" placeholder="e.g. Priya S." required>
+                <input type="text" id="author" name="author" placeholder="e.g. Priya S." required
+                    value="{% if user.is_authenticated %}{{ user.get_full_name|default:user.username }}{% endif %}">
             </div>
+            {% if user.is_authenticated %}
+            <div class="hint">Posting as <strong>{{ user.username }}</strong>. You can delete this review anytime from this page.</div>
+            {% else %}
             <div class="field">
                 <label>Your email</label>
                 <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                <div class="hint">We'll email you a copy of your review. We never share it.</div>
+                <div class="hint">We'll email you a copy of your review. We never share it.
+                    <a href="{% url 'login' %}?next={{ request.get_full_path|urlencode }}">Log in</a> to manage your reviews without your email.</div>
             </div>
+            {% endif %}
             <div class="field">
                 <label>Car reviewed</label>
                 <input type="text" value="{{ car.name }}" readonly>

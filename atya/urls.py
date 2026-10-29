@@ -18,10 +18,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include, re_path
+from django.views.generic import RedirectView
 from django.views.static import serve
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),
+    # allauth's own email/password pages -> Atya's (accounts/urls.py).
+    path('auth/login/', RedirectView.as_view(pattern_name='login', query_string=True)),
+    path('auth/signup/', RedirectView.as_view(pattern_name='signup', query_string=True)),
+    path('auth/password/reset/', RedirectView.as_view(pattern_name='password_reset')),
+    path('auth/', include('allauth.urls')),  # Google login callback etc.
     path('',include('cars.urls')),
 ]
 

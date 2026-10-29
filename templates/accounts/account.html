@@ -1,0 +1,39 @@
+{% extends "accounts/auth_base.html" %}
+
+{% block title %}My account | Atya{% endblock %}
+{% block eyebrow %}My account{% endblock %}
+{% block heading %}Hi, {{ user.first_name|default:user.username }}{% endblock %}
+{% block intro %}<p class="feedback-intro">Signed in as <strong>{{ user.username }}</strong>.</p>{% endblock %}
+
+{% block body %}
+<h2 class="auth-section-title">Your details</h2>
+<form class="feedback-form" method="post" novalidate>
+    {% csrf_token %}
+    {% include "accounts/_form_fields.html" %}
+    <div class="auth-actions">
+        <button type="submit" class="primary-button auth-submit">Save changes</button>
+        <a class="secondary-button auth-button-link" href="{% url 'password_change' %}">Change password</a>
+    </div>
+</form>
+
+<h2 class="auth-section-title">Your reviews</h2>
+{% if reviews %}
+    <ul class="account-reviews">
+        {% for review in reviews %}
+        <li>
+            <a href="{% url 'car_detail' review.car_slug %}#reviewList">
+                <strong>{{ review.title }}</strong>
+                <span>{{ review.car_name|default:review.car_slug }} · {{ review.rating }}★ · {{ review.created_at|date:"j M Y" }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p class="feedback-intro">You haven't reviewed any cars yet. Open any car and hit <em>Write a Review</em>.</p>
+{% endif %}
+
+<form method="post" action="{% url 'logout' %}" class="auth-logout">
+    {% csrf_token %}
+    <button type="submit" class="secondary-button">Log out</button>
+</form>
+{% endblock %}

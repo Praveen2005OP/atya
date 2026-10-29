@@ -100,6 +100,11 @@ export function renderCars() {
         .map(carCardHTML)
         .join("");
     updateToggleButton("car_card", filtered.length);
+    document.querySelectorAll("[data-purpose]").forEach((button) => {
+        const active = button.dataset.purpose === state.purpose;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", String(active));
+    });
     // Only newly added cards actually animate.
     animateCarCards();
 }

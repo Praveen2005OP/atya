@@ -17,7 +17,7 @@ class ReviewPhotoInline(admin.TabularInline):
 
 @admin.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
-    list_display = ("title", "author", "car_name", "car_slug", "rating", "verified", "created_at")
+    list_display = ("title", "author", "user", "car_name", "car_slug", "rating", "verified", "created_at")
     list_filter = ("rating", "verified", "car_slug")
     search_fields = ("title", "author", "car_name", "car_slug")
     inlines = [ReviewPhotoInline]

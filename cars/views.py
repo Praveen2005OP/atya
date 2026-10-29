@@ -59,6 +59,7 @@ def car_detail(request,slug):
         for review in Review.objects.filter(car_slug=normalized_slug).defer("email").prefetch_related("photos"):
             review_dict = review.to_dict()
             review_dict["liked"] = review.id in liked_ids
+            review_dict["mine"] = request.user.is_authenticated and review.user_id == request.user.id
             car["reviews"].append(review_dict)
     except Exception as exc:
         print(f"Review load failed: {exc}")
@@ -231,6 +232,13 @@ def submit_review(request, slug):
     rating = request.POST.get("rating", "").strip()
     car_name = request.POST.get("car_name", "").strip()
 
+    # Logged-in users review under their account: email comes from the
+    # account (not the form), and the name defaults to their profile name.
+    user = request.user if request.user.is_authenticated else None
+    if user:
+        author = author or user.get_full_name() or user.username
+        email_addr = user.email or email_addr
+
     if not all([author, email_addr, title, content, rating]):
         messages.error(request, "Please fill in every field before submitting.")
         return redirect("car_detail", slug=slug)
@@ -255,6 +263,7 @@ def submit_review(request, slug):
         review = Review.objects.create(
             car_slug=normalize_slug(slug),
             car_name=car_name,
+            user=user,
             author=author,
             email=email_addr,
             title=title,
@@ -290,18 +299,23 @@ def submit_review(request, slug):
 @require_POST
 def delete_review(request, slug, review_id):
     """
-    Deletes a review only if the submitted email matches the one it was
-    posted with. review.email decrypts automatically on read (see
-    EncryptedEmailField in cars/fields.py), so this compares plain text.
+    Deletes a review if it belongs to the logged-in user, or (for guest
+    reviews) if the submitted email matches the one it was posted with.
+    review.email decrypts automatically on read (see EncryptedEmailField
+    in cars/fields.py), so this compares plain text.
     """
-    submitted_email = request.POST.get("email", "").strip()
-    if not submitted_email:
-        return JsonResponse({"error": "Please enter the email you reviewed with."}, status=400)
-
     try:
         review = Review.objects.get(id=review_id, car_slug=normalize_slug(slug))
     except Review.DoesNotExist:
         return JsonResponse({"error": "Review not found."}, status=404)
+
+    if request.user.is_authenticated and review.user_id == request.user.id:
+        review.delete()
+        return JsonResponse({"success": True})
+
+    submitted_email = request.POST.get("email", "").strip()
+    if not submitted_email:
+        return JsonResponse({"error": "Please enter the email you reviewed with."}, status=400)
 
     if review.email.strip().lower() != submitted_email.lower():
         return JsonResponse({"error": "That email doesn't match this review."}, status=403)

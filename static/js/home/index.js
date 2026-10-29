@@ -21,9 +21,11 @@ function renderAll() {
     renderSaved();
 }
 
+// Re-render first, then scroll on the next frame - scrolling first and
+// changing the grid mid-scroll left the page stuck where it was.
 function showResults() {
-    scrollToExplore();
     renderCars();
+    requestAnimationFrame(scrollToExplore);
 }
 
 function renderDataError(error) {

@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.db.models.signals import post_delete
 from django.dispatch import receiver
@@ -41,6 +42,14 @@ class Review(models.Model):
         help_text="Snapshot of the car's name at review time, for admin/display convenience.",
     )
 
+    # Set when a logged-in user posts the review; guests leave it empty.
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="reviews",
+    )
     author = models.CharField(max_length=100)
     email = EncryptedEmailField()
     title = models.CharField(max_length=150)

@@ -1229,6 +1229,15 @@ h3 {
     text-align: left;
 }
 
+/* Purpose currently filtering the finder (click again to clear) */
+.purpose-grid button.active {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    background:
+        linear-gradient(135deg, color-mix(in srgb, var(--accent) 28%, transparent), transparent),
+        var(--surface);
+}
+
 .saved-grid:empty::before {
     content: "No saved cars yet. Add cars from Explore to build your shortlist.";
     display: block;
@@ -2374,6 +2383,210 @@ h3 {
     color:
         rgb(252, 165, 165);
     font-weight: 600;
+}
+
+/* ── Accounts: login / signup / account pages ─────────────────── */
+.auth-card {
+    max-width: 520px;
+}
+
+.auth-card h1 {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+.form-group.has-error input {
+    border-color: rgb(239, 68, 68);
+}
+
+.field-error {
+    margin: 0;
+    color: rgb(248, 113, 113);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.field-help {
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.field-help ul {
+    margin: 0.25rem 0 0;
+    padding-left: 1.1rem;
+}
+
+.auth-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -0.75rem;
+}
+
+.auth-link,
+.auth-switch a {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.auth-submit {
+    min-height: 3.2rem;
+    padding: 0 1.5rem;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.auth-switch {
+    margin-top: 1.5rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+.auth-section-title {
+    margin: 2.5rem 0 1rem;
+    font-size: 1.3rem;
+}
+
+.auth-section-title:first-of-type {
+    margin-top: 0.5rem;
+}
+
+.auth-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.auth-button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.2rem;
+    padding: 0 1.5rem;
+    border-radius: 999px;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.account-reviews {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.account-reviews a {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 160ms ease;
+}
+
+.account-reviews a:hover {
+    border-color: var(--accent);
+}
+
+.account-reviews span {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.auth-logout {
+    margin-top: 2.5rem;
+}
+
+.google-login {
+    margin-bottom: 1.5rem;
+}
+
+.google-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    min-height: 3.2rem;
+    font-size: 1rem;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+}
+
+/* django-allauth pages (Google login errors etc.) */
+.allauth-page h1 {
+    margin-bottom: 1rem;
+}
+
+.allauth-page p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.allauth-page a {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.allauth-page button {
+    min-height: 3rem;
+    padding: 0 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--accent);
+    color: #10100d;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* Header: Log in / account / Log out */
+.header-login,
+.header-account {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.header-avatar {
+    display: inline-grid;
+    place-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #10100d;
+    font-size: 0.85rem;
+    font-weight: 850;
+}
+
+.header-logout {
+    display: contents;
+}
+
+@media (max-width: 768px) {
+    .header-account-name {
+        display: none;
+    }
 }
 
 /* Contact page */

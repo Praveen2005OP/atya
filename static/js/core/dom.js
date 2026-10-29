@@ -21,8 +21,13 @@ export const els = {
     themeToggle: document.querySelector("#themeToggle"),
 };
 
+// Scrolls so the finder's results sit just below the sticky header.
 export function scrollToExplore() {
-    document.querySelector("#explore")?.scrollIntoView({ behavior: "smooth" });
+    const explore = document.querySelector("#explore");
+    if (!explore) return;
+    const headerHeight = els.header?.offsetHeight || 0;
+    const top = explore.getBoundingClientRect().top + window.scrollY - headerHeight - 12;
+    window.scrollTo({ top, behavior: "smooth" });
 }
 
 // Reads a {{ value|json_script:"id" }} island; null if it isn't on the page.

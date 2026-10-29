@@ -106,6 +106,23 @@ function initFinderAnimation() {
     });
 }
 
+// ScrollTrigger.refresh() cancels a smooth scroll that's still running
+// (e.g. after a purpose / brand click), so wait until scrolling stops.
+let refreshTimer;
+function refreshWhenScrollIdle() {
+    clearTimeout(refreshTimer);
+    const refresh = () => {
+        window.removeEventListener("scroll", onScroll);
+        ScrollTrigger.refresh();
+    };
+    const onScroll = () => {
+        clearTimeout(refreshTimer);
+        refreshTimer = setTimeout(refresh, 200);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    refreshTimer = setTimeout(refresh, 200);
+}
+
 // Tracks how many car cards have already been revealed, so a
 // re-render (Show More / filtering) only animates newly added cards.
 let animatedCarCount = 0;
@@ -125,7 +142,7 @@ export function animateCarCards() {
             y: 0, opacity: 1, scale: 1,
             duration: 0.45, stagger: 0.05, ease: "power2.out",
             overwrite: "auto",
-            onComplete: () => requestAnimationFrame(() => ScrollTrigger.refresh())
+            onComplete: refreshWhenScrollIdle
         }
     );
 }
